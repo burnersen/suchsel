@@ -14,6 +14,11 @@ If you prefer to run Suchsel on your own server, feel free: **[⬇️ Download t
 
 **[☕ Buy me a coffee](https://ko-fi.com/burnersen)**
 
+<p align="center">
+  <a href="promo/suchsel-promo.mp4"><img src="promo/suchsel-promo.gif" alt="Suchsel in one minute: pick a topic, swipe words, confetti, print as PDF, your own words, dark theme, zoom and installing as an app" width="270"></a><br>
+  <sub>🎬 Suchsel in one minute (German captions) · <a href="promo/suchsel-promo.mp4">Video as MP4, for sharing</a></sub>
+</p>
+
 Word search puzzles as a self-hosted app. Mark words with your finger or the mouse, zoom in, type your own words and print A4 PDFs. With more than 26,000 words in six languages. The server runs PHP, the browser plain JavaScript and CSS. No frameworks, no dependencies, no build step, no MySQL.
 
 The app is loaded from the server once and then runs entirely on the device, even without internet. Anyone opening the website in a browser may try a few puzzles (10 by default). After that they keep playing for free and without limits in the installed app. A banner at the top invites them to do so on every visit.

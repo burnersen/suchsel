@@ -14,6 +14,11 @@ Wer Suchsel lieber auf dem eigenen Server betreiben möchte, kann das gern tun: 
 
 **[☕ Spendier mir einen Kaffee](https://ko-fi.com/burnersen)**
 
+<p align="center">
+  <a href="promo/suchsel-promo.mp4"><img src="promo/suchsel-promo.gif" alt="Suchsel in einer Minute: Thema wählen, Wörter wischen, Konfetti, Ausdrucken als PDF, eigene Wörter, dunkles Design, Zoom und Installieren als App" width="270"></a><br>
+  <sub>🎬 Suchsel in einer Minute · <a href="promo/suchsel-promo.mp4">Video als MP4 zum Teilen</a></sub>
+</p>
+
 Wortsuchrätsel als App zum Selbsthosten. Wörter mit dem Finger oder der Maus markieren, groß zoomen, eigene Wörter eintippen und als A4-PDF ausdrucken. Mit über 26.000 Wörtern in sechs Sprachen. Auf dem Server läuft PHP, im Browser schlichtes JavaScript und CSS. Keine Frameworks, keine Abhängigkeiten, kein Build-Schritt, kein MySQL.
 
 Die App wird einmal vom Server geladen und läuft danach komplett auf dem Gerät, auch ohne Internet. Wer die Webseite im Browser öffnet, darf ein paar Rätsel ausprobieren (von Haus aus 10). Danach geht es mit der installierten App kostenlos und unbegrenzt weiter. Ein Hinweis oben auf der Seite lädt bei jedem Besuch dazu ein.
