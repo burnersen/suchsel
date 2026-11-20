@@ -21,7 +21,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', '0');
 date_default_timezone_set('Europe/Berlin');
 
-define('SU_VERSION', '1.0.2');
+define('SU_VERSION', '1.0.3');
 define('SU_ROOT', __DIR__);
 define('SU_APP', SU_ROOT . '/app');
 define('SU_DATA_DIR', SU_ROOT . '/data');
@@ -112,4 +112,4 @@ require SU_APP . '/views/app.php';
 $html = (string)ob_get_clean();
 if (!filter_var(ini_get('zlib.output_compression'), FILTER_VALIDATE_BOOLEAN)) header('Content-Length: ' . strlen($html));
 echo $html;
-suAutoUpdate();   // höchstens einmal pro Stunde, erst nachdem die Seite ausgeliefert ist
+suAutoUpdate();   // höchstens alle 15 Minuten, erst nachdem die Seite ausgeliefert ist

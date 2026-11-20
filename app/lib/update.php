@@ -1,5 +1,5 @@
 <?php
-/* Suchsel – Updates von allein: höchstens einmal pro Stunde beim neuesten GitHub-Release nachsehen und eine neue Version
+/* Suchsel – Updates von allein: höchstens alle 15 Minuten beim neuesten GitHub-Release nachsehen und eine neue Version
    gleich einspielen, nachdem die Seite ausgeliefert ist. Der Installer aus dem Release wird per Prüfsumme kontrolliert,
    die laufende Version vorher in data/update-prev.txt gelegt. Abschalten: 'auto_update' => false in data/config.php.
    Nach außen geht dabei nur die Frage an GitHub, nichts Persönliches. */
@@ -131,12 +131,12 @@ function suUpdInstall(array $info): void {
     suPayloadInstall($files);
 }
 
-/** Höchstens einmal pro Stunde nachsehen, eine neue Version gleich einspielen. Läuft nach der ausgelieferten Seite.
+/** Höchstens alle 15 Minuten nachsehen, eine neue Version gleich einspielen. Läuft nach der ausgelieferten Seite.
     Eine Sperrdatei sorgt dafür, dass es nur einmal gleichzeitig passiert. */
 function suAutoUpdate(): void {
     $cfg = suConfig();
     if (empty($cfg['auto_update']) || $cfg['secret'] === '' || suUpdUrl() === '') return;
-    if (time() - (int)(suUpdState()['at'] ?? 0) < 3600) return;
+    if (time() - (int)(suUpdState()['at'] ?? 0) < 900) return;
     $lock = @fopen(SU_DATA_DIR . '/update.lock', 'c');
     if (!$lock) return;
     if (!flock($lock, LOCK_EX | LOCK_NB)) { fclose($lock); return; }
@@ -144,7 +144,7 @@ function suAutoUpdate(): void {
         ignore_user_abort(true);
         if (function_exists('fastcgi_finish_request')) fastcgi_finish_request();
         else { while (ob_get_level() > 0) @ob_end_flush(); @flush(); }
-        if (time() - (int)(suUpdState()['at'] ?? 0) < 3600) return;   // ein anderer Aufruf war schneller
+        if (time() - (int)(suUpdState()['at'] ?? 0) < 900) return;   // ein anderer Aufruf war schneller
         @set_time_limit(150);
         $info = suUpdCheck();
         if (version_compare($info['v'], SU_VERSION, '>')) suUpdInstall($info);

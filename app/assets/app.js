@@ -356,7 +356,8 @@
     function renderWords() {
         const ul = $('#words');
         ul.classList.toggle('many', game.words.length > 14);
-        ul.replaceChildren(...game.words.map(w => el('li', {
+        const order = game.words.filter(w => !w.f).concat(game.words.filter(w => w.f));
+        ul.replaceChildren(...order.map(w => el('li', {
             class: w.f ? 'found' : null, vars: w.f ? { '--c': colorOf(w) } : null, text: w.t,
             title: w.f ? t('Antippen zeigt das Wort im Gitter') : null,
             onclick: w.f ? () => board.flash(w.f, colorOf(w)) : null,
@@ -1059,8 +1060,8 @@
         const body = el('div', null,
             section(t('Sprache'), lang),
             section(t('Design'), seg([['light', t('Hell')], ['dark', t('Dunkel')], ['auto', t('Wie das Gerät')]], set.theme, v => { set.theme = v; store(); applyTheme(); })),
-            section(t('Schrift im Gitter'), seg([['sans', t('Klar')], ['round', t('Rund')], ['serif', t('Klassisch')], ['mono', t('Schreibmaschine')]], set.font,
-                v => { set.font = v; store(); paintSample(); board.setStyle(set.font, set.lines); }), sample),
+            section(t('Schrift im Gitter'), (() => { const sg = seg([['sans', t('Klar')], ['round', t('Rund')], ['serif', t('Klassisch')], ['mono', t('Schreibmaschine')]], set.font,
+                v => { set.font = v; store(); paintSample(); board.setStyle(set.font, set.lines); }); sg.classList.add('c4'); return sg; })(), sample),
             section(t('Spiel'),
                 toggle(t('Kästchen im Gitter'), set.lines, v => { set.lines = v; store(); board.setStyle(set.font, set.lines); }),
                 toggle(t('Stoppuhr zeigen'), set.timer, v => { set.timer = v; store(); renderStat(); }),
@@ -1190,6 +1191,8 @@
         navigator.serviceWorker.addEventListener('controllerchange', () => {
             if (!had || shown) return;
             shown = true;
+            saveGame();
+            if (!sheets.length) { location.reload(); return; }   // Spielstand ist gesichert, also gleich die neue Version zeigen
             toast(t('Eine neue Version von Suchsel ist da.'), { label: t('Neu laden'), fn: () => { saveGame(); location.reload(); } });
         });
         if (isApp() && navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});

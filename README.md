@@ -182,7 +182,7 @@ Ohne SSH: `data/config.php` per FTP herunterladen, eine Kopie aufheben, bearbeit
 
 ## Updates
 
-**Von selbst:** Suchsel schaut höchstens einmal pro Stunde beim neuesten Release auf GitHub nach, und zwar erst, nachdem eine Seite ausgeliefert ist, damit niemand warten muss. Gibt es eine neue Version, wird der Installer heruntergeladen, per Prüfsumme kontrolliert und eingespielt. Die laufende Version wird vorher in `data/update-prev.txt` gesichert. Ersetzt werden nur die Programmdateien, `data/` bleibt unangetastet. Die Geräte holen sich die neue Version beim nächsten Öffnen und zeigen einen Hinweis zum Neuladen.
+**Von selbst:** Suchsel schaut höchstens alle 15 Minuten beim neuesten Release auf GitHub nach, und zwar erst, nachdem eine Seite ausgeliefert ist, damit niemand warten muss. Gibt es eine neue Version, wird der Installer heruntergeladen, per Prüfsumme kontrolliert und eingespielt. Die laufende Version wird vorher in `data/update-prev.txt` gesichert. Ersetzt werden nur die Programmdateien, `data/` bleibt unangetastet. Die Geräte holen sich die neue Version beim nächsten Öffnen und zeigen einen Hinweis zum Neuladen.
 
 Dafür muss PHP die Programmdateien überschreiben dürfen und Verbindungen nach außen aufbauen können. Abschalten mit `'auto_update' => false` in `data/config.php`.
 

@@ -182,7 +182,7 @@ Without SSH: download `data/config.php` via FTP, keep a copy, edit and upload it
 
 ## Updates
 
-**Automatically:** at most once an hour Suchsel checks the latest release on GitHub, only after a page has been delivered, so nobody has to wait. If there is a new version, the installer is downloaded, verified by checksum and installed. The running version is saved to `data/update-prev.txt` first. Only program files are replaced, `data/` is never touched. Devices pick up the new version the next time they open the app and show a hint to reload.
+**Automatically:** at most every 15 minutes Suchsel checks the latest release on GitHub, only after a page has been delivered, so nobody has to wait. If there is a new version, the installer is downloaded, verified by checksum and installed. The running version is saved to `data/update-prev.txt` first. Only program files are replaced, `data/` is never touched. Devices pick up the new version the next time they open the app and show a hint to reload.
 
 PHP must be allowed to overwrite the program files and to make outgoing connections. Turn it off with `'auto_update' => false` in `data/config.php`.
 
