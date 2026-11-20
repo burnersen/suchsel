@@ -120,8 +120,9 @@
     function generate(o) {
         const w = o.w, h = o.h, N = w * h;
         const dirs = dirsFor(o.dirs || {});
-        const words = o.words.filter(x => x.k.length >= 2);
-        const order = words.map((x, i) => i).sort((a, b) => words[b].k.length - words[a].k.length);
+        // Feste Reihenfolge (lang vor kurz, sonst alphabetisch), damit dieselben Wörter in jeder Reihenfolge dasselbe Gitter ergeben
+        const words = o.words.filter(x => x.k.length >= 2).sort((a, b) => b.k.length - a.k.length || (a.k < b.k ? -1 : a.k > b.k ? 1 : 0));
+        const order = words.map((x, i) => i);
         let best = null;
         for (let attempt = 0; attempt < 30; attempt++) {
             const r = rng((o.seed + attempt * 7919) >>> 0);

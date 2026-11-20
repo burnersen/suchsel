@@ -97,7 +97,7 @@
         /** Startansicht: ganzes Gitter, wenn die Buchstaben dann noch gut lesbar sind, sonst lesbar groß und oben links anfangen */
         home() {
             const f = this.fitCs();
-            if (f >= 22) return this.fit();
+            if (f >= 15) return this.fit();
             this.cs = this.clampCs(30);
             this.fitted = false;
             this.ox = PAD; this.oy = PAD;
@@ -178,9 +178,6 @@
             if (this.drag && this.drag.len) {
                 const d = this.drag;
                 capsule([d.sx, d.sy, d.dir[0], d.dir[1], d.len], d.color, 0.6, 1);
-                c.globalAlpha = 1;
-                c.lineWidth = Math.max(1.5, cs * 0.06);
-                c.strokeStyle = d.color;
             }
             c.globalAlpha = 1;
             for (const a of this.anims) {
@@ -210,7 +207,7 @@
                     }
                 }
             }
-            if (this.anims.length || this.drag) { if (this.anims.length) this.redraw(); }
+            if (this.anims.length) this.redraw();
         }
 
         /* ---------- Bedienung ---------- */

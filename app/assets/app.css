@@ -75,11 +75,15 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 #banner .iconbtn { color: #fff; width: 38px; height: 38px; }
 #banner .iconbtn:hover { background: rgba(255, 255, 255, .15); }
 .btn.light { background: #fff; color: #3b5bdb; white-space: nowrap; }
-@media (max-width: 480px) {
-    #banner { flex-wrap: wrap; }
-    #banner .txt { flex-basis: calc(100% - 110px); }
-    #banner .acts { flex-basis: 100%; justify-content: flex-end; margin-top: -2px; }
-    #banner .acts .btn { flex: 1; }
+@media (max-width: 560px) {
+    #banner { margin: 0 8px 8px; padding: 8px 6px 8px 10px; gap: 10px; }
+    #banner img { width: 32px; height: 32px; border-radius: 8px; }
+    #banner .txt b { font-size: .95rem; }
+    #banner .txt span { font-size: .8rem; }
+    #banner .btn.light { min-height: 38px; padding: 6px 10px; font-size: .9rem; }
+    #banner .btn.light svg { display: none; }
+    #banner .iconbtn { width: 30px; height: 30px; }
+    #banner .iconbtn svg { width: 18px; height: 18px; }
 }
 
 /* ---------- Spielfläche ---------- */
@@ -88,7 +92,8 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
     padding: 0 calc(env(safe-area-inset-right) + 10px) calc(env(safe-area-inset-bottom) + 10px) calc(env(safe-area-inset-left) + 10px);
 }
 .card { background: var(--card); border-radius: var(--r); box-shadow: var(--shadow); }
-#wordsCard { flex: none; max-height: 38vh; overflow: auto; padding: 0 0 10px; }
+#wordsCard { flex: none; max-height: 34vh; overflow: auto; padding: 0 0 10px; }
+@media (max-height: 760px) { #wordsCard { max-height: 28vh; } #theme { padding: 5px 12px; } }
 #theme {
     margin: 0; padding: 8px 14px; font-size: 1.05rem; font-weight: 800; text-align: center; letter-spacing: .06em; text-transform: uppercase;
     color: #fff; background: linear-gradient(180deg, var(--accent2), var(--accent)); border-radius: var(--r) var(--r) 0 0;
@@ -100,7 +105,8 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
     padding: 3px 10px; border-radius: 999px; font-weight: 800; letter-spacing: .04em; font-size: 1.02rem; line-height: 1.5;
     border: 2px solid transparent; transition: background .25s;
 }
-#words.many li { font-size: .92rem; padding: 2px 8px; }
+#words.many { gap: 4px; padding-top: 8px; }
+#words.many li { font-size: .86rem; padding: 1px 7px; letter-spacing: .02em; }
 #words li.found {
     background: var(--c); background: color-mix(in srgb, var(--c) 82%, var(--card)); color: #10131a;
     text-decoration: line-through; text-decoration-thickness: 2px; cursor: pointer; animation: pop .35s;
@@ -192,7 +198,9 @@ input[type=range] { width: 100%; accent-color: var(--accent); height: 32px; }
 .mitem span { display: flex; flex-direction: column; }
 .mitem small, .seg small, .toggle small { color: var(--muted); font-weight: 400; font-size: .84rem; }
 
-.seg { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 6px; }
+.seg { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 6px; }
+.seg.c4 { grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 560px) { .seg.c4 { grid-template-columns: repeat(4, 1fr); } }
 .seg button {
     border: 1.5px solid var(--line); background: var(--bg); border-radius: 12px; padding: 8px 10px; min-height: 44px;
     display: flex; flex-direction: column; align-items: flex-start; text-align: left;

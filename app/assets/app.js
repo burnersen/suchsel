@@ -271,7 +271,7 @@
                 if (!c) { toast(t('Diese Kategorie gibt es nicht mehr.')); return false; }
                 list = c.words.slice();
                 title = c.name;
-                fromPool = list.length > o.n;
+                fromPool = list.length > 20;   // eine eigene Kategorie mit bis zu 20 Wörtern kommt komplett ins Rätsel
             } else {
                 let id = o.cat.startsWith('b:') ? o.cat.slice(2) : '';
                 if (!b.cats[id]) {   // Zufall: ein Thema, das genug passende Wörter hat
@@ -581,7 +581,10 @@
         const search = el('input.search', { type: 'search', placeholder: t('Thema suchen …'), autocomplete: 'off' });
         function chip(key, label, count, ic) {
             return el('button.chip', { type: 'button', 'data-k': key, class: o.cat === key || (key === 'b:' + o.cat) ? 'on' : null,
-                onclick: () => { o.cat = key; paintCats(); paintCustom(); paintNote(); } },
+                onclick: () => {
+                    o.cat = key; paintCats(); paintCustom(); paintNote();
+                    if (key === 'custom') setTimeout(() => { customBox.scrollIntoView({ behavior: 'smooth', block: 'center' }); ta.focus({ preventScroll: true }); }, 50);
+                } },
                 ic ? icon(ic) : null, el('span', { text: label }), count != null ? el('small', { text: String(count) }) : null);
         }
         function paintCats() {
@@ -629,6 +632,7 @@
             ['schwer', t('Schwer'), t('15 Wörter, auch rückwärts')],
             ['profi', t('Profi'), t('20 Wörter, knifflig')],
         ], presetOf(o), applyPreset);
+        presetSeg.classList.add('c4');
 
         // Feineinstellung
         const nVal = el('b.val');
