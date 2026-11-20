@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { zoom: 2; }
+  html, body { width: 540px; height: 960px; overflow: hidden; }
+  body {
+    font-family: "Inter", sans-serif; color: #fff;
+    background: radial-gradient(120% 80% at 50% 0%, #5c7cfa 0%, #3b5bdb 45%, #1e2f8a 100%);
+    position: relative;
+  }
+  /* weiche Kreise im Hintergrund */
+  .blob { position: absolute; border-radius: 50%; filter: blur(40px); opacity: .35; }
+  .b1 { width: 320px; height: 320px; background: #ffd43b; left: -120px; top: 520px; animation: drift 9s ease-in-out infinite alternate; }
+  .b2 { width: 280px; height: 280px; background: #f783ac; right: -110px; top: 120px; animation: drift 11s ease-in-out infinite alternate-reverse; }
+  .b3 { width: 220px; height: 220px; background: #63e6be; right: -60px; bottom: -60px; animation: drift 8s ease-in-out infinite alternate; }
+  @keyframes drift { to { transform: translate(40px, -50px) scale(1.15); } }
+
+  /* Überschrift oben */
+  #head { position: absolute; left: 0; right: 0; top: 34px; text-align: center; padding: 0 24px; }
+  #head .kicker { font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; opacity: .8; }
+  #head .title { font-family: "Inter Display", "Inter"; font-size: 38px; font-weight: 800; line-height: 1.1; margin-top: 6px; text-shadow: 0 4px 20px rgba(0,0,0,.18); }
+  .swap { transition: opacity .35s ease, transform .35s ease; }
+  .swap.out { opacity: 0; transform: translateY(-14px); }
+
+  /* Handy */
+  #phone {
+    position: absolute; left: 50%; top: 150px; width: 384px; height: 676px; margin-left: -192px;
+    border-radius: 46px; background: #0b0f1a; padding: 10px;
+    box-shadow: 0 30px 80px rgba(5, 10, 40, .55), 0 0 0 2px rgba(255,255,255,.12) inset;
+    transition: transform .9s cubic-bezier(.2,.8,.2,1), opacity .6s ease;
+  }
+  #phone.hidden { transform: translateY(820px); }
+  #phone.away { transform: translateY(-40px) scale(.9); opacity: 0; }
+  #phone .screen { width: 364px; height: 656px; border-radius: 36px; overflow: hidden; background: #eef1f8; position: relative; }
+  #phone iframe { width: 364px; height: 656px; border: 0; display: block; }
+
+  /* Untertitel unten */
+  #sub { position: absolute; left: 22px; right: 22px; bottom: 34px; height: 92px; display: flex; align-items: center; justify-content: center; }
+  #sub span {
+    display: inline-block; text-align: center; font-size: 21px; font-weight: 600; line-height: 1.3;
+    background: rgba(8, 12, 35, .72); padding: 12px 20px; border-radius: 16px; backdrop-filter: blur(6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,.2);
+  }
+  #sub span:empty { display: none; }
+
+  /* Finger */
+  #finger {
+    position: absolute; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%; pointer-events: none;
+    background: rgba(255,255,255,.55); border: 3px solid rgba(255,255,255,.95);
+    box-shadow: 0 4px 14px rgba(0,0,0,.35); opacity: 0; transition: opacity .25s, transform .15s; z-index: 50;
+  }
+  #finger.on { opacity: 1; }
+  #finger.down { transform: scale(.75); background: rgba(255, 212, 59, .7); }
+  .ripple { position: absolute; width: 60px; height: 60px; margin: -30px 0 0 -30px; border-radius: 50%; border: 3px solid #fff;
+    pointer-events: none; animation: rip .5s ease-out forwards; z-index: 49; }
+  @keyframes rip { from { transform: scale(.3); opacity: .9; } to { transform: scale(1.3); opacity: 0; } }
+
+  /* Intro und Outro */
+  .card { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 30px; transition: opacity .6s ease; }
+  .card.hide { opacity: 0; pointer-events: none; }
+  .logo { width: 150px; height: 150px; border-radius: 36px; background: #fff; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+  .logo img { width: 112px; height: 112px; }
+  .pop { animation: pop .8s cubic-bezier(.2,1.6,.4,1) both; }
+  @keyframes pop { from { transform: scale(.2) rotate(-12deg); opacity: 0; } to { transform: none; opacity: 1; } }
+  .rise { animation: rise .7s cubic-bezier(.2,.8,.2,1) both; }
+  @keyframes rise { from { transform: translateY(30px); opacity: 0; } to { transform: none; opacity: 1; } }
+  .big { font-family: "Inter Display", "Inter"; font-size: 76px; font-weight: 900; letter-spacing: -.02em; margin-top: 28px; }
+  .tag { font-size: 25px; font-weight: 600; opacity: .92; margin-top: 8px; line-height: 1.35; }
+  .letters { display: flex; gap: 8px; margin-top: 34px; }
+  .letters b { width: 46px; height: 46px; border-radius: 12px; background: rgba(255,255,255,.16); display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: 800; }
+  .letters b.hl { background: #ffd43b; color: #1b1f2a; }
+  .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px; max-width: 470px; }
+  .pills span { background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.3); border-radius: 999px; padding: 9px 16px; font-size: 18px; font-weight: 700; }
+  .url { margin-top: 30px; background: #fff; color: #3b5bdb; font-size: 32px; font-weight: 800; padding: 16px 28px; border-radius: 20px; box-shadow: 0 16px 40px rgba(0,0,0,.28); }
+  .fun { font-family: "Inter Display", "Inter"; font-size: 44px; font-weight: 900; margin-top: 34px; line-height: 1.15; }
+  .small { font-size: 19px; font-weight: 600; opacity: .85; margin-top: 22px; }
+</style>
+</head>
+<body>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+
+<div id="head" class="swap out"><div class="kicker" id="kicker"></div><div class="title" id="title"></div></div>
+
+<div id="phone" class="hidden"><div class="screen"><iframe id="app" src="./"></iframe></div></div>
+
+<div id="sub"><span id="subtext"></span></div>
+
+<div id="intro" class="card hide"></div>
+<div id="outro" class="card hide"></div>
+
+<div id="finger"></div>
+
+<script>
+  const $ = s => document.querySelector(s);
+  const ICON = '/?action=asset&f=icon.svg';
+  window.stage = {
+    head(kicker, title) {
+      const h = $('#head');
+      h.classList.add('out');
+      setTimeout(() => { $('#kicker').textContent = kicker; $('#title').textContent = title; if (title) h.classList.remove('out'); }, title && $('#title').textContent ? 350 : 0);
+    },
+    sub(text) {
+      const s = $('#subtext');
+      s.parentElement.classList.add('swap', 'out');
+      setTimeout(() => { s.textContent = text; s.parentElement.classList.remove('out'); }, s.textContent ? 300 : 0);
+    },
+    phone(state) { $('#phone').className = state; },
+    finger(x, y, on, down) {
+      const f = $('#finger');
+      this._gid = (this._gid || 0) + 1;
+      if (x != null) { f.style.left = x + 'px'; f.style.top = y + 'px'; }
+      f.classList.toggle('on', !!on);
+      f.classList.toggle('down', !!down);
+    },
+    // Finger gleitet selbst flüssig (rAF), unabhängig vom Takt der Mausbewegungen
+    glide(x0, y0, x1, y1, ms, down) {
+      const f = $('#finger'), t0 = performance.now();
+      const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      f.classList.add('on'); f.classList.toggle('down', !!down);
+      const id = (this._gid = (this._gid || 0) + 1);
+      const step = now => {
+        if (id !== this._gid) return;
+        const k = ease(Math.min(1, (now - t0) / ms));
+        f.style.left = (x0 + (x1 - x0) * k) + 'px'; f.style.top = (y0 + (y1 - y0) * k) + 'px';
+        if (k < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    },
+    ripple(x, y) {
+      const r = document.createElement('div');
+      r.className = 'ripple'; r.style.left = x + 'px'; r.style.top = y + 'px';
+      document.body.append(r); setTimeout(() => r.remove(), 600);
+    },
+    intro(show) {
+      const c = $('#intro');
+      if (show) {
+        c.innerHTML = `
+          <div class="logo pop"><img src="${ICON}"></div>
+          <div class="big rise" style="animation-delay:.35s">Suchsel</div>
+          <div class="tag rise" style="animation-delay:.6s">Das Wortsuchrätsel<br>für Groß und Klein</div>
+          <div class="letters rise" style="animation-delay:.9s">${'SPASS'.split('').map((l, i) => `<b class="hl" style="animation:pop .5s ${1.1 + i * .1}s both cubic-bezier(.2,1.6,.4,1)">${l}</b>`).join('')}</div>`;
+        c.classList.remove('hide');
+      } else c.classList.add('hide');
+    },
+    outro(show) {
+      const c = $('#outro');
+      if (show) {
+        c.innerHTML = `
+          <div class="logo pop" style="width:110px;height:110px;border-radius:28px"><img src="${ICON}" style="width:82px;height:82px"></div>
+          <div class="big rise" style="animation-delay:.2s;font-size:60px;margin-top:20px">Suchsel</div>
+          <div class="pills rise" style="animation-delay:.45s"><span>Kostenlos</span><span>Ohne Werbung</span><span>Ohne Anmeldung</span><span>Auch offline</span></div>
+          <div class="tag rise" style="animation-delay:.8s;margin-top:34px">Jetzt im Browser spielen:</div>
+          <div class="url pop" style="animation-delay:1s">suchsel.burnersen.de</div>
+          <div class="fun rise" style="animation-delay:1.7s">Viel Spaß beim<br>Rätseln! 🎉</div>
+          <div class="small rise" style="animation-delay:2.2s">Mehr von mir: burnersen.de</div>`;
+        c.classList.remove('hide');
+      } else c.classList.add('hide');
+    },
+  };
+</script>
+</body>
+</html>
