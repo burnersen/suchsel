@@ -3,3 +3,6 @@
 
 # Gebaute Release-Dateien (php tools/build-release.php)
 /dist/
+
+# Test-Screenshots aus Playwright-Läufen
+/*.png
