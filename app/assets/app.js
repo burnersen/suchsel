@@ -153,13 +153,21 @@
             if (m) { group = { name: m[1], cats: [] }; out.groups.push(group); continue; }
             m = /^\[([a-z0-9_-]+)\]\s*(.+)$/.exec(line);
             if (m) {
-                cat = { id: m[1], name: m[2], words: [] };
+                cat = { id: m[1], name: m[2], words: [], buf: '' };
                 out.cats[cat.id] = cat;
                 if (!group) { group = { name: '', cats: [] }; out.groups.push(group); }
                 group.cats.push(cat.id);
                 continue;
             }
-            if (cat) for (const w of line.split(',')) { const x = w.trim(); if (x) cat.words.push(x); }
+            if (cat) cat.buf += ' ' + line;   // ein Wort darf über das Zeilenende gehen, getrennt wird nur am Komma
+        }
+        for (const id in out.cats) {
+            const c = out.cats[id], seen = new Set();
+            for (let w of c.buf.split(',')) {
+                w = w.trim().replace(/\s+/g, ' ');
+                if (w && !seen.has(w.toLowerCase())) { seen.add(w.toLowerCase()); c.words.push(w); }
+            }
+            delete c.buf;
         }
         return out;
     }

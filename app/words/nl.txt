@@ -1,0 +1,465 @@
+# Suchsel – Nederlandse woordenschat
+# "== Groep ==", dan "[id] Naam van het thema" en de woorden gescheiden door komma's. Spaties en accenten verdwijnen in het rooster.
+
+== Dieren ==
+[haustiere] Huisdieren
+Hond, Kat, Muis, Hamster, Konijn, Cavia, Parkiet, Goudvis, Schildpad, Paard, Pony, Rat, Fret, Kanarie, Papegaai, Chinchilla,
+Woestijnrat, Hagedis, Gekko, Leguaan, Slang, Axolotl, Kitten, Puppy, Veulen, Riem, Halsband, Mand, Kooi, Voerbak, Waterbak,
+Hondenhok, Kattenbak, Krabpaal, Aquarium, Terrarium, Konijnenhok, Snoepje, Borstel, Dierenarts, Snorharen, Poot, Vacht,
+Staart, Blaffen, Miauwen, Spinnen, Uitlaten, Speeltje, Vlo, Teek, Hooi, Wortel, Poedel, Tekkel, Labrador, Kater, Brokjes,
+Knuffelen, Aaien
+
+[bauernhof] Op de boerderij
+Koe, Kalf, Stier, Os, Varken, Big, Zeug, Schaap, Lam, Ram, Ooi, Geit, Bok, Paard, Veulen, Ezel, Muilezel, Kip, Haan, Kuiken,
+Gans, Eend, Eendje, Kalkoen, Herdershond, Boer, Boerin, Tractor, Maaidorser, Aanhanger, Ploeg, Schuur, Stal, Hooizolder,
+Silo, Weiland, Wei, Hek, Akker, Veld, Hooi, Stro, Strobaal, Voederbak, Drinkbak, Melken, Melk, Eieren, Kippenhok, Nest,
+Mest, Mestvork, Kruiwagen, Tarwe, Rogge, Gerst, Haver, Maïs, Aardappel, Biet, Zonnebloem, Oogst, Zaad, Vogelverschrikker,
+Boomgaard, Bijenkorf, Imker, Hoefijzer, Zadel, Varkensstal, Wol, Boter, Kaas, Molen, Laarzen, Klompen
+
+[wald] Dieren in het bos
+Hert, Hinde, Reekalf, Ree, Everzwijn, Vos, Das, Haas, Konijn, Eekhoorn, Egel, Mol, Wolf, Lynx, Beer, Bever, Wasbeer,
+Marter, Bunzing, Wezel, Hermelijn, Otter, Vleermuis, Zevenslaper, Spitsmuis, Bosmuis, Woelmuis, Eland, Wisent, Uil, Oehoe,
+Bosuil, Specht, Gaai, Koekoek, Havik, Buizerd, Valk, Roodborstje, Merel, Winterkoning, Boomklever, Mees, Vink, Lijster,
+Fazant, Patrijs, Houtsnip, Adder, Ringslang, Hazelworm, Salamander, Watersalamander, Pad, Kikker, Mier, Vliegend hert,
+Slak, Naaktslak, Spin, Libel, Glimworm, Kever, Wilde kat
+
+[zoo] In de dierentuin
+Leeuw, Tijger, Luipaard, Jachtluipaard, Jaguar, Panter, Olifant, Giraf, Zebra, Neushoorn, Nijlpaard, Kameel, Dromedaris,
+Lama, Alpaca, Aap, Gorilla, Chimpansee, Orang-oetan, Baviaan, Maki, Stokstaartje, Kangoeroe, Koala, Wombat, Panda, IJsbeer,
+Bruine beer, Pinguïn, Zeehond, Zeeleeuw, Walrus, Krokodil, Alligator, Python, Boa, Cobra, Kameleon, Flamingo, Pelikaan,
+Struisvogel, Emoe, Pauw, Toekan, Arend, Gier, Antilope, Gazelle, Gnoe, Buffel, Tapir, Okapi, Luiaard, Miereneter,
+Gordeldier, Stekelvarken, Hyena, Jakhals, Coyote, Wrattenzwijn, Jak, Rendier, Poema, Verblijf, Dierenverzorger, Kaartje
+
+[voegel] Vogels
+Merel, Lijster, Vink, Spreeuw, Mus, Huismus, Mees, Koolmees, Pimpelmees, Roodborst, Winterkoning, Boomklever, Putter,
+Goudvink, Groenling, Sijs, Kneu, Kwikstaart, Leeuwerik, Nachtegaal, Zwaluw, Gierzwaluw, Koekoek, Specht, Hop, IJsvogel,
+Wielewaal, Ekster, Kraai, Raaf, Kauw, Roek, Gaai, Duif, Tortelduif, Meeuw, Aalscholver, Reiger, Ooievaar, Kraanvogel,
+Zwaan, Gans, Eend, Wilde eend, Meerkoet, Fuut, Kievit, Wulp, Scholekster, Strandloper, Arend, Zeearend, Valk, Torenvalk,
+Slechtvalk, Havik, Sperwer, Buizerd, Wouw, Gier, Uil, Kerkuil, Bosuil, Fazant, Patrijs, Kwartel, Papegaai, Parkiet,
+Kanarie, Kaketoe, Ara, Toekan, Kolibrie, Flamingo, Pelikaan, Pinguïn, Struisvogel, Pauw, Albatros, Papegaaiduiker, Geelgors
+
+[meer] In de zee
+Walvis, Blauwe vinvis, Potvis, Bultrug, Orka, Dolfijn, Bruinvis, Haai, Hamerhaai, Walvishaai, Rog, Manta, Zeehond,
+Zeeleeuw, Walrus, Zeekoe, Zeeschildpad, Octopus, Inktvis, Pijlinktvis, Zeekat, Kwal, Zeester, Zee-egel, Zeepaardje,
+Zeekomkommer, Koraal, Anemoon, Schelp, Mossel, Oester, Sint-jakobsschelp, Kokkel, Krab, Kreeft, Langoest, Garnaal, Krill,
+Haring, Makreel, Sardine, Tonijn, Zalm, Kabeljauw, Schol, Tong, Tarbot, Paling, Aal, Murene, Barracuda, Zwaardvis,
+Clownvis, Kogelvis, Zeeduivel, Plankton, Alg, Zeewier, Rif, Koraalrif, Diepzee, Golf, Stroming, Eb, Vloed, Getijden, Eiland,
+Zandbank, Vuurtoren, Duiker, Snorkel, Duikbril, Zwemvliezen, Schip, Boot, Vissersboot, Net, Anker, Zeebodem, Narwal, Beloega
+
+[insekten] Insecten en beestjes
+Bij, Honingbij, Hommel, Wesp, Hoornaar, Mier, Vlieg, Huisvlieg, Mug, Steekmug, Langpootmug, Libel, Juffer, Vlinder,
+Citroenvlinder, Dagpauwoog, Atalanta, Koolwitje, Mot, Nachtvlinder, Rups, Pop, Cocon, Kever, Lieveheersbeestje, Meikever,
+Vliegend hert, Mestkever, Loopkever, Glimworm, Snuitkever, Sprinkhaan, Krekel, Cicade, Bidsprinkhaan, Wandelende tak,
+Oorwurm, Wants, Bladluis, Luis, Vlo, Teek, Mijt, Spin, Kruisspin, Vogelspin, Hooiwagen, Schorpioen, Duizendpoot,
+Pissebed, Regenworm, Slak, Naaktslak, Termiet, Kakkerlak, Zilvervisje, Daas, Gaasvlieg, Zweefvlieg, Schaatsenrijder,
+Fruitvlieg, Voelspriet, Vleugel, Angel, Larve, Insectenhotel, Bijenkorf, Honingraat, Mierenhoop, Spinnenweb, Honing,
+Stuifmeel, Nectar
+
+[dinos] Dinosaurussen en oertijd
+Dinosaurus, Tyrannosaurus, Triceratops, Stegosaurus, Brachiosaurus, Diplodocus, Velociraptor, Ankylosaurus, Iguanodon,
+Spinosaurus, Allosaurus, Brontosaurus, Archaeopteryx, Pteranodon, Pterosaurus, Plesiosaurus, Ichthyosaurus, Mosasaurus,
+Mammoet, Sabeltandtijger, Wolharige neushoorn, Holenbeer, Trilobiet, Ammoniet, Fossiel, Skelet, Bot, Klauw, Tand, Schub,
+Ei, Nest, Voetafdruk, Opgraving, Paleontoloog, Museum, Kwast, Hamer, Beitel, Prehistorie, Jura, Krijt, Trias, Vulkaan,
+Meteoriet, Asteroïde, Uitsterven, Planteneter, Vleeseter, Roofdier, Varen, Paardenstaart, Barnsteen, Grot, Grotschildering,
+Neanderthaler, Vuistbijl, Kampvuur, Speer, IJstijd, Gletsjer, Slagtand
+
+== Eten en drinken ==
+[obst] Fruit
+Appel, Peer, Kers, Pruim, Perzik, Abrikoos, Nectarine, Aardbei, Framboos, Braam, Bosbes, Blauwe bes, Bes, Rode bes,
+Zwarte bes, Kruisbes, Veenbes, Vlierbes, Druif, Rozijn, Banaan, Sinaasappel, Mandarijn, Clementine, Citroen, Limoen,
+Grapefruit, Ananas, Mango, Papaja, Kiwi, Passievrucht, Granaatappel, Vijg, Dadel, Kokosnoot, Meloen, Watermeloen, Lychee,
+Guave, Kaki, Stervrucht, Kweepeer, Physalis, Drakenvrucht, Avocado, Olijf, Rabarber, Zure kers, Sleedoorn, Rozenbottel,
+Kumquat, Mispel, Moerbei, Walnoot, Hazelnoot, Amandel, Kastanje, Pinda, Pistache, Fruitsalade, Compote, Jam, Sap, Klokhuis,
+Pit, Schil, Steeltje
+
+[gemuese] Groente
+Aardappel, Wortel, Peen, Tomaat, Komkommer, Paprika, Ui, Knoflook, Prei, Selderij, Venkel, Asperge, Broccoli, Bloemkool,
+Spruitjes, Boerenkool, Witte kool, Rode kool, Savooiekool, Koolrabi, Chinese kool, Spinazie, Snijbiet, Sla, Kropsla,
+IJsbergsla, Veldsla, Rucola, Radijs, Rammenas, Mierikswortel, Rode biet, Pastinaak, Schorseneer, Koolraap, Courgette,
+Pompoen, Aubergine, Erwt, Doperwt, Boon, Sperzieboon, Tuinboon, Linze, Kikkererwt, Maïs, Okra, Artisjok, Zoete aardappel,
+Gember, Paddenstoel, Champignon, Cantharel, Eekhoorntjesbrood, Lente-ui, Sjalot, Peper, Tuinkers, Waterkers, Witlof,
+Andijvie, Radicchio, Moestuin, Oogst, Rauwkost, Soep, Stamppot, Hutspot
+
+[essen] Lievelingsgerechten
+Pizza, Spaghetti, Lasagne, Pasta, Macaroni, Ravioli, Risotto, Pannenkoek, Poffertjes, Schnitzel, Worst, Rookworst,
+Frikandel, Kroket, Bitterballen, Gehaktbal, Hachee, Stoofvlees, Rollade, Kip, Kipsaté, Saté, Vissticks, Kibbeling, Haring,
+Hamburger, Patat, Friet, Aardappelpuree, Stamppot, Hutspot, Zuurkool, Erwtensoep, Snert, Tomatensoep, Groentesoep,
+Kippensoep, Ovenschotel, Nasi, Bami, Loempia, Rijst, Curry, Sushi, Paella, Omelet, Roerei, Spiegelei, Uitsmijter, Salade,
+Tosti, Broodje, Pannenkoeken, Wraps, Taco, Burrito, Shoarma, Kebab, Falafel, Gyros, Moussaka, Fondue, Gourmetten, Raclette,
+Rijstepap, Vla, Pudding, Appeltaart, Stroopwafel, Oliebol
+
+[backen] Bakken en zoetigheid
+Taart, Gebak, Muffin, Cupcake, Koekje, Koek, Wafel, Stroopwafel, Brownie, Donut, Oliebol, Appelflap, Appeltaart, Kwarktaart,
+Cake, Marmercake, Tulband, Boterkoek, Bokkenpootje, Tompouce, Moorkop, Soesje, Speculaas, Kruidnoot, Pepernoot,
+Ontbijtkoek, Kerststol, Banketstaaf, Kaneelbroodje, Meringue, Bitterkoekje, Deeg, Bloem, Meel, Suiker, Poedersuiker, Boter,
+Eieren, Melk, Gist, Bakpoeder, Vanille, Kaneel, Cacao, Chocolade, Room, Slagroom, Amandelen, Noten, Rozijnen, Hagelslag,
+Glazuur, Marsepein, Fondant, Mengkom, Garde, Mixer, Deegroller, Bakplaat, Springvorm, Uitsteekvorm, Oven, Bakpapier,
+Spatel, Spuitzak, Weegschaal, Recept, Snoep, Lolly, Drop, Toffee, Praline, Truffel, Karamel, Popcorn, Suikerspin, IJs,
+Pudding, Mousse, Tiramisu
+
+[getraenke] Drankjes
+Water, Mineraalwater, Bronwater, Spa, Kraanwater, Sap, Appelsap, Sinaasappelsap, Druivensap, Ranja, Limonade, Frisdrank,
+Cola, Ice tea, Thee, Muntthee, Kamillethee, Vruchtenthee, Kruidenthee, Groene thee, Zwarte thee, Koffie, Espresso,
+Cappuccino, Latte, Koffie verkeerd, Cacao, Warme chocolademelk, Chocomel, Melk, Karnemelk, Kefir, Milkshake, Smoothie,
+Bier, Wijn, Rode wijn, Witte wijn, Rosé, Champagne, Glühwein, Bowl, Cocktail, Likeur, Jenever, Advocaat, Cider, Siroop,
+Rietje, Glas, Beker, Mok, Kopje, Fles, Karaf, Kan, IJsblokjes, Schijfje citroen, Thermosfles, Theepot, Koffiepot, Proost
+
+[kueche] In de keuken
+Fornuis, Oven, Koelkast, IJskast, Vriezer, Vaatwasser, Magnetron, Broodrooster, Waterkoker, Koffiezetapparaat,
+Blender, Staafmixer, Keukenmachine, Weegschaal, Pan, Kookpan, Koekenpan, Wok, Deksel, Pollepel, Spatel, Garde, Soeplepel,
+Zeef, Vergiet, Rasp, Dunschiller, Mes, Broodmes, Snijplank, Deegroller, Blikopener, Flesopener, Kurkentrekker, Knoflookpers,
+Citruspers, Bord, Kom, Schaal, Kopje, Beker, Glas, Bestek, Vork, Lepel, Theelepel, Ovenschaal, Bakplaat, Broodtrommel,
+Voorraadpot, Aanrecht, Gootsteen, Kraan, Afwasmiddel, Spons, Theedoek, Pannenlap, Schort, Kookboek, Recept, Vuilnisbak,
+Keukenrol, Huishoudfolie, Aluminiumfolie, Kookwekker, Afzuigkap, Werkblad, Lade, Keukenkastje, Koken, Bakken, Braden,
+Roeren, Snijden, Schillen, Proeven
+
+== Natuur ==
+[blumen] Bloemen en planten
+Roos, Tulp, Narcis, Paasbloem, Krokus, Sneeuwklokje, Hyacint, Lelietje-van-dalen, Viooltje, Madeliefje, Paardenbloem,
+Klaproos, Korenbloem, Margriet, Kamille, Zonnebloem, Dahlia, Aster, Chrysant, Lelie, Iris, Orchidee, Anjer, Geranium,
+Petunia, Begonia, Fuchsia, Lavendel, Sering, Hortensia, Rododendron, Azalea, Magnolia, Jasmijn, Hibiscus, Goudsbloem,
+Oostindische kers, Vergeet-mij-nietje, Klokje, Vingerhoedskruid, Ridderspoor, Lupine, Pioenroos, Sleutelbloem, Anemoon,
+Waterlelie, Lotus, Edelweiss, Gentiaan, Heide, Distel, Klaver, Klavertje vier, Klimop, Varen, Mos, Cactus, Aloë, Bamboe,
+Gras, Riet, Bloem, Knop, Blad, Steel, Wortel, Doorn, Stuifmeel, Zaad, Bloembol, Bloempot, Boeket, Vaas, Gieter, Gerbera,
+Fresia, Amaryllis, Kerstster, Kamperfoelie, Blauwe regen, Leeuwenbek
+
+[baeume] Bomen en bos
+Eik, Beuk, Berk, Linde, Esdoorn, Es, Els, Iep, Populier, Wilg, Treurwilg, Kastanje, Paardenkastanje, Walnoot, Kersenboom,
+Appelboom, Perenboom, Den, Spar, Fijnspar, Lariks, Taxus, Ceder, Cipres, Mammoetboom, Palm, Olijfboom, Plataan, Lijsterbes,
+Vlier, Hazelaar, Haagbeuk, Jeneverbes, Hulst, Meidoorn, Eucalyptus, Baobab, Stam, Schors, Tak, Twijg, Blad, Naald,
+Dennenappel, Eikel, Beukennoot, Wortel, Kruin, Bladerdak, Jaarringen, Hars, Sap, Knop, Gebladerte, Loofboom, Naaldboom,
+Gemengd bos, Oerbos, Open plek, Bospad, Boswachter, Houthakker, Zaag, Bijl, Brandhout, Boomhut, Mos, Paddenstoel, Varen,
+Boomstronk, Zaailing, Bosrand
+
+[garten] In de tuin
+Gazon, Grasveld, Bloemperk, Moestuin, Border, Heg, Haag, Hek, Tuinhek, Tuinhuisje, Schuur, Pergola, Terras, Vijver, Fontein,
+Vogelhuisje, Voederplank, Vogelbad, Insectenhotel, Composthoop, Compost, Regenton, Kas, Broeikas, Tuinkabouter, Hangmat,
+Ligstoel, Strandstoel, Parasol, Tuinstoel, Tuintafel, Barbecue, Schommel, Zandbak, Glijbaan, Trampoline, Zwembadje,
+Grasmaaier, Hark, Spade, Schep, Schoffel, Vork, Plantschepje, Snoeischaar, Heggenschaar, Kruiwagen, Gieter, Tuinslang,
+Sproeier, Handschoenen, Bloempot, Potgrond, Mest, Zaden, Zaailingen, Onkruid, Wieden, Water geven, Planten, Zaaien,
+Oogsten, Maaien, Spitten, Aardbeienbed, Kruidentuin, Fruitboom, Bessenstruik, Rozenboog, Rotstuin, Stapsteen, Tuinpad,
+Regenworm, Slak, Mol, Egel, Merel, Bij, Hommel, Vlinder
+
+[wetter] Het weer
+Zon, Zonneschijn, Regen, Motregen, Stortbui, Bui, Regenboog, Wolk, Onweerswolk, Mist, Nevel, Wind, Bries, Storm, Orkaan,
+Windvlaag, Tornado, Tyfoon, Cycloon, Onweer, Bliksem, Donder, Hagel, Natte sneeuw, Sneeuw, Sneeuwvlok, Sneeuwstorm,
+IJzel, Vorst, Rijp, Dauw, IJspegel, Hitte, Hittegolf, Droogte, Kou, Warmte, Benauwd, Temperatuur, Thermometer, Barometer,
+Luchtdruk, Hogedrukgebied, Lagedrukgebied, Weerbericht, Weersverwachting, Weerman, Weerstation, Windrichting, Windkracht,
+Windmolen, Windvaan, Paraplu, Regenjas, Regenlaarzen, Zonnebril, Zonnebrand, Plas, Modder, Overstroming, Hoogwater,
+Lawine, Wolkbreuk, Zonsopgang, Zonsondergang, Schemering, Ochtendrood, Avondrood, Noorderlicht, Klimaat, Seizoen,
+Aprilweer, Moesson, Zonnig, Bewolkt, Regenachtig, Winderig, Mistig
+
+[landschaft] Landschap en natuur
+Berg, Gebergte, Top, Bergtop, Heuvel, Dal, Vallei, Kloof, Ravijn, Klif, Rots, Grot, Vulkaan, Krater, Gletsjer, Waterval,
+Bron, Beek, Rivier, Stroom, Meer, Vijver, Poel, Ven, Moeras, Veen, Zee, Oceaan, Kust, Strand, Duin, Baai, Eiland,
+Schiereiland, Lagune, Rif, Woestijn, Oase, Steppe, Savanne, Prairie, Jungle, Regenwoud, Oerwoud, Bos, Open plek, Weide,
+Wei, Veld, Akker, Heide, Vlakte, Hoogvlakte, Plateau, Canyon, Fjord, Delta, Monding, Oever, Kiezel, Grind, Zand, Steen,
+Aarde, Klei, Leem, Graniet, Marmer, Kristal, Horizon, Landschap, Panorama, Uitzicht, Natuurgebied, Nationaal park, Wandelpad,
+Brug, Dijk, Polder, Uiterwaard, Wad, Kwelder, Toendra
+
+[weltall] De ruimte
+Zon, Maan, Aarde, Mercurius, Venus, Mars, Jupiter, Saturnus, Uranus, Neptunus, Pluto, Planeet, Dwergplaneet, Ster,
+Sterrenbeeld, Vallende ster, Komeet, Asteroïde, Meteoor, Meteoriet, Melkweg, Sterrenstelsel, Andromeda, Nevel, Supernova,
+Zwart gat, Heelal, Universum, Ruimte, Zonnestelsel, Baan, Zwaartekracht, Krater, Maansverduistering, Zonsverduistering,
+Volle maan, Nieuwe maan, Halve maan, Maansikkel, Raket, Ruimteschip, Ruimtestation, Satelliet, Ruimtesonde, Astronaut,
+Kosmonaut, Ruimtepak, Helm, Aftellen, Lancering, Landing, Maanlanding, Telescoop, Sterrenwacht, Planetarium, Sterrenkundige,
+Lichtjaar, Poolster, Grote Beer, Orion, Cassiopeia, Ringen, Maansteen, Gewichtloosheid, Buitenaards wezen, Ufo, Kosmos,
+Oerknal, Rode reus, Witte dwerg, Sterrenhemel, Avondster
+
+== Seizoenen en feesten ==
+[fruehling] Lente
+Lente, Voorjaar, Maart, April, Mei, Pasen, Bloesem, Knop, Krokus, Tulp, Narcis, Sneeuwklokje, Sleutelbloem, Viooltje,
+Madeliefje, Paardenbloem, Kersenbloesem, Appelbloesem, Magnolia, Forsythia, Wilgenkatje, Daslook, Bij, Hommel, Vlinder,
+Lieveheersbeestje, Vogelgezang, Nest, Kuiken, Lammetje, Veulen, Kikkervisje, Kikkerdril, Ooievaar, Zwaluw, Koekoek, Merel,
+Voorjaarsschoonmaak, Zaaien, Zaailing, Tuinieren, Fiets, Wandeling, Regenbui, Aprilweer, Regenboog, Zonnestraal, Begin
+van de lente, Zomertijd, Moederdag, Koningsdag, Hemelvaart, Pinksteren, Bollenvelden, Keukenhof, Stuifmeel, Hooikoorts,
+Eieren zoeken, Aardbeiplant, Asperges, Rabarber, Radijs, Lentekriebels
+
+[sommer] Zomer
+Zomer, Juni, Juli, Augustus, Zon, Hitte, Zonneschijn, Vakantie, Zomervakantie, Strand, Zee, Zand, Zandkasteel, Schelp,
+Golf, Badpak, Bikini, Zwembroek, Handdoek, Zonnebril, Zonnebrand, Zonnehoed, Parasol, Ligstoel, Strandstoel, Zwembad,
+Buitenbad, Duikplank, Zwemband, Luchtbed, Zwembandjes, Opblaasbadje, Waterpistool, IJsje, Waterijsje, IJssalon, Hoorntje,
+Aardbeien, Kersen, Meloen, Watermeloen, Limonade, Barbecue, Worstjes, Picknick, Kamperen, Tent, Kampvuur, Onweer, Mug,
+Wesp, Vuurvlieg, Schaduw, Zomerfeest, Teenslippers, Sandalen, Korte broek, Zomerjurk, Sproeten, Verbranden, Blote voeten,
+Hangmat, Zwemmeer, Sproeier, Fietstocht, Wandeltocht, Zomernacht, Vallende ster, Bosbessen, Oogst, Strobalen, Zonnebloem,
+Lavendel, Festival, Kermis, Zonsondergang
+
+[herbst] Herfst
+Herfst, September, Oktober, November, Bladeren, Herfstbladeren, Kastanje, Eikel, Beukennoot, Walnoot, Hazelnoot,
+Paddenstoel, Vliegenzwam, Pompoen, Pompoensoep, Appel, Peer, Pruim, Druiven, Wijnoogst, Oogst, Oogstfeest, Vlieger,
+Vliegeren, Wind, Storm, Mist, Regen, Paraplu, Plas, Regenlaarzen, Modder, Lampion, Sint-Maarten, Halloween, Kaars, Thee,
+Chocolademelk, Vest, Sjaal, Muts, Trekvogels, Ganzen, Kraanvogels, Egel, Eekhoorn, Wintervoorraad, Winterslaap,
+Wintertijd, Hark, Bladerhoop, Bladblazer, Appeltaart, Gepofte kastanjes, Lijsterbessen, Rozenbottels, Herfstvakantie,
+Spinnenweb, Schemering, Goudgeel, Vogelverschrikker, Cider, Bramen plukken
+
+[winter] Winter
+Winter, December, Januari, Februari, Sneeuw, Sneeuwvlok, Sneeuwpop, Sneeuwbal, Sneeuwballengevecht, Sneeuwengel,
+Sneeuwstorm, IJs, IJzel, Vorst, Rijp, IJspegel, IJsbloemen, Kou, Slee, Sleeën, Schaatsen, Schaatsbaan, IJsbaan,
+Elfstedentocht, Koek-en-zopie, Ski, Skiën, Snowboard, Langlaufen, Skilift, Piste, Sneeuwschoen, Iglo, Muts, Sjaal,
+Handschoenen, Wanten, Winterjas, Laarzen, Trui, Wollen sokken, Oorwarmers, Open haard, Haardvuur, Kachel, Verwarming,
+Kruik, Deken, Knus, Thee, Warme chocolademelk, Erwtensoep, Glühwein, Oliebollen, Speculaas, Kerststol, Advent, Kerstmis,
+Oudejaarsavond, Nieuwjaar, Vuurwerk, Wintersport, Winterslaap, Vogelvoer, Roodborstje, Sneeuwschuiver, Strooizout,
+Sneeuwploeg, Winterbanden, IJskrabber, Duisternis, Noorderlicht, Pinguïn, IJsbeer, Verkoudheid, Kerstvakantie, Thermometer
+
+[weihnachten] Kerstmis
+Kerstmis, Kerst, Kerstavond, Eerste Kerstdag, Tweede Kerstdag, Advent, Adventskrans, Adventskalender, Kaars, Kerstboom,
+Dennenboom, Slingers, Kerstbal, Lichtjes, Ster, Engel, Kerststal, Kribbe, Kindje Jezus, Maria, Jozef, Herders, Schapen, Os,
+Ezel, Drie Koningen, Kerstman, Sinterklaas, Zwarte Piet, Rendier, Arreslee, Elf, Kabouter, Cadeau, Pakje, Inpakpapier,
+Strik, Lint, Verlanglijstje, Sok, Schoorsteen, Kerststol, Kerstkransje, Speculaas, Pepernoten, Chocoladeletter, Marsepein,
+Kalkoen, Gourmetten, Kerstdiner, Kerstmarkt, Glühwein, Sneeuw, Klok, Belletje, Kerstlied, Kerstnachtdienst, Kerk, Maretak,
+Hulst, Kerstster, Notenkraker, Sneeuwbol, Krans, Kaneel, Kruidnagel, Sinaasappel, Familie, Kerstkaart, Kerstpakket
+
+[ostern] Pasen
+Pasen, Paashaas, Paasei, Eieren zoeken, Paasmandje, Paastak, Paasvuur, Paaslam, Paaszondag, Paasmaandag, Goede Vrijdag,
+Witte Donderdag, Palmzondag, Palmpasen, Veertigdagentijd, Vasten, Opstanding, Kerk, Klokken, Kuiken, Kip, Haas, Konijn,
+Lammetje, Lente, Narcis, Tulp, Krokus, Wilgenkatjes, Paasbrood, Paasstol, Chocolade, Chocolade-ei, Chocoladehaas, Suikerei,
+Marsepein, Eierverf, Verven, Schilderen, Kwast, Eierlopen, Eierdopje, Eierschaal, Dooier, Eiwit, Tuinkers, Paasgras, Mandje,
+Strik, Knutselen, Meivakantie, Familie, Paasontbijt, Brunch, Paaskaars, Konijnenoren, Wortel, Weiland, Verstopplek
+
+[halloween] Halloween
+Halloween, Pompoen, Pompoenlantaarn, Kaars, Spook, Geest, Heks, Bezem, Heksenhoed, Tovenaar, Vampier, Weerwolf, Zombie,
+Mummie, Skelet, Doodshoofd, Monster, Frankenstein, Kobold, Demon, Vleermuis, Spin, Spinnenweb, Zwarte kat, Raaf, Uil,
+Kerkhof, Begraafplaats, Grafsteen, Crypte, Doodskist, Spookhuis, Spookkasteel, Kostuum, Verkleedpartij, Masker, Cape,
+Schmink, Nepbloed, Snoep, Lolly, Snoepwormen, Ketel, Toverdrank, Vloek, Toverspreuk, Middernacht, Volle maan, Mist,
+Griezelig, Kippenvel, Gillen, Huilen, Feest, Uithollen, Herfst, Oktober, Lantaarn, Spookverhaal, Griezelfilm
+
+[geburtstag] Verjaardagen en feesten
+Verjaardag, Feest, Feestje, Cadeau, Verrassing, Inpakpapier, Strik, Kaart, Felicitatie, Gefeliciteerd, Uitnodiging,
+Gasten, Taart, Verjaardagstaart, Kaarsjes, Uitblazen, Wens, Ballon, Slinger, Vlaggetjes, Confetti, Serpentine, Feesthoedje,
+Toeter, Sterretje, Lampion, Muziek, Dansen, Zingen, Spelletjes, Speurtocht, Zaklopen, Eierlopen, Stoelendans,
+Koekhappen, Spijkerpoepen, Traktatie, Kinderfeestje, Jubileum, Bruiloft, Bruid, Bruidegom, Trouwring, Bruidsboeket,
+Doop, Communie, Diploma-uitreiking, Oudejaarsavond, Vuurwerk, Champagne, Proosten, Buffet, Barbecue, Tuinfeest, Buurtfeest,
+Familiefeest, Fotohokje, Themafeest, Verkleedfeest, Karaoke, Logeerpartijtje, Visite, Kringverjaardag
+
+[kalender] Maanden en dagen
+Januari, Februari, Maart, April, Mei, Juni, Juli, Augustus, September, Oktober, November, December, Maandag, Dinsdag,
+Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag, Weekend, Werkdag, Feestdag, Week, Maand, Jaar, Schrikkeljaar, Dag,
+Nacht, Ochtend, Morgen, Middag, Namiddag, Avond, Middernacht, Uur, Minuut, Seconde, Klok, Wekker, Kalender, Datum, Afspraak,
+Verjaardag, Seizoen, Lente, Zomer, Herfst, Winter, Gisteren, Vandaag, Overmorgen, Eergisteren, Toekomst, Verleden, Heden,
+Eeuw, Decennium, Millennium, Nieuwjaar, Pasen, Pinksteren, Kerstmis, Dageraad, Zonsopgang, Zonsondergang, Schemering,
+Zomertijd, Wintertijd, Zandloper, Stopwatch, Horloge, Kerkklok, Agenda, Rooster
+
+== Mensen ==
+[koerper] Het lichaam
+Hoofd, Haar, Voorhoofd, Oog, Wenkbrauw, Wimper, Oor, Neus, Mond, Lip, Tong, Tand, Tanden, Kin, Wang, Kaak, Hals, Keel,
+Nek, Schouder, Arm, Bovenarm, Elleboog, Onderarm, Pols, Hand, Vinger, Duim, Wijsvinger, Nagel, Borst, Buik, Navel, Rug,
+Heup, Billen, Been, Dij, Knie, Kuit, Scheenbeen, Enkel, Voet, Hiel, Teen, Voetzool, Huid, Spier, Bot, Skelet, Schedel,
+Ruggengraat, Rib, Gewricht, Hart, Long, Lever, Nier, Maag, Darm, Hersenen, Bloed, Ader, Slagader, Zenuw, Pees, Zweet, Adem,
+Hartslag, Pupil, Iris, Trommelvlies, Gehemelte, Amandelen, Stem, Oksel, Handpalm, Sproet, Moedervlek, Kuiltje, Krul,
+Vlecht, Paardenstaart, Baard, Snor, Ooglid, Knokkel, Vuist
+
+[gesundheit] Gezondheid en dokter
+Dokter, Arts, Huisarts, Kinderarts, Tandarts, Oogarts, Dierenarts, Ziekenhuis, Kliniek, Praktijk, Wachtkamer, Spreekuur,
+Afspraak, Recept, Apotheek, Apotheker, Medicijn, Tablet, Pil, Hoestdrank, Druppels, Zalf, Crème, Prik, Injectie, Vaccinatie,
+Pleister, Verband, Gips, Krukken, Rolstoel, Thermometer, Koorts, Hoest, Verkoudheid, Griep, Keelpijn, Hoofdpijn, Buikpijn,
+Kiespijn, Allergie, Hooikoorts, Mazelen, Waterpokken, Bof, Verwonding, Wond, Buil, Blauwe plek, Schram, Zonnebrand,
+Verpleegster, Verpleegkundige, Ambulance, Spoedeisende hulp, Operatie, Chirurg, Narcose, Röntgenfoto, Echo, Stethoscoop,
+Bloeddruk, Onderzoek, Diagnose, Behandeling, Therapie, Massage, Fysiotherapie, Herstel, Bedrust, Kruik, Vitaminen,
+Gezondheid, Beweging, Slaap, Bril, Gehoorapparaat, Beugel
+
+[kleidung] Kleding
+Broek, Spijkerbroek, Korte broek, Rok, Jurk, Blouse, Overhemd, Shirt, T-shirt, Trui, Vest, Sweater, Hoodie, Gilet, Jas,
+Jasje, Winterjas, Regenjas, Leren jas, Colbert, Pak, Stropdas, Vlinderdas, Sjaal, Halsdoek, Muts, Hoed, Pet, Baret,
+Haarband, Handschoenen, Wanten, Sokken, Kousen, Panty, Onderbroek, Hemd, Pyjama, Nachtpon, Badjas, Badpak, Zwembroek,
+Bikini, Riem, Bretels, Schoenen, Laarzen, Regenlaarzen, Gympen, Sneakers, Sandalen, Pantoffels, Sloffen, Teenslippers,
+Ballerina's, Pumps, Klompen, Legging, Overall, Tuinbroek, Uniform, Kostuum, Knoop, Rits, Kraag, Mouw, Zak, Capuchon, Zoom,
+Veter, Kledingkast, Kleerhanger, Was, Wasmachine, Strijkijzer, Trainingspak
+
+[familie] Familie en vrienden
+Familie, Gezin, Moeder, Mama, Vader, Papa, Ouders, Kind, Kinderen, Zoon, Dochter, Broer, Zus, Zuster, Tweeling, Baby,
+Oma, Opa, Grootmoeder, Grootvader, Grootouders, Kleinzoon, Kleindochter, Kleinkind, Overgrootmoeder, Overgrootvader,
+Oom, Tante, Neef, Nicht, Zwager, Schoonzus, Schoonmoeder, Schoonvader, Stiefmoeder, Stiefvader, Peetoom, Peettante,
+Petekind, Man, Vrouw, Echtpaar, Bruid, Bruidegom, Verloofde, Vriend, Vriendin, Beste vriend, Buurman, Buurvrouw, Maatje,
+Kameraad, Kennissen, Familieleden, Stamboom, Generatie, Bruiloft, Geboorte, Doop, Familiefeest, Familiefoto, Thuis,
+Liefde, Knuffel, Kus, Bezoek, Uitstapje, Spelletjesavond, Zondagse maaltijd, Huisdier
+
+[gefuehle] Gevoelens
+Vreugde, Blijdschap, Geluk, Liefde, Genegenheid, Dankbaarheid, Trots, Moed, Hoop, Tevredenheid, Enthousiasme, Voorpret,
+Verrassing, Opluchting, Rust, Kalmte, Geborgenheid, Vertrouwen, Medeleven, Verlangen, Reislust, Heimwee, Nieuwsgierigheid,
+Verwondering, Plezier, Lachen, Glimlach, Verdriet, Droefheid, Pijn, Angst, Schrik, Paniek, Zorg, Zenuwen, Plankenkoorts,
+Woede, Boosheid, Ergernis, Frustratie, Teleurstelling, Jaloezie, Afgunst, Schaamte, Schuld, Spijt, Verveling, Eenzaamheid,
+Verlegenheid, Verwarring, Ongeduld, Onzekerheid, Walging, Medelijden, Bewondering, Respect, Optimisme, Kippenvel,
+Vlinders, Tranen, Knuffel, Troost, Vermoeidheid, Honger, Dorst, Gezelligheid, Lol
+
+[berufe] Beroepen
+Dokter, Arts, Leraar, Lerares, Juf, Meester, Politieagent, Brandweerman, Brandweervrouw, Bakker, Banketbakker, Slager,
+Kok, Ober, Serveerster, Kapper, Kapster, Metselaar, Timmerman, Dakdekker, Schilder, Meubelmaker, Elektricien, Loodgieter,
+Slotenmaker, Monteur, Automonteur, Schoorsteenveger, Tuinman, Hovenier, Boer, Boerin, Boswachter, Visser, Imker, Wijnboer,
+Dierenarts, Dierenverzorger, Tandarts, Apotheker, Verpleegkundige, Verloskundige, Ambulancebroeder, Piloot, Stewardess,
+Machinist, Buschauffeur, Taxichauffeur, Vrachtwagenchauffeur, Kapitein, Matroos, Postbode, Verkoper, Verkoopster,
+Caissière, Winkelier, Bankmedewerker, Secretaresse, Boekhouder, Advocaat, Rechter, Notaris, Journalist, Fotograaf,
+Verslaggever, Schrijver, Schrijfster, Dichter, Muzikant, Zanger, Zangeres, Acteur, Actrice, Danser, Danseres, Kunstenaar,
+Beeldhouwer, Architect, Ingenieur, Programmeur, Wetenschapper, Onderzoeker, Scheikundige, Astronaut, Soldaat,
+Burgemeester, Dominee, Priester, Kleermaker, Opticien, Goudsmid, Horlogemaker, Conciërge, Schoonmaker, Kraanmachinist,
+Bibliothecaris, Trainer, Scheidsrechter, Detective, Goochelaar, Clown, Bloemist, Vertaler, Badmeester
+
+[haus] Het huis
+Huis, Woning, Appartement, Flat, Kamer, Woonkamer, Slaapkamer, Kinderkamer, Badkamer, Keuken, Eetkamer, Werkkamer, Gang,
+Hal, Kelder, Zolder, Vliering, Garage, Balkon, Terras, Trap, Trappenhuis, Lift, Deur, Voordeur, Raam, Vensterbank, Muur,
+Wand, Plafond, Vloer, Tapijt, Vloerkleed, Parket, Tegels, Dak, Schoorsteen, Open haard, Verwarming, Radiator, Stopcontact,
+Lichtknopje, Lamp, Plafondlamp, Staande lamp, Gordijn, Vitrage, Rolluik, Jaloezie, Bank, Fauteuil, Stoel, Tafel, Eettafel,
+Bureau, Bed, Kussen, Dekbed, Matras, Nachtkastje, Kast, Kledingkast, Ladekast, Plank, Boekenkast, Spiegel, Schilderij, Klok,
+Televisie, Bad, Douche, Wastafel, Toilet, Kraan, Handdoek, Brievenbus, Deurbel, Deurklink, Sleutel, Tuin, Schutting, Erf,
+Oprit, Tuinhuis, Serre, Buren, Verhuizing, Huurder, Verhuurder, Deurmat
+
+[werkzeug] Gereedschap en klussen
+Hamer, Tang, Schroevendraaier, Moersleutel, Steeksleutel, Inbussleutel, Zaag, Handzaag, Decoupeerzaag, Cirkelzaag,
+Boormachine, Accuboor, Boor, Schuurpapier, Schuurmachine, Vijl, Rasp, Schaaf, Beitel, Bijl, Plamuur, Plamuurmes, Troffel,
+Kwast, Verfroller, Verf, Lak, Lijm, Plakband, Ducttape, Schroef, Moer, Bout, Spijker, Plug, Ring, Klinknagel, Scharnier,
+Duimstok, Rolmaat, Waterpas, Winkelhaak, Potlood, Stanleymes, Bankschroef, Werkbank, Werkplaats, Gereedschapskist,
+Ladder, Trapje, Kruiwagen, Schep, Spade, Koevoet, Soldeerbout, Kabel, Verlengsnoer, Zaklamp, Veiligheidsbril,
+Handschoenen, Helm, Gehoorbescherming, Klusser, Klussen, Bouwmarkt, Hout, Plank, Lat, Balk, Multiplex, Metaal, IJzerdraad,
+Slang, Zaagsel, Lijmklem, Moker
+
+[schule] School
+School, Klas, Klaslokaal, Leraar, Lerares, Juf, Meester, Leerling, Scholier, Directeur, Conciërge, Pauze, Speelplaats,
+Schoolplein, Rooster, Les, Huiswerk, Proefwerk, Toets, Dictee, Rapport, Cijfer, Schooltas, Boekentas, Rugzak, Etui,
+Potlood, Kleurpotlood, Vulpen, Balpen, Stift, Markeerstift, Gum, Puntenslijper, Liniaal, Geodriehoek, Passer, Schaar, Lijm,
+Lijmstift, Schrift, Schrijfblok, Boek, Schoolboek, Woordenboek, Atlas, Schoolbord, Krijt, Bordenwisser, Digibord, Beamer,
+Tafel, Stoel, Rekenen, Wiskunde, Nederlands, Engels, Frans, Duits, Biologie, Scheikunde, Natuurkunde, Geschiedenis,
+Aardrijkskunde, Tekenen, Muziek, Gymnastiek, Gym, Godsdienst, Informatica, Gymzaal, Bibliotheek, Aula, Kantine,
+Schoolreisje, Sportdag, Schoolfeest, Eerste schooldag, Vakantie, Lezen, Schrijven, Rekenmachine, Wereldbol, Overblijven
+
+[einkaufen] Boodschappen doen
+Supermarkt, Bakkerij, Slagerij, Markt, Kiosk, Drogisterij, Apotheek, Boekhandel, Warenhuis, Winkelcentrum, Boetiek, Winkel,
+Etalage, Winkelwagen, Winkelmandje, Boodschappentas, Boodschappenlijstje, Kassa, Caissière, Kassabon, Bonnetje, Geld,
+Munt, Briefje, Wisselgeld, Portemonnee, Bankpas, Pinpas, Creditcard, Cadeaubon, Korting, Aanbieding, Koopje, Prijs,
+Prijskaartje, Uitverkoop, Opruiming, Ruilen, Klantenkaart, Verkoper, Verkoopster, Klant, Toonbank, Schap, Koelvak,
+Diepvries, Weegschaal, Tasje, Papieren zak, Linnen tas, Statiegeld, Openingstijden, Parkeerplaats, Roltrap, Paskamer,
+Maat, Bestelling, Bezorging, Pakketje, Webwinkel, Rij, Zelfscan
+
+[stadt] In de stad
+Stad, Straat, Steeg, Laan, Plein, Marktplein, Stadhuis, Gemeentehuis, Kerk, Dom, Fontein, Monument, Standbeeld, Museum,
+Theater, Bioscoop, Opera, Bibliotheek, School, Kinderdagverblijf, Ziekenhuis, Politiebureau, Brandweerkazerne, Postkantoor,
+Bank, Station, Busstation, Bushalte, Flatgebouw, Wolkenkrabber, Winkelstraat, Voetgangersgebied, Stoep, Trottoir, Fietspad,
+Stoplicht, Zebrapad, Kruispunt, Rotonde, Brug, Tunnel, Parkeergarage, Parkeerplaats, Tankstation, Hotel, Restaurant, Café,
+Kroeg, Snackbar, Bakkerij, Supermarkt, Apotheek, Kapper, Park, Speeltuin, Stadspark, Dierentuin, Zwembad, Stadion, Sporthal,
+Fabriek, Haven, Gracht, Kade, Vliegveld, Tram, Metro, Taxi, Bus, Lantaarnpaal, Prullenbak, Bankje, Plattegrond, Centrum,
+Binnenstad, Oude stad, Buitenwijk, Stadsmuur, Stadspoort, Toren, Kerktoren, Klokkentoren, Fietsenstalling
+
+== Onderweg ==
+[fahrzeuge] Voertuigen
+Auto, Bus, Vrachtwagen, Truck, Bestelwagen, Busje, Camper, Caravan, Aanhanger, Tractor, Graafmachine, Kraan, Shovel,
+Bulldozer, Betonmolen, Kiepwagen, Heftruck, Maaidorser, Vuilniswagen, Brandweerauto, Ambulance, Politieauto, Takelwagen,
+Taxi, Limousine, Cabrio, Sportauto, Raceauto, Terreinwagen, Jeep, Minibus, Motor, Motorfiets, Scooter, Brommer, Snorfiets,
+Fiets, Mountainbike, Racefiets, Bakfiets, Tandem, Driewieler, Loopfiets, Eenwieler, Step, Skateboard, Skeelers, Trein,
+Locomotief, Stoomlocomotief, Goederentrein, Tram, Metro, Kabelbaan, Gondel, Stoeltjeslift, Vliegtuig, Straaljager,
+Helikopter, Zweefvliegtuig, Luchtballon, Zeppelin, Raket, Schip, Boot, Veerboot, Pont, Cruiseschip, Zeilboot, Speedboot,
+Roeiboot, Kano, Kajak, Waterfiets, Rubberboot, Vrachtschip, Tanker, Stoomboot, Jacht, Vlot, Duikboot, Onderzeeër, Koets,
+Kar, Slee, Riksja, Sneeuwscooter, Hovercraft
+
+[reisen] Reizen en vakantie
+Vakantie, Reis, Uitstapje, Dagje uit, Rondreis, Stedentrip, Cruise, Pakketreis, Wandelvakantie, Koffer, Rugzak, Reistas,
+Handbagage, Paspoort, Identiteitskaart, Visum, Kaartje, Ticket, Instapkaart, Vliegveld, Luchthaven, Vliegtuig, Vertrek,
+Aankomst, Gate, Inchecken, Bagageband, Douane, Station, Perron, Spoor, Trein, Veerboot, Haven, Hotel, Pension,
+Vakantiehuisje, Jeugdherberg, Camping, Kamer, Receptie, Ontbijtbuffet, Halfpension, Reisgids, Landkaart, Plattegrond,
+Kompas, Navigatie, Camera, Foto, Souvenir, Ansichtkaart, Bezienswaardigheid, Museum, Strand, Zee, Bergen, Uitzicht,
+Zonnebril, Zonnebrand, Badspullen, EHBO-doos, Vreemde taal, Woordenboek, Valuta, Buitenland, Grens, Avontuur, Ontspanning,
+Thuisreis, Reislust, Bestemming, Toerist, Reisroute, Roadtrip
+
+== De wereld ==
+[laender] Landen
+Duitsland, Oostenrijk, Zwitserland, Frankrijk, Italië, Spanje, Portugal, België, Nederland, Luxemburg, Denemarken, Zweden,
+Noorwegen, Finland, IJsland, Ierland, Engeland, Schotland, Wales, Polen, Tsjechië, Slowakije, Hongarije, Slovenië,
+Kroatië, Servië, Bosnië, Montenegro, Albanië, Griekenland, Bulgarije, Roemenië, Moldavië, Oekraïne, Wit-Rusland, Litouwen,
+Letland, Estland, Rusland, Turkije, Cyprus, Malta, Georgië, Armenië, Israël, Jordanië, Libanon, Syrië, Irak, Iran,
+Saoedi-Arabië, Jemen, Oman, Qatar, Egypte, Libië, Tunesië, Algerije, Marokko, Mauritanië, Senegal, Mali, Niger, Nigeria,
+Ghana, Kameroen, Congo, Kenia, Tanzania, Oeganda, Ethiopië, Somalië, Soedan, Angola, Zambia, Zimbabwe, Namibië, Botswana,
+Zuid-Afrika, Madagaskar, India, Pakistan, Afghanistan, Nepal, Bangladesh, Sri Lanka, China, Japan, Korea, Mongolië, Vietnam,
+Thailand, Cambodja, Laos, Myanmar, Maleisië, Singapore, Indonesië, Filipijnen, Australië, Nieuw-Zeeland, Canada,
+Verenigde Staten, Mexico, Cuba, Jamaica, Guatemala, Honduras, Panama, Colombia, Venezuela, Ecuador, Peru, Bolivia,
+Brazilië, Paraguay, Uruguay, Argentinië, Chili, Groenland, Liechtenstein, Monaco, Andorra, San Marino, Vaticaanstad,
+Suriname, Aruba, Curaçao
+
+[hauptstaedte] Hoofdsteden
+Berlijn, Wenen, Bern, Parijs, Rome, Madrid, Lissabon, Brussel, Amsterdam, Luxemburg, Kopenhagen, Stockholm, Oslo, Helsinki,
+Reykjavik, Dublin, Londen, Edinburgh, Warschau, Praag, Bratislava, Boedapest, Ljubljana, Zagreb, Belgrado, Sarajevo,
+Tirana, Athene, Sofia, Boekarest, Kyiv, Minsk, Vilnius, Riga, Tallinn, Moskou, Ankara, Nicosia, Valletta, Tbilisi, Jerevan,
+Caïro, Tunis, Algiers, Rabat, Dakar, Abuja, Accra, Nairobi, Kampala, Addis Abeba, Pretoria, Kaapstad, Windhoek, New Delhi,
+Islamabad, Kabul, Kathmandu, Peking, Tokio, Seoul, Bangkok, Hanoi, Manilla, Jakarta, Canberra, Wellington, Ottawa,
+Washington, Mexico-Stad, Havana, Bogota, Caracas, Quito, Lima, La Paz, Brasilia, Buenos Aires, Santiago, Montevideo,
+Teheran, Bagdad, Damascus, Beiroet, Amman, Jeruzalem, Riyad, Doha, Abu Dhabi, Muscat, Paramaribo, Vaduz, Monaco
+
+== Vrije tijd ==
+[sport] Sporten
+Voetbal, Handbal, Basketbal, Volleybal, Beachvolleybal, Tennis, Tafeltennis, Badminton, Squash, Padel, Golf, Midgetgolf,
+Hockey, IJshockey, Rugby, Honkbal, Softbal, Korfbal, Cricket, Zwemmen, Duiken, Waterpolo, Roeien, Kanoën, Kajakken,
+Zeilen, Surfen, Windsurfen, Kitesurfen, Waterskiën, Turnen, Atletiek, Hardlopen, Joggen, Marathon, Sprint, Hordelopen,
+Verspringen, Hoogspringen, Polsstokhoogspringen, Kogelstoten, Speerwerpen, Discuswerpen, Wielrennen, Fietsen,
+Mountainbiken, Paardrijden, Dressuur, Springen, Boksen, Worstelen, Judo, Karate, Taekwondo, Schermen, Handboogschieten,
+Klimmen, Boulderen, Bergbeklimmen, Wandelen, Skiën, Langlaufen, Biatlon, Schansspringen, Snowboarden, Sleeën, Bobsleeën,
+Kunstschaatsen, Schaatsen, Curling, Yoga, Pilates, Aerobics, Dansen, Ballet, Kegelen, Bowlen, Biljarten, Darten, Schaken,
+Dammen, Skateboarden, Skeeleren, Triatlon, Fitness, Krachtsport, Gewichtheffen, Frisbee, Jeu de boules, Fierljeppen
+
+[fussball] Voetbal
+Voetbal, Bal, Doel, Goal, Keeper, Doelman, Spits, Aanvaller, Verdediger, Middenvelder, Verdediging, Aanvoerder, Trainer,
+Coach, Scheidsrechter, Grensrechter, Fluit, Aftrap, Eindsignaal, Rust, Verlenging, Strafschop, Penalty, Strafschoppen,
+Vrije trap, Hoekschop, Corner, Inworp, Doeltrap, Buitenspel, Overtreding, Gele kaart, Rode kaart, Tribune, Stadion, Veld,
+Grasmat, Doellijn, Middenlijn, Strafschopgebied, Middencirkel, Paal, Lat, Net, Shirt, Tenue, Kousen, Scheenbeschermers,
+Voetbalschoenen, Noppen, Handschoenen, Supporters, Fans, Sjaal, Beker, Trofee, Kampioenschap, Competitie, Eredivisie,
+Wereldkampioen, Wereldbeker, Stand, Punten, Gelijkspel, Overwinning, Nederlaag, Kopbal, Omhaal, Volley, Voorzet, Pass,
+Dribbel, Doelpunt, Hattrick, Juichen, Elftal, Team, Club, Training, Opstelling, Wissel, Reservebank, Blessuretijd,
+Tackle, Redding
+
+[spielzeug] Speelgoed en spelletjes
+Pop, Poppenhuis, Poppenwagen, Teddybeer, Knuffel, Knuffelbeer, Blokken, Lego, Duplo, Bouwdoos, Puzzel, Knikkers, Tol,
+Jojo, Bal, Springtouw, Hoepel, Vlieger, Bellenblaas, Klei, Waterverf, Kleurpotloden, Kleurboek, Speelgoedauto, Racebaan,
+Treinbaan, Houten trein, Graafmachine, Brandweerauto, Ridderkasteel, Piratenschip, Winkeltje, Keukentje, Poppenkast,
+Handpop, Marionet, Stokpaardje, Hobbelpaard, Step, Loopfiets, Driewieler, Schommel, Glijbaan, Wip, Zandbak, Emmertje,
+Schepje, Zandvormpjes, Bordspel, Kaartspel, Dobbelsteen, Pion, Memory, Domino, Mikado, Schaken, Dammen, Ganzenbord,
+Mens-erger-je-niet, Kwartet, Uno, Bingo, Verstoppertje, Tikkertje, Hinkelen, Stoelendans, Blindemannetje, Goochelset,
+Spelcomputer, Caleidoscoop, Speeldoos, Rammelaar, Frisbee, Waterpistool
+
+[musik] Muziek en instrumenten
+Muziek, Lied, Liedje, Melodie, Ritme, Maat, Noot, Bladmuziek, Sleutel, Toonladder, Akkoord, Piano, Vleugel, Orgel,
+Keyboard, Accordeon, Mondharmonica, Gitaar, Elektrische gitaar, Basgitaar, Contrabas, Viool, Altviool, Cello, Harp, Luit,
+Mandoline, Banjo, Ukelele, Citer, Fluit, Blokfluit, Dwarsfluit, Klarinet, Hobo, Fagot, Saxofoon, Trompet, Trombone, Hoorn,
+Tuba, Doedelzak, Drumstel, Trommel, Pauk, Bekkens, Triangel, Xylofoon, Klokkenspel, Tamboerijn, Rammelaar, Castagnetten,
+Bongo, Koor, Orkest, Band, Fanfare, Harmonie, Dirigent, Dirigeerstok, Zanger, Zangeres, Solist, Duet, Concert, Opera,
+Musical, Podium, Microfoon, Luidspreker, Koptelefoon, Radio, Grammofoonplaat, Platenspeler, Klassiek, Jazz, Rock, Pop,
+Smartlap, Wals, Mars, Ballade, Refrein, Couplet, Componist, Muziekschool, Repetitie, Draaiorgel
+
+[farben] Kleuren en vormen
+Rood, Blauw, Geel, Groen, Oranje, Paars, Violet, Roze, Bruin, Zwart, Wit, Grijs, Zilver, Goud, Beige, Turquoise, Magenta,
+Oker, Bordeaux, Kersenrood, Scharlaken, Hemelsblauw, Lichtblauw, Donkerblauw, Marineblauw, Koningsblauw, Lichtgroen,
+Donkergroen, Olijfgroen, Mintgroen, Smaragdgroen, Citroengeel, Mosterdgeel, Abrikoos, Zalmroze, Koraal, Perzik, Lila,
+Lavendel, Pruim, Aubergine, Chocoladebruin, Kastanjebruin, Antraciet, Ivoor, Crème, Regenboog, Kleurencirkel, Cirkel,
+Vierkant, Driehoek, Rechthoek, Ruit, Ovaal, Ellips, Ster, Hart, Vijfhoek, Zeshoek, Achthoek, Kubus, Bol, Kegel, Cilinder,
+Piramide, Balk, Spiraal, Golf, Punt, Lijn, Kromme, Hoek, Rand, Oppervlak, Halve maan, Pijl, Kruis
+
+== Fantasie en geschiedenis ==
+[maerchen] Sprookjes en sagen
+Sprookje, Sage, Legende, Mythe, Fabel, Toverij, Magie, Tovenaar, Heks, Fee, Elf, Dwerg, Kabouter, Reus, Trol, Kobold,
+Draak, Eenhoorn, Zeemeermin, Prins, Prinses, Koning, Koningin, Keizer, Paleis, Kasteel, Toren, Kerker, Betoverd bos,
+Toverstaf, Toverspreuk, Vloek, Schat, Goudstukken, Spiegel, Appel, Spinnewiel, Put, Kikkerkoning, Sneeuwwitje,
+Assepoester, Raponsje, Doornroosje, Roodkapje, Hans, Grietje, Peperkoekhuisje, Repelsteeltje, Vrouw Holle, Klein Duimpje,
+Gelaarsde kat, Boze wolf, Grootmoeder, Jager, Stiefmoeder, Zeven dwergen, Glazen muiltje, Pompoen, Koets, Middernacht,
+Duizend-en-een-nacht, Aladdin, Wonderlamp, Geest, Vliegend tapijt, Sinbad, Ali Baba, Pegasus, Feniks, Griffioen, Cycloop,
+Minotaurus, Centaur, Koning Arthur, Merlijn, Excalibur, Robin Hood, Peter Pan, Tinkerbel, Goede fee, Boeman, Efteling
+
+[ritter] Ridders en kastelen
+Ridder, Kasteel, Burcht, Vesting, Jonkvrouw, Schildknaap, Page, Edelvrouw, Kasteelheer, Koning, Koningin, Prins, Prinses,
+Hertog, Graaf, Harnas, Maliënkolder, Helm, Vizier, Schild, Wapenschild, Zwaard, Lans, Speer, Strijdbijl, Morgenster,
+Kruisboog, Boog, Pijl, Pijlkoker, Ros, Strijdros, Zadel, Toernooi, Steekspel, Banier, Vaandel, Slotgracht, Ophaalbrug,
+Valhek, Poort, Donjon, Toren, Kantelen, Muur, Weergang, Schietgat, Kerker, Ridderzaal, Binnenplaats, Put, Smid, Smederij,
+Nar, Speelman, Minstreel, Kapel, Monnik, Klooster, Middeleeuwen, Fakkel, Kandelaar, Feestmaal, Banket, Belegering,
+Katapult, Stormram, Schatkamer, Kroon, Scepter, Troon, Draak, Kruistocht, Eer, Trouw, Ridderslag, Ronde Tafel, Heraut
+
+[piraten] Piraten
+Piraat, Zeerover, Kaper, Boekanier, Kapitein, Stuurman, Matroos, Scheepsjongen, Kok, Piratenschip, Zeilschip, Galjoen,
+Fregat, Sloep, Roeiboot, Zeil, Mast, Uitkijk, Kraaiennest, Want, Touwladder, Anker, Stuurwiel, Kompas, Verrekijker,
+Schatkaart, Schat, Schatkist, Goudstukken, Dukaten, Edelstenen, Parels, Juwelen, Eiland, Schateiland, Palmboom, Grot, Baai,
+Kanon, Kanonskogel, Sabel, Kortzwaard, Pistool, Musket, Ooglapje, Houten been, Haak, Hoofddoek, Steek, Doodshoofd,
+Piratenvlag, Papegaai, Rum, Loopplank, Muiterij, Kombuis, Kajuit, Ruim, Dek, Flessenpost, Storm, Golf, Wrak, Schipbreuk,
+Haven, Herberg, Buit, Enteren, Ahoy, Boeg, Achtersteven
+
+== Techniek ==
+[computer] Computer en internet
+Computer, Laptop, Tablet, Smartphone, Mobiel, Telefoon, Beeldscherm, Monitor, Toetsenbord, Muis, Touchpad, Printer,
+Scanner, Luidspreker, Koptelefoon, Oortjes, Microfoon, Webcam, Camera, Oplader, Kabel, Accu, Batterij, Harde schijf,
+Geheugen, Processor, Videokaart, Chip, Printplaat, Stekker, Stopcontact, Router, Modem, Wifi, Internet, Netwerk, Server,
+Cloud, Website, Browser, Zoekmachine, Link, Download, Upload, Bestand, Map, Document, Programma, App, Software, Update,
+Wachtwoord, Gebruikersnaam, Account, Inloggen, Bureaublad, Pictogram, Venster, Menu, Toets, Spatiebalk, Entertoets,
+Cursor, Klik, Dubbelklik, Email, Bericht, Chat, Videobellen, Emoji, Spel, Videogame, Spelcomputer, Controller, Joystick,
+Robot, Programmeren, Code, Algoritme, Database, Virus, Firewall, Back-up, Bluetooth, Geheugenkaart, USB-stick, Pixel,
+Byte, Spreadsheet

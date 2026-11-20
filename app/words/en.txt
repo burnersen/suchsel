@@ -1,0 +1,604 @@
+# Suchsel – English vocabulary
+# Layout: "== Group ==", then "[id] Topic name" and the words separated by commas (may span several lines).
+# Spaces and hyphens disappear in the grid. Words shorter than 3 letters are not used.
+
+== Animals ==
+[haustiere] Pets
+Dog, Cat, Mouse, Hamster, Rabbit, Guinea Pig, Budgie, Goldfish, Tortoise, Turtle, Horse, Pony, Rat, Ferret, Canary, Parrot,
+Chinchilla, Gerbil, Lizard, Gecko, Iguana, Snake, Axolotl, Tarantula, Hermit Crab, Cockatiel, Kitten, Puppy, Foal, Leash,
+Collar, Basket, Cage, Bowl, Kennel, Litter Box, Scratching Post, Aquarium, Terrarium, Hutch, Treat, Brush, Vet, Whiskers, Paw,
+Fur, Tail, Bark, Meow, Purr, Walkies, Squeaky Toy, Flea, Tick, Vaccine, Stable, Hay, Carrot, Bearded Dragon, Stick Insect,
+Guppy, Neon Tetra, Cockatoo, Finch, Dachshund, Poodle, Labrador, Pug, Persian, Tomcat, Cuddle, Pet Food, Water Bowl, Birdcage
+
+[bauernhof] On the Farm
+Cow, Calf, Bull, Ox, Pig, Piglet, Sow, Boar, Sheep, Lamb, Ram, Ewe, Goat, Kid, Horse, Foal, Donkey, Mule, Chicken, Hen,
+Rooster, Chick, Goose, Duck, Duckling, Turkey, Sheepdog, Barn Cat, Farmer, Tractor, Combine, Trailer, Plough, Harrow, Barn,
+Stable, Hayloft, Silo, Pasture, Paddock, Fence, Field, Meadow, Hay, Straw, Hay Bale, Trough, Feed, Milking, Milk, Eggs,
+Henhouse, Coop, Nest, Manure, Pitchfork, Wheelbarrow, Wheat, Rye, Barley, Oats, Corn, Potato, Beet, Sunflower, Harvest,
+Seeds, Farmhouse, Farm Shop, Wellies, Scarecrow, Cowbell, Weathervane, Orchard, Beekeeper, Beehive, Horseshoe, Saddle,
+Bridle, Pigsty, Sheepshearing, Wool, Dairy, Butter, Cheese, Grain, Crops, Hedge, Gate, Windmill
+
+[wald] Woodland Animals
+Deer, Stag, Doe, Fawn, Wild Boar, Fox, Badger, Hare, Rabbit, Squirrel, Hedgehog, Mole, Wolf, Lynx, Bear, Beaver, Raccoon,
+Marten, Polecat, Weasel, Stoat, Ermine, Otter, Bat, Dormouse, Shrew, Wood Mouse, Vole, Moose, Elk, Bison, Chipmunk, Skunk,
+Opossum, Porcupine, Owl, Eagle Owl, Tawny Owl, Woodpecker, Jay, Cuckoo, Hawk, Buzzard, Falcon, Robin, Blackbird, Wren,
+Nuthatch, Tit, Finch, Thrush, Pheasant, Partridge, Woodcock, Adder, Grass Snake, Slow Worm, Lizard, Salamander, Newt, Toad,
+Frog, Ant, Stag Beetle, Wood Ant, Snail, Slug, Spider, Dragonfly, Firefly, Glowworm, Beetle, Wildcat, Red Fox, Brown Hare,
+Pine Marten, Red Squirrel, Grey Squirrel, Roe Deer, Red Deer, Barn Owl
+
+[zoo] At the Zoo
+Lion, Tiger, Leopard, Cheetah, Jaguar, Panther, Elephant, Giraffe, Zebra, Rhino, Hippo, Camel, Dromedary, Llama, Alpaca,
+Monkey, Gorilla, Chimpanzee, Orangutan, Baboon, Lemur, Meerkat, Kangaroo, Koala, Wombat, Panda, Red Panda, Polar Bear,
+Brown Bear, Penguin, Seal, Sea Lion, Walrus, Crocodile, Alligator, Snake, Python, Boa, Cobra, Iguana, Chameleon, Tortoise,
+Flamingo, Pelican, Ostrich, Emu, Peacock, Parrot, Toucan, Eagle, Vulture, Owl, Antelope, Gazelle, Wildebeest, Buffalo, Bison,
+Tapir, Okapi, Sloth, Anteater, Armadillo, Porcupine, Hyena, Jackal, Coyote, Raccoon, Otter, Aardvark, Warthog, Yak, Reindeer,
+Moose, Wolf, Puma, Lynx, Enclosure, Zookeeper, Feeding Time, Petting Zoo, Aquarium, Reptile House, Monkey House, Ticket
+
+[voegel] Birds
+Blackbird, Thrush, Finch, Starling, Sparrow, Tit, Great Tit, Blue Tit, Robin, Wren, Nuthatch, Chaffinch, Goldfinch, Bullfinch,
+Greenfinch, Siskin, Linnet, Wagtail, Lark, Skylark, Nightingale, Swallow, Swift, Martin, Cuckoo, Woodpecker, Hoopoe,
+Kingfisher, Oriole, Magpie, Crow, Raven, Jackdaw, Rook, Jay, Pigeon, Dove, Turtle Dove, Seagull, Gull, Cormorant, Heron,
+Stork, Crane, Swan, Goose, Duck, Mallard, Coot, Moorhen, Grebe, Lapwing, Curlew, Oystercatcher, Sandpiper, Eagle, Golden
+Eagle, Sea Eagle, Falcon, Kestrel, Peregrine, Hawk, Sparrowhawk, Buzzard, Kite, Red Kite, Vulture, Owl, Barn Owl, Tawny Owl,
+Pheasant, Partridge, Quail, Grouse, Parrot, Budgie, Canary, Cockatoo, Macaw, Toucan, Hummingbird, Flamingo, Pelican, Penguin,
+Ostrich, Peacock, Albatross, Puffin, Yellowhammer, Bluebird, Cardinal, Mockingbird, Woodpigeon
+
+[meer] In the Sea
+Whale, Blue Whale, Sperm Whale, Humpback, Orca, Dolphin, Porpoise, Shark, Great White, Hammerhead, Whale Shark, Ray,
+Manta Ray, Stingray, Seal, Sea Lion, Walrus, Manatee, Sea Turtle, Octopus, Squid, Cuttlefish, Jellyfish, Starfish, Sea Urchin,
+Seahorse, Sea Cucumber, Coral, Anemone, Shell, Mussel, Oyster, Scallop, Clam, Snail, Crab, Lobster, Crayfish, Shrimp, Prawn,
+Krill, Herring, Mackerel, Sardine, Tuna, Salmon, Cod, Haddock, Plaice, Sole, Halibut, Eel, Moray, Barracuda, Swordfish,
+Clownfish, Surgeonfish, Pufferfish, Anglerfish, Plankton, Algae, Seaweed, Kelp, Reef, Coral Reef, Deep Sea, Wave, Current,
+Low Tide, High Tide, Island, Sandbank, Lighthouse, Diver, Snorkel, Mask, Flippers, Ship, Boat, Trawler, Net, Anchor,
+Seabed, Saltwater, Seagull, Albatross, Penguin, Cormorant, Narwhal, Beluga
+
+[insekten] Insects and Bugs
+Bee, Honeybee, Bumblebee, Wasp, Hornet, Ant, Fly, Housefly, Mosquito, Gnat, Midge, Crane Fly, Dragonfly, Damselfly,
+Butterfly, Brimstone, Peacock, Red Admiral, Cabbage White, Moth, Caterpillar, Pupa, Chrysalis, Cocoon, Beetle, Ladybird,
+Ladybug, Cockchafer, Stag Beetle, Dung Beetle, Ground Beetle, Firefly, Glowworm, Bark Beetle, Weevil, Grasshopper, Cricket,
+Locust, Cicada, Praying Mantis, Stick Insect, Earwig, Shield Bug, Aphid, Greenfly, Louse, Flea, Tick, Mite, Spider,
+Garden Spider, Tarantula, Daddy Longlegs, Scorpion, Millipede, Centipede, Woodlouse, Earthworm, Snail, Slug, Termite,
+Cockroach, Silverfish, Horsefly, Lacewing, Hoverfly, Pond Skater, Water Beetle, Fruit Fly, Antenna, Wing, Sting, Larva,
+Bug Hotel, Beehive, Honeycomb, Anthill, Cobweb, Honey, Pollen, Nectar
+
+[dinos] Dinosaurs and Prehistory
+Dinosaur, Tyrannosaurus, Triceratops, Stegosaurus, Brachiosaurus, Diplodocus, Velociraptor, Ankylosaurus, Iguanodon,
+Spinosaurus, Allosaurus, Parasaurolophus, Brontosaurus, Apatosaurus, Compsognathus, Archaeopteryx, Pteranodon, Pterosaur,
+Plesiosaur, Ichthyosaur, Mosasaur, Mammoth, Sabretooth, Woolly Rhino, Cave Bear, Giant Sloth, Trilobite, Ammonite, Fossil,
+Skeleton, Bone, Claw, Tooth, Scale, Egg, Nest, Footprint, Dig, Excavation, Palaeontologist, Museum, Brush, Hammer, Chisel,
+Stone Age, Jurassic, Cretaceous, Triassic, Volcano, Meteorite, Asteroid, Extinction, Herbivore, Carnivore, Predator, Jungle,
+Fern, Horsetail, Amber, Cave, Cave Painting, Neanderthal, Hand Axe, Campfire, Spear, Ice Age, Glacier, Tusk, Raptor, Crest,
+Swamp, Lagoon, Herd
+
+[hunde] Dog Breeds
+Dachshund, Poodle, Pug, Boxer, Dalmatian, Labrador, Golden Retriever, German Shepherd, Collie, Beagle, Terrier, Spitz,
+Pinscher, Dobermann, Rottweiler, Saint Bernard, Newfoundland, Husky, Malamute, Chihuahua, Maltese, Bulldog, Mastiff,
+Great Dane, Greyhound, Whippet, Basset, Bloodhound, Pointer, Setter, Spaniel, Cocker Spaniel, Weimaraner, Schnauzer,
+Pekingese, Shih Tzu, Yorkshire, Jack Russell, Border Collie, Sheltie, Akita, Shiba Inu, Samoyed, Chow Chow, Shar Pei, Dingo,
+Leonberger, Bobtail, Corgi, Papillon, Havanese, Boston Terrier, Pit Bull, Ridgeback, Afghan Hound, Saluki, Vizsla, Lurcher,
+Springer, Westie, Scottie, Cairn Terrier, Bichon, Lhasa Apso, Bull Terrier, Staffie, Retriever, Labradoodle, Cockapoo, Mongrel,
+Sheepdog, Wolfhound, Deerhound, Foxhound, Airedale, Kelpie, Cavalier
+
+== Food and Drink ==
+[obst] Fruit
+Apple, Pear, Cherry, Plum, Damson, Peach, Apricot, Nectarine, Strawberry, Raspberry, Blackberry, Blueberry, Bilberry,
+Redcurrant, Blackcurrant, Gooseberry, Cranberry, Elderberry, Grape, Raisin, Sultana, Banana, Orange, Tangerine, Mandarin,
+Clementine, Satsuma, Lemon, Lime, Grapefruit, Pineapple, Mango, Papaya, Kiwi, Passion Fruit, Pomegranate, Fig, Date,
+Coconut, Melon, Watermelon, Honeydew, Cantaloupe, Lychee, Guava, Persimmon, Star Fruit, Quince, Physalis, Dragon Fruit,
+Avocado, Olive, Rhubarb, Sour Cherry, Sloe, Rosehip, Kumquat, Medlar, Mulberry, Walnut, Hazelnut, Almond, Chestnut, Peanut,
+Pistachio, Cashew, Fruit Salad, Compote, Jam, Juice, Fruit Bowl, Core, Pip, Peel, Stalk, Smoothie
+
+[gemuese] Vegetables
+Potato, Carrot, Tomato, Cucumber, Pepper, Onion, Garlic, Leek, Celery, Fennel, Asparagus, Broccoli, Cauliflower, Sprouts,
+Brussels Sprouts, Kale, Cabbage, Red Cabbage, Savoy, Kohlrabi, Spinach, Chard, Lettuce, Iceberg, Lamb's Lettuce, Rocket,
+Radish, Horseradish, Beetroot, Parsnip, Turnip, Swede, Courgette, Zucchini, Pumpkin, Squash, Aubergine, Eggplant, Pea, Bean,
+Green Bean, Broad Bean, Runner Bean, Lentil, Chickpea, Sweetcorn, Okra, Artichoke, Sweet Potato, Yam, Ginger, Mushroom,
+Spring Onion, Shallot, Chilli, Cress, Watercress, Mangetout, Sugar Snap, Edamame, Soybean, Chicory, Endive, Radicchio,
+Celeriac, Salsify, Vegetable Patch, Harvest, Salad, Soup, Stew, Casserole
+
+[essen] Favourite Dishes
+Pizza, Spaghetti, Lasagne, Pasta, Ravioli, Tortellini, Risotto, Pancakes, Crepes, Schnitzel, Sausages, Bangers and Mash,
+Meatballs, Goulash, Roast Beef, Roast Chicken, Sunday Roast, Yorkshire Pudding, Shepherd's Pie, Cottage Pie, Fish and Chips,
+Fish Fingers, Burger, Chips, Fries, Mashed Potatoes, Jacket Potato, Baked Beans, Casserole, Stew, Soup, Tomato Soup,
+Chicken Soup, Chili, Burrito, Taco, Kebab, Falafel, Sushi, Curry, Rice, Paella, Omelette, Scrambled Eggs, Fried Egg, Salad,
+Sandwich, Toastie, Hot Dog, Quiche, Pie, Pasty, Sausage Roll, Toad in the Hole, Macaroni, Mac and Cheese, Noodles, Ramen,
+Dumplings, Spring Rolls, Fried Rice, Stir Fry, Fajitas, Nachos, Enchilada, Gyros, Moussaka, Fondue, Raclette, Porridge,
+Rice Pudding, Custard, Crumble, Trifle, Cheesecake, Brownies, Steak, Ribs, Barbecue
+
+[fruehstueck] Breakfast
+Bread, Roll, Toast, Croissant, Bagel, Muffin, Crumpet, Butter, Margarine, Jam, Marmalade, Honey, Chocolate Spread, Peanut
+Butter, Cheese, Cream Cheese, Yoghurt, Muesli, Granola, Porridge, Oats, Cornflakes, Cereal, Egg, Boiled Egg, Scrambled Eggs,
+Fried Egg, Poached Egg, Bacon, Sausage, Ham, Baked Beans, Hash Browns, Black Pudding, Mushrooms, Tomato, Pancakes, Waffles,
+French Toast, Fruit, Banana, Berries, Coffee, Tea, Cocoa, Hot Chocolate, Milk, Orange Juice, Apple Juice, Smoothie, Egg Cup,
+Teaspoon, Coffee Pot, Teapot, Mug, Cup, Saucer, Plate, Knife, Spoon, Fork, Napkin, Bread Basket, Toaster, Kettle, Coffee
+Machine, Sugar, Cream, Brunch, Full English, Kipper
+
+[backen] Baking and Sweets
+Cake, Gateau, Muffin, Cupcake, Biscuit, Cookie, Waffle, Brownie, Doughnut, Strudel, Apple Strudel, Cheesecake, Marble Cake,
+Sponge, Victoria Sponge, Swiss Roll, Fruitcake, Carrot Cake, Banana Bread, Scone, Flapjack, Shortbread, Tart, Pie, Crumble,
+Meringue, Macaron, Gingerbread, Stollen, Cinnamon Roll, Pastry, Dough, Batter, Flour, Sugar, Icing Sugar, Butter, Eggs, Milk,
+Yeast, Baking Powder, Vanilla, Cinnamon, Cocoa, Chocolate, Cream, Whipped Cream, Raisins, Almonds, Nuts, Sprinkles, Icing,
+Frosting, Glaze, Marzipan, Fondant, Mixing Bowl, Whisk, Mixer, Rolling Pin, Baking Tray, Cake Tin, Cookie Cutter, Oven,
+Baking Paper, Spatula, Piping Bag, Scales, Recipe, Sweets, Candy, Lollipop, Gummy Bears, Liquorice, Toffee, Fudge, Truffle,
+Caramel, Popcorn, Candyfloss, Ice Cream, Pudding, Mousse, Tiramisu, Jelly
+
+[getraenke] Drinks
+Water, Mineral Water, Sparkling Water, Tap Water, Juice, Apple Juice, Orange Juice, Grape Juice, Cranberry Juice, Squash,
+Lemonade, Cola, Soda, Fizzy Drink, Iced Tea, Tea, Peppermint Tea, Camomile Tea, Fruit Tea, Herbal Tea, Green Tea, Black Tea,
+Earl Grey, Coffee, Espresso, Cappuccino, Latte, Flat White, Mocha, Americano, Cocoa, Hot Chocolate, Milk, Buttermilk, Kefir,
+Milkshake, Smoothie, Beer, Ale, Lager, Cider, Wine, Red Wine, White Wine, Rosé, Champagne, Prosecco, Mulled Wine, Punch,
+Cocktail, Mocktail, Liqueur, Whisky, Ginger Beer, Root Beer, Elderflower, Lemon Squash, Energy Drink, Syrup, Straw, Glass,
+Mug, Cup, Bottle, Carafe, Jug, Ice Cubes, Lemon Slice, Flask, Teapot, Cheers
+
+[gewuerze] Herbs and Spices
+Salt, Pepper, Paprika, Curry, Cinnamon, Nutmeg, Cloves, Caraway, Cumin, Coriander, Cardamom, Aniseed, Star Anise, Fennel,
+Ginger, Turmeric, Saffron, Vanilla, Chilli, Cayenne, Garlic, Onion, Mustard, Horseradish, Bay Leaf, Juniper, Allspice, Basil,
+Oregano, Thyme, Rosemary, Sage, Marjoram, Parsley, Chives, Dill, Tarragon, Chervil, Lovage, Savory, Mint, Peppermint, Lemon
+Balm, Borage, Wild Garlic, Cress, Lavender, Camomile, Nettle, Dandelion, Sorrel, Lemongrass, Fenugreek, Capers, Sesame,
+Poppy Seeds, Linseed, Garam Masala, Za'atar, Sumac, Pepper Mill, Mortar, Pestle, Herb Garden, Herb Butter, Spice Rack, Pinch
+
+[kueche] In the Kitchen
+Cooker, Stove, Oven, Fridge, Freezer, Dishwasher, Microwave, Toaster, Kettle, Coffee Machine, Blender, Food Processor, Mixer,
+Scales, Saucepan, Pot, Frying Pan, Wok, Lid, Wooden Spoon, Spatula, Whisk, Ladle, Sieve, Colander, Grater, Peeler, Knife,
+Bread Knife, Chopping Board, Rolling Pin, Tin Opener, Bottle Opener, Corkscrew, Garlic Press, Lemon Squeezer, Plate, Bowl,
+Cup, Mug, Glass, Cutlery, Fork, Spoon, Teaspoon, Jug, Flask, Casserole Dish, Baking Tray, Bread Bin, Storage Jar, Spice Rack,
+Sink, Tap, Washing Up Liquid, Sponge, Tea Towel, Oven Glove, Apron, Cookbook, Recipe, Bin, Kitchen Roll, Cling Film,
+Tin Foil, Egg Timer, Cooker Hood, Worktop, Drawer, Cupboard, Pantry, Larder, Cooking, Frying, Baking, Stirring, Chopping,
+Peeling, Seasoning, Tasting
+
+== Nature ==
+[blumen] Flowers and Plants
+Rose, Tulip, Daffodil, Crocus, Snowdrop, Hyacinth, Lily of the Valley, Violet, Pansy, Daisy, Dandelion, Poppy, Cornflower,
+Marguerite, Camomile, Sunflower, Dahlia, Aster, Chrysanthemum, Lily, Iris, Orchid, Carnation, Geranium, Petunia, Begonia,
+Fuchsia, Lavender, Lilac, Hydrangea, Rhododendron, Azalea, Magnolia, Jasmine, Hibiscus, Marigold, Nasturtium, Forget Me Not,
+Bluebell, Foxglove, Delphinium, Lupin, Peony, Primrose, Cowslip, Anemone, Water Lily, Lotus, Edelweiss, Gentian, Heather,
+Thistle, Clover, Shamrock, Ivy, Fern, Moss, Cactus, Aloe, Bamboo, Grass, Reed, Blossom, Bud, Leaf, Stem, Root, Thorn, Pollen,
+Nectar, Seed, Bulb, Flowerpot, Bouquet, Vase, Watering Can, Wildflowers, Climbing Rose, Gerbera, Freesia, Amaryllis,
+Poinsettia, Honeysuckle, Wisteria, Sweet Pea, Snapdragon, Buttercup
+
+[baeume] Trees and Forest
+Oak, Beech, Birch, Lime, Linden, Maple, Ash, Alder, Elm, Poplar, Willow, Weeping Willow, Chestnut, Horse Chestnut, Walnut,
+Cherry Tree, Apple Tree, Pear Tree, Fir, Spruce, Pine, Larch, Yew, Cedar, Cypress, Redwood, Sequoia, Palm, Olive Tree,
+Plane Tree, Rowan, Elder, Hazel, Hornbeam, Juniper, Holly, Hawthorn, Sycamore, Magnolia, Eucalyptus, Baobab, Trunk, Bark,
+Branch, Twig, Leaf, Needle, Cone, Pine Cone, Acorn, Conker, Beechnut, Root, Crown, Canopy, Tree Rings, Resin, Sap, Bud,
+Foliage, Deciduous, Evergreen, Conifer, Woodland, Rainforest, Clearing, Forest Path, Ranger, Lumberjack, Saw, Axe, Firewood,
+Treehouse, Moss, Mushroom, Fern, Undergrowth, Forest Floor, Stump, Sapling, Seedling, Woodpecker, Squirrel
+
+[garten] In the Garden
+Lawn, Flowerbed, Vegetable Patch, Raised Bed, Hedge, Fence, Gate, Shed, Summerhouse, Pergola, Patio, Terrace, Decking, Pond,
+Fountain, Birdhouse, Bird Table, Birdbath, Bug Hotel, Compost Heap, Compost, Water Butt, Greenhouse, Cold Frame, Garden Gnome,
+Hammock, Deckchair, Sun Lounger, Parasol, Garden Chair, Garden Table, Barbecue, Swing, Sandpit, Slide, Trampoline, Paddling
+Pool, Lawnmower, Rake, Spade, Shovel, Hoe, Fork, Trowel, Secateurs, Shears, Hedge Trimmer, Wheelbarrow, Watering Can,
+Hosepipe, Sprinkler, Gloves, Flowerpot, Compost Bag, Fertiliser, Seeds, Seedlings, Weeds, Weeding, Watering, Planting, Sowing,
+Harvesting, Mowing, Digging, Strawberry Patch, Herb Garden, Fruit Tree, Berry Bush, Rose Arch, Rockery, Stepping Stone,
+Garden Path, Earthworm, Snail, Mole, Hedgehog, Robin, Bee, Bumblebee, Butterfly
+
+[wetter] Weather
+Sun, Sunshine, Rain, Drizzle, Downpour, Shower, Rainbow, Cloud, Storm Cloud, Fog, Mist, Haze, Wind, Breeze, Gale, Storm,
+Hurricane, Gust, Tornado, Typhoon, Cyclone, Thunderstorm, Lightning, Thunder, Hail, Sleet, Snow, Snowflake, Blizzard, Black
+Ice, Frost, Hoarfrost, Dew, Icicle, Heat, Heatwave, Drought, Cold, Warmth, Humidity, Temperature, Thermometer, Barometer, Air
+Pressure, High Pressure, Low Pressure, Forecast, Weather Report, Meteorologist, Weather Station, Wind Direction, Windsock,
+Weathervane, Umbrella, Raincoat, Wellies, Sunglasses, Sun Cream, Puddle, Mud, Flood, Avalanche, Cloudburst, Sunrise, Sunset,
+Dusk, Dawn, Twilight, Northern Lights, Aurora, Climate, Season, Monsoon, Trade Wind, Overcast, Sunny, Cloudy, Rainy, Windy,
+Foggy, Frosty, Snowy, Stormy, Muggy, Chilly
+
+[landschaft] Landscape and Nature
+Mountain, Mountains, Summit, Peak, Hill, Valley, Gorge, Ravine, Cliff, Rock, Cave, Volcano, Crater, Glacier, Waterfall, Spring,
+Stream, Brook, River, Lake, Pond, Moor, Marsh, Swamp, Bog, Sea, Ocean, Coast, Beach, Dune, Bay, Island, Peninsula, Lagoon, Reef,
+Desert, Oasis, Steppe, Savanna, Prairie, Jungle, Rainforest, Forest, Wood, Clearing, Meadow, Pasture, Field, Heath, Plain,
+Plateau, Canyon, Fjord, Delta, Estuary, Riverbank, Shore, Pebble, Gravel, Sand, Stone, Soil, Clay, Granite, Marble, Crystal,
+Horizon, Landscape, Panorama, View, Nature Reserve, National Park, Footpath, Trail, Bridge, Boardwalk, Mountain Lake, Alpine
+Meadow, Rolling Hills, Countryside, Woodland, Wetland, Tundra
+
+[weltall] Space
+Sun, Moon, Earth, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto, Planet, Dwarf Planet, Star, Constellation,
+Shooting Star, Comet, Asteroid, Meteor, Meteorite, Galaxy, Milky Way, Andromeda, Nebula, Supernova, Black Hole, Universe,
+Outer Space, Solar System, Orbit, Gravity, Crater, Lunar Eclipse, Solar Eclipse, Full Moon, New Moon, Half Moon, Crescent,
+Rocket, Spaceship, Space Station, Satellite, Space Probe, Rover, Astronaut, Cosmonaut, Spacesuit, Helmet, Countdown, Launch,
+Lift Off, Landing, Moon Landing, Telescope, Observatory, Planetarium, Astronomer, Light Year, North Star, Plough, Big Dipper,
+Orion, Cassiopeia, Rings, Moon Rock, Weightlessness, Alien, UFO, Extraterrestrial, Cosmos, Big Bang, Red Giant, White Dwarf,
+Starry Sky, Evening Star, Mission Control, Space Shuttle, Capsule
+
+== Seasons and Holidays ==
+[fruehling] Spring
+Spring, Springtime, March, April, May, Easter, Blossom, Bud, Crocus, Tulip, Daffodil, Snowdrop, Primrose, Violet, Daisy,
+Dandelion, Cherry Blossom, Apple Blossom, Magnolia, Forsythia, Catkins, Pussy Willow, Wild Garlic, Bee, Bumblebee, Butterfly,
+Ladybird, Birdsong, Nest, Chick, Lamb, Foal, Tadpole, Frogspawn, Stork, Swallow, Cuckoo, Blackbird, Spring Cleaning, Sowing,
+Seedling, Gardening, Bicycle, Walk, Shower, April Showers, Rainbow, Sunbeam, Equinox, Clocks Forward, Mother's Day, Maypole,
+May Day, Whitsun, Pentecost, Spring Fair, Wildflowers, Pollen, Hay Fever, Wellies, Light Jacket, Egg Hunt, Strawberry Plant,
+Asparagus, Rhubarb, Radish, Bluebells, Green Shoots, Fresh Air
+
+[sommer] Summer
+Summer, June, July, August, Sun, Heat, Sunshine, Holidays, Vacation, Beach, Sea, Sand, Sandcastle, Seashell, Wave, Swimsuit,
+Bikini, Swimming Trunks, Towel, Sunglasses, Sun Cream, Sunhat, Parasol, Deckchair, Beach Hut, Swimming Pool, Lido, Diving
+Board, Rubber Ring, Lilo, Armbands, Paddling Pool, Water Pistol, Ice Cream, Ice Lolly, Ice Cream Van, Cone, Strawberries,
+Cherries, Melon, Watermelon, Lemonade, Barbecue, Sausages, Picnic, Camping, Tent, Campfire, Thunderstorm, Mosquito, Wasp,
+Firefly, Shade, Summer Fete, Summer Holidays, Flip Flops, Sandals, Shorts, Sundress, Freckles, Sunburn, Barefoot, Hammock,
+Lake, Sprinkler, Bike Ride, Hike, Summer Night, Shooting Star, Blueberries, Harvest, Combine, Hay Bales, Sunflower, Lavender,
+Festival, Funfair, Sunset
+
+[herbst] Autumn
+Autumn, Fall, September, October, November, Leaves, Autumn Leaves, Chestnut, Conker, Acorn, Beechnut, Walnut, Hazelnut,
+Mushroom, Toadstool, Pumpkin, Pumpkin Soup, Apple, Pear, Plum, Grapes, Grape Harvest, Harvest, Harvest Festival, Thanksgiving,
+Kite, Kite Flying, Wind, Storm, Fog, Rain, Umbrella, Puddle, Wellies, Mud, Lantern, Bonfire, Bonfire Night, Fireworks,
+Halloween, Candle, Tea, Cocoa, Cardigan, Scarf, Woolly Hat, Migrating Birds, Geese, Hedgehog, Squirrel, Winter Store,
+Hibernation, Clocks Back, Rake, Leaf Pile, Leaf Blower, Apple Pie, Baked Apple, Roast Chestnuts, Rowan Berries, Rosehip,
+Half Term, Cobweb, Dusk, Crisp Air, Golden, Russet, Scarecrow, Cider, Blackberry Picking
+
+[winter] Winter
+Winter, December, January, February, Snow, Snowflake, Snowman, Snowball, Snowball Fight, Snow Angel, Blizzard, Ice, Black
+Ice, Frost, Hoarfrost, Icicle, Frost Flowers, Cold, Sledge, Sledging, Toboggan, Ice Skates, Ice Skating, Ice Rink, Skis,
+Skiing, Snowboard, Cross Country, Ski Lift, Slope, Snowshoe, Igloo, Woolly Hat, Scarf, Gloves, Mittens, Winter Coat, Boots,
+Jumper, Woolly Socks, Earmuffs, Fireplace, Log Fire, Stove, Heating, Hot Water Bottle, Blanket, Cosy, Tea, Hot Chocolate,
+Mulled Wine, Mince Pies, Gingerbread, Baked Apple, Advent, Christmas, New Year's Eve, New Year, Fireworks, Winter Sports,
+Hibernation, Bird Feeder, Robin, Snow Shovel, Grit, Gritter, Snowplough, Winter Tyres, Ice Scraper, Darkness, Northern
+Lights, Penguin, Polar Bear, Sniffles, Winter Holidays, Thermometer
+
+[weihnachten] Christmas
+Christmas, Christmas Eve, Christmas Day, Boxing Day, Advent, Advent Wreath, Advent Calendar, Candle, Christmas Tree, Fir Tree,
+Tinsel, Bauble, Fairy Lights, Star, Angel, Nativity, Crib, Manger, Baby Jesus, Mary, Joseph, Shepherds, Sheep, Ox, Donkey,
+Three Kings, Wise Men, Father Christmas, Santa Claus, Saint Nicholas, Reindeer, Rudolph, Sleigh, Elves, Elf, Present, Gift,
+Wrapping Paper, Ribbon, Bow, Wish List, Stocking, Chimney, Mince Pies, Christmas Pudding, Christmas Cake, Gingerbread,
+Gingerbread House, Candy Cane, Turkey, Stuffing, Cranberry Sauce, Roast Potatoes, Brussels Sprouts, Christmas Market,
+Mulled Wine, Eggnog, Snow, Bell, Jingle Bells, Carol, Carol Singers, Nativity Play, Midnight Mass, Church, Mistletoe, Holly,
+Ivy, Poinsettia, Nutcracker, Cracker, Paper Hat, Snow Globe, Wreath, Cinnamon, Cloves, Orange, Family, Pantomime, Card
+
+[ostern] Easter
+Easter, Easter Bunny, Easter Egg, Egg Hunt, Easter Basket, Easter Bonnet, Easter Lamb, Easter Sunday, Easter Monday, Good
+Friday, Maundy Thursday, Palm Sunday, Lent, Shrove Tuesday, Pancake Day, Hot Cross Buns, Simnel Cake, Resurrection, Church,
+Bells, Chick, Hen, Bunny, Rabbit, Lamb, Spring, Daffodil, Tulip, Crocus, Catkins, Pussy Willow, Chocolate, Chocolate Egg,
+Chocolate Bunny, Sugar Egg, Marzipan, Egg Dye, Painting, Decorating, Brush, Egg and Spoon Race, Egg Rolling, Egg Cup,
+Eggshell, Yolk, Cress, Easter Grass, Basket, Ribbon, Crafts, Easter Holidays, Family, Breakfast, Brunch, Easter Candle,
+Bunny Ears, Carrot, Meadow, Hiding Place
+
+[karneval] Carnival
+Carnival, Mardi Gras, Shrove Tuesday, Pancake Day, Ash Wednesday, Parade, Float, Procession, Sweets, Confetti, Streamers,
+Costume, Fancy Dress, Mask, Wig, Face Paint, Clown, Pirate, Princess, Cowboy, Witch, Wizard, Knight, Firefighter, Police
+Officer, Astronaut, Superhero, Vampire, Bee, Ladybird, Jester, Fool, Jester's Hat, Carnival Prince, Carnival Queen, Dancers,
+Marching Band, Drums, Samba, Feathers, Sequins, Glitter, Balloons, Doughnut, Fritters, Trumpet, Whistle, Party, Ball,
+Masquerade, Venice, Rio, Notting Hill, Dancing, Music, Celebration, Festival, Fireworks, Lanterns, Stilts, Juggler, Fun
+
+[halloween] Halloween
+Halloween, Pumpkin, Jack o' Lantern, Candle, Ghost, Spectre, Witch, Broomstick, Witch's Hat, Wizard, Vampire, Werewolf, Zombie,
+Mummy, Skeleton, Skull, Monster, Frankenstein, Goblin, Demon, Bat, Spider, Cobweb, Black Cat, Raven, Owl, Graveyard, Cemetery,
+Gravestone, Tombstone, Crypt, Coffin, Haunted House, Spooky Castle, Costume, Mask, Cape, Cloak, Face Paint, Fake Blood,
+Trick or Treat, Sweets, Candy, Lollipop, Gummy Worms, Cauldron, Potion, Curse, Spell, Midnight, Full Moon, Fog, Scary,
+Goosebumps, Scream, Howl, Party, Dressing Up, Carving, Autumn, October, Lantern, Ghost Story, Apple Bobbing, Toffee Apple
+
+[geburtstag] Birthdays and Parties
+Birthday, Party, Celebration, Present, Gift, Surprise, Wrapping Paper, Ribbon, Card, Congratulations, Invitation, Guests,
+Cake, Birthday Cake, Candles, Blow, Wish, Balloon, Bunting, Banner, Confetti, Streamers, Party Hat, Party Blower, Sparkler,
+Lantern, Music, Dancing, Singing, Games, Pass the Parcel, Musical Chairs, Musical Statues, Treasure Hunt, Sack Race,
+Egg and Spoon Race, Pin the Tail, Piñata, Party Bag, Children's Party, Anniversary, Wedding, Bride, Groom, Wedding Ring,
+Bouquet, Christening, Graduation, New Year's Eve, Fireworks, Rockets, Champagne, Toast, Cheers, Buffet, Barbecue, Garden
+Party, Street Party, Fete, Family Party, Photo Booth, Theme Party, Fancy Dress, Disco, Karaoke, Sleepover
+
+[kalender] Months and Days
+January, February, March, April, May, June, July, August, September, October, November, December, Monday, Tuesday,
+Wednesday, Thursday, Friday, Saturday, Sunday, Weekend, Weekday, Holiday, Bank Holiday, Week, Fortnight, Month, Year, Leap
+Year, Day, Night, Morning, Noon, Midday, Afternoon, Evening, Midnight, Hour, Minute, Second, Clock, Alarm Clock, Calendar,
+Date, Appointment, Birthday, Season, Spring, Summer, Autumn, Winter, Yesterday, Today, Tomorrow, Future, Past, Present,
+Century, Decade, Millennium, New Year, Easter, Christmas, Daybreak, Sunrise, Sunset, Dusk, Dawn, Twilight, Daylight Saving,
+Hourglass, Stopwatch, Wristwatch, Church Clock, Timetable, Diary, Schedule
+
+== People ==
+[koerper] The Body
+Head, Hair, Forehead, Eye, Eyebrow, Eyelash, Ear, Nose, Mouth, Lip, Tongue, Tooth, Teeth, Chin, Cheek, Jaw, Neck, Throat,
+Shoulder, Arm, Upper Arm, Elbow, Forearm, Wrist, Hand, Finger, Thumb, Index Finger, Fingernail, Chest, Belly, Tummy, Stomach,
+Belly Button, Back, Hip, Bottom, Leg, Thigh, Knee, Calf, Shin, Ankle, Foot, Heel, Toe, Sole, Skin, Muscle, Bone, Skeleton, Skull,
+Spine, Rib, Joint, Heart, Lungs, Liver, Kidney, Gut, Brain, Blood, Vein, Artery, Nerve, Tendon, Sweat, Breath, Pulse, Heartbeat,
+Pupil, Iris, Eardrum, Palate, Tonsils, Larynx, Voice, Armpit, Palm, Freckle, Mole, Dimple, Curl, Ponytail, Plait, Beard,
+Moustache, Eyelid, Knuckle, Fist
+
+[gesundheit] Health and the Doctor
+Doctor, GP, Paediatrician, Dentist, Optician, Vet, Hospital, Clinic, Surgery, Waiting Room, Appointment, Prescription,
+Pharmacy, Chemist, Pharmacist, Medicine, Tablet, Pill, Cough Syrup, Drops, Ointment, Cream, Injection, Jab, Vaccination,
+Plaster, Bandage, Gauze, Cast, Plaster Cast, Crutches, Wheelchair, Thermometer, Fever, Temperature, Cough, Cold, Sniffles,
+Flu, Sore Throat, Headache, Tummy Ache, Toothache, Allergy, Hay Fever, Measles, Chickenpox, Mumps, Injury, Wound, Bump,
+Bruise, Scratch, Sunburn, Nurse, Paramedic, Ambulance, Emergency, Operation, Surgeon, Anaesthetic, X-Ray, Ultrasound,
+Stethoscope, Blood Pressure, Check Up, Diagnosis, Therapy, Massage, Physiotherapy, Recovery, Bed Rest, Hot Water Bottle,
+Vitamins, Health, Fitness, Exercise, Sleep, Glasses, Hearing Aid, Braces
+
+[kleidung] Clothes
+Trousers, Jeans, Shorts, Skirt, Dress, Blouse, Shirt, T-Shirt, Jumper, Sweater, Pullover, Cardigan, Sweatshirt, Hoodie,
+Waistcoat, Vest, Jacket, Coat, Anorak, Raincoat, Parka, Leather Jacket, Blazer, Suit, Tie, Bow Tie, Scarf, Neckerchief, Hat,
+Cap, Beanie, Beret, Headband, Gloves, Mittens, Socks, Tights, Stockings, Pants, Knickers, Underpants, Pyjamas, Nightie,
+Dressing Gown, Swimsuit, Swimming Trunks, Bikini, Belt, Braces, Shoes, Boots, Wellies, Trainers, Sneakers, Sandals,
+Slippers, Flip Flops, Ballet Flats, High Heels, Leggings, Overalls, Dungarees, Uniform, Costume, Kilt, Poncho, Button,
+Zip, Collar, Sleeve, Pocket, Hood, Hem, Shoelace, Wardrobe, Hanger, Laundry, Washing Machine, Iron, Apron, Tracksuit
+
+[familie] Family and Friends
+Family, Mother, Mum, Mummy, Father, Dad, Daddy, Parents, Child, Children, Son, Daughter, Brother, Sister, Siblings, Twin,
+Baby, Grandma, Granny, Nan, Grandpa, Grandad, Grandmother, Grandfather, Grandparents, Grandson, Granddaughter, Grandchild,
+Great Grandmother, Great Grandfather, Uncle, Aunt, Auntie, Cousin, Nephew, Niece, Brother in Law, Sister in Law, Mother in
+Law, Father in Law, Stepmother, Stepfather, Stepbrother, Stepsister, Godmother, Godfather, Godchild, Husband, Wife, Couple,
+Bride, Groom, Fiancé, Friend, Best Friend, Neighbour, Mate, Pal, Buddy, Relatives, Relations, Family Tree, Generation,
+Wedding, Birth, Christening, Family Party, Family Photo, Home, Love, Hug, Kiss, Visit, Day Out, Games Night, Sunday Lunch, Pet
+
+[gefuehle] Feelings
+Joy, Happiness, Love, Affection, Gratitude, Pride, Courage, Hope, Contentment, Enthusiasm, Excitement, Anticipation,
+Surprise, Relief, Calm, Serenity, Peace, Security, Trust, Compassion, Empathy, Longing, Wanderlust, Homesickness, Curiosity,
+Wonder, Awe, Fun, Laughter, Smile, Grief, Sadness, Sorrow, Pain, Fear, Fright, Panic, Worry, Nerves, Stage Fright, Anger,
+Rage, Fury, Annoyance, Frustration, Disappointment, Jealousy, Envy, Shame, Guilt, Regret, Boredom, Loneliness,
+Embarrassment, Confusion, Impatience, Insecurity, Disgust, Pity, Admiration, Respect, Confidence, Optimism, Goosebumps,
+Butterflies, Tears, Hug, Comfort, Glee, Mischief, Silliness, Tiredness, Hunger, Thirst, Bliss, Delight, Cheerfulness
+
+[eigenschaften] Describing Words
+friendly, cheerful, funny, nice, kind, honest, brave, strong, clever, smart, wise, hardworking, tidy, punctual, polite,
+helpful, patient, quiet, calm, relaxed, curious, creative, imaginative, sporty, fast, slow, tall, short, big, small, thin, slim,
+old, young, beautiful, pretty, handsome, cheeky, wild, loud, shy, sad, angry, tired, lively, awake, hungry, thirsty, full,
+happy, content, proud, vain, lazy, messy, chaotic, forgetful, moody, anxious, nervous, serious, witty, silly, charming,
+generous, thrifty, stingy, modest, reliable, loyal, gentle, tender, loving, adventurous, sociable, chatty, clumsy, skilful,
+ambitious, excited, cosy, warmhearted, grumpy, jolly, sensible, bossy, careful, careless, fearless, playful, stubborn
+
+[berufe] Jobs
+Doctor, Teacher, Nursery Teacher, Police Officer, Firefighter, Baker, Pastry Chef, Butcher, Cook, Chef, Waiter, Waitress,
+Hairdresser, Barber, Bricklayer, Carpenter, Joiner, Roofer, Painter, Decorator, Electrician, Plumber, Locksmith, Mechanic,
+Chimney Sweep, Gardener, Farmer, Forester, Fisherman, Beekeeper, Winemaker, Vet, Zookeeper, Dentist, Pharmacist, Nurse,
+Carer, Midwife, Paramedic, Pilot, Flight Attendant, Train Driver, Bus Driver, Taxi Driver, Lorry Driver, Captain, Sailor,
+Postman, Postwoman, Shop Assistant, Cashier, Shopkeeper, Banker, Secretary, Accountant, Lawyer, Solicitor, Barrister, Judge,
+Journalist, Photographer, Reporter, Writer, Author, Poet, Musician, Singer, Actor, Actress, Dancer, Artist, Sculptor,
+Architect, Engineer, Programmer, Scientist, Researcher, Chemist, Astronaut, Soldier, Mayor, Priest, Vicar, Tailor, Optician,
+Goldsmith, Watchmaker, Caretaker, Cleaner, Crane Operator, Librarian, Coach, Referee, Detective, Magician, Clown, Florist,
+Plasterer, Builder, Surveyor, Designer, Translator, Dietitian, Lifeguard
+
+[vornamen] First Names
+Olivia, Emma, Amelia, Isla, Ava, Mia, Sophia, Grace, Lily, Freya, Ella, Charlotte, Poppy, Evie, Sophie, Ruby, Chloe, Emily,
+Jessica, Alice, Daisy, Florence, Isabella, Matilda, Rosie, Hannah, Lucy, Sarah, Rebecca, Laura, Katherine, Elizabeth, Margaret,
+Mary, Patricia, Jennifer, Linda, Barbara, Susan, Helen, Dorothy, Joan, Jean, Betty, Doris, Edith, Mabel, Agnes, Ethel, Irene,
+Oliver, George, Harry, Noah, Jack, Leo, Arthur, Muhammad, Oscar, Charlie, Jacob, Thomas, Henry, William, Alfie, Freddie,
+Theo, James, Joshua, Archie, Ethan, Isaac, Alexander, Samuel, Daniel, Edward, Joseph, Benjamin, Lucas, Max, Robert, John,
+Michael, David, Richard, Charles, Peter, Paul, Mark, Stephen, Andrew, Christopher, Matthew, Anthony, Kevin, Brian, Albert,
+Frank, Harold, Walter, Ernest, Stanley, Frederick, Reginald, Wilfred
+
+== Home and Everyday Life ==
+[haus] House and Home
+House, Flat, Apartment, Room, Living Room, Lounge, Bedroom, Nursery, Bathroom, Kitchen, Dining Room, Study, Office, Hall,
+Hallway, Landing, Cellar, Basement, Attic, Loft, Garage, Balcony, Patio, Stairs, Staircase, Lift, Door, Front Door, Window,
+Windowsill, Wall, Ceiling, Floor, Carpet, Rug, Floorboards, Tiles, Roof, Chimney, Fireplace, Radiator, Heater, Socket, Light
+Switch, Lamp, Ceiling Light, Floor Lamp, Curtain, Blind, Shutter, Sofa, Settee, Couch, Armchair, Chair, Table, Dining Table,
+Desk, Bed, Pillow, Cushion, Duvet, Mattress, Bedside Table, Cupboard, Wardrobe, Chest of Drawers, Shelf, Bookcase, Mirror,
+Picture, Clock, Television, Bath, Shower, Washbasin, Sink, Toilet, Tap, Towel, Letterbox, Doorbell, Door Handle, Key, Garden,
+Fence, Yard, Driveway, Shed, Conservatory, Neighbour, Removal, Tenant, Landlord, Doormat, Hallstand
+
+[haushalt] Housework
+Vacuum Cleaner, Hoover, Broom, Dustpan, Brush, Mop, Bucket, Cloth, Sponge, Scrubbing Brush, Duster, Feather Duster,
+Cleaning Spray, Washing Up Liquid, Glass Cleaner, Washing Powder, Fabric Softener, Washing Machine, Tumble Dryer, Clothes
+Horse, Washing Line, Clothes Peg, Laundry Basket, Iron, Ironing Board, Dishwasher, Dishes, Washing Up, Drying Up, Bin, Bin
+Bag, Recycling, Compost Bin, Bottle Bank, Shopping List, Shopping Bag, Pantry, Fridge, Freezer, Tidying, Cleaning, Hoovering,
+Dusting, Mopping, Washing, Ironing, Cooking, Window Cleaning, Spring Cleaning, Order, Drawer, Hanger, Sewing Kit, Needle,
+Thread, Scissors, Light Bulb, Battery, Toolbox, Watering Plants, Bedding, Sheets, Pillowcase, Towel, Tablecloth, Napkin,
+Chores, Rubber Gloves, Kitchen Roll, Tea Towel
+
+[werkzeug] Tools and DIY
+Hammer, Pliers, Screwdriver, Spanner, Wrench, Allen Key, Saw, Handsaw, Jigsaw, Circular Saw, Drill, Cordless Drill, Drill
+Bit, Sandpaper, Sander, File, Rasp, Plane, Chisel, Axe, Hatchet, Filler, Scraper, Trowel, Paintbrush, Roller, Paint, Varnish,
+Glue, Tape, Duct Tape, Masking Tape, Screw, Nut, Bolt, Nail, Rawlplug, Washer, Rivet, Hinge, Ruler, Tape Measure, Spirit
+Level, Set Square, Pencil, Craft Knife, Stanley Knife, Vice, Workbench, Workshop, Toolbox, Ladder, Stepladder, Wheelbarrow,
+Shovel, Spade, Crowbar, Soldering Iron, Cable, Extension Lead, Torch, Safety Goggles, Gloves, Hard Hat, Ear Defenders,
+Tradesman, DIY, Hardware Store, Wood, Plank, Batten, Beam, Plywood, Metal, Wire, Hose, Sawdust, Clamp, Mallet
+
+[schule] School
+School, Class, Classroom, Teacher, Pupil, Student, Head Teacher, Headmistress, Caretaker, Break, Playtime, Playground,
+Timetable, Lesson, Homework, Test, Exam, Spelling Test, Report, Mark, Grade, School Bag, Satchel, Backpack, Pencil Case,
+Pencil, Coloured Pencil, Fountain Pen, Biro, Felt Tip, Highlighter, Rubber, Eraser, Sharpener, Ruler, Protractor, Compass,
+Scissors, Glue, Glue Stick, Exercise Book, Notebook, Jotter, Book, Textbook, Dictionary, Atlas, Blackboard, Chalk, Whiteboard,
+Projector, Desk, Chair, Maths, English, French, German, Spanish, Science, Biology, Chemistry, Physics, History, Geography,
+Art, Music, Drama, Sport, PE, Religious Education, Computing, Gym, Library, Canteen, Dining Hall, Assembly, Hall, School Trip,
+Sports Day, School Fair, First Day, Holidays, Register, Reading, Writing, Arithmetic, Uniform, Lunchbox, Calculator, Globe
+
+[buero] At the Office
+Office, Desk, Office Chair, Computer, Screen, Monitor, Keyboard, Mouse, Mouse Mat, Laptop, Printer, Scanner, Photocopier,
+Telephone, Mobile, Headset, Calendar, Diary, Notepad, Sticky Note, Pen, Pencil, Highlighter, Ruler, Hole Punch, Stapler,
+Staple, Paper Clip, Drawing Pin, Pinboard, Whiteboard, Flip Chart, Folder, Ring Binder, Filing Cabinet, Drawer, Envelope,
+Stamp, Rubber Stamp, Ink Pad, Wastepaper Basket, Shredder, Coffee Machine, Coffee Cup, Meeting, Conference, Presentation,
+Minutes, Report, Spreadsheet, Invoice, Letter, Email, Password, Colleague, Boss, Manager, Reception, Receptionist, Lunch
+Break, Overtime, Salary, Payslip, Holiday, Deadline, Agenda, Memo, Contract, Signature, Briefcase, Lanyard, Water Cooler
+
+[einkaufen] Shopping
+Supermarket, Bakery, Butcher's, Market, Newsagent, Chemist, Pharmacy, Bookshop, Department Store, Shopping Centre, Mall,
+Boutique, Shop, Store, Shop Window, Trolley, Basket, Shopping Bag, Shopping List, Till, Checkout, Cashier, Receipt, Money,
+Coin, Note, Change, Purse, Wallet, Bank Card, Credit Card, Voucher, Discount, Offer, Special Offer, Bargain, Price, Price Tag,
+Sale, Clearance, Refund, Exchange, Loyalty Card, Shop Assistant, Customer, Counter, Shelf, Aisle, Fridge, Freezer, Scales,
+Carrier Bag, Paper Bag, Tote Bag, Deposit, Opening Hours, Car Park, Escalator, Changing Room, Fitting Room, Size, Order,
+Delivery, Parcel, Online Shop, Queue, Self Checkout
+
+[stadt] In Town
+Town, City, Street, Road, Lane, Avenue, Square, Market Square, Town Hall, Church, Cathedral, Fountain, Monument, Statue,
+Museum, Theatre, Cinema, Opera House, Library, School, Nursery, Hospital, Police Station, Fire Station, Post Office, Bank,
+Station, Bus Station, Bus Stop, Tower Block, Skyscraper, Pedestrian Zone, High Street, Pavement, Cycle Path, Traffic Lights,
+Zebra Crossing, Crossroads, Junction, Roundabout, Bridge, Tunnel, Car Park, Petrol Station, Hotel, Restaurant, Cafe, Pub,
+Takeaway, Bakery, Supermarket, Pharmacy, Hairdresser, Park, Playground, Zoo, Swimming Pool, Stadium, Sports Centre, Factory,
+Harbour, Port, Airport, Tram, Underground, Tube, Metro, Taxi, Bus, Lamppost, Litter Bin, Bench, Map, City Centre, Old Town,
+Suburb, City Wall, Gate, Tower, Church Tower, Clock Tower, Postbox, Phone Box
+
+== Out and About ==
+[fahrzeuge] Vehicles
+Car, Bus, Lorry, Truck, Van, Pickup, Camper Van, Motorhome, Caravan, Trailer, Tractor, Digger, Excavator, Crane, Bulldozer,
+Cement Mixer, Dumper Truck, Forklift, Combine Harvester, Bin Lorry, Fire Engine, Ambulance, Police Car, Tow Truck, Taxi,
+Limousine, Convertible, Sports Car, Racing Car, Jeep, Minibus, Motorbike, Scooter, Moped, Bicycle, Bike, Mountain Bike,
+Racing Bike, Tandem, Tricycle, Balance Bike, Unicycle, Skateboard, Rollerblades, Train, Railway, Locomotive, Steam Engine,
+Goods Train, Tram, Underground, Cable Car, Gondola, Chairlift, Aeroplane, Plane, Jet, Helicopter, Glider, Hot Air Balloon,
+Airship, Rocket, Ship, Boat, Ferry, Cruise Ship, Sailing Boat, Speedboat, Rowing Boat, Canoe, Kayak, Pedalo, Dinghy,
+Freighter, Tanker, Steamer, Yacht, Raft, Submarine, Carriage, Cart, Sledge, Rickshaw, Snowmobile, Hovercraft, Double Decker
+
+[reisen] Travel and Holidays
+Holiday, Vacation, Trip, Journey, Day Trip, Tour, City Break, Cruise, Package Holiday, Walking Holiday, Suitcase, Backpack,
+Travel Bag, Hand Luggage, Passport, Identity Card, Visa, Ticket, Boarding Pass, Airport, Aeroplane, Departure, Arrival,
+Gate, Check In, Baggage Claim, Customs, Station, Platform, Train, Ferry, Harbour, Hotel, Guest House, Holiday Flat, Hostel,
+Campsite, Room, Reception, Breakfast Buffet, Half Board, Guidebook, Map, City Map, Compass, Sat Nav, Camera, Photo, Souvenir,
+Postcard, Sights, Sightseeing, Museum, Beach, Sea, Mountains, View, Sunglasses, Sun Cream, Swimwear, First Aid Kit, Foreign
+Language, Phrasebook, Currency, Exchange Rate, Abroad, Border, Adventure, Relaxation, Journey Home, Wanderlust, Destination,
+Tourist, Jet Lag, Itinerary, Road Trip
+
+[camping] Camping and Outdoors
+Tent, Tent Peg, Tent Pole, Groundsheet, Sleeping Bag, Sleeping Mat, Air Bed, Pillow, Camping Chair, Camping Table, Camping
+Stove, Gas Stove, Pan, Water Bottle, Flask, Cool Box, Torch, Head Torch, Lantern, Battery, Penknife, Rope, Carabiner, Compass,
+Map, Rucksack, Hiking Boots, Raincoat, Insect Repellent, Sun Cream, Campfire, Firewood, Matches, Marshmallows, Sausages,
+Barbecue, Charcoal, Caravan, Motorhome, Campsite, Shower Block, Warden, Awning, Hammock, Starry Sky, Night Walk, Glowworm,
+Owl, Frogs, Stream, Lake, Forest, Clearing, Guitar, Campfire Song, Adventure, Scouts, Girl Guides, First Aid, Plaster, Water
+Carrier, Washing Up Bowl, Mallet, Billy Can, Tarp, Bivvy
+
+[wandern] Hiking and Mountains
+Hiking, Hike, Walk, Ramble, Mountain Tour, Summit, Summit Cross, Mountain, Mountains, Alps, Hut, Mountain Hut, Chalet,
+Pasture, Cowbell, Footpath, Trail, Path, Hairpin Bend, Signpost, Waymark, Hiking Map, Compass, Rucksack, Hiking Boots,
+Walking Pole, Water Bottle, Packed Lunch, Provisions, Raincoat, Sunhat, Mountain Lake, Waterfall, Gorge, Ravine, Ridge,
+Rock Face, Scree, Glacier, Snowfield, Cable Car, Chairlift, Gondola, Mountain Guide, Climber, Via Ferrata, Rope, Helmet,
+Carabiner, Ibex, Chamois, Marmot, Eagle, Edelweiss, Gentian, Alpine Rose, View, Panorama, Binoculars, Altitude, Ascent,
+Descent, Rest, Break, Summit Book, Mountain Rescue, Sea of Clouds, Sunrise, Blister, Stile, Cairn, Moorland
+
+== World ==
+[laender] Countries
+Germany, Austria, Switzerland, France, Italy, Spain, Portugal, Belgium, Netherlands, Luxembourg, Denmark, Sweden, Norway,
+Finland, Iceland, Ireland, England, Scotland, Wales, Poland, Czechia, Slovakia, Hungary, Slovenia, Croatia, Serbia, Bosnia,
+Montenegro, Albania, Greece, Bulgaria, Romania, Moldova, Ukraine, Belarus, Lithuania, Latvia, Estonia, Russia, Turkey,
+Cyprus, Malta, Georgia, Armenia, Israel, Jordan, Lebanon, Syria, Iraq, Iran, Saudi Arabia, Yemen, Oman, Qatar, Egypt, Libya,
+Tunisia, Algeria, Morocco, Mauritania, Senegal, Mali, Niger, Nigeria, Ghana, Cameroon, Congo, Kenya, Tanzania, Uganda,
+Ethiopia, Somalia, Sudan, Angola, Zambia, Zimbabwe, Namibia, Botswana, South Africa, Madagascar, India, Pakistan,
+Afghanistan, Nepal, Bangladesh, Sri Lanka, China, Japan, Korea, Mongolia, Vietnam, Thailand, Cambodia, Laos, Myanmar,
+Malaysia, Singapore, Indonesia, Philippines, Australia, New Zealand, Canada, United States, Mexico, Cuba, Jamaica, Guatemala,
+Honduras, Panama, Colombia, Venezuela, Ecuador, Peru, Bolivia, Brazil, Paraguay, Uruguay, Argentina, Chile, Greenland,
+Liechtenstein, Monaco, Andorra, San Marino, Vatican
+
+[hauptstaedte] Capital Cities
+Berlin, Vienna, Bern, Paris, Rome, Madrid, Lisbon, Brussels, Amsterdam, Luxembourg, Copenhagen, Stockholm, Oslo, Helsinki,
+Reykjavik, Dublin, London, Edinburgh, Cardiff, Belfast, Warsaw, Prague, Bratislava, Budapest, Ljubljana, Zagreb, Belgrade,
+Sarajevo, Podgorica, Tirana, Athens, Sofia, Bucharest, Kyiv, Minsk, Vilnius, Riga, Tallinn, Moscow, Ankara, Nicosia, Valletta,
+Tbilisi, Yerevan, Cairo, Tunis, Algiers, Rabat, Dakar, Abuja, Accra, Nairobi, Kampala, Addis Ababa, Pretoria, Cape Town,
+Windhoek, New Delhi, Islamabad, Kabul, Kathmandu, Beijing, Tokyo, Seoul, Bangkok, Hanoi, Manila, Jakarta, Canberra,
+Wellington, Ottawa, Washington, Mexico City, Havana, Bogota, Caracas, Quito, Lima, La Paz, Brasilia, Buenos Aires, Santiago,
+Montevideo, Tehran, Baghdad, Damascus, Beirut, Amman, Jerusalem, Riyadh, Doha, Abu Dhabi, Muscat, Vaduz, Monaco, Andorra
+
+[usa] United States
+Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois,
+Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri,
+Montana, Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina, North Dakota, Ohio, Oklahoma,
+Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington,
+West Virginia, Wisconsin, Wyoming, Chicago, Boston, Seattle, Houston, Dallas, Denver, Miami, Atlanta, Detroit, Phoenix,
+Las Vegas, San Francisco, Los Angeles, Philadelphia, Nashville, Memphis, New Orleans, Baltimore, Portland, Austin, Hollywood,
+Broadway, Grand Canyon, Yellowstone, Niagara Falls, Mount Rushmore, Statue of Liberty, Golden Gate, Route Sixty Six
+
+[geografie] Geography
+Continent, Europe, Asia, Africa, America, Australia, Antarctica, Arctic, North Pole, South Pole, Equator, Latitude, Longitude,
+Globe, World Map, Atlas, Compass, North, South, East, West, Ocean, Atlantic, Pacific, Indian Ocean, Mediterranean, North Sea,
+Baltic, Caribbean, Amazon, Nile, Mississippi, Yangtze, Volga, Danube, Rhine, Thames, Himalayas, Mount Everest, Andes, Rockies,
+Alps, Pyrenees, Carpathians, Urals, Sahara, Gobi, Kalahari, Grand Canyon, Niagara Falls, Victoria Falls, Kilimanjaro, Etna,
+Vesuvius, Mount Fuji, Matterhorn, Mont Blanc, Ben Nevis, Snowdon, Greenland, Iceland, Madagascar, Sicily, Sardinia, Corsica,
+Crete, Majorca, Hawaii, Galapagos, Tasmania, Volcano, Earthquake, Tectonic Plate, Climate Zone, Tropics, Arctic Circle,
+Tropic, Time Zone, Capital, Border, Island, Peninsula, Strait, Channel, Panama Canal, Suez Canal
+
+== Free Time ==
+[sport] Sports
+Football, Soccer, Handball, Basketball, Volleyball, Beach Volleyball, Tennis, Table Tennis, Badminton, Squash, Golf, Crazy Golf,
+Hockey, Ice Hockey, Rugby, Baseball, Cricket, Netball, Rounders, Swimming, Diving, Water Polo, Rowing, Canoeing, Kayaking,
+Sailing, Surfing, Windsurfing, Kitesurfing, Water Skiing, Gymnastics, Athletics, Running, Jogging, Marathon, Sprint, Hurdles,
+Long Jump, High Jump, Pole Vault, Shot Put, Javelin, Discus, Cycling, Mountain Biking, Horse Riding, Dressage, Show Jumping,
+Boxing, Wrestling, Judo, Karate, Taekwondo, Fencing, Archery, Climbing, Bouldering, Mountaineering, Hiking, Skiing, Cross
+Country, Biathlon, Ski Jumping, Snowboarding, Sledging, Bobsleigh, Figure Skating, Speed Skating, Curling, Yoga, Pilates,
+Aerobics, Dancing, Ballet, Skittles, Bowling, Billiards, Snooker, Darts, Chess, Skateboarding, Rollerblading, Triathlon,
+Fitness, Weightlifting, Frisbee, Bowls, Croquet, Lacrosse
+
+[fussball] Football
+Football, Ball, Goal, Goalkeeper, Keeper, Striker, Forward, Defender, Midfielder, Defence, Captain, Manager, Coach, Referee,
+Linesman, Assistant Referee, Whistle, Kick Off, Final Whistle, Half Time, Extra Time, Penalty, Penalty Shootout, Free Kick,
+Corner, Throw In, Goal Kick, Offside, Foul, Yellow Card, Red Card, Sending Off, Stand, Stadium, Pitch, Grass, Goal Line,
+Halfway Line, Penalty Area, Centre Circle, Post, Crossbar, Net, Shirt, Kit, Socks, Shin Pads, Boots, Studs, Gloves, Fans,
+Scarf, Supporters, Trophy, Cup, League, Championship, Premier League, World Cup, Table, Points, Draw, Win, Defeat, Header,
+Bicycle Kick, Volley, Cross, Pass, Dribble, Scorer, Hat Trick, Celebration, Team, Club, Training, Line Up, Substitute,
+Substitution, Bench, Stoppage Time, VAR, Tackle, Save
+
+[spielzeug] Toys and Games
+Doll, Dolls House, Pram, Teddy, Teddy Bear, Cuddly Toy, Soft Toy, Building Blocks, Lego, Construction Set, Jigsaw, Puzzle,
+Marbles, Spinning Top, Yo-Yo, Ball, Skipping Rope, Hula Hoop, Kite, Bubbles, Play Dough, Paints, Crayons, Colouring Book,
+Toy Car, Racing Track, Train Set, Wooden Railway, Digger, Fire Engine, Castle, Pirate Ship, Toy Shop, Play Kitchen, Puppet,
+Glove Puppet, Marionette, Hobby Horse, Rocking Horse, Scooter, Balance Bike, Tricycle, Swing, Slide, Seesaw, Sandpit, Bucket,
+Spade, Sand Moulds, Board Game, Card Game, Dice, Counter, Memory, Dominoes, Pick Up Sticks, Chess, Draughts, Checkers,
+Ludo, Snakes and Ladders, Monopoly, Scrabble, Top Trumps, Bingo, Hide and Seek, Tag, Tig, Hopscotch, Musical Chairs, Blind
+Man's Buff, Magic Set, Science Kit, Games Console, Kaleidoscope, Music Box, Rattle, Jack in the Box, Frisbee, Water Pistol
+
+[musik] Music and Instruments
+Music, Song, Melody, Rhythm, Beat, Bar, Note, Sheet Music, Clef, Scale, Chord, Piano, Grand Piano, Organ, Keyboard, Accordion,
+Harmonica, Guitar, Electric Guitar, Bass, Double Bass, Violin, Fiddle, Viola, Cello, Harp, Lute, Mandolin, Banjo, Ukulele,
+Zither, Flute, Recorder, Clarinet, Oboe, Bassoon, Saxophone, Trumpet, Trombone, French Horn, Tuba, Bagpipes, Drums, Drum
+Kit, Kettle Drum, Cymbals, Triangle, Xylophone, Glockenspiel, Tambourine, Maracas, Castanets, Bongos, Choir, Orchestra,
+Band, Brass Band, Conductor, Baton, Singer, Soloist, Duet, Concert, Opera, Musical, Stage, Microphone, Loudspeaker,
+Headphones, Radio, Record, Record Player, Classical, Jazz, Rock, Pop, Folk, Country, Blues, Waltz, March, Ballad, Chorus,
+Verse, Composer, Music School, Rehearsal
+
+[hobbys] Hobbies
+Reading, Writing, Painting, Drawing, Crafts, Knitting, Crochet, Sewing, Embroidery, Pottery, Photography, Filming, Singing,
+Dancing, Playing Music, Gardening, Cooking, Baking, Fishing, Angling, Hiking, Cycling, Swimming, Riding, Climbing, Jogging,
+Yoga, Camping, Travelling, Collecting, Stamps, Coins, Jigsaws, Puzzles, Crosswords, Sudoku, Chess, Card Games, Board Games,
+Bowling, Model Making, Model Railway, DIY, Woodwork, Whittling, Birdwatching, Stargazing, Beekeeping, Acting, Magic Tricks,
+Juggling, Geocaching, Cinema, Concerts, Museums, Video Games, Blogging, Podcasts, Volunteering, Choir, Club, Walking, Brain
+Training, Family History, Calligraphy, Origami, Macrame, Jewellery, Beads, Kite Flying, Quizzes, Bingo
+
+[basteln] Arts and Crafts
+Paper, Card, Cardboard, Crepe Paper, Tissue Paper, Tracing Paper, Shiny Paper, Scissors, Glue, Glue Stick, PVA Glue, Glue Gun,
+Sticky Tape, Sellotape, Paintbrush, Paint, Watercolours, Finger Paint, Acrylic Paint, Paint Box, Water Pot, Canvas, Easel,
+Palette, Pencil, Coloured Pencils, Crayons, Felt Tips, Chalk, Rubber, Ruler, Compass, Stencil, Stamp, Glitter, Sequins,
+Beads, Buttons, Wool, Thread, Felt, Fabric, Pipe Cleaners, Googly Eyes, Pompoms, Feathers, Cotton Wool, Foam Sheet, Salt
+Dough, Play Dough, Clay, Plaster, Papier Mache, Origami, Paper Chain, Lantern, Mobile, Collage, Mosaic, Window Picture,
+Potato Print, Decoupage, Template, Box, Toilet Roll, Egg Box, Cork, Lolly Sticks, Paper Plate, Bunting
+
+[farben] Colours and Shapes
+Red, Blue, Yellow, Green, Orange, Purple, Violet, Pink, Brown, Black, White, Grey, Silver, Gold, Beige, Turquoise, Magenta,
+Ochre, Burgundy, Maroon, Cherry Red, Scarlet, Crimson, Sky Blue, Light Blue, Dark Blue, Navy, Royal Blue, Light Green, Dark
+Green, Olive, Mint, Emerald, Lime, Lemon, Mustard, Apricot, Salmon, Coral, Peach, Lilac, Lavender, Plum, Aubergine, Chocolate,
+Chestnut, Charcoal, Ivory, Cream, Rainbow, Colour Wheel, Circle, Square, Triangle, Rectangle, Diamond, Rhombus, Oval, Ellipse,
+Star, Heart, Pentagon, Hexagon, Octagon, Cube, Sphere, Cone, Cylinder, Pyramid, Cuboid, Spiral, Wave, Dot, Line, Curve,
+Corner, Edge, Surface, Crescent, Arrow, Cross
+
+[zirkus] Circus and Funfair
+Circus, Big Top, Ring, Arena, Ringmaster, Clown, Red Nose, Acrobat, Trapeze, Trapeze Artist, Tightrope, Tightrope Walker,
+High Wire, Juggler, Magician, Magic Trick, Fire Eater, Knife Thrower, Lion Tamer, Lion, Tiger, Elephant, Horses, Pony,
+Sea Lion, Poodle, Bareback Rider, Unicycle, Stilts, Human Pyramid, Somersault, Drum Roll, Applause, Audience, Ticket,
+Popcorn, Candyfloss, Circus Wagon, Funfair, Fair, Carnival, Fete, Carousel, Merry Go Round, Big Wheel, Ferris Wheel, Roller
+Coaster, Bumper Cars, Dodgems, Ghost Train, Chair Swing, Swing Boat, Tombola, Raffle, Coconut Shy, Hook a Duck, Hoopla,
+Toffee Apple, Hot Dog, Showman, Hall of Mirrors, Helter Skelter, Waltzer, Teacups, Prize, Goldfish
+
+== Fantasy and History ==
+[maerchen] Fairy Tales and Legends
+Fairy Tale, Legend, Myth, Fable, Magic, Wizard, Witch, Fairy, Elf, Dwarf, Giant, Troll, Goblin, Pixie, Gnome, Dragon,
+Unicorn, Mermaid, Prince, Princess, King, Queen, Emperor, Palace, Castle, Tower, Dungeon, Enchanted Forest, Magic Wand,
+Spell, Curse, Treasure, Gold Coins, Mirror, Apple, Spindle, Well, Frog Prince, Snow White, Cinderella, Rapunzel, Sleeping
+Beauty, Little Red Riding Hood, Hansel, Gretel, Gingerbread House, Rumpelstiltskin, Mother Holle, Goldilocks, Three Bears,
+Jack and the Beanstalk, Beanstalk, Puss in Boots, Big Bad Wolf, Grandmother, Huntsman, Stepmother, Seven Dwarfs, Glass
+Slipper, Pumpkin, Coach, Midnight, Arabian Nights, Aladdin, Magic Lamp, Genie, Flying Carpet, Sinbad, Ali Baba, Pegasus,
+Phoenix, Griffin, Cyclops, Minotaur, Centaur, King Arthur, Merlin, Excalibur, Robin Hood, Sherwood, Pied Piper, Peter Pan,
+Tinkerbell, Fairy Godmother, Ogre
+
+[ritter] Knights and Castles
+Knight, Castle, Fortress, Lady, Squire, Page, Lord, Baron, King, Queen, Prince, Princess, Duke, Earl, Count, Armour, Chain
+Mail, Helmet, Visor, Shield, Coat of Arms, Sword, Lance, Spear, Battleaxe, Mace, Crossbow, Bow, Arrow, Quiver, Steed,
+Warhorse, Saddle, Tournament, Joust, Banner, Flag, Moat, Drawbridge, Portcullis, Gatehouse, Keep, Tower, Battlements, Wall,
+Rampart, Arrow Slit, Dungeon, Great Hall, Courtyard, Well, Blacksmith, Forge, Jester, Minstrel, Troubadour, Chapel, Monk,
+Monastery, Middle Ages, Medieval, Torch, Candlestick, Feast, Banquet, Siege, Catapult, Trebuchet, Battering Ram, Treasury,
+Crown, Sceptre, Throne, Dragon, Crusade, Honour, Loyalty, Knighthood, Chivalry, Round Table, Herald
+
+[piraten] Pirates
+Pirate, Buccaneer, Captain, Helmsman, Sailor, Cabin Boy, Ship's Cook, Pirate Ship, Sailing Ship, Galleon, Frigate, Rowing
+Boat, Dinghy, Sail, Mast, Lookout, Crow's Nest, Rigging, Rope Ladder, Anchor, Ship's Wheel, Compass, Telescope, Treasure Map,
+Treasure, Treasure Chest, Gold Coins, Doubloons, Pieces of Eight, Gems, Pearls, Jewels, Island, Treasure Island, Palm Tree,
+Cave, Cove, Cannon, Cannonball, Cutlass, Sabre, Pistol, Musket, Eye Patch, Wooden Leg, Hook, Bandana, Tricorn Hat, Skull and
+Crossbones, Jolly Roger, Parrot, Rum, Plank, Walk the Plank, Mutiny, Galley, Cabin, Hold, Message in a Bottle, Storm, Wave,
+Wreck, Shipwreck, Harbour, Tavern, Booty, Loot, Boarding, Ahoy, Landlubber, Deck, Bow, Stern
+
+== Technology ==
+[computer] Computers and the Internet
+Computer, Laptop, Tablet, Smartphone, Mobile Phone, Screen, Monitor, Keyboard, Mouse, Touchpad, Printer, Scanner, Speaker,
+Headphones, Microphone, Webcam, Camera, Charger, Cable, Battery, Hard Drive, Memory, Processor, Graphics Card, Chip, Circuit
+Board, Plug, Socket, Router, Modem, WiFi, Internet, Network, Server, Cloud, Website, Browser, Search Engine, Link, Download,
+Upload, File, Folder, Document, Program, App, Software, Update, Password, Username, Account, Login, Screensaver, Desktop,
+Icon, Window, Menu, Key, Space Bar, Enter Key, Cursor, Click, Double Click, Email, Message, Chat, Video Call, Emoji, Game,
+Video Game, Console, Controller, Joystick, Robot, Programming, Code, Algorithm, Database, Virus, Firewall, Backup, Bluetooth,
+Memory Card, USB Stick, Ink Cartridge, Pixel, Byte, Gigabyte, Spreadsheet
+
+[baustelle] Building Site
+Building Site, Construction Site, Digger, Excavator, Crane, Tower Crane, Loader, Bulldozer, Roller, Dumper, Lorry, Cement
+Mixer, Concrete Pump, Forklift, Jackhammer, Pneumatic Drill, Compactor, Builder, Foreman, Crane Operator, Bricklayer,
+Carpenter, Roofer, Electrician, Architect, Plan, Blueprint, Foundations, Cellar, Pit, Shell, Scaffolding, Ladder, Wall,
+Brick, Mortar, Concrete, Cement, Sand, Gravel, Steel, Girder, Beam, Roof Truss, Roof Tile, Window, Wheelbarrow, Shovel,
+Spade, Trowel, Spirit Level, Hammer, Hard Hat, High Vis Jacket, Safety Boots, Barrier, Hoarding, Warning Sign, Traffic
+Cone, Site Hut, Skip, Container, Topping Out, Foundation Stone, New Build, Skyscraper, Bridge, Tunnel, Road Works, Tarmac,
+Asphalt, Drill, Pipe, Drain

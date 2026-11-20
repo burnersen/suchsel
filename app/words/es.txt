@@ -1,0 +1,455 @@
+# Suchsel – vocabulario español
+# «== Grupo ==», luego «[id] Nombre del tema» y las palabras separadas por comas. Los acentos desaparecen en la cuadrícula, la Ñ se queda.
+
+== Animales ==
+[haustiere] Mascotas
+Perro, Gato, Ratón, Hámster, Conejo, Cobaya, Conejillo de Indias, Periquito, Pez dorado, Tortuga, Caballo, Poni, Rata,
+Hurón, Canario, Loro, Chinchilla, Jerbo, Lagarto, Geco, Iguana, Serpiente, Ajolote, Gatito, Cachorro, Potro, Correa,
+Collar, Cesta, Jaula, Comedero, Cuenco, Caseta, Arenero, Acuario, Terrario, Golosina, Cepillo, Veterinario, Bigotes, Pata,
+Pelaje, Cola, Ladrido, Maullido, Ronroneo, Paseo, Juguete, Pulga, Garrapata, Heno, Zanahoria, Caniche, Teckel, Labrador,
+Pienso, Mascota
+
+[bauernhof] En la granja
+Vaca, Ternero, Toro, Buey, Cerdo, Cochinillo, Lechón, Cerda, Oveja, Cordero, Carnero, Cabra, Cabrito, Macho cabrío,
+Caballo, Potro, Burro, Asno, Mula, Gallina, Gallo, Pollito, Ganso, Oca, Pato, Patito, Pavo, Perro pastor, Granjero,
+Granjera, Tractor, Cosechadora, Remolque, Arado, Granero, Establo, Cuadra, Pajar, Silo, Pasto, Prado, Valla, Campo, Heno,
+Paja, Fardo, Comedero, Bebedero, Ordeñar, Leche, Huevos, Gallinero, Nido, Estiércol, Horca, Carretilla, Trigo, Centeno,
+Cebada, Avena, Maíz, Patata, Remolacha, Girasol, Cosecha, Semilla, Espantapájaros, Huerto, Colmena, Apicultor, Herradura,
+Silla de montar, Pocilga, Lana, Mantequilla, Queso, Molino, Botas
+
+[wald] Animales del bosque
+Ciervo, Cierva, Cervatillo, Corzo, Jabalí, Zorro, Tejón, Liebre, Conejo, Ardilla, Erizo, Topo, Lobo, Lince, Oso, Castor,
+Mapache, Marta, Turón, Comadreja, Armiño, Nutria, Murciélago, Lirón, Musaraña, Ratón de campo, Alce, Bisonte, Búho,
+Lechuza, Cárabo, Pájaro carpintero, Arrendajo, Cuco, Azor, Ratonero, Halcón, Petirrojo, Mirlo, Herrerillo, Carbonero,
+Pinzón, Zorzal, Faisán, Perdiz, Becada, Víbora, Culebra, Lución, Salamandra, Tritón, Sapo, Rana, Hormiga, Ciervo volante,
+Caracol, Babosa, Araña, Libélula, Luciérnaga, Escarabajo, Gato montés
+
+[zoo] En el zoo
+León, Tigre, Leopardo, Guepardo, Jaguar, Pantera, Elefante, Jirafa, Cebra, Rinoceronte, Hipopótamo, Camello, Dromedario,
+Llama, Alpaca, Mono, Gorila, Chimpancé, Orangután, Babuino, Lémur, Suricata, Canguro, Koala, Wombat, Panda, Oso polar,
+Oso pardo, Pingüino, Foca, León marino, Morsa, Cocodrilo, Caimán, Pitón, Boa, Cobra, Camaleón, Flamenco, Pelícano,
+Avestruz, Emú, Pavo real, Tucán, Águila, Buitre, Antílope, Gacela, Ñu, Búfalo, Tapir, Okapi, Perezoso, Oso hormiguero,
+Armadillo, Puercoespín, Hiena, Chacal, Coyote, Facóquero, Yak, Reno, Puma, Recinto, Cuidador, Entrada
+
+[voegel] Aves
+Mirlo, Zorzal, Pinzón, Estornino, Gorrión, Herrerillo, Carbonero, Petirrojo, Chochín, Trepador, Jilguero, Camachuelo,
+Verderón, Lavandera, Alondra, Ruiseñor, Golondrina, Vencejo, Cuco, Pájaro carpintero, Abubilla, Martín pescador, Oropéndola,
+Urraca, Corneja, Cuervo, Grajilla, Arrendajo, Paloma, Tórtola, Gaviota, Cormorán, Garza, Cigüeña, Grulla, Cisne, Ganso,
+Pato, Ánade real, Focha, Somormujo, Avefría, Zarapito, Ostrero, Águila, Halcón, Cernícalo, Gavilán, Ratonero, Milano,
+Buitre, Búho, Lechuza, Faisán, Perdiz, Codorniz, Loro, Periquito, Canario, Cacatúa, Guacamayo, Tucán, Colibrí, Flamenco,
+Pelícano, Pingüino, Avestruz, Pavo real, Albatros, Frailecillo, Escribano, Cardenal
+
+[meer] En el mar
+Ballena, Cachalote, Orca, Delfín, Marsopa, Tiburón, Tiburón martillo, Raya, Manta, Foca, León marino, Morsa, Manatí,
+Tortuga marina, Pulpo, Calamar, Sepia, Medusa, Estrella de mar, Erizo de mar, Caballito de mar, Pepino de mar, Coral,
+Anémona, Concha, Mejillón, Ostra, Vieira, Almeja, Cangrejo, Langosta, Bogavante, Gamba, Camarón, Kril, Arenque, Caballa,
+Sardina, Atún, Salmón, Bacalao, Lenguado, Rodaballo, Anguila, Morena, Barracuda, Pez espada, Pez payaso, Pez globo, Rape,
+Plancton, Alga, Arrecife, Fondo marino, Ola, Corriente, Marea, Isla, Faro, Buzo, Tubo, Gafas de buceo, Aletas, Barco,
+Pesquero, Red, Ancla, Narval, Beluga
+
+[insekten] Insectos y bichos
+Abeja, Abejorro, Avispa, Avispón, Hormiga, Mosca, Mosquito, Libélula, Mariposa, Polilla, Oruga, Crisálida, Capullo,
+Escarabajo, Mariquita, Ciervo volante, Escarabajo pelotero, Luciérnaga, Gorgojo, Saltamontes, Langosta, Grillo, Cigarra,
+Mantis religiosa, Insecto palo, Tijereta, Chinche, Pulgón, Piojo, Pulga, Garrapata, Ácaro, Araña, Tarántula, Escorpión,
+Alacrán, Ciempiés, Milpiés, Cochinilla, Lombriz, Caracol, Babosa, Termita, Cucaracha, Pececillo de plata, Tábano, Larva,
+Antena, Ala, Aguijón, Colmena, Panal, Hormiguero, Telaraña, Miel, Polen, Néctar
+
+[dinos] Dinosaurios y prehistoria
+Dinosaurio, Tiranosaurio, Triceratops, Estegosaurio, Braquiosaurio, Diplodocus, Velociraptor, Anquilosaurio, Iguanodonte,
+Espinosaurio, Alosaurio, Brontosaurio, Arqueoptérix, Pteranodon, Pterosaurio, Plesiosaurio, Ictiosaurio, Mosasaurio,
+Mamut, Tigre dientes de sable, Rinoceronte lanudo, Oso cavernario, Trilobites, Amonites, Fósil, Esqueleto, Hueso, Garra,
+Diente, Escama, Huevo, Nido, Huella, Excavación, Paleontólogo, Museo, Pincel, Martillo, Cincel, Prehistoria, Jurásico,
+Cretácico, Triásico, Volcán, Meteorito, Asteroide, Extinción, Herbívoro, Carnívoro, Depredador, Helecho, Ámbar, Cueva,
+Pintura rupestre, Neandertal, Hacha de piedra, Hoguera, Lanza, Glaciación, Glaciar, Colmillo
+
+== Comer y beber ==
+[obst] Frutas
+Manzana, Pera, Cereza, Ciruela, Melocotón, Albaricoque, Nectarina, Fresa, Frambuesa, Mora, Arándano, Grosella, Saúco,
+Uva, Pasa, Plátano, Banana, Naranja, Mandarina, Clementina, Limón, Lima, Pomelo, Piña, Mango, Papaya, Kiwi, Maracuyá,
+Granada, Higo, Dátil, Coco, Melón, Sandía, Lichi, Guayaba, Caqui, Carambola, Membrillo, Pitaya, Aguacate, Aceituna,
+Ruibarbo, Guinda, Endrina, Escaramujo, Níspero, Nuez, Avellana, Almendra, Castaña, Cacahuete, Pistacho, Macedonia,
+Compota, Mermelada, Zumo, Corazón, Pepita, Piel, Rabito, Chirimoya
+
+[gemuese] Verduras
+Patata, Zanahoria, Tomate, Pepino, Pimiento, Cebolla, Ajo, Puerro, Apio, Hinojo, Espárrago, Brócoli, Coliflor, Col de
+Bruselas, Col rizada, Col, Lombarda, Colinabo, Espinaca, Acelga, Lechuga, Canónigos, Rúcula, Rábano, Rábano picante,
+Remolacha, Chirivía, Nabo, Calabacín, Calabaza, Berenjena, Guisante, Judía, Judía verde, Haba, Lenteja, Garbanzo, Maíz,
+Alcachofa, Boniato, Jengibre, Champiñón, Seta, Níscalo, Cebolleta, Chalota, Chile, Guindilla, Berro, Endibia, Achicoria,
+Huerta, Cosecha, Ensalada, Sopa, Pisto, Gazpacho, Cocido
+
+[essen] Platos favoritos
+Paella, Tortilla, Tortilla de patatas, Gazpacho, Salmorejo, Cocido, Fabada, Croquetas, Patatas bravas, Albóndigas,
+Empanada, Pulpo a la gallega, Calamares, Gambas al ajillo, Pisto, Migas, Churros, Bocadillo, Jamón, Chorizo, Pizza,
+Espaguetis, Lasaña, Pasta, Macarrones, Raviolis, Risotto, Crepes, Tortitas, Filete, Escalope, Salchicha, Hamburguesa,
+Patatas fritas, Puré, Pollo asado, Asado, Estofado, Sopa, Caldo, Lentejas, Garbanzos, Arroz, Arroz con leche, Huevo frito,
+Revuelto, Ensalada, Sándwich, Tacos, Burrito, Enchiladas, Quesadilla, Nachos, Guacamole, Ceviche, Sushi, Curry, Kebab,
+Falafel, Fondue, Flan, Natillas, Crema catalana, Tarta, Torrijas, Buñuelos
+
+[backen] Repostería y dulces
+Pastel, Tarta, Bizcocho, Magdalena, Cupcake, Galleta, Gofre, Brownie, Rosquilla, Dónut, Churro, Ensaimada, Croissant,
+Napolitana, Palmera, Merengue, Macaron, Polvorón, Mantecado, Turrón, Mazapán, Roscón de Reyes, Tarta de queso, Brazo de
+gitano, Bizcocho de yogur, Tarta de manzana, Masa, Harina, Azúcar, Azúcar glas, Mantequilla, Huevos, Leche, Levadura,
+Vainilla, Canela, Cacao, Chocolate, Nata, Nata montada, Almendras, Nueces, Pasas, Glaseado, Fondant, Bol, Batidor,
+Batidora, Rodillo, Bandeja, Molde, Cortapastas, Horno, Espátula, Manga pastelera, Báscula, Receta, Caramelo, Piruleta,
+Gominolas, Regaliz, Bombón, Trufa, Nube, Palomitas, Algodón de azúcar, Helado, Flan, Mousse, Tiramisú
+
+[getraenke] Bebidas
+Agua, Agua mineral, Agua con gas, Agua del grifo, Zumo, Jugo, Zumo de naranja, Zumo de manzana, Mosto, Limonada, Refresco,
+Gaseosa, Cola, Té helado, Té, Infusión, Manzanilla, Poleo, Menta, Té verde, Té negro, Café, Café solo, Cortado, Café con
+leche, Capuchino, Carajillo, Chocolate caliente, Cacao, Leche, Batido, Horchata, Granizado, Smoothie, Cerveza, Clara, Vino,
+Vino tinto, Vino blanco, Rosado, Cava, Champán, Sangría, Tinto de verano, Ponche, Cóctel, Licor, Sidra, Pajita, Vaso, Taza,
+Botella, Jarra, Cubitos de hielo, Rodaja de limón, Termo, Tetera, Cafetera, Salud
+
+[kueche] En la cocina
+Cocina, Horno, Nevera, Frigorífico, Congelador, Lavavajillas, Microondas, Tostadora, Hervidor, Cafetera, Batidora, Robot de
+cocina, Báscula, Olla, Cazo, Sartén, Tapa, Cuchara de madera, Espátula, Batidor, Cucharón, Colador, Escurridor, Rallador,
+Pelador, Cuchillo, Tabla de cortar, Rodillo, Abrelatas, Abrebotellas, Sacacorchos, Prensa de ajos, Exprimidor, Plato, Bol,
+Taza, Vaso, Cubiertos, Tenedor, Cuchara, Cucharilla, Fuente, Bandeja, Panera, Tarro, Fregadero, Grifo,
+Estropajo, Esponja, Paño, Agarrador, Delantal, Libro de recetas, Receta, Cubo de basura, Papel de cocina, Temporizador,
+Campana, Encimera, Cajón, Armario, Despensa, Cocinar, Freír, Hornear, Remover, Cortar, Pelar, Probar
+
+== Naturaleza ==
+[blumen] Flores y plantas
+Rosa, Tulipán, Narciso, Azafrán, Campanilla de invierno, Jacinto, Lirio de los valles, Violeta, Pensamiento, Margarita,
+Diente de león, Amapola, Aciano, Manzanilla, Girasol, Dalia, Áster, Crisantemo, Lirio, Azucena, Orquídea, Clavel,
+Geranio, Petunia, Begonia, Fucsia, Lavanda, Lila, Hortensia, Rododendro, Azalea, Magnolia, Jazmín, Hibisco, Caléndula,
+Capuchina, Nomeolvides, Campanilla, Dedalera, Espuela de caballero, Altramuz, Peonía, Prímula, Anémona, Nenúfar, Loto,
+Edelweiss, Genciana, Brezo, Cardo, Trébol, Hiedra, Helecho, Musgo, Cactus, Aloe, Bambú, Hierba, Junco, Flor, Capullo, Hoja,
+Tallo, Raíz, Espina, Polen, Semilla, Bulbo, Maceta, Ramo, Florero, Regadera, Buganvilla, Mimosa, Glicinia, Madreselva,
+Azahar, Gardenia, Flor de Pascua
+
+[baeume] Árboles y bosque
+Roble, Haya, Abedul, Tilo, Arce, Fresno, Aliso, Olmo, Álamo, Chopo, Sauce, Sauce llorón, Castaño, Nogal, Cerezo, Manzano,
+Peral, Abeto, Pino, Alerce, Tejo, Cedro, Ciprés, Secuoya, Palmera, Olivo, Plátano de sombra, Serbal, Saúco, Avellano,
+Carpe, Enebro, Acebo, Espino, Eucalipto, Baobab, Encina, Alcornoque, Almendro, Naranjo, Limonero, Tronco, Corteza, Rama,
+Ramita, Hoja, Aguja, Piña, Bellota, Castaña, Raíz, Copa, Follaje, Anillo, Resina, Savia, Brote, Claro, Sendero,
+Guardabosques, Leñador, Sierra, Hacha, Leña, Cabaña, Seta, Helecho, Tocón, Plantón, Bosque, Selva, Arboleda
+
+[garten] En el jardín
+Césped, Parterre, Huerto, Bancal, Seto, Valla, Verja, Caseta, Cobertizo, Pérgola, Terraza, Patio, Estanque, Fuente,
+Pajarera, Comedero, Hotel de insectos, Compost, Invernadero, Enano de jardín, Hamaca, Tumbona, Sombrilla, Silla de jardín,
+Mesa de jardín, Barbacoa, Columpio, Arenero, Tobogán, Cama elástica, Piscina, Cortacésped, Rastrillo, Pala, Azada, Horca,
+Desplantador, Tijeras de podar, Cortasetos, Carretilla, Regadera, Manguera, Aspersor, Guantes, Maceta, Tierra, Abono,
+Semillas, Plantón, Malas hierbas, Desherbar, Regar, Plantar, Sembrar, Cosechar, Cortar el césped, Cavar, Fresal, Rosal,
+Árbol frutal, Rocalla, Camino, Lombriz, Caracol, Topo, Erizo, Abeja, Mariposa
+
+[wetter] El tiempo
+Sol, Lluvia, Llovizna, Chaparrón, Aguacero, Arcoíris, Nube, Niebla, Neblina, Viento, Brisa, Ráfaga, Tormenta, Huracán,
+Tornado, Tifón, Ciclón, Relámpago, Rayo, Trueno, Granizo, Nieve, Copo de nieve, Ventisca, Hielo, Escarcha, Helada, Rocío,
+Carámbano, Calor, Ola de calor, Sequía, Frío, Humedad, Temperatura, Termómetro, Barómetro, Presión, Anticiclón, Borrasca,
+Previsión, Pronóstico, Meteorólogo, Estación meteorológica, Veleta, Paraguas, Chubasquero, Impermeable, Botas de agua,
+Gafas de sol, Crema solar, Charco, Barro, Inundación, Riada, Avalancha, Amanecer, Atardecer, Anochecer, Crepúsculo, Aurora
+boreal, Clima, Estación, Monzón, Cielo, Soleado, Nublado, Lluvioso, Ventoso
+
+[landschaft] Paisajes y naturaleza
+Montaña, Sierra, Cordillera, Cumbre, Cima, Pico, Colina, Valle, Desfiladero, Barranco, Acantilado, Roca, Cueva, Volcán,
+Cráter, Glaciar, Cascada, Catarata, Manantial, Arroyo, Río, Lago, Estanque, Laguna, Pantano, Ciénaga, Mar, Océano, Costa,
+Playa, Duna, Bahía, Cala, Isla, Península, Arrecife, Desierto, Oasis, Estepa, Sabana, Pradera, Selva, Jungla, Bosque,
+Claro, Prado, Campo, Llanura, Meseta, Cañón, Fiordo, Delta, Desembocadura, Orilla, Ribera, Guijarro, Grava, Arena, Piedra,
+Tierra, Arcilla, Granito, Mármol, Cristal, Horizonte, Paisaje, Panorama, Vista, Reserva natural, Parque nacional, Sendero,
+Puente, Campiña, Viñedo, Tundra
+
+[weltall] El espacio
+Sol, Luna, Tierra, Mercurio, Venus, Marte, Júpiter, Saturno, Urano, Neptuno, Plutón, Planeta, Estrella, Constelación,
+Estrella fugaz, Cometa, Asteroide, Meteoro, Meteorito, Galaxia, Vía Láctea, Andrómeda, Nebulosa, Supernova, Agujero negro,
+Universo, Espacio, Sistema solar, Órbita, Gravedad, Cráter, Eclipse, Luna llena, Luna nueva, Cuarto creciente, Cohete,
+Nave espacial, Estación espacial, Satélite, Sonda, Astronauta, Cosmonauta, Traje espacial, Casco, Cuenta atrás, Despegue,
+Aterrizaje, Telescopio, Observatorio, Planetario, Astrónomo, Año luz, Estrella polar, Osa Mayor, Orión, Casiopea, Anillos,
+Ingravidez, Extraterrestre, Ovni, Cosmos, Big Bang, Gigante roja, Enana blanca
+
+== Estaciones y fiestas ==
+[fruehling] Primavera
+Primavera, Marzo, Abril, Mayo, Pascua, Flor, Capullo, Brote, Tulipán, Narciso, Prímula, Violeta, Margarita, Diente de
+león, Cerezo en flor, Almendro en flor, Magnolia, Azahar, Abeja, Abejorro, Mariposa, Mariquita, Canto de los pájaros, Nido,
+Pollito, Cordero, Potro, Renacuajo, Cigüeña, Golondrina, Cuco, Mirlo, Limpieza, Siembra, Jardinería, Bicicleta, Paseo,
+Chubasco, Arcoíris, Rayo de sol, Equinoccio, Cambio de hora, Día de la Madre, Feria de abril, Semana Santa, Romería,
+Polen, Alergia, Búsqueda de huevos, Fresas, Espárragos, Rábanos, Florecer, Brotar, Renacer
+
+[sommer] Verano
+Verano, Junio, Julio, Agosto, Sol, Calor, Vacaciones, Playa, Mar, Arena, Castillo de arena, Concha, Ola, Bañador, Biquini,
+Toalla, Gafas de sol, Crema solar, Sombrero, Sombrilla, Tumbona, Piscina, Trampolín, Flotador, Colchoneta, Manguitos,
+Pistola de agua, Helado, Polo, Heladería, Cucurucho, Fresas, Cerezas, Melón, Sandía, Limonada, Granizado, Horchata,
+Barbacoa, Pícnic, Camping, Tienda de campaña, Hoguera, Tormenta, Mosquito, Avispa, Luciérnaga, Sombra, Verbena, Fiestas
+del pueblo, Fuegos artificiales, Chanclas, Sandalias, Pantalones cortos, Vestido, Pecas, Quemadura, Descalzo, Hamaca,
+Siesta, Lago, Paseo en bici, Excursión, Noche de verano, Estrella fugaz, Cosecha, Girasol, Lavanda, Cigarra, Festival,
+Puesta de sol, San Juan
+
+[herbst] Otoño
+Otoño, Septiembre, Octubre, Noviembre, Hojas, Hojarasca, Castaña, Bellota, Nuez, Avellana, Seta, Níscalo, Calabaza, Sopa,
+Manzana, Pera, Ciruela, Uva, Vendimia, Cosecha, Cometa, Viento, Tormenta, Niebla, Lluvia, Paraguas, Charco, Botas de agua,
+Barro, Farol, Halloween, Todos los Santos, Castañada, Castañas asadas, Vela, Té, Chocolate caliente, Chaqueta, Bufanda,
+Gorro, Aves migratorias, Grullas, Erizo, Ardilla, Provisiones, Hibernación, Cambio de hora, Rastrillo, Montón de hojas,
+Tarta de manzana, Manzana asada, Moras, Membrillo, Granada, Vuelta al cole, Telaraña, Atardecer, Dorado, Espantapájaros
+
+[winter] Invierno
+Invierno, Diciembre, Enero, Febrero, Nieve, Copo de nieve, Muñeco de nieve, Bola de nieve, Guerra de bolas, Ángel de nieve,
+Ventisca, Hielo, Escarcha, Helada, Carámbano, Frío, Trineo, Patines, Patinaje, Pista de hielo, Esquí, Esquiar, Snowboard,
+Esquí de fondo, Telesilla, Remonte, Pista, Raquetas, Iglú, Gorro, Bufanda, Guantes, Manoplas, Abrigo, Plumífero, Botas,
+Jersey, Calcetines, Orejeras, Chimenea, Fuego, Estufa, Calefacción, Bolsa de agua caliente, Manta, Brasero, Té, Chocolate
+caliente, Churros, Turrón, Polvorones, Navidad, Nochevieja, Año Nuevo, Reyes Magos, Uvas, Campanadas, Fuegos artificiales,
+Deportes de invierno, Comedero, Petirrojo, Pala, Sal, Quitanieves, Cadenas, Rascador, Noche, Aurora boreal, Pingüino, Oso
+polar, Resfriado, Vacaciones de invierno, Termómetro
+
+[weihnachten] Navidad
+Navidad, Nochebuena, Nochevieja, Adviento, Corona de Adviento, Calendario de Adviento, Vela, Árbol de Navidad, Abeto,
+Espumillón, Bola, Luces, Estrella, Ángel, Belén, Pesebre, Niño Jesús, María, José, Pastores, Ovejas, Buey, Mula, Reyes
+Magos, Melchor, Gaspar, Baltasar, Camellos, Papá Noel, San Nicolás, Reno, Trineo, Duende, Regalo, Paquete, Papel de regalo,
+Lazo, Carta a los Reyes, Calcetín, Chimenea, Turrón, Mazapán, Polvorones, Roscón de Reyes, Pavo, Cordero, Marisco, Mercado
+navideño, Nieve, Campana, Cascabel, Villancico, Zambomba, Pandereta, Misa del Gallo, Iglesia, Muérdago, Acebo, Flor de
+Pascua, Cascanueces, Bola de nieve, Guirnalda, Canela, Clavo, Naranja, Familia, Fiesta, Lotería, Cabalgata, Uvas,
+Campanadas
+
+[ostern] Pascua
+Pascua, Conejo de Pascua, Huevo de Pascua, Búsqueda de huevos, Cesta, Cordero pascual, Domingo de Resurrección, Lunes de
+Pascua, Viernes Santo, Jueves Santo, Domingo de Ramos, Semana Santa, Cuaresma, Carnaval, Resurrección, Procesión, Nazareno,
+Paso, Cofradía, Iglesia, Campanas, Pollito, Gallina, Conejo, Cordero, Primavera, Narciso, Tulipán, Mona de Pascua, Torrijas,
+Pestiños, Buñuelos, Chocolate, Huevo de chocolate, Conejo de chocolate, Pintar, Decorar, Pincel, Huevera, Cáscara, Yema,
+Clara, Hierba, Lazo, Manualidades, Vacaciones de Pascua, Familia, Desayuno, Cirio pascual, Orejas de conejo, Zanahoria,
+Prado, Escondite
+
+[halloween] Halloween
+Halloween, Calabaza, Farol, Vela, Fantasma, Espectro, Bruja, Escoba, Sombrero de bruja, Brujo, Mago, Vampiro, Hombre lobo,
+Zombi, Momia, Esqueleto, Calavera, Monstruo, Frankenstein, Duende, Demonio, Murciélago, Araña, Telaraña, Gato negro,
+Cuervo, Búho, Cementerio, Tumba, Lápida, Cripta, Ataúd, Casa encantada, Castillo encantado, Disfraz, Máscara, Capa,
+Maquillaje, Sangre falsa, Truco o trato, Caramelos, Piruleta, Gominolas, Caldero, Poción, Maldición, Hechizo, Medianoche,
+Luna llena, Niebla, Miedo, Escalofrío, Piel de gallina, Grito, Aullido, Fiesta, Tallar, Otoño, Octubre, Cuento de miedo,
+Día de Muertos, Catrina, Calaverita
+
+[geburtstag] Cumpleaños y fiestas
+Cumpleaños, Fiesta, Celebración, Regalo, Sorpresa, Papel de regalo, Lazo, Tarjeta, Felicidades, Invitación, Invitados,
+Tarta, Pastel, Tarta de cumpleaños, Velas, Soplar, Deseo, Globo, Guirnalda, Pancarta, Confeti, Serpentinas, Gorro de fiesta,
+Matasuegras, Bengala, Farolillo, Música, Baile, Canción, Juegos, Búsqueda del tesoro, Carrera de sacos, Sillas musicales,
+Piñata, Merienda, Chuches, Boda, Novia, Novio, Anillo, Ramo, Bautizo, Comunión, Graduación, Nochevieja, Fuegos
+artificiales, Champán, Brindis, Salud, Bufé, Barbacoa, Verbena, Fiesta familiar, Foto, Disfraz, Karaoke, Fiesta de pijamas,
+Aniversario, Cumpleañero
+
+[kalender] Meses y días
+Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre, Lunes, Martes,
+Miércoles, Jueves, Viernes, Sábado, Domingo, Fin de semana, Festivo, Semana, Quincena, Mes, Año, Año bisiesto, Día, Noche,
+Mañana, Mediodía, Tarde, Medianoche, Madrugada, Hora, Minuto, Segundo, Reloj, Despertador, Calendario, Fecha, Cita,
+Cumpleaños, Estación, Primavera, Verano, Otoño, Invierno, Ayer, Hoy, Pasado mañana, Anteayer, Futuro, Pasado, Presente,
+Siglo, Década, Milenio, Año Nuevo, Semana Santa, Navidad, Amanecer, Atardecer, Anochecer, Reloj de arena, Cronómetro,
+Agenda, Horario
+
+== Las personas ==
+[koerper] El cuerpo
+Cabeza, Pelo, Cabello, Frente, Ojo, Ceja, Pestaña, Oreja, Oído, Nariz, Boca, Labio, Lengua, Diente, Muela, Barbilla,
+Mejilla, Mandíbula, Cuello, Garganta, Nuca, Hombro, Brazo, Codo, Antebrazo, Muñeca, Mano, Dedo, Pulgar, Índice, Uña, Pecho,
+Barriga, Vientre, Ombligo, Espalda, Cadera, Trasero, Pierna, Muslo, Rodilla, Pantorrilla, Espinilla, Tobillo, Pie, Talón,
+Planta, Piel, Músculo, Hueso, Esqueleto, Cráneo, Columna, Costilla, Articulación, Corazón, Pulmón, Hígado, Riñón,
+Estómago, Intestino, Cerebro, Sangre, Vena, Arteria, Nervio, Tendón, Sudor, Aliento, Pulso, Pupila, Tímpano, Paladar,
+Amígdalas, Voz, Axila, Palma, Peca, Lunar, Hoyuelo, Rizo, Trenza, Barba, Bigote, Párpado, Puño
+
+[gesundheit] Salud y médico
+Médico, Médica, Doctor, Pediatra, Dentista, Oculista, Veterinario, Hospital, Clínica, Consulta, Sala de espera, Cita,
+Receta, Farmacia, Farmacéutico, Medicina, Medicamento, Pastilla, Comprimido, Jarabe, Gotas, Pomada, Crema, Inyección,
+Vacuna, Tirita, Venda, Escayola, Muletas, Silla de ruedas, Termómetro, Fiebre, Tos, Resfriado, Catarro, Gripe, Dolor de
+garganta, Dolor de cabeza, Dolor de barriga, Dolor de muelas, Alergia, Sarampión, Varicela, Paperas, Herida, Chichón,
+Moratón, Arañazo, Quemadura, Enfermera, Enfermero, Ambulancia, Urgencias, Operación, Cirujano, Anestesia, Radiografía,
+Ecografía, Estetoscopio, Tensión, Revisión, Diagnóstico, Tratamiento, Masaje, Fisioterapia, Recuperación, Reposo,
+Vitaminas, Salud, Ejercicio, Sueño, Gafas, Audífono, Ortodoncia
+
+[kleidung] Ropa
+Pantalón, Vaqueros, Pantalón corto, Falda, Vestido, Blusa, Camisa, Camiseta, Jersey, Suéter, Chaqueta, Rebeca, Sudadera,
+Chaleco, Abrigo, Anorak, Chubasquero, Plumífero, Cazadora, Americana, Traje, Corbata, Pajarita, Bufanda, Pañuelo, Gorro,
+Sombrero, Gorra, Boina, Diadema, Guantes, Manoplas, Calcetines, Medias, Leotardos, Bragas, Calzoncillos, Camiseta interior,
+Pijama, Camisón, Albornoz, Bañador, Biquini, Cinturón, Tirantes, Zapatos, Botas, Zapatillas, Deportivas, Sandalias,
+Pantuflas, Chanclas, Bailarinas, Tacones, Mallas, Peto, Mono, Uniforme, Disfraz, Delantal, Poncho, Botón, Cremallera,
+Cuello, Manga, Bolsillo, Capucha, Dobladillo, Cordón, Armario, Percha, Colada, Lavadora, Plancha, Chándal
+
+[familie] Familia y amigos
+Familia, Madre, Mamá, Padre, Papá, Padres, Hijo, Hija, Hijos, Niño, Niña, Hermano, Hermana, Hermanos, Gemelo, Gemela, Bebé,
+Abuela, Abuelo, Abuelos, Nieto, Nieta, Nietos, Bisabuela, Bisabuelo, Tío, Tía, Primo, Prima, Sobrino, Sobrina, Cuñado,
+Cuñada, Suegra, Suegro, Madrastra, Padrastro, Padrino, Madrina, Ahijado, Marido, Esposo, Esposa, Mujer, Pareja, Novia,
+Novio, Prometido, Amigo, Amiga, Mejor amigo, Vecino, Vecina, Colega, Compañero, Pandilla, Parientes, Árbol genealógico,
+Generación, Boda, Nacimiento, Bautizo, Fiesta familiar, Foto de familia, Hogar, Casa, Amor, Abrazo, Beso, Visita,
+Excursión, Comida del domingo, Mascota
+
+[gefuehle] Sentimientos
+Alegría, Felicidad, Amor, Cariño, Ternura, Gratitud, Orgullo, Valor, Coraje, Esperanza, Satisfacción, Entusiasmo, Ilusión,
+Emoción, Sorpresa, Alivio, Calma, Tranquilidad, Paz, Seguridad, Confianza, Compasión, Empatía, Nostalgia, Añoranza,
+Morriña, Curiosidad, Asombro, Diversión, Risa, Sonrisa, Pena, Tristeza, Dolor, Miedo, Susto, Pánico, Preocupación,
+Nervios, Rabia, Ira, Enfado, Fastidio, Frustración, Decepción, Celos, Envidia, Vergüenza, Culpa, Arrepentimiento,
+Aburrimiento, Soledad, Confusión, Duda, Asco, Lástima, Admiración, Respeto, Optimismo, Escalofrío, Lágrimas, Abrazo,
+Consuelo, Cansancio, Hambre, Sed, Placer, Buen humor
+
+[berufe] Profesiones
+Médico, Médica, Profesor, Profesora, Maestro, Maestra, Policía, Bombero, Bombera, Panadero, Panadera, Pastelero, Carnicero,
+Cocinero, Cocinera, Camarero, Camarera, Peluquero, Peluquera, Albañil, Carpintero, Tejador, Pintor, Ebanista,
+Electricista, Fontanero, Cerrajero, Mecánico, Deshollinador, Jardinero, Agricultor, Granjero, Guardabosques, Pescador,
+Apicultor, Viticultor, Veterinario, Cuidador, Dentista, Farmacéutico, Enfermero, Enfermera, Comadrona, Piloto, Azafata,
+Maquinista, Conductor, Taxista, Camionero, Capitán, Marinero, Cartero, Cartera, Vendedor, Dependienta, Cajero, Cajera,
+Comerciante, Banquero, Secretaria, Contable, Abogado, Abogada, Juez, Notario, Periodista, Fotógrafo, Reportero, Escritor,
+Escritora, Autor, Poeta, Músico, Cantante, Actor, Actriz, Bailarín, Bailarina, Artista, Escultor, Arquitecto, Ingeniero,
+Informático, Programador, Científico, Investigador, Químico, Astronauta, Soldado, Alcalde, Sacerdote, Sastre, Modista,
+Óptico, Joyero, Relojero, Conserje, Bibliotecario, Entrenador, Árbitro, Detective, Mago, Payaso, Florista, Traductor,
+Socorrista
+
+[haus] La casa
+Casa, Piso, Apartamento, Habitación, Salón, Sala de estar, Dormitorio, Cuarto de baño, Baño, Cocina, Comedor, Despacho,
+Pasillo, Recibidor, Sótano, Desván, Buhardilla, Garaje, Balcón, Terraza, Escalera, Ascensor, Puerta, Ventana, Alféizar,
+Pared, Techo, Suelo, Alfombra, Moqueta, Parqué, Baldosas, Azulejos, Tejado, Chimenea, Radiador, Calefacción, Enchufe,
+Interruptor, Lámpara, Lámpara de pie, Cortina, Persiana, Contraventana, Sofá, Sillón, Silla, Mesa, Escritorio, Cama,
+Almohada, Cojín, Edredón, Colchón, Mesilla, Armario, Cómoda, Estantería, Librería, Espejo, Cuadro, Reloj, Televisión,
+Bañera, Ducha, Lavabo, Retrete, Grifo, Toalla, Buzón, Timbre, Picaporte, Llave, Jardín, Valla, Patio, Vecino, Mudanza,
+Inquilino, Casero, Felpudo
+
+[werkzeug] Herramientas y bricolaje
+Martillo, Alicates, Tenazas, Destornillador, Llave inglesa, Llave Allen, Sierra, Serrucho, Caladora, Sierra circular,
+Taladro, Atornillador, Broca, Papel de lija, Lijadora, Lima, Escofina, Cepillo, Formón, Cincel, Hacha, Masilla, Espátula,
+Paleta, Llana, Brocha, Pincel, Rodillo, Pintura, Barniz, Pegamento, Cola, Cinta adhesiva, Tornillo, Tuerca, Perno, Clavo,
+Taco, Arandela, Remache, Bisagra, Regla, Metro, Cinta métrica, Nivel, Escuadra, Lápiz, Cúter, Tornillo de banco, Banco de
+trabajo, Taller, Caja de herramientas, Escalera, Carretilla, Pala, Palanca, Soldador, Cable, Alargador, Linterna, Gafas de
+protección, Guantes, Casco, Manitas, Bricolaje, Ferretería, Madera, Tabla, Viga, Contrachapado, Metal, Alambre, Manguera,
+Serrín, Sargento, Mazo
+
+[schule] El colegio
+Colegio, Escuela, Clase, Aula, Profesor, Profesora, Maestro, Maestra, Alumno, Alumna, Director, Directora, Conserje,
+Recreo, Patio, Horario, Asignatura, Lección, Deberes, Examen, Prueba, Dictado, Boletín, Nota, Mochila, Cartera, Estuche,
+Lápiz, Lápiz de color, Bolígrafo, Pluma, Rotulador, Subrayador, Goma, Sacapuntas, Regla, Transportador, Compás, Tijeras,
+Pegamento, Barra de pegamento, Cuaderno, Libreta, Archivador, Libro, Libro de texto, Diccionario, Atlas, Pizarra, Tiza,
+Borrador, Proyector, Pupitre, Silla, Matemáticas, Lengua, Inglés, Francés, Alemán, Ciencias, Biología, Química, Física,
+Historia, Geografía, Plástica, Música, Educación física, Informática, Gimnasio, Biblioteca, Comedor, Excursión, Fiesta del
+colegio, Vacaciones, Lectura, Escritura, Cálculo, Calculadora, Globo terráqueo, Uniforme
+
+[einkaufen] De compras
+Supermercado, Panadería, Carnicería, Pescadería, Frutería, Mercado, Quiosco, Farmacia, Droguería, Librería, Grandes
+almacenes, Centro comercial, Tienda, Escaparate, Carrito, Cesta, Bolsa, Lista de la compra, Caja, Cajera, Tique, Recibo,
+Dinero, Moneda, Billete, Cambio, Monedero, Cartera, Tarjeta, Tarjeta de crédito, Vale, Descuento, Oferta, Ganga, Precio,
+Etiqueta, Rebajas, Devolución, Tarjeta de cliente, Dependiente, Dependienta, Cliente, Clienta, Mostrador,
+Estantería, Pasillo, Congelador, Báscula, Bolsa de papel, Bolsa de tela, Envase, Horario, Aparcamiento, Escalera mecánica,
+Probador, Talla, Pedido, Entrega, Paquete, Tienda online, Cola
+
+[stadt] En la ciudad
+Ciudad, Pueblo, Calle, Callejón, Avenida, Paseo, Plaza, Plaza Mayor, Ayuntamiento, Iglesia, Catedral, Fuente, Monumento,
+Estatua, Museo, Teatro, Cine, Ópera, Biblioteca, Colegio, Guardería, Hospital, Comisaría, Parque de bomberos, Correos,
+Banco, Estación, Estación de autobuses, Parada, Rascacielos, Calle peatonal, Acera, Carril bici, Semáforo, Paso de
+peatones, Cruce, Rotonda, Puente, Túnel, Aparcamiento, Gasolinera, Hotel, Restaurante, Cafetería, Bar, Panadería,
+Supermercado, Farmacia, Peluquería, Parque, Parque infantil, Zoo, Piscina, Estadio, Polideportivo, Fábrica, Puerto,
+Aeropuerto, Tranvía, Metro, Taxi, Autobús, Farola, Papelera, Plano, Centro, Casco antiguo, Barrio, Afueras,
+Muralla, Torre, Campanario, Reloj
+
+== En camino ==
+[fahrzeuge] Vehículos
+Coche, Automóvil, Autobús, Camión, Furgoneta, Autocaravana, Caravana, Remolque, Tractor, Excavadora, Grúa, Bulldózer,
+Hormigonera, Volquete, Carretilla elevadora, Cosechadora, Camión de la basura, Camión de bomberos, Ambulancia, Coche de
+policía, Grúa municipal, Taxi, Limusina, Descapotable, Deportivo, Coche de carreras, Todoterreno, Minibús, Moto,
+Motocicleta, Escúter, Ciclomotor, Bicicleta, Bici, Bicicleta de montaña, Tándem, Triciclo, Monociclo, Patinete, Monopatín,
+Patines, Tren, Locomotora, Tren de vapor, Tren de mercancías, Tranvía, Metro, Teleférico, Telesilla, Funicular, Avión,
+Avioneta, Reactor, Helicóptero, Planeador, Globo aerostático, Dirigible, Cohete, Barco, Buque, Ferri, Crucero, Velero,
+Lancha, Bote, Barca, Canoa, Kayak, Hidropedal, Carguero, Petrolero, Yate, Balsa, Submarino, Carruaje, Carro, Trineo,
+Moto de nieve, Aerodeslizador
+
+[reisen] Viajes y vacaciones
+Vacaciones, Viaje, Excursión, Gira, Crucero, Escapada, Maleta, Mochila, Bolsa de viaje, Equipaje de mano, Pasaporte,
+Carné de identidad, Visado, Billete, Tarjeta de embarque, Aeropuerto, Avión, Salida, Llegada, Puerta de embarque,
+Facturación, Cinta de equipaje, Aduana, Estación, Andén, Vía, Tren, Ferri, Puerto, Hotel, Hostal, Pensión, Apartamento,
+Albergue, Camping, Habitación, Recepción, Desayuno, Media pensión, Guía, Mapa, Plano, Brújula, GPS, Cámara, Foto, Recuerdo,
+Postal, Monumentos, Museo, Playa, Mar, Montaña, Vista, Gafas de sol, Crema solar, Botiquín, Idioma, Moneda, Cambio,
+Extranjero, Frontera, Aventura, Descanso, Vuelta, Destino, Turista, Itinerario, Ruta
+
+== El mundo ==
+[laender] Países
+Alemania, Austria, Suiza, Francia, Italia, España, Portugal, Bélgica, Países Bajos, Holanda, Luxemburgo, Dinamarca, Suecia,
+Noruega, Finlandia, Islandia, Irlanda, Inglaterra, Escocia, Gales, Polonia, Chequia, Eslovaquia, Hungría, Eslovenia,
+Croacia, Serbia, Bosnia, Montenegro, Albania, Grecia, Bulgaria, Rumanía, Moldavia, Ucrania, Bielorrusia, Lituania, Letonia,
+Estonia, Rusia, Turquía, Chipre, Malta, Georgia, Armenia, Israel, Jordania, Líbano, Siria, Irak, Irán, Arabia Saudí,
+Yemen, Omán, Catar, Egipto, Libia, Túnez, Argelia, Marruecos, Mauritania, Senegal, Malí, Níger, Nigeria, Ghana, Camerún,
+Congo, Kenia, Tanzania, Uganda, Etiopía, Somalia, Sudán, Angola, Zambia, Zimbabue, Namibia, Botsuana, Sudáfrica,
+Madagascar, India, Pakistán, Afganistán, Nepal, Bangladés, Sri Lanka, China, Japón, Corea, Mongolia, Vietnam, Tailandia,
+Camboya, Laos, Birmania, Malasia, Singapur, Indonesia, Filipinas, Australia, Nueva Zelanda, Canadá, Estados Unidos, México,
+Cuba, Jamaica, Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, Panamá, Colombia, Venezuela, Ecuador, Perú,
+Bolivia, Brasil, Paraguay, Uruguay, Argentina, Chile, Groenlandia, Liechtenstein, Mónaco, Andorra, San Marino, Vaticano,
+Puerto Rico, República Dominicana
+
+[hauptstaedte] Capitales
+Berlín, Viena, Berna, París, Roma, Madrid, Lisboa, Bruselas, Ámsterdam, Luxemburgo, Copenhague, Estocolmo, Oslo, Helsinki,
+Reikiavik, Dublín, Londres, Edimburgo, Varsovia, Praga, Bratislava, Budapest, Liubliana, Zagreb, Belgrado, Sarajevo,
+Tirana, Atenas, Sofía, Bucarest, Kiev, Minsk, Vilna, Riga, Tallin, Moscú, Ankara, Nicosia, La Valeta, Tiflis, Ereván,
+El Cairo, Túnez, Argel, Rabat, Dakar, Abuya, Acra, Nairobi, Kampala, Adís Abeba, Pretoria, Windhoek, Nueva Delhi,
+Islamabad, Kabul, Katmandú, Pekín, Tokio, Seúl, Bangkok, Hanói, Manila, Yakarta, Canberra, Wellington, Ottawa, Washington,
+Ciudad de México, La Habana, Guatemala, Tegucigalpa, San Salvador, Managua, San José, Bogotá, Caracas, Quito, Lima, La Paz,
+Brasilia, Buenos Aires, Santiago, Montevideo, Asunción, Teherán, Bagdad, Damasco, Beirut, Amán, Jerusalén, Riad, Doha,
+Abu Dabi, Mascate, Santo Domingo, San Juan
+
+== Tiempo libre ==
+[sport] Deportes
+Fútbol, Balonmano, Baloncesto, Voleibol, Vóley playa, Tenis, Tenis de mesa, Pimpón, Bádminton, Squash, Pádel, Golf, Minigolf,
+Hockey, Hockey sobre hielo, Rugby, Béisbol, Críquet, Natación, Buceo, Waterpolo, Remo, Piragüismo, Kayak, Vela, Surf,
+Windsurf, Kitesurf, Esquí acuático, Gimnasia, Atletismo, Carrera, Footing, Maratón, Esprint, Vallas, Salto de longitud,
+Salto de altura, Salto con pértiga, Lanzamiento de peso, Jabalina, Disco, Ciclismo, Equitación, Doma, Salto ecuestre, Boxeo,
+Lucha, Judo, Kárate, Taekwondo, Esgrima, Tiro con arco, Escalada, Alpinismo, Senderismo, Esquí, Esquí de fondo, Biatlón,
+Salto de esquí, Snowboard, Trineo, Bobsleigh, Patinaje artístico, Patinaje de velocidad, Curling, Yoga, Pilates, Aeróbic,
+Baile, Ballet, Bolos, Billar, Dardos, Ajedrez, Monopatín, Patinaje, Triatlón, Musculación, Halterofilia, Petanca, Frisbi,
+Pelota vasca, Frontón
+
+[fussball] Fútbol
+Fútbol, Balón, Pelota, Portería, Gol, Portero, Delantero, Defensa, Centrocampista, Lateral, Capitán, Entrenador, Árbitro,
+Juez de línea, Silbato, Saque inicial, Pitido final, Descanso, Prórroga, Penalti, Tanda de penaltis, Tiro libre, Falta,
+Córner, Saque de banda, Saque de puerta, Fuera de juego, Tarjeta amarilla, Tarjeta roja, Expulsión, Grada, Estadio, Campo,
+Césped, Línea de gol, Línea de medio campo, Área, Círculo central, Poste, Larguero, Red, Camiseta, Medias, Espinilleras,
+Botas, Tacos, Guantes, Afición, Hinchas, Bufanda, Copa, Trofeo, Liga, Campeonato, Mundial, Clasificación, Puntos, Empate,
+Victoria, Derrota, Cabezazo, Chilena, Volea, Centro, Pase, Regate, Goleador, Triplete, Equipo, Club, Entrenamiento,
+Alineación, Suplente, Cambio, Banquillo, Tiempo añadido, Entrada, Parada
+
+[spielzeug] Juguetes y juegos
+Muñeca, Casa de muñecas, Carrito, Osito, Oso de peluche, Peluche, Bloques, Lego, Juego de construcción, Puzle, Rompecabezas,
+Canicas, Peonza, Trompo, Yoyó, Pelota, Comba, Aro, Cometa, Pompas de jabón, Plastilina, Pinturas, Ceras, Libro de colorear,
+Cochecito, Pista de carreras, Tren eléctrico, Tren de madera, Camión de bomberos, Castillo, Barco pirata, Tiendita,
+Cocinita, Marioneta, Títere, Caballito, Caballo balancín, Patinete, Triciclo, Columpio, Tobogán, Balancín, Arenero, Cubo,
+Pala, Molde, Juego de mesa, Baraja, Cartas, Dado, Ficha, Memoria, Dominó, Palillos chinos, Ajedrez, Damas, Parchís, Oca,
+Hundir la flota, Bingo, Escondite, Pilla pilla, Rayuela, Gallinita ciega, Sillas musicales, Caja de magia, Videoconsola,
+Caleidoscopio, Caja de música, Sonajero, Frisbi, Pistola de agua, Chapas
+
+[musik] Música e instrumentos
+Música, Canción, Melodía, Ritmo, Compás, Nota, Partitura, Clave de sol, Escala, Acorde, Piano, Piano de cola, Órgano,
+Teclado, Acordeón, Armónica, Guitarra, Guitarra eléctrica, Bajo, Contrabajo, Violín, Viola, Violonchelo, Arpa, Laúd,
+Mandolina, Banjo, Ukelele, Cítara, Flauta, Flauta dulce, Flauta travesera, Clarinete, Oboe, Fagot, Saxofón, Trompeta,
+Trombón, Trompa, Tuba, Gaita, Batería, Tambor, Timbal, Platillos, Triángulo, Xilófono, Pandereta, Maracas, Castañuelas,
+Bongós, Cajón, Coro, Orquesta, Grupo, Banda, Director, Batuta, Cantante, Solista, Dúo, Concierto, Ópera, Musical,
+Escenario, Micrófono, Altavoz, Auriculares, Radio, Disco, Tocadiscos, Clásica, Jazz, Rock, Pop, Flamenco, Salsa, Tango,
+Vals, Marcha, Balada, Estribillo, Estrofa, Compositor, Conservatorio, Ensayo
+
+[farben] Colores y formas
+Rojo, Azul, Amarillo, Verde, Naranja, Morado, Violeta, Rosa, Marrón, Negro, Blanco, Gris, Plateado, Dorado, Beis,
+Turquesa, Magenta, Ocre, Granate, Burdeos, Escarlata, Carmesí, Celeste, Azul claro, Azul oscuro, Azul marino, Verde claro,
+Verde oscuro, Verde oliva, Verde menta, Esmeralda, Lima, Limón, Mostaza, Albaricoque, Salmón, Coral, Melocotón, Lila,
+Lavanda, Ciruela, Berenjena, Chocolate, Castaño, Antracita, Marfil, Crema, Arcoíris, Círculo cromático, Círculo, Cuadrado,
+Triángulo, Rectángulo, Rombo, Óvalo, Elipse, Estrella, Corazón, Pentágono, Hexágono, Octógono, Cubo, Esfera, Cono,
+Cilindro, Pirámide, Prisma, Espiral, Onda, Punto, Línea, Curva, Esquina, Borde, Superficie, Media luna, Flecha, Cruz
+
+== Fantasía e historia ==
+[maerchen] Cuentos y leyendas
+Cuento, Cuento de hadas, Leyenda, Mito, Fábula, Magia, Mago, Bruja, Hada, Elfo, Enano, Gigante, Trol, Duende, Gnomo,
+Dragón, Unicornio, Sirena, Príncipe, Princesa, Rey, Reina, Emperador, Palacio, Castillo, Torre, Mazmorra, Bosque encantado,
+Varita mágica, Hechizo, Conjuro, Maldición, Tesoro, Monedas de oro, Espejo, Manzana, Huso, Pozo, Blancanieves, Cenicienta,
+Rapunzel, Bella Durmiente, Caperucita Roja, Hansel, Gretel, Casita de chocolate, Pulgarcito, Gato con botas, Lobo feroz,
+Abuelita, Cazador, Madrastra, Siete enanitos, Zapato de cristal, Calabaza, Carroza, Medianoche, Mil y una noches, Aladino,
+Lámpara maravillosa, Genio, Alfombra voladora, Simbad, Alí Babá, Pegaso, Fénix, Grifo, Cíclope, Minotauro, Centauro, Rey
+Arturo, Merlín, Excalibur, Robin Hood, Peter Pan, Campanilla, Hada madrina, Ogro, Don Quijote, Sancho Panza
+
+[ritter] Caballeros y castillos
+Caballero, Castillo, Fortaleza, Dama, Escudero, Paje, Señor, Barón, Rey, Reina, Príncipe, Princesa, Duque, Conde, Armadura,
+Cota de malla, Yelmo, Casco, Visera, Escudo, Blasón, Espada, Lanza, Hacha, Maza, Ballesta, Arco, Flecha, Carcaj, Corcel,
+Caballo, Silla de montar, Torneo, Justa, Estandarte, Bandera, Foso, Puente levadizo, Rastrillo, Torre del homenaje, Torre,
+Almenas, Muralla, Adarve, Saetera, Mazmorra, Calabozo, Gran salón, Patio de armas, Pozo, Herrero, Fragua, Bufón, Juglar,
+Trovador, Capilla, Monje, Monasterio, Edad Media, Medieval, Antorcha, Candelabro, Festín, Banquete, Asedio, Catapulta,
+Ariete, Tesoro, Corona, Cetro, Trono, Dragón, Cruzada, Honor, Lealtad, Mesa Redonda, Heraldo
+
+[piraten] Piratas
+Pirata, Corsario, Bucanero, Filibustero, Capitán, Timonel, Marinero, Grumete, Cocinero, Barco pirata, Velero, Galeón,
+Fragata, Bote, Chalupa, Vela, Mástil, Vigía, Cofa, Jarcia, Escalera de cuerda, Ancla, Timón, Brújula, Catalejo, Mapa del
+tesoro, Tesoro, Cofre, Monedas de oro, Doblones, Piedras preciosas, Perlas, Joyas, Isla, Isla del tesoro, Palmera, Cueva,
+Cala, Cañón, Bala de cañón, Sable, Alfanje, Pistola, Mosquete, Parche, Pata de palo, Garfio, Pañuelo, Tricornio, Calavera,
+Bandera pirata, Loro, Ron, Tablón, Motín, Bodega, Camarote, Cubierta, Mensaje en una botella, Tormenta, Ola, Naufragio,
+Restos, Puerto, Taberna, Botín, Abordaje, Proa, Popa, Babor, Estribor
+
+== Tecnología ==
+[computer] Ordenador e internet
+Ordenador, Portátil, Tableta, Teléfono móvil, Móvil, Pantalla, Monitor, Teclado, Ratón, Panel táctil, Impresora, Escáner,
+Altavoz, Auriculares, Micrófono, Webcam, Cámara, Cargador, Cable, Batería, Disco duro, Memoria, Procesador, Tarjeta
+gráfica, Chip, Circuito, Enchufe, Router, Módem, Wifi, Internet, Red, Servidor, Nube, Página web, Navegador, Buscador,
+Enlace, Descarga, Archivo, Carpeta, Documento, Programa, Aplicación, Software, Actualización, Contraseña, Usuario, Cuenta,
+Escritorio, Icono, Ventana, Menú, Tecla, Barra espaciadora, Cursor, Clic, Doble clic, Correo electrónico, Mensaje, Chat,
+Videollamada, Emoji, Juego, Videojuego, Consola, Mando, Joystick, Robot, Programación, Código, Algoritmo, Base de datos,
+Virus, Cortafuegos, Copia de seguridad, Bluetooth, Tarjeta de memoria, Memoria USB, Píxel, Byte, Hoja de cálculo

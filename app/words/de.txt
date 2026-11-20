@@ -1,7 +1,609 @@
-# Test
-== Jahreszeiten ==
-[sommer] Im Sommer
-Badeanzug, Eis, Mücke, Hitze, Limo, Grill, Schatten, Strand, Ferien, Freibad, Melone, Sand, Sonnenbrille, Sonnencreme, Urlaub, Planschbecken, Eis am Stiel
+# Suchsel – Wortschatz Deutsch
+# Aufbau: „== Gruppe ==“, darunter „[id] Name des Themas“ und die Wörter, mit Komma getrennt (gern über mehrere Zeilen).
+# Leerzeichen und Bindestriche verschwinden im Gitter, ß wird zu SS. Wörter unter 3 Buchstaben werden nicht benutzt.
+
 == Tiere ==
 [haustiere] Haustiere
-Hund, Katze, Maus, Hamster, Kaninchen, Meerschweinchen, Wellensittich, Goldfisch, Schildkröte, Pferd, Pony, Ratte, Frettchen, Kanarienvogel
+Hund, Katze, Maus, Hamster, Kaninchen, Meerschweinchen, Wellensittich, Goldfisch, Schildkröte, Pferd, Pony, Ratte, Frettchen,
+Kanarienvogel, Papagei, Chinchilla, Degu, Rennmaus, Zwergkaninchen, Aquarium, Terrarium, Futternapf, Leine, Halsband, Körbchen,
+Käfig, Kratzbaum, Katzenklo, Hundehütte, Welpe, Kätzchen, Fohlen, Streu, Leckerli, Bürste, Tierarzt, Schnurrhaare, Pfote, Fell,
+Schwanz, Bellen, Miauen, Schnurren, Gassi, Spielzeug, Wassernapf, Zecke, Floh, Impfung, Stall, Heu, Möhre, Gecko, Leguan, Axolotl,
+Bartagame, Stabheuschrecke, Kaulquappe, Guppy, Wels, Neonfisch, Kakadu, Nymphensittich, Zebrafink, Dackel, Pudel, Schäferhund,
+Mops, Perserkatze, Kater, Hündin, Streicheln, Kuscheln, Futter, Trockenfutter, Nassfutter, Hasenstall, Vogelkäfig
+
+[bauernhof] Auf dem Bauernhof
+Kuh, Kalb, Stier, Bulle, Ochse, Schwein, Ferkel, Sau, Eber, Schaf, Lamm, Widder, Ziege, Zicklein, Bock, Pferd, Fohlen, Esel, Huhn,
+Hahn, Küken, Henne, Gans, Ente, Truthahn, Pute, Hofhund, Scheunenkatze, Bauer, Bäuerin, Traktor, Mähdrescher, Anhänger, Pflug,
+Egge, Scheune, Stall, Heuboden, Silo, Weide, Koppel, Zaun, Acker, Feld, Wiese, Heu, Stroh, Strohballen, Futter, Trog, Tränke,
+Melken, Milch, Eier, Hühnerstall, Nest, Mist, Misthaufen, Gülle, Mistgabel, Schubkarre, Weizen, Roggen, Gerste, Hafer, Mais,
+Kartoffel, Rübe, Raps, Sonnenblume, Ernte, Saat, Bauernhaus, Hofladen, Gummistiefel, Vogelscheuche, Melkmaschine, Kuhglocke,
+Wetterhahn, Hofkatze, Gemüsebeet, Obstgarten, Imker, Bienenstock, Hufeisen, Sattel, Zaumzeug, Futterkrippe, Ackerland
+
+[wald] Tiere im Wald
+Reh, Hirsch, Hirschkuh, Kitz, Wildschwein, Frischling, Fuchs, Dachs, Hase, Eichhörnchen, Igel, Maulwurf, Wolf, Luchs, Bär, Biber,
+Waschbär, Marder, Iltis, Wiesel, Hermelin, Otter, Fledermaus, Siebenschläfer, Haselmaus, Spitzmaus, Waldmaus, Elch, Wisent,
+Mufflon, Gämse, Steinbock, Murmeltier, Eule, Uhu, Waldkauz, Specht, Buntspecht, Eichelhäher, Kuckuck, Habicht, Bussard, Falke,
+Rotkehlchen, Amsel, Zaunkönig, Kleiber, Meise, Fink, Drossel, Auerhahn, Fasan, Rebhuhn, Waldschnepfe, Kreuzotter, Ringelnatter,
+Blindschleiche, Eidechse, Feuersalamander, Molch, Kröte, Frosch, Unke, Ameise, Hirschkäfer, Borkenkäfer, Zecke, Waldameise,
+Schnecke, Nacktschnecke, Weinbergschnecke, Spinne, Libelle, Glühwürmchen, Mistkäfer, Wildkatze, Rotfuchs, Feldhase
+
+[zoo] Im Zoo
+Löwe, Tiger, Leopard, Gepard, Jaguar, Panther, Elefant, Giraffe, Zebra, Nashorn, Nilpferd, Flusspferd, Kamel, Dromedar, Lama,
+Alpaka, Affe, Gorilla, Schimpanse, Orang-Utan, Pavian, Lemur, Erdmännchen, Känguru, Koala, Wombat, Panda, Eisbär, Braunbär,
+Pinguin, Seehund, Seelöwe, Robbe, Walross, Krokodil, Alligator, Schlange, Python, Boa, Kobra, Leguan, Chamäleon, Schildkröte,
+Flamingo, Pelikan, Strauß, Emu, Pfau, Papagei, Tukan, Adler, Geier, Uhu, Antilope, Gazelle, Gnu, Büffel, Bison, Tapir, Okapi,
+Faultier, Ameisenbär, Gürteltier, Stachelschwein, Hyäne, Schakal, Kojote, Waschbär, Otter, Erdferkel, Warzenschwein, Yak,
+Rentier, Elch, Wolf, Puma, Luchs, Gehege, Tierpfleger, Fütterung, Streichelzoo, Aquarium, Terrarium, Raubtierhaus, Affenhaus,
+Zoowärter, Eintritt, Zookarte
+
+[voegel] Vögel
+Amsel, Drossel, Fink, Star, Spatz, Sperling, Meise, Kohlmeise, Blaumeise, Rotkehlchen, Zaunkönig, Kleiber, Buchfink, Stieglitz,
+Gimpel, Dompfaff, Zeisig, Hänfling, Grünfink, Bachstelze, Lerche, Nachtigall, Schwalbe, Mauersegler, Kuckuck, Specht, Wiedehopf,
+Eisvogel, Pirol, Elster, Krähe, Rabe, Dohle, Eichelhäher, Taube, Turteltaube, Möwe, Kormoran, Reiher, Graureiher, Storch, Kranich,
+Schwan, Gans, Ente, Stockente, Blesshuhn, Haubentaucher, Kiebitz, Brachvogel, Austernfischer, Strandläufer, Adler, Seeadler,
+Steinadler, Falke, Turmfalke, Wanderfalke, Habicht, Sperber, Bussard, Mäusebussard, Milan, Geier, Uhu, Eule, Schleiereule,
+Waldkauz, Steinkauz, Fasan, Rebhuhn, Wachtel, Auerhahn, Papagei, Wellensittich, Kanarienvogel, Kakadu, Ara, Tukan, Kolibri,
+Flamingo, Pelikan, Pinguin, Strauß, Pfau, Albatros, Papageitaucher, Rotmilan, Goldammer, Feldlerche, Singdrossel, Ringeltaube
+
+[meer] Im Meer
+Wal, Blauwal, Pottwal, Buckelwal, Orca, Delfin, Tümmler, Hai, Weißer Hai, Hammerhai, Walhai, Rochen, Mantarochen, Robbe, Seehund,
+Seelöwe, Walross, Seekuh, Schildkröte, Krake, Oktopus, Tintenfisch, Kalmar, Qualle, Seestern, Seeigel, Seepferdchen, Seegurke,
+Koralle, Anemone, Muschel, Miesmuschel, Auster, Jakobsmuschel, Schnecke, Krebs, Krabbe, Hummer, Languste, Garnele, Krill,
+Hering, Makrele, Sardine, Thunfisch, Lachs, Kabeljau, Dorsch, Scholle, Seezunge, Steinbutt, Aal, Muräne, Barrakuda, Schwertfisch,
+Clownfisch, Doktorfisch, Kugelfisch, Rotbarsch, Seeteufel, Plankton, Algen, Seegras, Tang, Riff, Korallenriff, Tiefsee, Welle,
+Strömung, Ebbe, Flut, Gezeiten, Insel, Sandbank, Leuchtturm, Taucher, Schnorchel, Taucherbrille, Schiff, Boot, Fischkutter,
+Netz, Anker, Meeresgrund, Salzwasser, Möwe, Albatros, Pinguin, Kormoran
+
+[insekten] Insekten und Krabbeltiere
+Biene, Honigbiene, Wildbiene, Hummel, Wespe, Hornisse, Ameise, Fliege, Stubenfliege, Mücke, Stechmücke, Schnake, Libelle,
+Schmetterling, Zitronenfalter, Tagpfauenauge, Admiral, Kohlweißling, Motte, Nachtfalter, Raupe, Puppe, Kokon, Käfer, Marienkäfer,
+Maikäfer, Hirschkäfer, Mistkäfer, Laufkäfer, Glühwürmchen, Leuchtkäfer, Borkenkäfer, Kartoffelkäfer, Rüsselkäfer, Heuschrecke,
+Grashüpfer, Grille, Zikade, Gottesanbeterin, Stabheuschrecke, Ohrwurm, Wanze, Blattlaus, Laus, Floh, Zecke, Milbe, Spinne,
+Kreuzspinne, Vogelspinne, Weberknecht, Skorpion, Tausendfüßer, Hundertfüßer, Assel, Kellerassel, Regenwurm, Schnecke,
+Nacktschnecke, Termite, Kakerlake, Schabe, Silberfischchen, Bremse, Kriebelmücke, Florfliege, Schwebfliege, Wasserläufer,
+Gelbrandkäfer, Taufliege, Fühler, Flügel, Stachel, Larve, Insektenhotel, Bienenstock, Wabe, Ameisenhaufen, Spinnennetz, Honig
+
+[dinos] Dinosaurier und Urzeit
+Dinosaurier, Tyrannosaurus, Triceratops, Stegosaurus, Brachiosaurus, Diplodocus, Velociraptor, Ankylosaurus, Iguanodon,
+Spinosaurus, Allosaurus, Parasaurolophus, Pachycephalosaurus, Brontosaurus, Apatosaurus, Compsognathus, Archaeopteryx,
+Pteranodon, Flugsaurier, Plesiosaurier, Ichthyosaurier, Mosasaurus, Mammut, Säbelzahntiger, Wollnashorn, Höhlenbär,
+Riesenfaultier, Urpferd, Trilobit, Ammonit, Fossil, Versteinerung, Skelett, Knochen, Kralle, Zahn, Schuppe, Ei, Nest,
+Fußabdruck, Ausgrabung, Forscher, Paläontologe, Museum, Pinsel, Hammer, Meißel, Steinzeit, Urzeit, Jura, Kreide, Trias,
+Vulkan, Meteorit, Asteroid, Aussterben, Pflanzenfresser, Fleischfresser, Raubsaurier, Urwald, Farn, Schachtelhalm, Bernstein,
+Höhle, Höhlenmalerei, Neandertaler, Faustkeil, Lagerfeuer, Speer, Urmensch, Eiszeit, Gletscher
+
+[hunde] Hunderassen
+Dackel, Pudel, Mops, Boxer, Dalmatiner, Labrador, Golden Retriever, Schäferhund, Collie, Beagle, Terrier, Spitz, Pinscher,
+Dobermann, Rottweiler, Bernhardiner, Neufundländer, Husky, Malamute, Chihuahua, Malteser, Bulldogge, Mastiff, Dogge, Windhund,
+Greyhound, Whippet, Basset, Bluthund, Pointer, Setter, Spaniel, Cockerspaniel, Weimaraner, Schnauzer, Riesenschnauzer, Pekinese,
+Shih Tzu, Yorkshire, Jack Russell, Border Collie, Sheltie, Akita, Shiba, Samojede, Chow Chow, Shar Pei, Dingo, Leonberger,
+Hovawart, Bobtail, Pumi, Puli, Corgi, Papillon, Havaneser, Boston Terrier, Pitbull, Rhodesian Ridgeback, Afghane, Saluki,
+Magyar Vizsla, Münsterländer, Wolfsspitz, Mischling, Zwergpudel, Rauhaardackel, Laika, Bracke, Eurasier
+
+== Essen und Trinken ==
+[obst] Obst
+Apfel, Birne, Kirsche, Pflaume, Zwetschge, Mirabelle, Pfirsich, Aprikose, Nektarine, Erdbeere, Himbeere, Brombeere, Heidelbeere,
+Blaubeere, Johannisbeere, Stachelbeere, Preiselbeere, Cranberry, Holunder, Weintraube, Rosine, Banane, Orange, Apfelsine,
+Mandarine, Clementine, Zitrone, Limette, Grapefruit, Pampelmuse, Ananas, Mango, Papaya, Kiwi, Maracuja, Passionsfrucht,
+Granatapfel, Feige, Dattel, Kokosnuss, Melone, Wassermelone, Honigmelone, Litschi, Guave, Kaki, Sternfrucht, Quitte, Physalis,
+Drachenfrucht, Avocado, Olive, Rhabarber, Sauerkirsche, Schlehe, Hagebutte, Kumquat, Mispel, Maulbeere, Walnuss, Haselnuss,
+Mandel, Kastanie, Erdnuss, Pistazie, Obstsalat, Kompott, Marmelade, Saft, Obstkorb, Kerngehäuse, Fruchtfleisch, Schale, Stiel
+
+[gemuese] Gemüse
+Kartoffel, Karotte, Möhre, Mohrrübe, Tomate, Gurke, Paprika, Zwiebel, Knoblauch, Lauch, Porree, Sellerie, Fenchel, Spargel,
+Brokkoli, Blumenkohl, Rosenkohl, Grünkohl, Weißkohl, Rotkohl, Wirsing, Kohlrabi, Chinakohl, Spinat, Mangold, Salat, Kopfsalat,
+Eisbergsalat, Feldsalat, Rucola, Radieschen, Rettich, Meerrettich, Rote Bete, Pastinake, Schwarzwurzel, Steckrübe, Zucchini,
+Kürbis, Aubergine, Erbse, Bohne, Linse, Kichererbse, Mais, Okra, Artischocke, Süßkartoffel, Ingwer, Pilz, Champignon,
+Pfifferling, Steinpilz, Frühlingszwiebel, Schalotte, Peperoni, Chili, Kresse, Bärlauch, Topinambur, Zuckerschote, Edamame,
+Sojabohne, Brunnenkresse, Chicorée, Endivie, Radicchio, Petersilienwurzel, Gemüsebeet, Ernte, Rohkost, Gemüsesuppe, Eintopf
+
+[essen] Lieblingsgerichte
+Pizza, Spaghetti, Lasagne, Nudeln, Ravioli, Tortellini, Risotto, Pfannkuchen, Eierkuchen, Kaiserschmarrn, Schnitzel, Bratwurst,
+Currywurst, Frikadelle, Bulette, Gulasch, Rouladen, Sauerbraten, Braten, Hähnchen, Brathähnchen, Fischstäbchen, Hamburger,
+Pommes, Kartoffelsalat, Bratkartoffeln, Kartoffelbrei, Püree, Klöße, Knödel, Spätzle, Maultaschen, Käsespätzle, Flammkuchen,
+Zwiebelkuchen, Quiche, Auflauf, Gratin, Eintopf, Suppe, Tomatensuppe, Linsensuppe, Erbsensuppe, Kartoffelsuppe, Gemüsesuppe,
+Hühnersuppe, Chili, Burrito, Taco, Döner, Falafel, Sushi, Curry, Reis, Paella, Omelett, Rührei, Spiegelei, Salat, Sandwich,
+Toast, Würstchen, Leberkäse, Schweinebraten, Sauerkraut, Rotkohl, Grünkohl, Labskaus, Matjes, Reibekuchen, Kartoffelpuffer,
+Dampfnudeln, Germknödel, Milchreis, Grießbrei, Pudding, Arme Ritter, Fondue, Raclette, Gyros, Moussaka, Kebab, Ramen
+
+[fruehstueck] Frühstück
+Brötchen, Brot, Toast, Croissant, Butter, Margarine, Marmelade, Konfitüre, Honig, Nutella, Nougatcreme, Käse, Frischkäse, Quark,
+Joghurt, Müsli, Haferflocken, Cornflakes, Porridge, Ei, Frühstücksei, Rührei, Spiegelei, Speck, Schinken, Salami, Wurst,
+Leberwurst, Teewurst, Mettwurst, Lachs, Gurke, Tomate, Radieschen, Obst, Banane, Apfel, Erdbeeren, Kaffee, Tee, Kakao, Milch,
+Orangensaft, Apfelsaft, Smoothie, Eierbecher, Eierlöffel, Kaffeekanne, Teekanne, Tasse, Becher, Teller, Brettchen, Messer,
+Löffel, Gabel, Serviette, Brotkorb, Toaster, Kaffeemaschine, Wasserkocher, Zucker, Süßstoff, Sahne, Kondensmilch, Pfannkuchen,
+Waffel, Rosinenbrötchen, Laugenbrezel, Vollkornbrot, Knäckebrot, Zwieback, Hörnchen, Sonntagsfrühstück, Brunch
+
+[backen] Backen und Süßes
+Kuchen, Torte, Muffin, Cupcake, Keks, Plätzchen, Waffel, Brownie, Kekse, Krapfen, Berliner, Donut, Strudel, Apfelstrudel,
+Käsekuchen, Marmorkuchen, Rührkuchen, Gugelhupf, Napfkuchen, Streuselkuchen, Bienenstich, Schwarzwälder, Frankfurter Kranz,
+Obstkuchen, Zwetschgenkuchen, Hefezopf, Biskuit, Baiser, Makrone, Lebkuchen, Stollen, Zimtschnecke, Teig, Mehl, Zucker,
+Puderzucker, Butter, Eier, Milch, Hefe, Backpulver, Vanille, Zimt, Kakao, Schokolade, Kuvertüre, Sahne, Schlagsahne, Quark,
+Rosinen, Mandeln, Nüsse, Streusel, Glasur, Zuckerguss, Marzipan, Fondant, Sprinkles, Rührschüssel, Schneebesen, Mixer,
+Nudelholz, Backblech, Springform, Ausstecher, Backofen, Backpapier, Teigschaber, Spritzbeutel, Waage, Rezept, Bonbon, Lutscher,
+Gummibärchen, Lakritz, Praline, Trüffel, Karamell, Popcorn, Zuckerwatte, Eis, Pudding, Mousse, Tiramisu, Pfannkuchen
+
+[getraenke] Getränke
+Wasser, Mineralwasser, Sprudel, Leitungswasser, Saft, Apfelsaft, Orangensaft, Traubensaft, Kirschsaft, Multivitaminsaft,
+Apfelschorle, Schorle, Limonade, Limo, Cola, Brause, Eistee, Tee, Pfefferminztee, Kamillentee, Früchtetee, Kräutertee, Grüntee,
+Schwarztee, Kaffee, Espresso, Cappuccino, Latte Macchiato, Milchkaffee, Kakao, Heiße Schokolade, Milch, Buttermilch, Kefir,
+Milchshake, Smoothie, Bier, Wein, Rotwein, Weißwein, Sekt, Champagner, Glühwein, Punsch, Bowle, Cocktail, Likör, Schnaps,
+Most, Cidre, Radler, Malzbier, Kinderpunsch, Holunderblütensaft, Ingwertee, Energydrink, Sirup, Trinkhalm, Strohhalm, Glas,
+Becher, Tasse, Flasche, Karaffe, Krug, Eiswürfel, Zitronenscheibe, Thermoskanne, Getränkekiste, Kanne, Prost
+
+[gewuerze] Kräuter und Gewürze
+Salz, Pfeffer, Paprika, Curry, Zimt, Muskat, Nelke, Kümmel, Kreuzkümmel, Koriander, Kardamom, Anis, Sternanis, Fenchel,
+Ingwer, Kurkuma, Safran, Vanille, Chili, Cayenne, Knoblauch, Zwiebel, Senf, Meerrettich, Lorbeer, Wacholder, Piment,
+Basilikum, Oregano, Thymian, Rosmarin, Salbei, Majoran, Petersilie, Schnittlauch, Dill, Estragon, Kerbel, Liebstöckel,
+Bohnenkraut, Minze, Pfefferminze, Melisse, Zitronenmelisse, Borretsch, Bärlauch, Kresse, Lavendel, Kamille, Brennnessel,
+Löwenzahn, Sauerampfer, Pimpinelle, Zitronengras, Bockshornklee, Kapern, Sesam, Mohn, Leinsamen, Gewürzmühle, Mörser,
+Kräutergarten, Kräuterbutter, Gewürzregal, Pfeffermühle, Salzstreuer, Prise
+
+[kueche] In der Küche
+Herd, Backofen, Kühlschrank, Gefrierschrank, Spülmaschine, Mikrowelle, Toaster, Wasserkocher, Kaffeemaschine, Mixer, Pürierstab,
+Rührgerät, Küchenmaschine, Waage, Topf, Pfanne, Deckel, Kochlöffel, Pfannenwender, Schneebesen, Schöpfkelle, Sieb, Nudelsieb,
+Reibe, Schäler, Messer, Brotmesser, Schneidebrett, Nudelholz, Dosenöffner, Flaschenöffner, Korkenzieher, Knoblauchpresse,
+Zitronenpresse, Teller, Schüssel, Tasse, Becher, Glas, Besteck, Gabel, Löffel, Teelöffel, Kanne, Thermoskanne, Auflaufform,
+Backblech, Brotkasten, Vorratsdose, Gewürzregal, Spüle, Wasserhahn, Spülmittel, Schwamm, Geschirrtuch, Topflappen, Schürze,
+Kochbuch, Rezept, Mülleimer, Küchenrolle, Frischhaltefolie, Alufolie, Eieruhr, Küchenwecker, Dunstabzug, Arbeitsplatte,
+Schublade, Hängeschrank, Kochen, Braten, Backen, Rühren, Schneiden, Schälen, Würzen, Abschmecken, Probieren
+
+== Natur ==
+[blumen] Blumen und Pflanzen
+Rose, Tulpe, Narzisse, Osterglocke, Krokus, Schneeglöckchen, Hyazinthe, Maiglöckchen, Veilchen, Stiefmütterchen, Gänseblümchen,
+Löwenzahn, Mohn, Kornblume, Margerite, Kamille, Sonnenblume, Dahlie, Aster, Chrysantheme, Lilie, Iris, Schwertlilie, Orchidee,
+Nelke, Geranie, Petunie, Begonie, Fuchsie, Lavendel, Flieder, Hortensie, Rhododendron, Azalee, Magnolie, Jasmin, Hibiskus,
+Klatschmohn, Ringelblume, Kapuzinerkresse, Vergissmeinnicht, Glockenblume, Fingerhut, Rittersporn, Lupine, Pfingstrose,
+Primel, Schlüsselblume, Anemone, Seerose, Lotus, Edelweiß, Enzian, Alpenrose, Heidekraut, Distel, Klee, Kleeblatt, Efeu, Farn,
+Moos, Kaktus, Aloe, Bambus, Gras, Schilf, Blüte, Knospe, Blatt, Stängel, Wurzel, Dorn, Stachel, Pollen, Nektar, Samen,
+Zwiebel, Blumentopf, Blumenstrauß, Vase, Gießkanne, Blumenwiese, Kletterrose, Gerbera, Freesie, Amaryllis, Weihnachtsstern
+
+[baeume] Bäume und Wald
+Eiche, Buche, Birke, Linde, Ahorn, Esche, Erle, Ulme, Pappel, Weide, Trauerweide, Kastanie, Rosskastanie, Walnuss, Kirschbaum,
+Apfelbaum, Birnbaum, Tanne, Fichte, Kiefer, Lärche, Eibe, Zeder, Zypresse, Mammutbaum, Palme, Olivenbaum, Platane, Robinie,
+Eberesche, Vogelbeere, Holunder, Haselnuss, Hainbuche, Wacholder, Baumstamm, Rinde, Borke, Ast, Zweig, Blatt, Nadel, Zapfen,
+Tannenzapfen, Eichel, Buchecker, Wurzel, Krone, Baumkrone, Jahresringe, Harz, Knospe, Laub, Laubbaum, Nadelbaum, Mischwald,
+Urwald, Lichtung, Waldweg, Hochsitz, Förster, Holzfäller, Säge, Axt, Brennholz, Baumhaus, Moos, Pilz, Farn, Unterholz,
+Waldboden, Baumstumpf, Setzling, Schonung, Aufforstung, Waldrand, Specht, Eichhörnchen
+
+[garten] Im Garten
+Rasen, Beet, Blumenbeet, Gemüsebeet, Hochbeet, Hecke, Zaun, Gartentor, Gartenhaus, Laube, Pergola, Terrasse, Gartenteich,
+Springbrunnen, Vogelhaus, Vogeltränke, Insektenhotel, Komposthaufen, Kompost, Regentonne, Gewächshaus, Frühbeet, Gartenzwerg,
+Hängematte, Liegestuhl, Sonnenschirm, Gartenstuhl, Gartentisch, Grill, Schaukel, Sandkasten, Rutsche, Trampolin, Planschbecken,
+Rasenmäher, Harke, Rechen, Spaten, Schaufel, Hacke, Gartenschere, Heckenschere, Astschere, Schubkarre, Gießkanne, Gartenschlauch,
+Rasensprenger, Handschuhe, Blumentopf, Blumenerde, Dünger, Samen, Saatgut, Setzling, Unkraut, Jäten, Gießen, Pflanzen, Säen,
+Ernten, Mähen, Umgraben, Erdbeerbeet, Kräuterbeet, Obstbaum, Beerenstrauch, Rosenbogen, Steingarten, Trittstein, Gartenweg,
+Regenwurm, Schnecke, Maulwurf, Igel, Amsel, Biene, Hummel, Schmetterling
+
+[wetter] Wetter
+Sonne, Sonnenschein, Regen, Nieselregen, Platzregen, Schauer, Regenbogen, Wolke, Gewitterwolke, Nebel, Dunst, Wind, Brise,
+Sturm, Orkan, Böe, Tornado, Hurrikan, Taifun, Gewitter, Blitz, Donner, Hagel, Graupel, Schnee, Schneeflocke, Schneesturm,
+Glatteis, Frost, Raureif, Tau, Eiszapfen, Hitze, Hitzewelle, Dürre, Kälte, Wärme, Schwüle, Temperatur, Thermometer, Barometer,
+Luftdruck, Hochdruck, Tiefdruck, Wetterbericht, Vorhersage, Meteorologe, Wetterstation, Windrichtung, Windstärke, Windmühle,
+Wetterhahn, Regenschirm, Regenjacke, Gummistiefel, Sonnenbrille, Sonnencreme, Pfütze, Matsch, Überschwemmung, Hochwasser,
+Lawine, Wolkenbruch, Sonnenaufgang, Sonnenuntergang, Dämmerung, Morgenrot, Abendrot, Wetterleuchten, Polarlicht, Klima,
+Jahreszeit, Aprilwetter, Altweibersommer, Föhn, Monsun, Passat
+
+[landschaft] Landschaft und Natur
+Berg, Gebirge, Gipfel, Hügel, Tal, Schlucht, Klippe, Felsen, Höhle, Vulkan, Krater, Gletscher, Wasserfall, Quelle, Bach, Fluss,
+Strom, See, Teich, Weiher, Tümpel, Moor, Sumpf, Meer, Ozean, Küste, Strand, Düne, Bucht, Insel, Halbinsel, Lagune, Riff, Wüste,
+Oase, Steppe, Savanne, Prärie, Dschungel, Regenwald, Urwald, Wald, Lichtung, Wiese, Weide, Feld, Acker, Heide, Ebene, Hochebene,
+Plateau, Canyon, Fjord, Delta, Mündung, Ufer, Kies, Sand, Stein, Kiesel, Erde, Lehm, Ton, Granit, Marmor, Kristall, Horizont,
+Landschaft, Panorama, Aussicht, Naturschutz, Nationalpark, Biotop, Wanderweg, Pfad, Brücke, Steg, Holzsteg, Bergsee, Almwiese
+
+[weltall] Weltall
+Sonne, Mond, Erde, Merkur, Venus, Mars, Jupiter, Saturn, Uranus, Neptun, Pluto, Planet, Zwergplanet, Stern, Sternbild,
+Sternschnuppe, Komet, Asteroid, Meteor, Meteorit, Galaxie, Milchstraße, Andromeda, Nebel, Supernova, Schwarzes Loch, Universum,
+Weltraum, Sonnensystem, Umlaufbahn, Schwerkraft, Krater, Mondfinsternis, Sonnenfinsternis, Vollmond, Neumond, Halbmond,
+Mondsichel, Rakete, Raumschiff, Raumstation, Satellit, Raumsonde, Astronaut, Kosmonaut, Raumanzug, Helm, Countdown, Start,
+Landung, Mondlandung, Teleskop, Fernrohr, Sternwarte, Planetarium, Astronom, Lichtjahr, Polarstern, Großer Wagen, Orion,
+Kassiopeia, Ringe, Marsmond, Mondgestein, Schwerelosigkeit, Außerirdischer, Ufo, Alien, Kosmos, Urknall, Roter Riese,
+Weißer Zwerg, Sternenhimmel, Abendstern
+
+== Jahreszeiten und Feste ==
+[fruehling] Frühling
+Frühling, Frühjahr, Lenz, März, April, Mai, Ostern, Blüte, Knospe, Krokus, Tulpe, Narzisse, Osterglocke, Schneeglöckchen,
+Märzenbecher, Primel, Veilchen, Gänseblümchen, Löwenzahn, Kirschblüte, Apfelblüte, Magnolie, Forsythie, Weidenkätzchen,
+Bärlauch, Biene, Hummel, Schmetterling, Marienkäfer, Vogelgezwitscher, Nest, Küken, Lamm, Fohlen, Kaulquappe, Storch, Schwalbe,
+Kuckuck, Amsel, Frühjahrsputz, Aussaat, Säen, Setzling, Gartenarbeit, Fahrrad, Spaziergang, Regenschauer, Aprilwetter,
+Regenbogen, Sonnenstrahl, Frühlingsanfang, Zeitumstellung, Muttertag, Maibaum, Maifeiertag, Pfingsten, Himmelfahrt,
+Frühlingsfest, Blumenwiese, Pollen, Heuschnupfen, Gummistiefel, Übergangsjacke, Frühlingsgefühle, Eiersuche, Erdbeerpflanze,
+Spargelzeit, Rhabarber, Radieschen
+
+[sommer] Im Sommer
+Sommer, Juni, Juli, August, Sonne, Hitze, Sonnenschein, Ferien, Urlaub, Strand, Meer, Sand, Sandburg, Muschel, Welle, Badeanzug,
+Bikini, Badehose, Handtuch, Sonnenbrille, Sonnencreme, Sonnenhut, Sonnenschirm, Liegestuhl, Strandkorb, Schwimmbad, Freibad,
+Sprungturm, Schwimmring, Luftmatratze, Schwimmflügel, Planschbecken, Wasserpistole, Eis, Eis am Stiel, Eisdiele, Waffeleis,
+Erdbeeren, Kirschen, Melone, Wassermelone, Limonade, Limo, Grill, Grillen, Würstchen, Picknick, Camping, Zelt, Lagerfeuer,
+Gewitter, Mücke, Wespe, Glühwürmchen, Schatten, Sommerfest, Sommerferien, Flipflops, Sandalen, Shorts, Kleid, Sommersprossen,
+Sonnenbrand, Barfuß, Hängematte, Badesee, Rasensprenger, Fahrradtour, Wanderung, Sommernacht, Sternschnuppe, Johannisbeere,
+Heidelbeere, Getreideernte, Mähdrescher, Strohballen, Sonnenblume, Lavendel
+
+[herbst] Herbst
+Herbst, September, Oktober, November, Laub, Blätter, Herbstlaub, Kastanie, Eichel, Buchecker, Walnuss, Haselnuss, Pilz,
+Pilzsammeln, Steinpilz, Pfifferling, Kürbis, Kürbissuppe, Apfel, Birne, Pflaume, Zwetschge, Weintraube, Weinlese, Ernte,
+Erntedank, Kartoffelfeuer, Drachen, Drachensteigen, Wind, Sturm, Nebel, Regen, Regenschirm, Pfütze, Gummistiefel, Matsch,
+Laterne, Laternenumzug, Sankt Martin, Martinsgans, Halloween, Kerze, Tee, Kakao, Strickjacke, Schal, Mütze, Zugvögel,
+Kraniche, Igel, Eichhörnchen, Wintervorrat, Winterschlaf, Zeitumstellung, Rechen, Laubhaufen, Laubbläser, Federweißer,
+Zwiebelkuchen, Apfelkuchen, Bratapfel, Maronen, Vogelbeeren, Hagebutte, Herbstferien, Spinnennetz, Altweibersommer, Dämmerung
+
+[winter] Winter
+Winter, Dezember, Januar, Februar, Schnee, Schneeflocke, Schneemann, Schneeball, Schneeballschlacht, Schneeengel, Schneesturm,
+Eis, Glatteis, Frost, Raureif, Eiszapfen, Eisblume, Kälte, Schlitten, Rodeln, Schlittschuh, Eislaufen, Eisbahn, Ski, Skifahren,
+Snowboard, Langlauf, Skilift, Piste, Schneeschuh, Iglu, Mütze, Schal, Handschuhe, Fäustlinge, Winterjacke, Stiefel, Pullover,
+Wollsocken, Ohrenschützer, Kamin, Kaminfeuer, Ofen, Heizung, Wärmflasche, Decke, Kuscheln, Tee, Kakao, Glühwein, Punsch,
+Plätzchen, Lebkuchen, Bratapfel, Advent, Weihnachten, Silvester, Neujahr, Raketen, Wintersport, Winterschlaf, Futterhaus,
+Vogelfutter, Rotkehlchen, Schneeschippe, Streusalz, Schneepflug, Winterreifen, Eiskratzer, Dunkelheit, Wintersonne, Polarlicht,
+Pinguin, Eisbär, Fasching, Winterferien, Thermometer, Erkältung, Schnupfen
+
+[weihnachten] Weihnachten
+Weihnachten, Heiligabend, Advent, Adventskranz, Adventskalender, Kerze, Christbaum, Tannenbaum, Weihnachtsbaum, Lametta,
+Christbaumkugel, Lichterkette, Strohstern, Stern, Engel, Krippe, Jesuskind, Maria, Josef, Hirten, Schafe, Ochse, Esel,
+Heilige Drei Könige, Weihnachtsmann, Christkind, Nikolaus, Knecht Ruprecht, Rentier, Rudolph, Schlitten, Wichtel, Elfen,
+Geschenk, Bescherung, Geschenkpapier, Schleife, Wunschzettel, Stiefel, Socken, Plätzchen, Lebkuchen, Spekulatius, Stollen,
+Zimtstern, Vanillekipferl, Printen, Dominostein, Marzipan, Weihnachtsgans, Raclette, Weihnachtsmarkt, Glühwein, Punsch,
+Bratwurst, Gebrannte Mandeln, Schnee, Glocke, Glöckchen, Weihnachtslied, Krippenspiel, Christmette, Kirche, Mistelzweig,
+Weihnachtsstern, Räuchermännchen, Nussknacker, Schwibbogen, Pyramide, Zimt, Nelken, Orange, Kamin, Feiertage, Familie
+
+[ostern] Ostern
+Ostern, Osterhase, Osterei, Ostereier, Eiersuche, Osternest, Osterkorb, Osterstrauch, Osterfeuer, Osterlamm, Osterbrunnen,
+Osterglocke, Ostersonntag, Ostermontag, Karfreitag, Gründonnerstag, Palmsonntag, Fastenzeit, Auferstehung, Kirche, Glocken,
+Küken, Henne, Hase, Kaninchen, Lamm, Frühling, Narzisse, Tulpe, Krokus, Weidenkätzchen, Palmkätzchen, Hefezopf, Osterzopf,
+Schokolade, Schokohase, Zuckerei, Marzipanei, Eierfarbe, Färben, Bemalen, Pinsel, Ausblasen, Eierlauf, Eierlöffel,
+Eierbecher, Eierschale, Dotter, Eiweiß, Kresse, Ostergras, Körbchen, Schleife, Basteln, Osterferien, Familienfest,
+Frühstück, Brunch, Osterkerze, Ostermarkt, Hasenohren, Möhre, Wiese, Versteck
+
+[karneval] Karneval und Fasching
+Karneval, Fasching, Fastnacht, Fasnet, Rosenmontag, Weiberfastnacht, Aschermittwoch, Faschingsdienstag, Rosenmontagszug,
+Umzug, Festwagen, Kamelle, Bonbons, Konfetti, Luftschlangen, Kostüm, Verkleidung, Maske, Perücke, Schminke, Clown, Pirat,
+Prinzessin, Cowboy, Indianerkostüm, Hexe, Zauberer, Ritter, Feuerwehrmann, Polizist, Astronaut, Superheld, Vampir, Biene,
+Marienkäfer, Narr, Narren, Narrenkappe, Jeck, Helau, Alaaf, Büttenrede, Prinzenpaar, Dreigestirn, Funkemariechen, Garde,
+Tanzmariechen, Elferrat, Prunksitzung, Kappensitzung, Musikkapelle, Guggenmusik, Krapfen, Berliner, Kreppel, Tröte,
+Pappnase, Narrenzunft, Kinderfasching, Faschingsball, Schunkeln, Polonaise, Glitzer
+
+[halloween] Halloween
+Halloween, Kürbis, Kürbislaterne, Kerze, Gespenst, Geist, Hexe, Hexenbesen, Hexenhut, Zauberer, Vampir, Werwolf, Zombie,
+Mumie, Skelett, Totenkopf, Monster, Frankenstein, Kobold, Dämon, Fledermaus, Spinne, Spinnennetz, Schwarze Katze, Rabe, Eule,
+Friedhof, Grabstein, Gruft, Sarg, Spukhaus, Geisterhaus, Gruselschloss, Kostüm, Maske, Umhang, Schminke, Kunstblut, Süßes,
+Saures, Bonbons, Lutscher, Gummiwürmer, Kessel, Zaubertrank, Fluch, Zauberspruch, Mitternacht, Vollmond, Nebel, Grusel,
+Gänsehaut, Kreischen, Heulen, Party, Verkleiden, Schnitzen, Herbst, Oktober, Laterne, Gruselgeschichte, Spinnenbein
+
+[geburtstag] Geburtstag und Feste
+Geburtstag, Party, Feier, Fest, Geschenk, Überraschung, Geschenkpapier, Schleife, Karte, Glückwunsch, Einladung, Gäste,
+Torte, Geburtstagstorte, Kuchen, Kerzen, Pusten, Wunsch, Luftballon, Girlande, Konfetti, Luftschlangen, Partyhut, Tröte,
+Wunderkerze, Lampion, Musik, Tanzen, Singen, Spiele, Topfschlagen, Schatzsuche, Sackhüpfen, Eierlauf, Stopptanz, Reise nach
+Jerusalem, Kindergeburtstag, Jubiläum, Hochzeit, Braut, Bräutigam, Ehering, Brautstrauß, Taufe, Kommunion, Konfirmation,
+Abschlussfeier, Silvester, Feuerwerk, Raketen, Sekt, Anstoßen, Prost, Gratulieren, Feiern, Buffet, Grillfest, Gartenparty,
+Sommerfest, Straßenfest, Kirmes, Familienfeier, Fotobox, Mottoparty, Verkleidung, Polonaise
+
+[kalender] Monate und Tage
+Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember, Montag, Dienstag, Mittwoch,
+Donnerstag, Freitag, Samstag, Sonnabend, Sonntag, Wochenende, Werktag, Feiertag, Woche, Monat, Jahr, Schaltjahr, Tag, Nacht,
+Morgen, Vormittag, Mittag, Nachmittag, Abend, Mitternacht, Stunde, Minute, Sekunde, Uhr, Wecker, Kalender, Datum, Termin,
+Geburtstag, Jahreszeit, Frühling, Sommer, Herbst, Winter, Gestern, Heute, Übermorgen, Vorgestern, Zukunft, Vergangenheit,
+Gegenwart, Jahrhundert, Jahrzehnt, Jahrtausend, Silvester, Neujahr, Ostern, Pfingsten, Weihnachten, Tagesanbruch,
+Sonnenaufgang, Dämmerung, Zeitumstellung, Sommerzeit, Winterzeit, Sanduhr, Stoppuhr, Armbanduhr, Kirchturmuhr
+
+== Mensch ==
+[koerper] Der Körper
+Kopf, Haare, Stirn, Auge, Augenbraue, Wimper, Ohr, Nase, Mund, Lippe, Zunge, Zahn, Zähne, Kinn, Wange, Backe, Hals, Nacken,
+Schulter, Arm, Oberarm, Ellbogen, Unterarm, Handgelenk, Hand, Finger, Daumen, Zeigefinger, Fingernagel, Brust, Bauch,
+Bauchnabel, Rücken, Hüfte, Po, Bein, Oberschenkel, Knie, Wade, Schienbein, Knöchel, Fuß, Ferse, Zehe, Sohle, Haut, Muskel,
+Knochen, Skelett, Schädel, Wirbelsäule, Rippe, Gelenk, Herz, Lunge, Leber, Niere, Magen, Darm, Gehirn, Blut, Ader, Vene,
+Nerv, Sehne, Schweiß, Atem, Puls, Herzschlag, Pupille, Iris, Trommelfell, Gaumen, Mandeln, Kehlkopf, Stimme, Achsel,
+Handfläche, Fußsohle, Sommersprosse, Muttermal, Grübchen, Locke, Zopf, Bart, Schnurrbart
+
+[gesundheit] Gesundheit und Arzt
+Arzt, Ärztin, Hausarzt, Kinderarzt, Zahnarzt, Augenarzt, Tierarzt, Krankenhaus, Klinik, Praxis, Wartezimmer, Sprechstunde,
+Rezept, Apotheke, Apotheker, Medizin, Medikament, Tablette, Pille, Hustensaft, Tropfen, Salbe, Spritze, Impfung, Pflaster,
+Verband, Mullbinde, Gips, Krücke, Rollstuhl, Thermometer, Fieber, Husten, Schnupfen, Erkältung, Grippe, Halsschmerzen,
+Kopfschmerzen, Bauchweh, Zahnschmerzen, Allergie, Heuschnupfen, Masern, Windpocken, Mumps, Verletzung, Wunde, Beule,
+Prellung, Kratzer, Sonnenbrand, Krankenschwester, Pfleger, Sanitäter, Notarzt, Krankenwagen, Notaufnahme, Operation,
+Narkose, Röntgen, Ultraschall, Stethoskop, Blutdruck, Untersuchung, Diagnose, Therapie, Massage, Physiotherapie, Erholung,
+Genesung, Bettruhe, Wärmflasche, Kamillentee, Vitamine, Gesundheit, Fitness, Bewegung, Schlaf, Brille, Hörgerät, Zahnspange
+
+[kleidung] Kleidung
+Hose, Jeans, Shorts, Rock, Kleid, Bluse, Hemd, T-Shirt, Pullover, Pulli, Strickjacke, Sweatshirt, Hoodie, Weste, Jacke, Mantel,
+Anorak, Regenjacke, Winterjacke, Lederjacke, Blazer, Sakko, Anzug, Krawatte, Fliege, Schal, Halstuch, Mütze, Hut, Kappe,
+Baskenmütze, Stirnband, Handschuhe, Fäustlinge, Socken, Strümpfe, Strumpfhose, Unterhose, Unterhemd, Schlafanzug, Nachthemd,
+Bademantel, Badeanzug, Badehose, Bikini, Gürtel, Hosenträger, Schuhe, Stiefel, Gummistiefel, Turnschuhe, Sneaker, Sandalen,
+Hausschuhe, Pantoffeln, Flipflops, Ballerinas, Pumps, Leggings, Overall, Latzhose, Trachtenjacke, Dirndl, Lederhose, Uniform,
+Kostüm, Knopf, Reißverschluss, Kragen, Ärmel, Tasche, Kapuze, Saum, Schnürsenkel, Kleiderschrank, Kleiderbügel, Wäsche,
+Waschmaschine, Bügeleisen
+
+[familie] Familie und Freunde
+Familie, Mutter, Mama, Vater, Papa, Eltern, Kind, Kinder, Sohn, Tochter, Bruder, Schwester, Geschwister, Zwilling, Baby,
+Oma, Opa, Großmutter, Großvater, Großeltern, Enkel, Enkelin, Urgroßmutter, Urgroßvater, Onkel, Tante, Cousin, Cousine, Neffe,
+Nichte, Schwager, Schwägerin, Schwiegermutter, Schwiegervater, Stiefmutter, Stiefvater, Pate, Patin, Patenkind, Ehemann,
+Ehefrau, Ehepaar, Braut, Bräutigam, Verlobte, Freund, Freundin, Nachbar, Nachbarin, Kumpel, Clique, Bekannte, Verwandte,
+Verwandtschaft, Stammbaum, Generation, Hochzeit, Geburt, Taufe, Familienfest, Familienfoto, Zuhause, Liebe, Zusammenhalt,
+Umarmung, Kuss, Besuch, Familienausflug, Spieleabend, Sonntagsessen, Haustier
+
+[gefuehle] Gefühle
+Freude, Glück, Liebe, Zuneigung, Dankbarkeit, Stolz, Mut, Hoffnung, Zufriedenheit, Begeisterung, Vorfreude, Überraschung,
+Erleichterung, Gelassenheit, Ruhe, Geborgenheit, Vertrauen, Mitgefühl, Sehnsucht, Fernweh, Heimweh, Neugier, Staunen, Spaß,
+Lachen, Lächeln, Trauer, Traurigkeit, Kummer, Schmerz, Angst, Furcht, Panik, Sorge, Nervosität, Lampenfieber, Wut, Zorn,
+Ärger, Frust, Enttäuschung, Eifersucht, Neid, Scham, Schuld, Reue, Langeweile, Einsamkeit, Verlegenheit, Verwirrung,
+Ungeduld, Unsicherheit, Ekel, Mitleid, Bewunderung, Respekt, Zuversicht, Optimismus, Gänsehaut, Herzklopfen, Tränen,
+Freudentränen, Umarmung, Trost, Schadenfreude, Übermut, Albernheit, Müdigkeit, Hunger, Durst
+
+[eigenschaften] Eigenschaften
+freundlich, fröhlich, lustig, nett, lieb, ehrlich, mutig, tapfer, stark, klug, schlau, weise, fleißig, ordentlich, pünktlich,
+höflich, hilfsbereit, geduldig, ruhig, gelassen, neugierig, kreativ, fantasievoll, sportlich, schnell, langsam, groß, klein,
+dick, dünn, schlank, alt, jung, schön, hübsch, frech, wild, laut, leise, schüchtern, mutlos, traurig, wütend, müde, munter,
+wach, hungrig, durstig, satt, glücklich, zufrieden, stolz, eitel, faul, chaotisch, vergesslich, launisch, ängstlich, ernst,
+witzig, albern, charmant, großzügig, sparsam, geizig, bescheiden, zuverlässig, treu, sanft, zärtlich, liebevoll,
+abenteuerlustig, gesellig, gesprächig, still, tollpatschig, geschickt, ehrgeizig, entspannt, aufgeregt, gemütlich, warmherzig
+
+[berufe] Berufe
+Arzt, Ärztin, Lehrer, Lehrerin, Erzieher, Erzieherin, Polizist, Polizistin, Feuerwehrmann, Feuerwehrfrau, Bäcker, Bäckerin,
+Konditor, Metzger, Fleischer, Koch, Köchin, Kellner, Kellnerin, Friseur, Friseurin, Maurer, Zimmermann, Dachdecker, Maler,
+Tischler, Schreiner, Elektriker, Klempner, Installateur, Schlosser, Mechaniker, Mechatroniker, Schornsteinfeger, Gärtner,
+Gärtnerin, Landwirt, Bauer, Bäuerin, Förster, Fischer, Imker, Winzer, Tierarzt, Tierpfleger, Zahnarzt, Apotheker, Krankenpfleger,
+Pflegekraft, Hebamme, Sanitäter, Pilot, Pilotin, Stewardess, Lokführer, Busfahrer, Taxifahrer, Lkw-Fahrer, Kapitän, Matrose,
+Briefträger, Postbote, Verkäufer, Kassierer, Kaufmann, Bankkaufmann, Sekretärin, Buchhalter, Rechtsanwalt, Anwältin, Richter,
+Notar, Journalist, Fotograf, Reporter, Schriftsteller, Autor, Musiker, Sänger, Sängerin, Schauspieler, Tänzerin, Künstler,
+Architekt, Ingenieur, Informatiker, Programmierer, Wissenschaftler, Forscher, Chemiker, Astronaut, Soldat, Bürgermeister,
+Pfarrer, Pastorin, Schneider, Schneiderin, Optiker, Goldschmied, Uhrmacher, Hausmeister, Reinigungskraft, Gerüstbauer,
+Kranführer, Steuerberater, Bibliothekar, Trainer, Schiedsrichter, Detektiv, Zauberer, Clown, Florist, Floristin
+
+[vornamen] Vornamen
+Anna, Emma, Mia, Sophia, Hannah, Lena, Lea, Marie, Laura, Julia, Sarah, Lisa, Katharina, Johanna, Clara, Charlotte, Emilia,
+Ida, Greta, Mathilda, Luisa, Paula, Frieda, Helene, Elisabeth, Margarete, Gertrud, Ingrid, Ursula, Renate, Monika, Sabine,
+Petra, Claudia, Andrea, Stefanie, Christine, Gabriele, Martina, Susanne, Birgit, Heike, Karin, Brigitte, Hildegard, Erika,
+Ilse, Inge, Rosemarie, Waltraud, Paul, Ben, Leon, Noah, Elias, Finn, Felix, Lukas, Jonas, Luis, Maximilian, Moritz, Jakob,
+Emil, Anton, Theo, Oskar, Karl, Friedrich, Wilhelm, Heinrich, Hermann, Otto, Ernst, Walter, Werner, Günter, Helmut, Gerhard,
+Manfred, Wolfgang, Klaus, Dieter, Jürgen, Peter, Michael, Thomas, Andreas, Stefan, Christian, Markus, Frank, Matthias,
+Alexander, Sebastian, Daniel, Tobias, Florian, Johannes, Martin, Hans, Josef, Georg, Franz
+
+== Zuhause und Alltag ==
+[haus] Haus und Wohnung
+Haus, Wohnung, Zimmer, Wohnzimmer, Schlafzimmer, Kinderzimmer, Badezimmer, Küche, Esszimmer, Arbeitszimmer, Flur, Diele,
+Keller, Dachboden, Speicher, Garage, Balkon, Terrasse, Treppe, Treppenhaus, Aufzug, Fahrstuhl, Tür, Haustür, Fenster,
+Fensterbank, Wand, Decke, Boden, Fußboden, Teppich, Parkett, Fliesen, Dach, Schornstein, Kamin, Heizung, Ofen, Steckdose,
+Lichtschalter, Lampe, Deckenlampe, Stehlampe, Vorhang, Gardine, Rollladen, Jalousie, Sofa, Couch, Sessel, Stuhl, Tisch,
+Esstisch, Schreibtisch, Bett, Kissen, Bettdecke, Matratze, Nachttisch, Schrank, Kleiderschrank, Kommode, Regal, Bücherregal,
+Spiegel, Bild, Uhr, Fernseher, Badewanne, Dusche, Waschbecken, Toilette, Wasserhahn, Handtuch, Briefkasten, Klingel,
+Türklinke, Schlüssel, Garten, Zaun, Hof, Einfahrt, Gartenhaus, Wintergarten, Nachbar, Umzug, Mieter, Vermieter
+
+[haushalt] Haushalt
+Staubsauger, Besen, Kehrblech, Handfeger, Wischmopp, Eimer, Putzlappen, Schwamm, Bürste, Staubtuch, Staubwedel, Putzmittel,
+Spülmittel, Glasreiniger, Waschpulver, Weichspüler, Waschmaschine, Trockner, Wäscheständer, Wäscheleine, Wäscheklammer,
+Wäschekorb, Bügeleisen, Bügelbrett, Spülmaschine, Geschirr, Abwasch, Abtrocknen, Mülleimer, Müllbeutel, Mülltrennung,
+Biotonne, Papiertonne, Gelber Sack, Recycling, Glascontainer, Pfandflasche, Einkaufszettel, Einkaufstasche, Vorrat,
+Kühlschrank, Gefriertruhe, Aufräumen, Putzen, Saugen, Wischen, Spülen, Waschen, Bügeln, Kochen, Fensterputzen, Frühjahrsputz,
+Ordnung, Schublade, Kleiderbügel, Nähkasten, Nadel, Faden, Schere, Glühbirne, Batterie, Werkzeugkasten, Pflanzen gießen,
+Bettwäsche, Handtuch, Tischdecke, Serviette
+
+[werkzeug] Werkzeug und Handwerk
+Hammer, Zange, Schraubenzieher, Schraubendreher, Schraubenschlüssel, Maulschlüssel, Inbusschlüssel, Säge, Fuchsschwanz,
+Stichsäge, Kreissäge, Bohrmaschine, Akkuschrauber, Bohrer, Schleifpapier, Schleifmaschine, Feile, Raspel, Hobel, Meißel,
+Beitel, Axt, Beil, Spachtel, Kelle, Pinsel, Farbrolle, Farbe, Lack, Leim, Kleber, Klebeband, Schraube, Mutter, Nagel, Dübel,
+Niete, Scharnier, Zollstock, Maßband, Wasserwaage, Winkel, Bleistift, Cuttermesser, Teppichmesser, Schraubstock,
+Werkbank, Werkstatt, Werkzeugkasten, Leiter, Trittleiter, Schubkarre, Schaufel, Spaten, Brecheisen, Lötkolben, Kabel,
+Verlängerungskabel, Taschenlampe, Schutzbrille, Handschuhe, Helm, Ohrenschützer, Handwerker, Heimwerker, Baumarkt,
+Holz, Brett, Latte, Balken, Sperrholz, Metall, Draht, Schlauch
+
+[schule] Schule
+Schule, Klasse, Klassenzimmer, Lehrer, Lehrerin, Schüler, Schülerin, Direktor, Rektorin, Hausmeister, Pause, Pausenhof,
+Schulhof, Stundenplan, Unterricht, Hausaufgaben, Klassenarbeit, Test, Diktat, Zeugnis, Note, Schulranzen, Ranzen, Rucksack,
+Federmäppchen, Bleistift, Buntstift, Füller, Kugelschreiber, Filzstift, Textmarker, Radiergummi, Spitzer, Lineal, Geodreieck,
+Zirkel, Schere, Kleber, Klebestift, Heft, Schulheft, Block, Buch, Schulbuch, Wörterbuch, Atlas, Tafel, Kreide, Schwamm,
+Whiteboard, Beamer, Pult, Stuhl, Tisch, Mathe, Mathematik, Deutsch, Englisch, Französisch, Sachkunde, Biologie, Chemie,
+Physik, Geschichte, Erdkunde, Kunst, Musik, Sport, Religion, Ethik, Informatik, Turnhalle, Bibliothek, Mensa, Aula,
+Klassenfahrt, Wandertag, Schulfest, Einschulung, Schultüte, Ferien, Klassenbuch, Lernen, Lesen, Schreiben, Rechnen
+
+[buero] Im Büro
+Büro, Schreibtisch, Bürostuhl, Computer, Bildschirm, Monitor, Tastatur, Maus, Mauspad, Laptop, Drucker, Scanner, Kopierer,
+Telefon, Handy, Headset, Kalender, Terminkalender, Notizblock, Haftnotiz, Kugelschreiber, Bleistift, Textmarker, Lineal,
+Locher, Hefter, Tacker, Heftklammer, Büroklammer, Reißzwecke, Pinnwand, Whiteboard, Flipchart, Ordner, Aktenordner,
+Hängeregister, Aktenschrank, Schublade, Briefumschlag, Briefmarke, Stempel, Stempelkissen, Papierkorb, Aktenvernichter,
+Kaffeemaschine, Kaffeetasse, Besprechung, Meeting, Konferenz, Präsentation, Protokoll, Bericht, Tabelle, Rechnung, Brief,
+Email, Passwort, Kollege, Kollegin, Chef, Chefin, Sekretariat, Empfang, Mittagspause, Feierabend, Urlaub, Gehalt, Überstunden
+
+[einkaufen] Einkaufen
+Supermarkt, Bäckerei, Metzgerei, Wochenmarkt, Kiosk, Drogerie, Apotheke, Buchhandlung, Kaufhaus, Einkaufszentrum, Boutique,
+Laden, Geschäft, Schaufenster, Einkaufswagen, Einkaufskorb, Einkaufstasche, Einkaufszettel, Kasse, Kassiererin, Kassenbon,
+Quittung, Geld, Münze, Schein, Wechselgeld, Portemonnaie, Geldbeutel, Bankkarte, Kreditkarte, Gutschein, Rabatt, Angebot,
+Sonderangebot, Schnäppchen, Preis, Preisschild, Sale, Ausverkauf, Umtausch, Kundenkarte, Verkäufer, Verkäuferin, Kunde,
+Kundin, Theke, Regal, Kühlregal, Tiefkühltruhe, Waage, Tüte, Papiertüte, Stoffbeutel, Pfand, Pfandautomat, Öffnungszeiten,
+Parkplatz, Rolltreppe, Umkleide, Anprobe, Größe, Bestellung, Lieferung, Paket, Onlineshop, Warenkorb
+
+[stadt] In der Stadt
+Stadt, Straße, Gasse, Allee, Platz, Marktplatz, Rathaus, Kirche, Dom, Brunnen, Denkmal, Museum, Theater, Kino, Oper,
+Bibliothek, Schule, Kindergarten, Krankenhaus, Polizei, Feuerwache, Post, Bank, Bahnhof, Busbahnhof, Haltestelle,
+Bushaltestelle, Hochhaus, Wolkenkratzer, Fußgängerzone, Bürgersteig, Gehweg, Radweg, Ampel, Zebrastreifen, Kreuzung,
+Kreisverkehr, Brücke, Tunnel, Parkhaus, Parkplatz, Tankstelle, Hotel, Restaurant, Café, Eisdiele, Imbiss, Bäckerei,
+Supermarkt, Kaufhaus, Apotheke, Friseur, Park, Spielplatz, Stadtpark, Zoo, Schwimmbad, Stadion, Sporthalle, Fabrik, Hafen,
+Flughafen, Straßenbahn, U-Bahn, Taxi, Bus, Laterne, Mülleimer, Litfaßsäule, Stadtplan, Innenstadt, Altstadt, Vorort,
+Stadtmauer, Stadttor, Turm, Kirchturm, Uhrturm
+
+== Unterwegs ==
+[fahrzeuge] Fahrzeuge
+Auto, Bus, Lastwagen, Laster, Lkw, Lieferwagen, Transporter, Wohnmobil, Wohnwagen, Anhänger, Traktor, Bagger, Kran, Radlader,
+Planierraupe, Betonmischer, Kipper, Gabelstapler, Mähdrescher, Müllauto, Feuerwehrauto, Krankenwagen, Polizeiauto,
+Abschleppwagen, Taxi, Limousine, Cabrio, Sportwagen, Rennwagen, Geländewagen, Jeep, Kleinbus, Motorrad, Roller, Mofa, Moped,
+Fahrrad, Mountainbike, Rennrad, Tandem, Dreirad, Laufrad, Einrad, Tretroller, Skateboard, Inlineskates, Zug, Eisenbahn,
+Lokomotive, Dampflok, Güterzug, Straßenbahn, U-Bahn, S-Bahn, Seilbahn, Gondel, Sessellift, Flugzeug, Düsenjet, Hubschrauber,
+Segelflugzeug, Heißluftballon, Zeppelin, Rakete, Schiff, Boot, Fähre, Kreuzfahrtschiff, Segelboot, Motorboot, Ruderboot,
+Kanu, Kajak, Tretboot, Schlauchboot, Frachter, Tanker, Dampfer, Yacht, Floß, U-Boot, Kutsche, Pferdewagen, Schlitten,
+Rikscha, Pistenraupe, Schneemobil
+
+[reisen] Reisen und Urlaub
+Urlaub, Reise, Ferien, Ausflug, Rundreise, Städtereise, Kreuzfahrt, Pauschalreise, Wanderurlaub, Koffer, Rucksack,
+Reisetasche, Handgepäck, Reisepass, Ausweis, Visum, Fahrkarte, Ticket, Bordkarte, Flughafen, Flugzeug, Abflug, Ankunft,
+Gate, Check-in, Gepäckband, Zoll, Bahnhof, Bahnsteig, Gleis, Zug, Fähre, Hafen, Hotel, Pension, Ferienwohnung, Jugendherberge,
+Campingplatz, Zimmer, Rezeption, Frühstücksbuffet, Halbpension, Reiseführer, Landkarte, Stadtplan, Kompass, Navi, Kamera,
+Foto, Souvenir, Andenken, Postkarte, Sehenswürdigkeit, Museum, Strand, Meer, Berge, Ausblick, Sonnenbrille, Sonnencreme,
+Badesachen, Reiseapotheke, Fremdsprache, Wörterbuch, Wechselgeld, Währung, Ausland, Grenze, Abenteuer, Erholung, Heimreise,
+Fernweh, Reiseziel, Sightseeing, Tourist, Touristin
+
+[camping] Camping und Draußen
+Zelt, Hering, Zeltstange, Zeltplane, Schlafsack, Isomatte, Luftmatratze, Kopfkissen, Campingstuhl, Campingtisch,
+Campingkocher, Gaskocher, Kochtopf, Feldflasche, Thermoskanne, Kühlbox, Taschenlampe, Stirnlampe, Laterne, Batterie,
+Taschenmesser, Seil, Karabiner, Kompass, Landkarte, Rucksack, Wanderschuhe, Regenjacke, Mückenspray, Sonnencreme, Lagerfeuer,
+Feuerholz, Streichhölzer, Stockbrot, Marshmallow, Würstchen, Grill, Holzkohle, Wohnwagen, Wohnmobil, Campingplatz, Waschhaus,
+Platzwart, Vorzelt, Hängematte, Sternenhimmel, Nachtwanderung, Glühwürmchen, Eule, Frösche, Bach, See, Wald, Lichtung,
+Gitarre, Lagerfeuerlied, Abenteuer, Zeltlager, Pfadfinder, Erste Hilfe, Pflaster, Wasserkanister, Spülschüssel
+
+[wandern] Wandern und Berge
+Wandern, Wanderung, Bergtour, Gipfel, Gipfelkreuz, Berg, Gebirge, Alpen, Hütte, Berghütte, Almhütte, Alm, Weide, Kuhglocke,
+Wanderweg, Pfad, Steig, Serpentine, Wegweiser, Markierung, Wanderkarte, Kompass, Rucksack, Wanderschuhe, Wanderstock,
+Trinkflasche, Brotzeit, Proviant, Regenjacke, Sonnenhut, Bergsee, Wasserfall, Schlucht, Klamm, Grat, Felswand, Geröll,
+Gletscher, Schneefeld, Seilbahn, Sessellift, Gondel, Bergführer, Kletterer, Klettersteig, Seil, Helm, Karabiner, Steinbock,
+Gämse, Murmeltier, Adler, Edelweiß, Enzian, Alpenrose, Aussicht, Panorama, Fernglas, Höhenmeter, Aufstieg, Abstieg, Pause,
+Rast, Gipfelbuch, Bergwacht, Hüttenwirt, Kaiserschmarrn, Wanderlied, Nebelmeer, Sonnenaufgang
+
+== Welt ==
+[laender] Länder
+Deutschland, Österreich, Schweiz, Frankreich, Italien, Spanien, Portugal, Belgien, Niederlande, Luxemburg, Dänemark,
+Schweden, Norwegen, Finnland, Island, Irland, England, Schottland, Wales, Polen, Tschechien, Slowakei, Ungarn, Slowenien,
+Kroatien, Serbien, Bosnien, Montenegro, Albanien, Griechenland, Bulgarien, Rumänien, Moldawien, Ukraine, Belarus, Litauen,
+Lettland, Estland, Russland, Türkei, Zypern, Malta, Georgien, Armenien, Israel, Jordanien, Libanon, Syrien, Irak, Iran,
+Saudi-Arabien, Jemen, Oman, Katar, Ägypten, Libyen, Tunesien, Algerien, Marokko, Mauretanien, Senegal, Mali, Niger, Nigeria,
+Ghana, Kamerun, Kongo, Kenia, Tansania, Uganda, Äthiopien, Somalia, Sudan, Angola, Sambia, Simbabwe, Namibia, Botswana,
+Südafrika, Madagaskar, Indien, Pakistan, Afghanistan, Nepal, Bangladesch, Sri Lanka, China, Japan, Korea, Mongolei, Vietnam,
+Thailand, Kambodscha, Laos, Myanmar, Malaysia, Singapur, Indonesien, Philippinen, Australien, Neuseeland, Kanada, Amerika,
+Mexiko, Kuba, Jamaika, Guatemala, Honduras, Panama, Kolumbien, Venezuela, Ecuador, Peru, Bolivien, Brasilien, Paraguay,
+Uruguay, Argentinien, Chile, Grönland, Liechtenstein, Monaco, Andorra, San Marino, Vatikan
+
+[hauptstaedte] Hauptstädte
+Berlin, Wien, Bern, Paris, Rom, Madrid, Lissabon, Brüssel, Amsterdam, Luxemburg, Kopenhagen, Stockholm, Oslo, Helsinki,
+Reykjavik, Dublin, London, Edinburgh, Warschau, Prag, Bratislava, Budapest, Ljubljana, Zagreb, Belgrad, Sarajevo, Podgorica,
+Tirana, Athen, Sofia, Bukarest, Kiew, Minsk, Vilnius, Riga, Tallinn, Moskau, Ankara, Nikosia, Valletta, Tiflis, Eriwan,
+Kairo, Tunis, Algier, Rabat, Dakar, Abuja, Accra, Nairobi, Kampala, Addis Abeba, Pretoria, Kapstadt, Windhuk, Neu-Delhi,
+Islamabad, Kabul, Kathmandu, Peking, Tokio, Seoul, Bangkok, Hanoi, Manila, Jakarta, Canberra, Wellington, Ottawa,
+Washington, Mexiko-Stadt, Havanna, Bogota, Caracas, Quito, Lima, La Paz, Brasilia, Buenos Aires, Santiago, Montevideo,
+Teheran, Bagdad, Damaskus, Beirut, Amman, Jerusalem, Riad, Doha, Abu Dhabi, Maskat, Vaduz, Monaco, Andorra
+
+[deutschland] Deutschland
+Berlin, Hamburg, München, Köln, Frankfurt, Stuttgart, Düsseldorf, Dortmund, Essen, Leipzig, Bremen, Dresden, Hannover,
+Nürnberg, Duisburg, Bochum, Wuppertal, Bielefeld, Bonn, Münster, Mannheim, Karlsruhe, Augsburg, Wiesbaden, Mainz, Kiel,
+Lübeck, Rostock, Schwerin, Potsdam, Magdeburg, Erfurt, Weimar, Jena, Halle, Kassel, Göttingen, Freiburg, Heidelberg, Ulm,
+Regensburg, Würzburg, Bamberg, Passau, Konstanz, Trier, Koblenz, Aachen, Saarbrücken, Osnabrück, Oldenburg, Braunschweig,
+Wolfsburg, Cottbus, Görlitz, Chemnitz, Zwickau, Flensburg, Stralsund, Bayern, Sachsen, Thüringen, Hessen, Niedersachsen,
+Brandenburg, Saarland, Rhein, Elbe, Donau, Main, Weser, Mosel, Neckar, Spree, Havel, Oder, Bodensee, Chiemsee, Müritz,
+Zugspitze, Brocken, Harz, Schwarzwald, Eifel, Rhön, Erzgebirge, Allgäu, Nordsee, Ostsee, Sylt, Rügen, Helgoland, Usedom
+
+[geografie] Erdkunde
+Kontinent, Europa, Asien, Afrika, Amerika, Australien, Antarktis, Arktis, Nordpol, Südpol, Äquator, Breitengrad, Längengrad,
+Globus, Weltkarte, Atlas, Kompass, Himmelsrichtung, Norden, Süden, Osten, Westen, Ozean, Atlantik, Pazifik, Mittelmeer,
+Nordsee, Ostsee, Karibik, Amazonas, Nil, Mississippi, Jangtse, Wolga, Donau, Rhein, Himalaja, Mount Everest, Anden, Rocky
+Mountains, Alpen, Pyrenäen, Karpaten, Ural, Sahara, Gobi, Kalahari, Grand Canyon, Niagarafälle, Viktoriafälle, Kilimandscharo,
+Ätna, Vesuv, Fudschijama, Matterhorn, Mont Blanc, Grönland, Island, Madagaskar, Sizilien, Sardinien, Korsika, Kreta, Mallorca,
+Hawaii, Galapagos, Tasmanien, Vulkan, Erdbeben, Kontinentalplatte, Klimazone, Tropen, Polarkreis, Wendekreis, Zeitzone,
+Hauptstadt, Grenze, Insel, Halbinsel, Meerenge, Kanal, Panamakanal, Suezkanal
+
+== Freizeit ==
+[sport] Sportarten
+Fußball, Handball, Basketball, Volleyball, Beachvolleyball, Tennis, Tischtennis, Badminton, Squash, Golf, Minigolf, Hockey,
+Eishockey, Rugby, Baseball, Cricket, Schwimmen, Tauchen, Wasserball, Rudern, Kanu, Kajak, Segeln, Surfen, Windsurfen, Kitesurfen,
+Wasserski, Turnen, Leichtathletik, Laufen, Joggen, Marathon, Sprint, Hürdenlauf, Weitsprung, Hochsprung, Stabhochsprung,
+Kugelstoßen, Speerwurf, Diskus, Radfahren, Mountainbiken, Reiten, Voltigieren, Dressur, Springreiten, Boxen, Ringen, Judo,
+Karate, Taekwondo, Fechten, Bogenschießen, Klettern, Bouldern, Bergsteigen, Wandern, Skifahren, Langlauf, Biathlon, Skispringen,
+Snowboarden, Rodeln, Bobfahren, Eiskunstlauf, Eisschnelllauf, Curling, Yoga, Pilates, Gymnastik, Aerobic, Tanzen, Ballett,
+Kegeln, Bowling, Billard, Darts, Schach, Skateboarden, Inlineskaten, Triathlon, Fitness, Kraftsport, Gewichtheben, Rollhockey,
+Faustball, Frisbee, Boccia, Boule, Petanque
+
+[fussball] Fußball
+Fußball, Ball, Tor, Torwart, Torhüter, Stürmer, Verteidiger, Mittelfeld, Abwehr, Libero, Kapitän, Trainer, Schiedsrichter,
+Linienrichter, Pfeife, Anpfiff, Abpfiff, Halbzeit, Verlängerung, Elfmeter, Elfmeterschießen, Freistoß, Eckball, Ecke,
+Einwurf, Abstoß, Abseits, Foul, Gelbe Karte, Rote Karte, Platzverweis, Tribüne, Stadion, Rasen, Torlinie, Mittellinie,
+Strafraum, Anstoßkreis, Pfosten, Latte, Netz, Trikot, Stutzen, Schienbeinschoner, Fußballschuhe, Stollen, Handschuhe, Fans,
+Fanschal, Fankurve, Pokal, Meisterschaft, Bundesliga, Weltmeister, Europameister, Champions League, Tabelle, Punkte,
+Unentschieden, Sieg, Niederlage, Kopfball, Fallrückzieher, Flanke, Pass, Dribbling, Torschütze, Hattrick, Jubel, Mannschaft,
+Verein, Training, Aufstellung, Auswechslung, Ersatzbank, Nachspielzeit, Videobeweis
+
+[spielzeug] Spielzeug und Spiele
+Puppe, Puppenhaus, Puppenwagen, Teddy, Teddybär, Kuscheltier, Stofftier, Bauklötze, Lego, Duplo, Baukasten, Puzzle,
+Murmeln, Kreisel, Jojo, Ball, Springseil, Hula-Hoop, Drachen, Seifenblasen, Knete, Wasserfarben, Buntstifte, Malbuch,
+Spielzeugauto, Rennbahn, Eisenbahn, Holzeisenbahn, Bagger, Feuerwehrauto, Ritterburg, Piratenschiff, Kaufladen, Puppenküche,
+Kasperle, Handpuppe, Marionette, Steckenpferd, Schaukelpferd, Roller, Laufrad, Dreirad, Schaukel, Rutsche, Wippe, Sandkasten,
+Eimer, Schaufel, Förmchen, Brettspiel, Kartenspiel, Würfel, Spielfigur, Memory, Domino, Mikado, Schach, Dame, Mühle, Halma,
+Quartett, Uno, Kniffel, Bingo, Versteckspiel, Fangen, Verstecken, Himmel und Hölle, Gummitwist, Topfschlagen, Blindekuh,
+Zauberkasten, Experimentierkasten, Spielkonsole, Kaleidoskop, Spieluhr, Rassel, Holzpferd
+
+[musik] Musik und Instrumente
+Musik, Lied, Melodie, Rhythmus, Takt, Note, Notenblatt, Notenschlüssel, Tonleiter, Akkord, Klavier, Flügel, Orgel, Keyboard,
+Akkordeon, Mundharmonika, Gitarre, E-Gitarre, Bass, Kontrabass, Geige, Violine, Bratsche, Cello, Harfe, Laute, Mandoline,
+Banjo, Ukulele, Zither, Flöte, Blockflöte, Querflöte, Klarinette, Oboe, Fagott, Saxofon, Trompete, Posaune, Horn, Tuba,
+Dudelsack, Schlagzeug, Trommel, Pauke, Becken, Triangel, Xylofon, Glockenspiel, Tamburin, Rassel, Kastagnetten, Bongos,
+Chor, Orchester, Band, Kapelle, Dirigent, Taktstock, Sänger, Sängerin, Solist, Duett, Konzert, Oper, Musical, Bühne,
+Mikrofon, Lautsprecher, Kopfhörer, Radio, Schallplatte, Plattenspieler, Klassik, Jazz, Rock, Pop, Schlager, Volksmusik,
+Walzer, Marsch, Ballade, Refrain, Strophe, Komponist, Musikschule, Probe
+
+[hobbys] Hobbys
+Lesen, Schreiben, Malen, Zeichnen, Basteln, Stricken, Häkeln, Nähen, Sticken, Töpfern, Fotografieren, Filmen, Singen, Tanzen,
+Musizieren, Gärtnern, Kochen, Backen, Angeln, Wandern, Radfahren, Schwimmen, Reiten, Klettern, Joggen, Yoga, Camping, Reisen,
+Sammeln, Briefmarken, Münzen, Puzzeln, Rätseln, Kreuzworträtsel, Sudoku, Schach, Kartenspielen, Brettspiele, Kegeln,
+Modellbau, Modelleisenbahn, Heimwerken, Schnitzen, Vogelbeobachtung, Sterngucken, Imkern, Theaterspielen, Zaubern,
+Jonglieren, Geocaching, Kino, Konzerte, Museum, Videospiele, Bloggen, Podcasts, Ehrenamt, Chor, Verein, Spazierengehen,
+Gedächtnistraining, Ahnenforschung, Kalligrafie, Origami, Makramee, Schmuck, Perlen, Seifenkisten, Drachenbau
+
+[basteln] Basteln und Malen
+Papier, Tonpapier, Karton, Pappe, Krepppapier, Seidenpapier, Transparentpapier, Glanzpapier, Schere, Kleber, Klebestift,
+Flüssigkleber, Heißkleber, Klebeband, Tesafilm, Pinsel, Farbe, Wasserfarbe, Fingerfarbe, Acrylfarbe, Malkasten, Wasserglas,
+Leinwand, Staffelei, Palette, Bleistift, Buntstift, Wachsmalkreide, Filzstift, Kreide, Radiergummi, Lineal, Zirkel, Schablone,
+Stempel, Glitzer, Pailletten, Perlen, Knöpfe, Wolle, Faden, Filz, Stoff, Pfeifenputzer, Wackelaugen, Pompons, Federn, Watte,
+Moosgummi, Salzteig, Knete, Ton, Gips, Pappmaché, Origami, Faltschnitt, Laterne, Mobile, Collage, Mosaik, Kastanienmännchen,
+Fensterbild, Kartoffeldruck, Serviettentechnik, Bastelbogen, Vorlage, Schachtel, Klopapierrolle, Eierkarton, Korken
+
+[farben] Farben und Formen
+Rot, Blau, Gelb, Grün, Orange, Lila, Violett, Rosa, Pink, Braun, Schwarz, Weiß, Grau, Silber, Gold, Beige, Türkis, Magenta,
+Ocker, Bordeaux, Weinrot, Kirschrot, Himmelblau, Hellblau, Dunkelblau, Marineblau, Königsblau, Hellgrün, Dunkelgrün,
+Olivgrün, Mintgrün, Smaragdgrün, Zitronengelb, Sonnengelb, Senfgelb, Apricot, Lachs, Flieder, Lavendel, Pflaume, Aubergine,
+Schokobraun, Kastanienbraun, Anthrazit, Elfenbein, Creme, Regenbogen, Farbkreis, Kreis, Quadrat, Dreieck, Rechteck, Raute,
+Oval, Ellipse, Stern, Herz, Fünfeck, Sechseck, Achteck, Würfel, Kugel, Kegel, Zylinder, Pyramide, Quader, Spirale, Welle,
+Punkt, Linie, Kurve, Ecke, Kante, Fläche
+
+[zirkus] Zirkus und Jahrmarkt
+Zirkus, Zirkuszelt, Manege, Arena, Zirkusdirektor, Clown, Clownsnase, Akrobat, Akrobatin, Artist, Trapez, Trapezkünstler,
+Seiltänzer, Hochseil, Jongleur, Zauberer, Zaubertrick, Magier, Feuerspucker, Messerwerfer, Dompteur, Löwe, Tiger, Elefant,
+Pferde, Pony, Seelöwe, Pudel, Kunstreiter, Einrad, Stelzen, Pyramide, Salto, Trommelwirbel, Applaus, Zuschauer, Eintrittskarte,
+Popcorn, Zuckerwatte, Zirkuswagen, Jahrmarkt, Kirmes, Rummel, Volksfest, Karussell, Kinderkarussell, Riesenrad, Achterbahn,
+Autoscooter, Geisterbahn, Kettenkarussell, Schiffschaukel, Losbude, Schießbude, Dosenwerfen, Entenangeln, Lebkuchenherz,
+Gebrannte Mandeln, Liebesapfel, Bratwurst, Schausteller, Losverkäufer, Spiegelkabinett, Hau den Lukas
+
+== Fantasie und Geschichte ==
+[maerchen] Märchen und Sagen
+Märchen, Sage, Legende, Fabel, Zauber, Zauberer, Hexe, Fee, Elfe, Zwerg, Riese, Troll, Kobold, Wichtel, Drache, Einhorn,
+Meerjungfrau, Nixe, Prinz, Prinzessin, König, Königin, Kaiser, Schloss, Burg, Turm, Verlies, Zauberwald, Zauberstab,
+Zauberspruch, Fluch, Schatz, Goldtaler, Spiegel, Apfel, Spindel, Brunnen, Froschkönig, Schneewittchen, Aschenputtel, Rapunzel,
+Dornröschen, Rotkäppchen, Hänsel, Gretel, Lebkuchenhaus, Rumpelstilzchen, Frau Holle, Goldmarie, Pechmarie, Sterntaler,
+Bremer Stadtmusikanten, Gestiefelter Kater, Wolf, Großmutter, Jäger, Stiefmutter, Zwerge, Bohnenranke, Glasschuh, Kürbis,
+Kutsche, Mitternacht, Tausendundeine Nacht, Aladin, Wunderlampe, Flaschengeist, Fliegender Teppich, Sindbad, Ali Baba,
+Pegasus, Phönix, Greif, Zyklop, Minotaurus, Kentaur, Rübezahl, Loreley, Nibelungen, Siegfried, Excalibur
+
+[ritter] Ritter und Burgen
+Ritter, Burg, Festung, Burgfräulein, Knappe, Page, Edelfrau, Burgherr, König, Königin, Prinz, Prinzessin, Herzog, Graf,
+Rüstung, Kettenhemd, Helm, Visier, Schild, Wappen, Schwert, Lanze, Speer, Streitaxt, Morgenstern, Armbrust, Bogen, Pfeil,
+Köcher, Ross, Schlachtross, Sattel, Turnier, Tjost, Banner, Fahne, Burggraben, Zugbrücke, Fallgitter, Burgtor, Bergfried,
+Burgturm, Zinnen, Mauer, Wehrgang, Schießscharte, Verlies, Kerker, Rittersaal, Kemenate, Burghof, Brunnen, Schmied, Schmiede,
+Gaukler, Spielmann, Minnesänger, Burgkapelle, Mönch, Kloster, Mittelalter, Fackel, Kerzenleuchter, Festmahl, Bankett,
+Belagerung, Katapult, Rammbock, Schatzkammer, Krone, Zepter, Thron, Drache, Kreuzzug, Ehre, Treue, Ritterschlag
+
+[piraten] Piraten
+Pirat, Piratin, Seeräuber, Kapitän, Steuermann, Matrose, Schiffsjunge, Smutje, Piratenschiff, Segelschiff, Galeone, Fregatte,
+Ruderboot, Beiboot, Segel, Mast, Ausguck, Krähennest, Takelage, Strickleiter, Anker, Steuerrad, Kompass, Fernrohr, Schatzkarte,
+Schatz, Schatztruhe, Goldmünzen, Dublonen, Edelsteine, Perlen, Juwelen, Insel, Schatzinsel, Palme, Höhle, Bucht, Kanone,
+Kanonenkugel, Säbel, Entermesser, Pistole, Augenklappe, Holzbein, Hakenhand, Kopftuch, Dreispitz, Totenkopf, Piratenflagge,
+Papagei, Rum, Planke, Meuterei, Kombüse, Kajüte, Laderaum, Flaschenpost, Sturm, Welle, Wrack, Schiffbruch, Hafen, Taverne,
+Beute, Entern, Ahoi
+
+== Technik ==
+[computer] Computer und Internet
+Computer, Laptop, Tablet, Smartphone, Handy, Bildschirm, Monitor, Tastatur, Maus, Touchpad, Drucker, Scanner, Lautsprecher,
+Kopfhörer, Mikrofon, Webcam, Kamera, Ladekabel, Akku, Festplatte, Speicher, Prozessor, Grafikkarte, Arbeitsspeicher, Chip,
+Platine, Stecker, Kabel, Router, Modem, WLAN, Internet, Netzwerk, Server, Cloud, Webseite, Browser, Suchmaschine, Link,
+Download, Upload, Datei, Ordner, Dokument, Programm, App, Software, Update, Passwort, Benutzername, Konto, Anmeldung,
+Bildschirmschoner, Desktop, Symbol, Fenster, Menü, Taste, Leertaste, Eingabetaste, Mauszeiger, Klick, Doppelklick, Email,
+Nachricht, Chat, Videoanruf, Emoji, Spiel, Videospiel, Konsole, Controller, Joystick, Roboter, Programmieren, Code,
+Algorithmus, Datenbank, Virus, Firewall, Backup, Akkuladung, Bluetooth, Speicherkarte, Tintenpatrone
+
+[baustelle] Baustelle
+Baustelle, Bagger, Kran, Baukran, Radlader, Planierraupe, Walze, Kipper, Lastwagen, Betonmischer, Betonpumpe, Gabelstapler,
+Presslufthammer, Rüttelplatte, Bauarbeiter, Polier, Kranführer, Maurer, Zimmermann, Dachdecker, Elektriker, Architekt,
+Bauplan, Fundament, Keller, Grube, Rohbau, Gerüst, Leiter, Mauer, Wand, Ziegel, Backstein, Mörtel, Beton, Zement, Sand, Kies,
+Schotter, Stahl, Träger, Balken, Dachstuhl, Dachziegel, Fenster, Schubkarre, Schaufel, Spaten, Kelle, Wasserwaage, Hammer,
+Schutzhelm, Warnweste, Sicherheitsschuhe, Absperrung, Bauzaun, Warnschild, Pylone, Bauwagen, Container, Richtfest,
+Richtkranz, Grundstein, Neubau, Hochhaus, Brücke, Tunnel, Straßenbau, Asphalt
