@@ -18,7 +18,7 @@
         schwer: { n: 15, w: 16, h: 16, dirs: { h: 1, v: 1, d: 1, r: 1 }, tricky: false },
         profi: { n: 20, w: 20, h: 20, dirs: { h: 1, v: 1, d: 1, r: 1 }, tricky: true },
     };
-    const PRESET_NAMES = { leicht: 'Leicht', mittel: 'Mittel', schwer: 'Schwer', profi: 'Profi', eigen: 'Eigene' };
+    const PRESET_NAMES = { leicht: 'Leicht', mittel: 'Mittel', schwer: 'Schwer', profi: 'Profi', eigen: 'Individuell' };
 
     /* ---------- Speicher ---------- */
     const load = (k, d) => { try { const v = JSON.parse(localStorage.getItem('su_' + k)); return v == null ? d : v; } catch (e) { return d; } };
@@ -730,7 +730,7 @@
         const body = el('div.done', null,
             el('div.big', { text: '🎉' }),
             el('p.lead', { text: t('{n} Wörter in {time} gefunden.', { n: game.words.length, time: fmtTime(game.elapsed) }) }),
-            rec ? el('p.rec', null, icon('star'), el('span', { text: t('Neue Bestzeit für {p}!', { p: t(PRESET_NAMES[game.opt.preset] || 'Eigene') }) })) : null,
+            rec ? el('p.rec', null, icon('star'), el('span', { text: t('Neue Bestzeit für {p}!', { p: t(PRESET_NAMES[game.opt.preset] || 'Individuell') }) })) : null,
             game.hints ? el('p.muted', { text: t('Mit {n} Tipps.', { n: game.hints }) }) : null);
         const s = sheet(t('Geschafft!'), body, { cls: 'narrow', foot: el('div.btns', null,
             el('button.btn.primary', { type: 'button', onclick: () => { s.close(); setTimeout(nextGame, 80); } }, icon('play'), el('span', { text: t('Nächstes Rätsel') })),
@@ -747,7 +747,7 @@
     }
     function exportLayout(o) {
         return SuPdf.layout({
-            title: o.title || game.title, sub: t('{p} · {n} Wörter · {w} × {h}', { p: t(PRESET_NAMES[game.opt.preset] || 'Eigene'), n: game.words.length, w: game.w, h: game.h }),
+            title: o.title || game.title, sub: t('{p} · {n} Wörter · {w} × {h}', { p: t(PRESET_NAMES[game.opt.preset] || 'Individuell'), n: game.words.length, w: game.w, h: game.h }),
             brand: 'Suchsel', label: [t('Rätsel'), t('Lösung')], g: { grid: game.grid, w: game.w, h: game.h, words: exportWords() },
             mode: o.mode, land: o.land, list: o.list, name: o.name ? [t('Name'), t('Datum')] : null, font: set.font === 'serif' ? 'serif' : set.font === 'mono' ? 'mono' : 'sans',
         });

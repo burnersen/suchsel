@@ -1,0 +1,64 @@
+# Baut die Release-Dateien (Installer + ZIP) und hängt sie an ein GitHub-Release.
+#
+# Zwei Wege:
+#   1. Von Hand: Actions → Release → "Run workflow". Ohne Angabe heißt der Tag wie die Version aus index.php, z. B. 1.0.0.
+#      So heißen alle Releases. Ein anderer Name (etwa Suchsel-1.0.0) bringt die Reihenfolge auf GitHub durcheinander.
+#   2. Automatisch, sobald ein Tag wie 1.0.0 (oder Suchsel-1.0.0, v1.0.0) gepusht wird.
+# Gibt es das Release zu dem Tag schon, werden die Dateien nur angehängt bzw. ersetzt.
+name: Release
+
+on:
+  push:
+    tags: ['[0-9]*', 'Suchsel-*', 'v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag für das Release (leer = Version aus index.php, z. B. 1.0.0)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Tag bestimmen
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
+        run: |
+          if [ "$GITHUB_REF_TYPE" = "tag" ]; then
+            TAG="$GITHUB_REF_NAME"
+          elif [ -n "$INPUT_TAG" ]; then
+            TAG="$INPUT_TAG"
+          else
+            TAG="$(sed -n "s/^define('SU_VERSION', '\([^']*\)');.*/\1/p" index.php)"
+          fi
+          case "$TAG" in
+            *[!A-Za-z0-9._-]*|''|Suchsel-) echo "Ungültiger Tag: $TAG"; exit 1 ;;
+          esac
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          # Gibt es den Tag schon, wird genau dieser Stand gebaut
+          git fetch --tags --quiet
+          if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
+            git checkout --quiet "refs/tags/$TAG"
+            echo "TAG_EXISTS=1" >> "$GITHUB_ENV"
+          fi
+      - name: Dateien bauen
+        run: php tools/build-release.php
+      - name: Release anlegen oder ergänzen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          NAME="${TAG#v}"; NAME="Suchsel ${NAME#Suchsel-}"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" dist/suchsel-install.php dist/suchsel-*.zip --clobber
+          else
+            # Neuer Tag: erst anlegen, dann das Release daran hängen
+            if [ -z "$TAG_EXISTS" ]; then git tag "$TAG" && git push origin "refs/tags/$TAG"; fi
+            gh release create "$TAG" dist/suchsel-install.php dist/suchsel-*.zip --title "$NAME" --generate-notes --verify-tag
+          fi

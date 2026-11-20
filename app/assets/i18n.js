@@ -258,7 +258,7 @@
         "Buchstabengitter": ["Letter grid", "Grille de lettres", "Cuadrícula de letras", "Griglia di lettere", "Letterrooster"],
         "Eine neue Version von Suchsel ist da.": ["A new version of Suchsel is available.", "Une nouvelle version de Suchsel est disponible.", "Hay una nueva versión de Suchsel.", "È disponibile una nuova versione di Suchsel.", "Er is een nieuwe versie van Suchsel."],
         "Neu laden": ["Reload", "Recharger", "Recargar", "Ricarica", "Opnieuw laden"],
-        "Eigene": ["Custom", "Perso", "Personalizado", "Personalizzato", "Eigen"],
+        "Individuell": ["Custom", "Personnalisé", "Personalizado", "Personalizzato", "Aangepast"],
     };
     const out = {};
     L.forEach((l, i) => {

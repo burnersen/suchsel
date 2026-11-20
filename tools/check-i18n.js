@@ -7,7 +7,7 @@ const used = new Set();
 const re = /\bt\('((?:[^'\\]|\\.)*)'/g;
 let m, bad = 0;
 while ((m = re.exec(src))) used.add(m[1].replace(/\\'/g, "'"));
-for (const k of ['Leicht', 'Mittel', 'Schwer', 'Profi', 'Eigene']) used.add(k);
+for (const k of ['Leicht', 'Mittel', 'Schwer', 'Profi', 'Individuell']) used.add(k);
 for (const k of used) if (!T[k]) { console.log('fehlt: ' + k); bad++; }
 for (const k in T) {
     if (!used.has(k)) console.log('unbenutzt: ' + k);
