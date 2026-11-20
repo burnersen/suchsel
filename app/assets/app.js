@@ -8,7 +8,7 @@
     const root = document.documentElement;
     const WORD_URLS = JSON.parse(root.dataset.words || '{}');
     const LANGS = { de: 'Deutsch', en: 'English', fr: 'Français', es: 'Español', it: 'Italiano', nl: 'Nederlands' };
-    const LINKS = { github: 'https://github.com/burnersen/suchsel', web: 'https://tech.burnersen.de/', kofi: 'https://ko-fi.com/burnersen' };
+    const LINKS = { play: 'https://suchsel.burnersen.de/', github: 'https://github.com/burnersen/suchsel', web: 'https://tech.burnersen.de/', kofi: 'https://ko-fi.com/burnersen' };
     // Gut unterscheidbare, helle Farben, auf denen dunkle Buchstaben lesbar bleiben. Reihenfolge so, dass Nachbarn sich deutlich abheben.
     const COLORS = ['#FFD43B', '#74C0FC', '#8CE99A', '#F783AC', '#FFA94D', '#B197FC', '#63E6BE', '#FF8787', '#C0EB75', '#91A7FF',
         '#E599F7', '#66D9E8', '#FAB005', '#4DABF7', '#51CF66', '#F06595', '#FF922B', '#9775FA', '#20C997', '#FFC9C9'];
@@ -1093,6 +1093,7 @@
                 el('div', null, el('h3', { text: 'Suchsel' }), el('p.muted', { text: t('Version {v}', { v: root.dataset.v }) }))),
             el('p', { text: t('Wortsuchrätsel mit großem Wortschatz, eigenen Wörtern und Druck als PDF. Kostenlos, ohne Werbung, ohne Anmeldung. Freie Software, die du auch selbst hosten kannst.') }),
             el('div.menu', null,
+                a('play', t('Suchsel online spielen: suchsel.burnersen.de'), LINKS.play),
                 a('github', t('Suchsel auf GitHub'), LINKS.github),
                 a('globe', 'tech.burnersen.de', LINKS.web),
                 a('heart', t('Spendier mir einen Kaffee'), LINKS.kofi)),

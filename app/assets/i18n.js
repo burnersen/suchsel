@@ -205,6 +205,7 @@
             "Sopas de letras con un amplio vocabulario, tus propias palabras e impresión en PDF. Gratis, sin anuncios, sin registro. Software libre que también puedes alojar tú mismo.",
             "Puzzle di parole con un grande vocabolario, parole tue e stampa in PDF. Gratis, senza pubblicità, senza registrazione. Software libero che puoi anche ospitare da te.",
             "Woordzoekers met een grote woordenschat, eigen woorden en afdrukken als pdf. Gratis, zonder reclame, zonder account. Vrije software die je ook zelf kunt hosten."],
+        "Suchsel online spielen: suchsel.burnersen.de": ["Play Suchsel online: suchsel.burnersen.de", "Jouer à Suchsel en ligne : suchsel.burnersen.de", "Jugar a Suchsel en línea: suchsel.burnersen.de", "Gioca a Suchsel online: suchsel.burnersen.de", "Suchsel online spelen: suchsel.burnersen.de"],
         "Suchsel auf GitHub": ["Suchsel on GitHub", "Suchsel sur GitHub", "Suchsel en GitHub", "Suchsel su GitHub", "Suchsel op GitHub"],
         "Spendier mir einen Kaffee": ["Buy me a coffee", "Offre-moi un café", "Invítame a un café", "Offrimi un caffè", "Trakteer me op een koffie"],
         "Lizenz: GNU AGPL v3.": ["Licence: GNU AGPL v3.", "Licence : GNU AGPL v3.", "Licencia: GNU AGPL v3.", "Licenza: GNU AGPL v3.", "Licentie: GNU AGPL v3."],
