@@ -126,7 +126,8 @@
         if (action) tEl.append(el('button.btn.small', { type: 'button', text: action.label, onclick: () => { tEl.hidden = true; action.fn(); } }));
         tEl.hidden = false;
         clearTimeout(toastT);
-        toastT = setTimeout(() => { tEl.hidden = true; }, action ? 9000 : 3800);
+        // kurz zeigen; Antippen schließt sofort
+        toastT = setTimeout(() => { tEl.hidden = true; }, action ? 6000 : Math.min(4500, 1800 + msg.length * 25));
     }
 
     /* ---------- Aussehen ---------- */
@@ -350,6 +351,7 @@
         board.setFound(foundList());
         renderStat();
         renderCoach();
+        layout();
     }
     function renderWords() {
         const ul = $('#words');
@@ -365,13 +367,88 @@
         $('#timer').textContent = game && set.timer ? fmtTime(game.elapsed) : '';
         $('#timer').hidden = !set.timer;
     }
+    /** Hinweis zum Wischen: nur ein einziges Mal, ein paar Sekunden lang, die erste Berührung blendet ihn sofort aus */
     function renderCoach() {
-        const old = $('#coach');
-        if (old) old.remove();
-        if (!game || game.done || game.found || stats.words) return;
+        if ($('#coach') || !game || game.done || game.found || stats.words || load('coach', 0)) return;
+        save('coach', 1);
         const c = el('div.coach', null, icon('hand'), el('span', { text: t('Zieh mit dem Finger oder der Maus über die Buchstaben eines Wortes.') }));
         c.id = 'coach';
         $('#boardWrap').append(c);
+        setTimeout(hideCoach, 3600);
+    }
+    function hideCoach() {
+        const c = $('#coach');
+        if (!c || c.classList.contains('gone')) return;
+        c.classList.add('gone');
+        setTimeout(() => c.remove(), 450);
+    }
+
+    /** Schrift der Wortliste so groß, wie der Platz hergibt (zwischen 13 und 30 Pixeln) */
+    function fitWords() {
+        const card = $('#wordsCard'), ul = $('#words');
+        if (!ul.children.length) return;
+        const fits = px => { ul.style.setProperty('--wfs', px + 'px'); return card.scrollHeight <= card.clientHeight + 1; };
+        let lo = 13, hi = 30;
+        if (fits(hi)) return;
+        while (hi - lo > 0.5) { const m = (lo + hi) / 2; if (fits(m)) lo = m; else hi = m; }
+        fits(Math.floor(lo));
+    }
+    let layout = () => {};
+
+    /* ---------- Griff zwischen Wortliste und Gitter: Größe stufenlos, je Ausrichtung gemerkt ---------- */
+    function initSplit() {
+        const sp = $('#split'), card = $('#wordsCard'), main = $('#main');
+        const row = () => getComputedStyle(main).flexDirection === 'row';
+        const apply = () => {
+            const s = load('split', {}), r = row(), f = s[r ? 'row' : 'col'];
+            card.style.height = ''; card.style.width = '';
+            sp.setAttribute('aria-orientation', r ? 'vertical' : 'horizontal');
+            const total = r ? main.clientWidth : main.clientHeight;
+            let px;
+            if (f != null) px = f * total;
+            else if (game) {
+                // Von selbst: das Gitter bekommt so viel Platz, wie seine Form braucht, die Wortliste den Rest
+                const SP = 18, PAD = 22;
+                if (r) px = total - SP - (main.clientHeight * game.w / game.h + PAD);
+                else px = total - SP - (main.clientWidth * game.h / game.w + PAD);
+                if (!r) {   // die Wortliste muss mindestens in kleiner Schrift ganz zu sehen sein
+                    card.classList.add('sized');
+                    card.style.height = 'auto';
+                    $('#words').style.setProperty('--wfs', '14px');
+                    px = Math.max(px, card.scrollHeight + 2);
+                    card.style.height = '';
+                }
+                px = Math.max(r ? 220 : 110, Math.min(total * (r ? 0.45 : 0.42), px));
+            } else { card.classList.remove('sized'); fitWords(); return; }
+            px = Math.round(Math.max(70, Math.min(total - 180, px)));
+            card.classList.add('sized');
+            if (r) card.style.width = px + 'px'; else card.style.height = px + 'px';
+            fitWords();
+        };
+        layout = apply;
+        let drag = null;
+        sp.addEventListener('pointerdown', e => {
+            e.preventDefault();
+            sp.setPointerCapture(e.pointerId);
+            const r = card.getBoundingClientRect();
+            drag = { r: row(), start: row() ? r.left : r.top };
+            sp.classList.add('active');
+        });
+        sp.addEventListener('pointermove', e => {
+            if (!drag) return;
+            const total = drag.r ? main.clientWidth : main.clientHeight;
+            const px = Math.max(70, Math.min(total - 180, (drag.r ? e.clientX : e.clientY) - drag.start - 9));
+            const s = load('split', {});
+            s[drag.r ? 'row' : 'col'] = px / total;
+            save('split', s);
+            apply();
+        });
+        const end = () => { if (drag) { drag = null; sp.classList.remove('active'); } };
+        sp.addEventListener('pointerup', end);
+        sp.addEventListener('pointercancel', end);
+        sp.addEventListener('dblclick', () => { const s = load('split', {}); delete s[row() ? 'row' : 'col']; save('split', s); apply(); });
+        new ResizeObserver(apply).observe(main);
+        apply();
     }
 
     function onSelect(sel, color) {
@@ -683,7 +760,7 @@
                 const longest = Math.max(0, ...list.map(k => k.length));
                 if (longest > ml) msg += ' ' + t('Dein längstes Wort hat {n} Buchstaben, das Gitter wird dafür größer.', { n: longest });
             }
-            if (o.w * o.h > 1600) msg += ' ' + t('Großes Gitter: mit Plus und Minus oder zwei Fingern zoomen.');
+            if (o.w * o.h > 1600) msg += ' ' + t('Großes Gitter: mit zwei Fingern oder dem Mausrad zoomen, doppelt tippen zeigt wieder alles.');
             note.textContent = msg;
         }
         fine.append(
@@ -1000,8 +1077,8 @@
         const p = (h, txt) => el('div.help', null, el('h3', { text: h }), el('p', { text: txt }));
         const body = el('div', null,
             p(t('So geht\'s'), t('Oben stehen die gesuchten Wörter. Zieh mit dem Finger oder der Maus über die Buchstaben eines Wortes. Die Markierung rastet waagerecht, senkrecht und schräg ein, egal ob du vorn oder hinten anfängst. Gefundene Wörter bekommen eine eigene Farbe und werden oben durchgestrichen.')),
-            p(t('Zoomen und Verschieben'), t('Mit Plus und Minus unten rechts, mit zwei Fingern oder am Rechner mit dem Mausrad. Verschieben geht mit zwei Fingern, am Rechner mit gedrückter rechter Maustaste, dem Mausrad oder den Pfeiltasten. Der Knopf zwischen Plus und Minus zeigt wieder das ganze Gitter. Beim Markieren am Rand wandert das Gitter von selbst mit.')),
-            p(t('Tipp'), t('Die Glühbirne unten links zeigt, wo eins der Wörter anfängt.')),
+            p(t('Zoomen und Verschieben'), t('Zwei Finger auseinander- oder zusammenziehen, am Rechner mit dem Mausrad oder Strg und Mausrad. Verschieben geht mit zwei Fingern, am Rechner mit gedrückter rechter Maustaste, dem Mausrad oder den Pfeiltasten. Doppelt tippen bringt das Gitter wieder in die Ausgangsgröße. Beim Markieren am Rand wandert das Gitter von selbst mit. Den Balken zwischen Wortliste und Gitter kannst du ziehen, doppelt tippen stellt ihn zurück.')),
+            p(t('Tipp'), t('Die Glühbirne oben zeigt, wo eins der Wörter anfängt.')),
             p(t('Neues Rätsel'), t('Wähle ein Thema aus dem großen Wortschatz, lass den Zufall entscheiden oder tipp eigene Wörter ein. Die Schwierigkeit reicht von 6 Wörtern nur waagerecht und senkrecht bis zu 20 Wörtern in alle Richtungen. In der Feineinstellung legst du Anzahl, Größe des Gitters (bis 100 × 100) und Richtungen selbst fest.')),
             p(t('Meine Wörter'), t('Leg eigene Kategorien an oder ergänze die eingebauten Themen. Alles bleibt auf deinem Gerät. Mit der Sicherung als Datei nimmst du es auf ein anderes Gerät mit.')),
             p(t('Drucken'), t('Unter Drucken und Bild gibt es das Rätsel als A4-PDF oder als Bild, leer zum Lösen oder bunt mit Lösung, im Hoch- oder Querformat. Die Vorschau zeigt genau, was aus dem Drucker kommt.')),
@@ -1093,10 +1170,11 @@
     function applyTexts() {
         root.lang = set.lang;
         $('#newBtn span').textContent = t('Neu');
-        $('#hintBtn span').textContent = t('Tipp');
-        const lab = { menuBtn: t('Menü'), newBtn: t('Neues Rätsel'), zoomIn: t('Größer'), zoomOut: t('Kleiner'), zoomFit: t('Ganzes Gitter'), hintBtn: t('Tipp') };
+        const lab = { menuBtn: t('Menü'), newBtn: t('Neues Rätsel'), hintBtn: t('Tipp') };
         for (const id in lab) { $('#' + id).setAttribute('aria-label', lab[id]); $('#' + id).title = lab[id]; }
         $('#board').setAttribute('aria-label', t('Buchstabengitter'));
+        $('#split').setAttribute('aria-label', t('Größe der Wortliste ändern'));
+        $('#split').title = t('Ziehen ändert die Größe, doppelt tippen stellt zurück');
         renderBanner();
         if (game) renderWords();
         renderCoach();
@@ -1124,11 +1202,10 @@
         applyTexts();
         $('#menuBtn').addEventListener('click', showMenu);
         $('#newBtn').addEventListener('click', showNew);
-        $('#zoomIn').addEventListener('click', () => board.zoom(1.3));
-        $('#zoomOut').addEventListener('click', () => board.zoom(1 / 1.3));
-        $('#zoomFit').addEventListener('click', () => board.fit());
         $('#hintBtn').addEventListener('click', hint);
-        $('#board').addEventListener('pointerdown', () => { const c = $('#coach'); if (c) c.classList.add('gone'); });
+        $('#board').addEventListener('pointerdown', hideCoach);
+        $('#toast').addEventListener('click', e => { if (!e.target.closest('button')) { $('#toast').hidden = true; clearTimeout(toastT); } });
+        initSplit();
         document.addEventListener('keydown', e => {
             if (e.key === 'Escape' && sheets.length) { closeSheet(sheets[sheets.length - 1]); return; }
             if (sheets.length || /INPUT|TEXTAREA|SELECT/.test((document.activeElement || {}).tagName || '')) return;

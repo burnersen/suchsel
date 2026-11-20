@@ -52,12 +52,13 @@ Upload `suchsel-install.php`, open it in the browser, click "Install now". That 
 | Action | On a phone | On a computer |
 |---|---|---|
 | Mark a word | swipe across it | drag across it with the mouse |
-| Zoom | two fingers, plus and minus | mouse wheel, Ctrl + wheel, plus and minus, keys + and − |
-| Move | two fingers | hold the right mouse button, mouse wheel, arrow keys |
-| Whole grid | button between plus and minus | same, or key 0 |
-| Hint | light bulb at the bottom left | same |
+| Zoom | spread or pinch two fingers | mouse wheel, Ctrl + wheel, keys + and − |
+| Move | move two fingers together | hold the right mouse button, mouse wheel, arrow keys |
+| Back to starting size | double tap | double click or key 0 |
+| Word list bigger or smaller | drag the bar between list and grid, double tap resets it | same |
+| Hint | light bulb at the top | same |
 
-When you mark near the edge, the grid moves along by itself, so long words work in large grids too.
+When you mark near the edge, the grid moves along by itself, so long words work in large grids too. The split between word list and grid adapts to the shape of the grid, and the word list uses the largest font that fits. Text cannot be selected by accident.
 
 ## Features
 

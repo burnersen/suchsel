@@ -176,8 +176,15 @@
                 if (a.type === 'flash') capsule(a.f.sel, a.f.color, 1, 1 + 0.3 * Math.abs(Math.sin(k * Math.PI * 3)));
             }
             if (this.drag && this.drag.len) {
-                const d = this.drag;
-                capsule([d.sx, d.sy, d.dir[0], d.dir[1], d.len], d.color, 0.6, 1);
+                // Die Markierung folgt dem Finger fließend in der eingerasteten Richtung, erfasst werden ganze Felder
+                const d = this.drag, tt = d.t || 0;
+                c.globalAlpha = 0.6;
+                c.strokeStyle = d.color;
+                c.lineWidth = cs * 0.8;
+                c.beginPath();
+                c.moveTo(cx(d.sx), cy(d.sy));
+                c.lineTo(cx(d.sx) + d.dir[0] * tt * cs + 0.01, cy(d.sy) + d.dir[1] * tt * cs);
+                c.stroke();
             }
             c.globalAlpha = 1;
             for (const a of this.anims) {
@@ -249,7 +256,7 @@
                 this.lock = true;
                 const [a, b] = [...this.ptrs.values()];
                 const mx = (a.px + b.px) / 2, my = (a.py + b.py) / 2;
-                this.pinch = { d0: Math.hypot(a.px - b.px, a.py - b.py) || 1, cs0: this.cs, gx: (mx - this.ox) / this.cs, gy: (my - this.oy) / this.cs };
+                this.pinch = { d0: Math.hypot(a.px - b.px, a.py - b.py) || 1, cs0: this.cs, gx: (mx - this.ox) / this.cs, gy: (my - this.oy) / this.cs, zoom: false };
                 this.redraw();
                 return;
             }
@@ -270,9 +277,12 @@
             this.ptrs.set(e.pointerId, p);
             if (this.pinch && this.ptrs.size >= 2) {
                 const [a, b] = [...this.ptrs.values()];
-                const mx = (a.px + b.px) / 2, my = (a.py + b.py) / 2;
-                this.cs = this.clampCs(this.pinch.cs0 * Math.hypot(a.px - b.px, a.py - b.py) / this.pinch.d0);
-                this.ox = mx - this.pinch.gx * this.cs; this.oy = my - this.pinch.gy * this.cs;
+                const mx = (a.px + b.px) / 2, my = (a.py + b.py) / 2, dist = Math.hypot(a.px - b.px, a.py - b.py) || 1;
+                const pz = this.pinch;
+                // Zwei Finger gemeinsam bewegen verschiebt nur. Gezoomt wird erst, wenn sich der Abstand deutlich ändert (über 12 %).
+                if (!pz.zoom && Math.abs(dist / pz.d0 - 1) > 0.12) { pz.zoom = true; pz.d0 = dist; pz.cs0 = this.cs; pz.gx = (mx - this.ox) / this.cs; pz.gy = (my - this.oy) / this.cs; }
+                if (pz.zoom) this.cs = this.clampCs(pz.cs0 * dist / pz.d0);
+                this.ox = mx - pz.gx * this.cs; this.oy = my - pz.gy * this.cs;
                 this.fitted = false;
                 this.clamp();
                 this.redraw();
@@ -292,7 +302,7 @@
             const d = this.drag, g = this.g;
             const vx = p.gx - (d.sx + 0.5), vy = p.gy - (d.sy + 0.5);
             const dist = Math.hypot(vx, vy);
-            if (dist < 0.5) { d.len = 1; this.redraw(); return; }
+            if (dist < 0.5) { d.len = 1; d.t = 0; this.redraw(); return; }
             d.moved = true;
             const ang = Math.atan2(vy, vx);
             const cur = Math.atan2(d.dir[1], d.dir[0]);
@@ -301,9 +311,10 @@
             // Hysterese: in der bisherigen Richtung bleiben, solange der Finger nicht deutlich (mehr als ~32°) davon abweicht
             if (!(d.len > 1 && diff < 0.56)) d.dir = D8[((Math.round(ang / (Math.PI / 4)) % 8) + 8) % 8];
             const [dx, dy] = d.dir;
-            let n = Math.round((vx * dx + vy * dy) / (dx * dx + dy * dy));
+            const proj = (vx * dx + vy * dy) / (dx * dx + dy * dy);
             const lim = Math.min(dx > 0 ? g.w - 1 - d.sx : dx < 0 ? d.sx : 1e9, dy > 0 ? g.h - 1 - d.sy : dy < 0 ? d.sy : 1e9);
-            n = Math.max(0, Math.min(lim, n));
+            d.t = Math.max(0, Math.min(lim, proj));
+            const n = Math.max(0, Math.min(lim, Math.round(proj)));
             if (n + 1 !== d.len) { d.len = n + 1; if (navigator.vibrate && this.o.tick) this.o.tick(); }
             this.redraw();
         }
@@ -339,6 +350,12 @@
             const d = this.drag;
             this.drag = null;
             if (!d) return;
+            // Doppelt tippen (ohne zu ziehen) bringt das Gitter zurück in die Ausgangsgröße
+            if (!d.moved && !cancel) {
+                const now = performance.now(), p = d.last;
+                if (this.tap && now - this.tap.t < 350 && Math.hypot(p.px - this.tap.x, p.py - this.tap.y) < 40) { this.tap = null; this.home(); this.redraw(); return; }
+                this.tap = { t: now, x: p.px, y: p.py };
+            } else this.tap = null;
             if (!cancel && d.len >= 2) {
                 const sel = [d.sx, d.sy, d.dir[0], d.dir[1], d.len];
                 if (!this.o.onSelect(sel, d.color)) this.anim({ type: 'miss', sel, color: d.color, dur: 420 });

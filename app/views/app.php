@@ -32,6 +32,7 @@ foreach (suWordLangs() as $l) $suWords[$l] = '?action=words&l=' . $l . '&v=' . s
     <button id="menuBtn" class="iconbtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     <div class="brand"><img src="<?= $suV('icon.svg') ?>" alt="" width="28" height="28"><span>Suchsel</span></div>
     <div class="stat"><span id="timer"></span><span id="progress"></span></div>
+    <button id="hintBtn" class="iconbtn hintbtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg></button>
     <button id="newBtn" class="btn primary" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span></span></button>
 </header>
 <div id="banner" hidden></div>
@@ -40,16 +41,9 @@ foreach (suWordLangs() as $l) $suWords[$l] = '?action=words&l=' . $l . '&v=' . s
         <h1 id="theme"></h1>
         <ul id="words"></ul>
     </section>
+    <div id="split" class="split" role="separator" aria-orientation="horizontal"><i></i></div>
     <section id="boardCard" class="card">
         <div id="boardWrap"><canvas id="board"></canvas></div>
-        <div class="tools">
-            <button id="hintBtn" class="iconbtn hintbtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg><span></span></button>
-            <div class="zoom">
-                <button id="zoomOut" class="iconbtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <button id="zoomFit" class="iconbtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
-                <button id="zoomIn" class="iconbtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-            </div>
-        </div>
     </section>
 </main>
 <div id="layer"></div>

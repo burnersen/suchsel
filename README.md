@@ -52,12 +52,13 @@ Die App wird einmal vom Server geladen und läuft danach komplett auf dem Gerät
 | Bedienung | Am Handy | Am Rechner |
 |---|---|---|
 | Wort markieren | mit dem Finger darüberziehen | mit gedrückter Maus darüberziehen |
-| Zoomen | zwei Finger, Plus und Minus | Mausrad, Strg + Mausrad, Plus und Minus, Tasten + und − |
-| Verschieben | zwei Finger | rechte Maustaste gedrückt halten, Mausrad, Pfeiltasten |
-| Ganzes Gitter | Knopf zwischen Plus und Minus | dito, oder Taste 0 |
-| Tipp | Glühbirne unten links | dito |
+| Zoomen | zwei Finger auseinander- oder zusammenziehen | Mausrad, Strg + Mausrad, Tasten + und − |
+| Verschieben | zwei Finger gemeinsam bewegen | rechte Maustaste gedrückt halten, Mausrad, Pfeiltasten |
+| Zurück zur Ausgangsgröße | doppelt tippen | Doppelklick oder Taste 0 |
+| Wortliste größer oder kleiner | Balken zwischen Liste und Gitter ziehen, doppelt tippen stellt zurück | dito |
+| Tipp | Glühbirne oben | dito |
 
-Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange Wörter in großen Gittern.
+Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange Wörter in großen Gittern. Die Aufteilung zwischen Wortliste und Gitter richtet sich von selbst nach der Form des Gitters, die Schrift der Wortliste wird so groß, wie der Platz hergibt. Text lässt sich nicht aus Versehen markieren.
 
 ## Funktionen
 
