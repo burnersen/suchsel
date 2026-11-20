@@ -1,0 +1,5 @@
+# Hier liegen Zähler und Einstellungen des Servers. Niemals ins Git legen.
+/data/
+
+# Gebaute Release-Dateien (php tools/build-release.php)
+/dist/
