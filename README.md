@@ -6,7 +6,13 @@
 [![Lizenz: AGPLv3](https://img.shields.io/badge/Lizenz-AGPLv3-blue)](#lizenz)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Unterst%C3%BCtze%20mich-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/burnersen)
 
-**[⬇️ Neuestes Release herunterladen](../../releases/latest)** · **[☕ Spendier mir einen Kaffee](https://ko-fi.com/burnersen)**
+## 🎮 [Jetzt spielen: suchsel.burnersen.de](https://suchsel.burnersen.de)
+
+**Kostenlos für alle, ohne Anmeldung und ohne Werbung.** Einfach im Browser ausprobieren und bei Gefallen mit einem Klick als App auf Handy, Tablet oder Rechner installieren. Ganz ohne eigenen Webspace.
+
+Wer Suchsel lieber auf dem eigenen Server betreiben möchte, kann das gern tun: **[⬇️ Neuestes Release herunterladen](../../releases/latest)**, siehe [Installation](#installation).
+
+**[☕ Spendier mir einen Kaffee](https://ko-fi.com/burnersen)**
 
 Wortsuchrätsel als App zum Selbsthosten. Wörter mit dem Finger oder der Maus markieren, groß zoomen, eigene Wörter eintippen und als A4-PDF ausdrucken. Mit über 26.000 Wörtern in sechs Sprachen. Auf dem Server läuft PHP, im Browser schlichtes JavaScript und CSS. Keine Frameworks, keine Abhängigkeiten, kein Build-Schritt, kein MySQL.
 

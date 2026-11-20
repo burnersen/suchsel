@@ -6,7 +6,13 @@
 [![License: AGPLv3](https://img.shields.io/badge/License-AGPLv3-blue)](#license)
 [![Ko-fi](https://img.shields.io/badge/Ko--fi-Support%20me-FF5E5B?logo=kofi&logoColor=white)](https://ko-fi.com/burnersen)
 
-**[⬇️ Download the latest release](../../releases/latest)** · **[☕ Buy me a coffee](https://ko-fi.com/burnersen)**
+## 🎮 [Play now: suchsel.burnersen.de](https://suchsel.burnersen.de)
+
+**Free for everyone, no sign-up and no ads.** Just try it in your browser and, if you like it, install it as an app on your phone, tablet or computer with one click. No web hosting of your own needed.
+
+If you prefer to run Suchsel on your own server, feel free: **[⬇️ Download the latest release](../../releases/latest)**, see [Installation](#installation).
+
+**[☕ Buy me a coffee](https://ko-fi.com/burnersen)**
 
 Word search puzzles as a self-hosted app. Mark words with your finger or the mouse, zoom in, type your own words and print A4 PDFs. With more than 26,000 words in six languages. The server runs PHP, the browser plain JavaScript and CSS. No frameworks, no dependencies, no build step, no MySQL.
 
