@@ -1,0 +1,7 @@
+# Test
+== Jahreszeiten ==
+[sommer] Im Sommer
+Badeanzug, Eis, Mücke, Hitze, Limo, Grill, Schatten, Strand, Ferien, Freibad, Melone, Sand, Sonnenbrille, Sonnencreme, Urlaub, Planschbecken, Eis am Stiel
+== Tiere ==
+[haustiere] Haustiere
+Hund, Katze, Maus, Hamster, Kaninchen, Meerschweinchen, Wellensittich, Goldfisch, Schildkröte, Pferd, Pony, Ratte, Frettchen, Kanarienvogel
