@@ -1085,7 +1085,7 @@
                 for (const k in d.own.extra || {}) if (/^[a-z]{2}:[a-z0-9_-]+$/.test(k) && Array.isArray(d.own.extra[k])) own.extra[k] = parseList(d.own.extra[k].join('\n'));
                 save('own', own);
                 if (d.stats && (d.stats.played || 0) > stats.played) { stats = Object.assign(stats, d.stats); save('stats', stats); }
-                if (d.set) { Object.assign(set, d.set); if (!LANGS[set.lang]) set.lang = 'en'; save('set', set); applyTheme(); applyTexts(); }
+                if (d.set) { Object.assign(set, d.set); if (!LANGS[set.lang]) set.lang = 'en'; if (!POS.includes(set.pos)) set.pos = 'auto'; save('set', set); applyTheme(); applyTexts(); layout(); }
                 toast(t('Sicherung geladen.'));
                 done && done();
             } catch (e) {
