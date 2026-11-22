@@ -404,11 +404,15 @@
 
     /**
      * Schrift der Wortliste so groß, wie der Platz hergibt. Reicht er nicht, erst kleiner (bis 12 Pixel), dann die gefundenen
-     * Wörter zusammenklappen, dann noch kleiner (bis 10 Pixel). Erst wenn auch das nicht reicht, wird gescrollt.
+     * Wörter zusammenklappen (bis 11 Pixel). Passt es dann immer noch nicht, bleibt die Schrift gut lesbar und die Liste scrollt:
+     * steht sie oben oder unten, seitwärts in so vielen Zeilen, wie hineinpassen, steht sie links oder rechts, hoch und runter.
      */
     let showFound = false;
+    const SCROLL_FS = 13;
     function fitWords() {
         const ul = $('#words');
+        ul.classList.remove('collapsed', 'wrap', 'hscroll');
+        ul.style.removeProperty('--rows');
         if (!ul.children.length) { moreHint(); return; }
         const sum = ul.querySelector('.sum');
         const fits = px => { ul.style.setProperty('--wfs', px + 'px'); return ul.scrollHeight <= ul.clientHeight + 1 && ul.scrollWidth <= ul.clientWidth + 1; };
@@ -419,19 +423,37 @@
             fits(Math.floor(lo * 2) / 2);
             return true;
         };
-        ul.classList.remove('collapsed', 'wrap');
         if (sum) sum.hidden = !showFound;
         let ok = fit(12, 30);
-        if (!ok && sum && !showFound) { ul.classList.add('collapsed'); sum.hidden = false; ok = fit(10, 30); }
-        if (!ok) ok = fit(10, 12);
-        if (!ok && ul.scrollWidth > ul.clientWidth + 1) ul.classList.add('wrap');   // ein einzelnes Wort ist breiter als die Liste
-        if (!ok) fits(10);
+        if (!ok && sum && !showFound) { ul.classList.add('collapsed'); sum.hidden = false; ok = fit(11, 30); }
+        if (!ok) {
+            fits(SCROLL_FS);
+            const pos = $('#main').dataset.pos;
+            if (pos === 'top' || pos === 'bottom') {
+                // Seitwärts: die Wörter laufen spaltenweise in so vielen Zeilen, wie in die Höhe passen
+                ul.classList.add('hscroll');
+                const li = [...ul.children].find(x => !x.hidden && x.offsetParent);
+                const cs = getComputedStyle(ul), gap = parseFloat(cs.rowGap) || 0;
+                const room = ul.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+                const rows = li ? Math.max(1, Math.floor((room + gap) / (li.offsetHeight + gap))) : 1;
+                ul.style.setProperty('--rows', rows);
+                if (ul.scrollHeight > ul.clientHeight + 1 && rows > 1) ul.style.setProperty('--rows', rows - 1);
+            } else if (ul.scrollWidth > ul.clientWidth + 1) {
+                // Schmale Spalte: Schrift so, dass auch das längste Wort ganz hineinpasst. Getrennt wird nur im Notfall.
+                const wide = px => { ul.style.setProperty('--wfs', px + 'px'); return ul.scrollWidth <= ul.clientWidth + 1; };
+                let lo = 9, hi = SCROLL_FS;
+                if (wide(lo)) { while (hi - lo > 0.5) { const m = (lo + hi) / 2; if (wide(m)) lo = m; else hi = m; } wide(Math.floor(lo * 2) / 2); }
+                else ul.classList.add('wrap');
+            }
+        }
         moreHint();
     }
-    /** Verlauf am unteren Rand, wenn in der Wortliste noch etwas weiter unten steht */
+    /** Verlauf am Rand, wenn in der Wortliste in dieser Richtung noch etwas steht */
     function moreHint() {
-        const ul = $('#words');
-        $('#wordsCard').classList.toggle('more', ul.scrollTop + ul.clientHeight < ul.scrollHeight - 2);
+        const ul = $('#words'), card = $('#wordsCard'), h = ul.classList.contains('hscroll');
+        card.classList.toggle('more', !h && ul.scrollTop + ul.clientHeight < ul.scrollHeight - 2);
+        card.classList.toggle('more-r', h && ul.scrollLeft + ul.clientWidth < ul.scrollWidth - 2);
+        card.classList.toggle('more-l', h && ul.scrollLeft > 2);
     }
     let layout = () => {};
 
@@ -440,7 +462,7 @@
     /** Wo die Wortliste gerade steht. Automatisch: im Hochformat oben, auf breiten Bildschirmen links. */
     const listPos = () => set.pos !== 'auto' ? set.pos : wideMq.matches ? 'left' : 'top';
     function initSplit() {
-        const MIN = 90;   // mindestens Überschrift und eine Zeile Wörter
+        const MIN = 90, MIN_W = 120;   // oben/unten mindestens Überschrift und eine Zeile, links/rechts eine lesbare Spalte
         const sp = $('#split'), card = $('#wordsCard'), main = $('#main'), ul = $('#words');
         // Alte Einstellung (vor 1.1.0) übernehmen: „col“ war oben, „row“ war links
         const old = load('split', {});
@@ -475,7 +497,7 @@
                 }
                 px = Math.max(lo, Math.min(hi, px));
             } else { card.classList.remove('sized'); fitWords(); return; }
-            px = Math.round(Math.max(MIN, Math.min(total - 180, px)));
+            px = Math.round(Math.max(r ? MIN_W : MIN, Math.min(total - 180, px)));
             card.classList.add('sized');
             if (r) card.style.width = px + 'px'; else card.style.height = px + 'px';
             fitWords();
@@ -504,7 +526,7 @@
             const p = drag.pos, rc = drag.rect, r = p === 'left' || p === 'right';
             const total = r ? main.clientWidth : main.clientHeight;
             const raw = p === 'top' ? e.clientY - rc.top : p === 'bottom' ? rc.bottom - e.clientY : p === 'left' ? e.clientX - rc.left : rc.right - e.clientX;
-            const px = Math.max(MIN, Math.min(total - 180, raw - 9));
+            const px = Math.max(r ? MIN_W : MIN, Math.min(total - 180, raw - 9));
             const s = load('split', {});
             s[p] = px / total;
             save('split', s);
@@ -515,6 +537,12 @@
         sp.addEventListener('pointercancel', end);
         sp.addEventListener('dblclick', () => { const s = load('split', {}); delete s[listPos()]; save('split', s); apply(); });
         ul.addEventListener('scroll', moreHint, { passive: true });
+        // Am Rechner: das Mausrad scrollt die seitwärts laufende Liste auch seitwärts
+        ul.addEventListener('wheel', e => {
+            if (!ul.classList.contains('hscroll') || Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+            e.preventDefault();
+            ul.scrollLeft += e.deltaY * (e.deltaMode === 1 ? 16 : 1);
+        }, { passive: false });
         wideMq.addEventListener && wideMq.addEventListener('change', apply);
         new ResizeObserver(apply).observe(main);
         apply();
@@ -641,14 +669,22 @@
         setTimeout(() => s.wrap.remove(), 180);
         if (s.onClose) s.onClose();
     }
+    // Schließen passiert immer sofort. Der Eintrag im Verlauf wird nur hinterher aufgeräumt, denn als installierte App am
+    // iPhone kommt die Meldung vom Zurückgehen manchmal spät oder gar nicht, und dann darf kein Fenster offen hängen bleiben.
+    let skipPop = 0, skipAt = 0;
+    function unwind(depth) { if (depth > 0) { skipPop++; skipAt = performance.now(); history.go(-depth); } }
     function closeSheet(s) {
         if (s.closed) return;
-        if (sheets[sheets.length - 1] === s && history.state && history.state.su) history.back();
-        else removeSheet(s);
+        const top = sheets[sheets.length - 1] === s;
+        removeSheet(s);
+        if (top && history.state && history.state.su) unwind(1);
     }
-    let skipPop = 0;
     addEventListener('popstate', () => {
-        if (skipPop) { skipPop--; return; }
+        if (skipPop) {
+            skipPop--;
+            if (performance.now() - skipAt < 1500) return;   // das war unser eigenes Aufräumen
+            skipPop = 0;
+        }
         const s = sheets[sheets.length - 1];
         if (s) removeSheet(s);
     });
@@ -656,8 +692,7 @@
         const n = sheets.length;
         if (!n) return;
         sheets.slice().reverse().forEach(removeSheet);
-        const depth = Math.min(n, history.state && history.state.su || 0);
-        if (depth) { skipPop++; history.go(-depth); }
+        unwind(Math.min(n, history.state && history.state.su || 0));
     }
 
     // Kleine Bausteine für die Fenster
@@ -1157,7 +1192,7 @@
             p(t('Zoomen und Verschieben'), t('Zwei Finger auseinander- oder zusammenziehen, am Rechner mit dem Mausrad oder Strg und Mausrad. Verschieben geht mit zwei Fingern, am Rechner mit gedrückter rechter Maustaste, dem Mausrad oder den Pfeiltasten. Doppelt tippen bringt das Gitter wieder in die Ausgangsgröße. Beim Markieren am Rand wandert das Gitter von selbst mit. Den Balken zwischen Wortliste und Gitter kannst du ziehen, doppelt tippen stellt ihn zurück.')),
             p(t('Tipp'), t('Die Glühbirne oben zeigt, wo eins der Wörter anfängt.')),
             p(t('Taschenlampe'), t('Unter Neues Rätsel lässt sich die Taschenlampe einschalten. Dann ist das Gitter dunkel und nur rund um deinen Finger oder die Maus leuchten die Buchstaben, mit einer kurzen Lichtspur dahinter. Je schwerer das Rätsel, desto kleiner das Licht. Bestzeiten mit Taschenlampe zählen extra.')),
-            p(t('Wortliste'), t('In den Einstellungen legst du fest, ob die Wortliste oben, unten, links oder rechts steht. Wird sie klein gezogen, schrumpft die Schrift und die gefundenen Wörter rücken zu einem ✓ zusammen. Antippen klappt sie wieder auf.')),
+            p(t('Wortliste'), t('In den Einstellungen legst du fest, ob die Wortliste oben, unten, links oder rechts steht. Wird sie klein gezogen, schrumpft die Schrift und die gefundenen Wörter rücken zu einem ✓ zusammen. Antippen klappt sie wieder auf. Reicht der Platz dann noch nicht, kannst du die Liste wischen: oben und unten seitwärts, links und rechts hoch und runter.')),
             p(t('Neues Rätsel'), t('Wähle ein Thema aus dem großen Wortschatz, lass den Zufall entscheiden oder tipp eigene Wörter ein. Die Schwierigkeit reicht von 6 Wörtern nur waagerecht und senkrecht bis zu 20 Wörtern in alle Richtungen. In der Feineinstellung legst du Anzahl, Größe des Gitters (bis 100 × 100) und Richtungen selbst fest.')),
             p(t('Meine Wörter'), t('Leg eigene Kategorien an oder ergänze die eingebauten Themen. Alles bleibt auf deinem Gerät. Mit der Sicherung als Datei nimmst du es auf ein anderes Gerät mit.')),
             p(t('Drucken'), t('Unter Drucken und Bild gibt es das Rätsel als A4-PDF oder als Bild, leer zum Lösen oder bunt mit Lösung, im Hoch- oder Querformat. Die Vorschau zeigt genau, was aus dem Drucker kommt.')),
