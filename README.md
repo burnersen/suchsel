@@ -273,6 +273,12 @@ Release bauen: `php tools/build-release.php` legt `dist/suchsel-install.php` und
 
 Suchsel ist kostenlos und entsteht in meiner Freizeit. Wenn es dir Freude macht und du Danke sagen möchtest, kannst du [ein kleines Trinkgeld bei Ko-fi dalassen](https://ko-fi.com/burnersen). Völlig freiwillig, und in jedem Fall: danke fürs Spielen!
 
+## ⚠️ Haftungsausschluss
+
+Suchsel ist kostenlose Hobby-Software und wird **so, wie es ist, ohne jede Gewähr** bereitgestellt. Es ist mit Sorgfalt gebaut und getestet, die Nutzung erfolgt aber **auf eigene Gefahr**.
+
+Wo diese Anleitung beschreibt, was Suchsel tut, prüft oder nie tut, steht dort, wie es gedacht und gebaut ist, keine Zusage und keine Garantie: Software kann Fehler haben, und Systeme, Dienste und andere Programme verhalten sich nicht immer wie erwartet. Soweit gesetzlich zulässig, haftet der Autor nicht für Schäden oder Datenverlust durch die Nutzung dieser Software. Siehe Abschnitte 15 und 16 der [Lizenz](LICENSE).
+
 ## Lizenz
 
 GNU Affero General Public License v3.0, siehe [LICENSE](LICENSE).

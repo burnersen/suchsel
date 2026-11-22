@@ -273,6 +273,12 @@ Building a release: `php tools/build-release.php` creates `dist/suchsel-install.
 
 Suchsel is free and made in my spare time. If you enjoy it and want to say thanks, you can [leave a small tip on Ko-fi](https://ko-fi.com/burnersen). Entirely optional, and either way: thanks for playing!
 
+## ⚠️ Disclaimer
+
+Suchsel is free hobby software, provided **"as is", without any warranty or condition of any kind**. It was built and tested with care, but you use it **at your own risk**.
+
+Where this README describes what Suchsel does, checks or never does, that is how it is designed to work, not a promise or guarantee: software can have bugs, and systems, services and other programs do not always behave as expected. As far as the applicable law allows, the author is not liable for any damages or data loss arising from the use of this software. See sections 15 and 16 of the [license](LICENSE).
+
 ## License
 
 GNU Affero General Public License v3.0, see [LICENSE](LICENSE).
