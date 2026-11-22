@@ -71,7 +71,7 @@ Die App wird einmal vom Server geladen und läuft danach komplett auf dem Gerät
 | Tipp | Glühbirne oben | dito |
 | Taschenlampe | Finger übers Gitter ziehen | Maus übers Gitter bewegen |
 
-Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange Wörter in großen Gittern. Die Aufteilung zwischen Wortliste und Gitter richtet sich von selbst nach der Form des Gitters, die Schrift der Wortliste wird so groß, wie der Platz hergibt. Wird die Liste klein gezogen, schrumpft die Schrift, und die schon gefundenen Wörter rücken zu einem kleinen ✓ zusammen, das sie beim Antippen wieder aufklappt. Halb abgeschnittene Einträge gibt es nicht mehr. Text lässt sich nicht aus Versehen markieren.
+Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange Wörter in großen Gittern. Die Aufteilung zwischen Wortliste und Gitter richtet sich von selbst nach der Form des Gitters, die Schrift der Wortliste wird so groß, wie der Platz hergibt. Wird die Liste klein gezogen, schrumpft die Schrift, und die schon gefundenen Wörter rücken zu einem kleinen ✓ zusammen, das sie beim Antippen wieder aufklappt. Reicht der Platz dann noch nicht, bleibt die Schrift lesbar und die Liste lässt sich wischen: oben und unten seitwärts, links und rechts hoch und runter. Text lässt sich nicht aus Versehen markieren.
 
 ## Funktionen
 

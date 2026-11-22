@@ -123,8 +123,23 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
     font-variant-numeric: tabular-nums; letter-spacing: .02em;
 }
 #words li.sum:hover { border-color: var(--accent); }
-/* Steht unten noch etwas, blendet der Rand sanft aus */
+/* Zu viele Wörter für den Platz, oben oder unten: die Liste läuft in Spalten und scrollt seitwärts */
+#words.hscroll {
+    display: grid; grid-auto-flow: column; grid-template-rows: repeat(var(--rows, 1), auto); grid-auto-columns: max-content;
+    justify-content: start; align-content: start; align-items: center; justify-items: start;
+    overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; touch-action: pan-x; padding-right: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+#words.hscroll li { white-space: nowrap; }
+#words:not(.hscroll) { touch-action: pan-y; -webkit-overflow-scrolling: touch; }
+/* Steht in einer Richtung noch etwas, blendet der Rand dort sanft aus */
 #wordsCard.more #words { -webkit-mask-image: linear-gradient(#000 calc(100% - 22px), transparent); mask-image: linear-gradient(#000 calc(100% - 22px), transparent); }
+#wordsCard.more-r #words { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); }
+#wordsCard.more-l #words { -webkit-mask-image: linear-gradient(to right, transparent, #000 28px); mask-image: linear-gradient(to right, transparent, #000 28px); }
+#wordsCard.more-l.more-r #words {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+    mask-image: linear-gradient(to right, transparent, #000 28px, #000 calc(100% - 28px), transparent);
+}
 @container (max-width: 190px) {
     #theme { font-size: .82rem; padding: 6px 8px; letter-spacing: .03em; }
     #words { padding: 8px 6px 0; }
