@@ -1,7 +1,8 @@
 /* Suchsel – das Buchstabengitter auf einem Canvas: zeichnen, zoomen, verschieben und Wörter mit Finger oder Maus markieren.
    Die Markierung rastet in 8 Richtungen ein (waagerecht, senkrecht, schräg, jeweils vorwärts und rückwärts) und bleibt bei
    kleinen Wacklern in ihrer Richtung. Zwei Finger zoomen und verschieben, am Rechner Mausrad, Strg+Mausrad und rechte Maustaste.
-   Gezeichnet werden nur die sichtbaren Felder, so bleibt es auch bei 100 × 100 flüssig. */
+   Gezeichnet werden nur die sichtbaren Felder, so bleibt es auch bei 100 × 100 flüssig.
+   Taschenlampe: das Gitter ist dunkel, nur rund um Finger oder Maus leuchten die Buchstaben, mit einer kurzen Lichtspur dahinter. */
 (function () {
     'use strict';
 
@@ -13,6 +14,7 @@
         mono: '"Courier New", Courier, "Liberation Mono", ui-monospace, monospace',
     };
     const PAD = 10, EDGE = 44;
+    const TRAIL = 900;   // so lange leuchtet die Spur der Taschenlampe nach (ms)
 
     class SuBoard {
         /** opts: onSelect(sel, color) → true, wenn ein Wort gefunden wurde; nextColor() → Farbe für die nächste Markierung */
@@ -33,6 +35,10 @@
             this.font = 'sans';
             this.colors = { text: '#1b1f2a', cover: '#111', line: 'rgba(0,0,0,.06)', bg: '#fff', dark: false };
             this.lines = false;
+            this.lamp = 0;          // Radius des Lichtkegels in Feldern, 0 = aus
+            this.lampAt = null;     // wo das Licht gerade ist (in Feldern)
+            this.trail = [];        // Lichtspur: [{ gx, gy, t }]
+            this.lc = null; this.mc = null;   // Zeichenflächen für die angeleuchteten Buchstaben und das Licht als Maske
             this.bind();
             new ResizeObserver(() => this.resize()).observe(canvas.parentElement);
             this.resize();
@@ -60,6 +66,16 @@
             this.font = FONTS[font] ? font : 'sans';
             this.lines = !!lines;
             this.readColors();
+            this.redraw();
+        }
+        /** Taschenlampe an (Radius in Feldern) oder aus (0) */
+        setLamp(r) {
+            r = +r || 0;
+            if (r === this.lamp) return;
+            this.lamp = r;
+            this.lampAt = null;
+            this.trail = [];
+            this.cv.parentElement.classList.toggle('lamp', !!r);
             this.redraw();
         }
         readColors() {
@@ -144,8 +160,11 @@
             const y0 = Math.max(0, Math.floor(-this.oy / cs)), y1 = Math.min(g.h - 1, Math.floor((this.ch - this.oy) / cs));
             const cx = x => this.ox + (x + 0.5) * cs, cy = y => this.oy + (y + 0.5) * cs;
 
+            const lamp = this.lamp > 0, lights = lamp ? this.lights(now) : null;
+            if (lamp) this.drawGlow(c, lights);
+
             if (this.lines && cs >= 8) {
-                c.strokeStyle = this.colors.line;
+                c.strokeStyle = lamp ? 'rgba(255,255,255,.06)' : this.colors.line;
                 c.lineWidth = 1;
                 c.beginPath();
                 for (let x = x0; x <= x1 + 1; x++) { const px = Math.round(this.ox + x * cs) + 0.5; c.moveTo(px, cy(y0) - cs / 2); c.lineTo(px, cy(y1) + cs / 2); }
@@ -170,6 +189,17 @@
                 const k = pop ? (now - pop.t0) / pop.dur : 1;
                 capsule(f.sel, f.color, fa, pop ? 1 + 0.35 * Math.sin(Math.PI * k) : 1);
             }
+            if (lamp && cs >= 5) {
+                // Im Dunkeln: kleine Punkte zeigen, wo Buchstaben stehen
+                c.fillStyle = 'rgba(255,255,255,.16)';
+                const rr = Math.max(1, cs * 0.045);
+                c.beginPath();
+                for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) {
+                    if (this.cover && this.cover[y * g.w + x]) continue;
+                    c.moveTo(cx(x) + rr, cy(y)); c.arc(cx(x), cy(y), rr, 0, Math.PI * 2);
+                }
+                c.fill();
+            }
             for (const a of this.anims) {
                 const k = (now - a.t0) / a.dur;
                 if (a.type === 'miss') capsule(a.sel, a.color, 0.55 * (1 - k), 1);
@@ -178,7 +208,7 @@
             if (this.drag && this.drag.len) {
                 // Die Markierung folgt dem Finger fließend in der eingerasteten Richtung, erfasst werden ganze Felder
                 const d = this.drag, tt = d.t || 0;
-                c.globalAlpha = 0.6;
+                c.globalAlpha = lamp ? 0.4 : 0.6;
                 c.strokeStyle = d.color;
                 c.lineWidth = cs * 0.8;
                 c.beginPath();
@@ -201,7 +231,8 @@
 
             // Buchstaben, nur die sichtbaren
             if (cs >= 3) {
-                c.font = '700 ' + (cs * 0.6).toFixed(1) + 'px ' + FONTS[this.font];
+                const font = '700 ' + (cs * 0.6).toFixed(1) + 'px ' + FONTS[this.font];
+                c.font = font;
                 c.textAlign = 'center';
                 c.textBaseline = 'middle';
                 const dy = cs * 0.035;
@@ -209,19 +240,113 @@
                     const py = cy(y) + dy;
                     for (let x = x0; x <= x1; x++) {
                         const i = y * g.w + x;
-                        c.fillStyle = this.cover && this.cover[i] ? this.colors.cover : this.colors.text;
+                        const cov = this.cover && this.cover[i];
+                        if (lamp && !cov) continue;   // im Dunkeln nur gefundene Wörter, der Rest kommt über das Licht
+                        c.fillStyle = cov ? this.colors.cover : this.colors.text;
                         c.fillText(g.grid[i], cx(x), py);
                     }
                 }
+                if (lamp && lights.length) this.drawLit(c, lights, font, x0, x1, y0, y1);
             }
-            if (this.anims.length) this.redraw();
+            if (this.anims.length || (lamp && this.trail.length)) this.redraw();
+        }
+
+        /* ---------- Taschenlampe ---------- */
+        /** Alle Lichtpunkte gerade: wo das Licht ist, die verblassende Spur und ein Tipp. k = Helligkeit 0…1 */
+        lights(now) {
+            this.trail = this.trail.filter(p => now - p.t < TRAIL);
+            const out = this.trail.map(p => { const k = 1 - (now - p.t) / TRAIL; return { gx: p.gx, gy: p.gy, k: k * k * (3 - 2 * k) }; });
+            if (this.lampAt) out.push({ gx: this.lampAt.gx, gy: this.lampAt.gy, k: 1 });
+            for (const a of this.anims) if (a.type === 'hint') out.push({ gx: a.x + 0.5, gy: a.y + 0.5, k: Math.min(1, (1 - (now - a.t0) / a.dur) * 3) * 0.8 });
+            return out;
+        }
+        lightR(p) { return this.lamp * this.cs * (0.55 + 0.45 * p.k); }
+        /** Warmer Schein unter den Buchstaben */
+        drawGlow(c, lights) {
+            for (const p of lights) {
+                const x = this.ox + p.gx * this.cs, y = this.oy + p.gy * this.cs, r = this.lightR(p);
+                const gr = c.createRadialGradient(x, y, 0, x, y, r);
+                gr.addColorStop(0, 'rgba(255,214,90,' + (0.24 * p.k).toFixed(3) + ')');
+                gr.addColorStop(0.6, 'rgba(255,200,60,' + (0.08 * p.k).toFixed(3) + ')');
+                gr.addColorStop(1, 'rgba(255,200,60,0)');
+                c.fillStyle = gr;
+                c.fillRect(x - r, y - r, 2 * r, 2 * r);
+            }
+        }
+        /** Buchstaben im Licht: die Buchstaben im Lichtkreis auf eine eigene Fläche, dann mit den Lichtflecken als Maske ausblenden */
+        drawLit(c, lights, font, x0, x1, y0, y1) {
+            const g = this.g, cs = this.cs, W = this.cv.width, H = this.cv.height;
+            const prep = k => {
+                if (!this[k]) this[k] = document.createElement('canvas');
+                const cv = this[k];
+                if (cv.width !== W || cv.height !== H) { cv.width = W; cv.height = H; }
+                const l = cv.getContext('2d');
+                l.globalCompositeOperation = 'source-over';
+                l.setTransform(1, 0, 0, 1, 0, 0);
+                l.clearRect(0, 0, W, H);
+                l.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+                return l;
+            };
+            const m = prep('mc'), l = prep('lc');
+            const lit = new Set();
+            for (const p of lights) {
+                const x = this.ox + p.gx * cs, y = this.oy + p.gy * cs, r = this.lightR(p);
+                const gr = m.createRadialGradient(x, y, 0, x, y, r);
+                gr.addColorStop(0, 'rgba(255,255,255,' + p.k.toFixed(3) + ')');
+                gr.addColorStop(0.5, 'rgba(255,255,255,' + (0.85 * p.k).toFixed(3) + ')');
+                gr.addColorStop(1, 'rgba(255,255,255,0)');
+                m.fillStyle = gr;
+                m.fillRect(x - r, y - r, 2 * r, 2 * r);
+                const rc = r / cs;
+                for (let yy = Math.max(y0, Math.floor(p.gy - rc)); yy <= Math.min(y1, Math.floor(p.gy + rc)); yy++)
+                    for (let xx = Math.max(x0, Math.floor(p.gx - rc)); xx <= Math.min(x1, Math.floor(p.gx + rc)); xx++) lit.add(yy * g.w + xx);
+            }
+            l.font = font;
+            l.textAlign = 'center';
+            l.textBaseline = 'middle';
+            l.fillStyle = '#fff4d0';
+            const dy = cs * 0.035;
+            for (const i of lit) {
+                if (this.cover && this.cover[i]) continue;
+                const x = i % g.w, y = (i - x) / g.w;
+                l.fillText(g.grid[i], this.ox + (x + 0.5) * cs, this.oy + (y + 0.5) * cs + dy);
+            }
+            l.setTransform(1, 0, 0, 1, 0, 0);
+            l.globalCompositeOperation = 'destination-in';
+            l.drawImage(this.mc, 0, 0);
+            l.globalCompositeOperation = 'source-over';
+            c.save();
+            c.setTransform(1, 0, 0, 1, 0, 0);
+            c.globalAlpha = 1;
+            c.drawImage(this.lc, 0, 0);
+            c.restore();
+        }
+        /** Licht an die Stelle von Finger oder Maus. Am Handy etwas über die Fingerspitze, damit der Finger es nicht verdeckt. */
+        moveLamp(p, touch) {
+            if (!this.lamp || !this.g) return;
+            const off = touch ? Math.min(30, Math.max(14, this.cs * 0.6)) / this.cs : 0;
+            const at = { gx: p.gx, gy: p.gy - off };
+            const now = performance.now(), last = this.trail[this.trail.length - 1];
+            if (this.lampAt && (!last || Math.hypot(at.gx - last.gx, at.gy - last.gy) > 0.2 || now - last.t > 40)) {
+                this.trail.push({ gx: this.lampAt.gx, gy: this.lampAt.gy, t: now });
+                if (this.trail.length > 160) this.trail.shift();
+            }
+            this.lampAt = at;
+            this.redraw();
+        }
+        /** Finger hoch oder Maus raus: das Licht verglimmt */
+        dropLamp() {
+            if (!this.lampAt) return;
+            this.trail.push({ gx: this.lampAt.gx, gy: this.lampAt.gy, t: performance.now() });
+            this.lampAt = null;
+            this.redraw();
         }
 
         /* ---------- Bedienung ---------- */
         toGrid(e) {
             const r = this.cv.getBoundingClientRect();
             const px = e.clientX - r.left, py = e.clientY - r.top;
-            return { px, py, gx: (px - this.ox) / this.cs, gy: (py - this.oy) / this.cs };
+            return { px, py, gx: (px - this.ox) / this.cs, gy: (py - this.oy) / this.cs, touch: e.pointerType !== 'mouse' };
         }
         bind() {
             const cv = this.cv;
@@ -230,6 +355,7 @@
             cv.addEventListener('pointerup', e => this.up(e, false));
             cv.addEventListener('pointercancel', e => this.up(e, true));
             cv.addEventListener('lostpointercapture', e => { if (this.ptrs.has(e.pointerId)) this.up(e, true); });
+            cv.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse' && !this.ptrs.size) this.dropLamp(); });
             cv.addEventListener('contextmenu', e => e.preventDefault());
             cv.addEventListener('wheel', e => this.wheel(e), { passive: false });
             // Safari am Mac: Zoomen mit zwei Fingern auf dem Trackpad kommt als gesture-Ereignis
@@ -254,6 +380,7 @@
                 this.drag = null;
                 this.pan = null;
                 this.lock = true;
+                this.dropLamp();
                 const [a, b] = [...this.ptrs.values()];
                 const mx = (a.px + b.px) / 2, my = (a.py + b.py) / 2;
                 this.pinch = { d0: Math.hypot(a.px - b.px, a.py - b.py) || 1, cs0: this.cs, gx: (mx - this.ox) / this.cs, gy: (my - this.oy) / this.cs, zoom: false };
@@ -261,6 +388,7 @@
                 return;
             }
             if (this.ptrs.size > 1 || this.lock) return;
+            this.moveLamp(p, p.touch);
             const inside = p.gx >= 0 && p.gy >= 0 && p.gx < this.g.w && p.gy < this.g.h;
             if (e.pointerType === 'mouse' && e.button !== 0 || !inside) {
                 this.pan = { px: p.px, py: p.py, ox: this.ox, oy: this.oy };
@@ -272,9 +400,13 @@
             this.redraw();
         }
         move(e) {
-            if (!this.ptrs.has(e.pointerId)) return;
+            if (!this.ptrs.has(e.pointerId)) {
+                if (e.pointerType === 'mouse' && this.lamp) this.moveLamp(this.toGrid(e), false);   // am Rechner leuchtet die Maus auch ohne Klick
+                return;
+            }
             const p = this.toGrid(e);
             this.ptrs.set(e.pointerId, p);
+            if (!this.pinch && this.ptrs.size === 1) this.moveLamp(p, p.touch);
             if (this.pinch && this.ptrs.size >= 2) {
                 const [a, b] = [...this.ptrs.values()];
                 const mx = (a.px + b.px) / 2, my = (a.py + b.py) / 2, dist = Math.hypot(a.px - b.px, a.py - b.py) || 1;
@@ -334,6 +466,7 @@
                     if (ox !== this.ox || oy !== this.oy) {
                         this.fitted = false;
                         p.gx = (p.px - this.ox) / this.cs; p.gy = (p.py - this.oy) / this.cs;
+                        if (this.lamp) this.moveLamp(p, p.touch);
                         this.track(p);
                     }
                 }
@@ -344,6 +477,7 @@
         up(e, cancel) {
             if (!this.ptrs.has(e.pointerId)) return;
             this.ptrs.delete(e.pointerId);
+            if (e.pointerType !== 'mouse') this.dropLamp();
             if (this.pinch) { if (this.ptrs.size < 2) this.pinch = null; if (!this.ptrs.size) this.lock = false; return; }
             if (!this.ptrs.size) this.lock = false;
             if (this.pan) { this.pan = null; this.cv.classList.remove('panning'); return; }
@@ -358,7 +492,7 @@
             } else this.tap = null;
             if (!cancel && d.len >= 2) {
                 const sel = [d.sx, d.sy, d.dir[0], d.dir[1], d.len];
-                if (!this.o.onSelect(sel, d.color)) this.anim({ type: 'miss', sel, color: d.color, dur: 420 });
+                if (!this.o.onSelect(sel, d.color) && !this.lamp) this.anim({ type: 'miss', sel, color: d.color, dur: 420 });
             }
             this.redraw();
         }

@@ -257,7 +257,7 @@
     function encodeShare(g) {
         const o = g.opt;
         return b64e(JSON.stringify({ v: 1, t: g.title, l: g.lang, w: g.w, h: g.h, s: o.seed, d: ['h', 'v', 'd', 'r'].filter(x => o.dirs[x]).join(''),
-            k: o.keep ? 1 : 0, f: o.tricky ? 1 : 0, p: o.preset || '', x: g.words.map(x => x.src || x.t) }));
+            k: o.keep ? 1 : 0, f: o.tricky ? 1 : 0, m: o.lamp ? 1 : 0, p: o.preset || '', x: g.words.map(x => x.src || x.t) }));
     }
     function decodeShare(s) {
         try {
@@ -268,7 +268,7 @@
                 title: String(j.t || '').slice(0, 80), lang: /^[a-z]{2}$/.test(j.l) ? j.l : 'de',
                 w: clamp(j.w, 4, 100), h: clamp(j.h, 4, 100), seed: (+j.s) >>> 0,
                 dirs: { h: /h/.test(j.d), v: /v/.test(j.d), d: /d/.test(j.d), r: /r/.test(j.d) },
-                keep: !!j.k, tricky: !!j.f, preset: String(j.p || '').slice(0, 10),
+                keep: !!j.k, tricky: !!j.f, lamp: !!j.m, preset: String(j.p || '').slice(0, 10),
                 words: j.x.slice(0, 60).map(x => String(x).slice(0, 60)),
             };
         } catch (e) { return null; }
