@@ -67,9 +67,11 @@ Upload `suchsel-install.php`, open it in the browser, click "Install now". That 
 | Move | move two fingers together | hold the right mouse button, mouse wheel, arrow keys |
 | Back to starting size | double tap | double click or key 0 |
 | Word list bigger or smaller | drag the bar between list and grid, double tap resets it | same |
+| Word list at the top, bottom, left or right | Menu, Settings, Word list | same |
 | Hint | light bulb at the top | same |
+| Flashlight | drag your finger across the grid | move the mouse over the grid |
 
-When you mark near the edge, the grid moves along by itself, so long words work in large grids too. The split between word list and grid adapts to the shape of the grid, and the word list uses the largest font that fits. Text cannot be selected by accident.
+When you mark near the edge, the grid moves along by itself, so long words work in large grids too. The split between word list and grid adapts to the shape of the grid, and the word list uses the largest font that fits. If you drag the list smaller, the text shrinks and the words already found collapse into a small ✓ that expands them again when tapped. No more entries cut in half. Text cannot be selected by accident.
 
 ## Features
 
@@ -81,6 +83,8 @@ When you mark near the edge, the grid moves along by itself, so long words work 
 - **Special letters:** Ä, Ö, Ü (and Ñ in Spanish) stay in the grid, or are replaced by AE, OE, UE if you like. ß always becomes SS, accents are dropped. Spaces and hyphens disappear: "ice cream" is ICECREAM in the grid and ICE CREAM in the list.
 - **Reshuffle:** same words, new grid.
 - **Hint:** shows where one of the words starts.
+- **Flashlight:** can be switched on for a new puzzle. The grid lies in the dark, only the letters around your finger or the mouse light up, with a trail of light that glows on for almost a second. The harder the puzzle, the smaller the light (Easy large, Medium medium, Hard and Expert small). Found words stay visible, and once everything is found the light comes on. Best times with the flashlight are counted separately.
+- **Word list where you want it:** top, bottom, left, right or automatic (top in portrait, left on wide screens).
 - **Timer and statistics:** puzzles started and solved, words found, hints, playing time and best times per difficulty. The timer only runs while the puzzle is visible.
 - **Progress is kept:** close the app, open it again, carry on.
 - **Share via link:** whoever opens the link gets exactly the same grid. The link only contains the words and settings, no solutions.

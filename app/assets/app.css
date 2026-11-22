@@ -96,27 +96,47 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
     padding: 0 calc(env(safe-area-inset-right) + 10px) calc(env(safe-area-inset-bottom) + 10px) calc(env(safe-area-inset-left) + 10px);
 }
 .card { background: var(--card); border-radius: var(--r); box-shadow: var(--shadow); }
-#wordsCard { flex: none; max-height: 34vh; overflow: auto; padding: 0 0 10px; }
+#wordsCard { flex: none; max-height: 34vh; overflow: hidden; padding: 0 0 10px; display: flex; flex-direction: column; container-type: inline-size; }
 @media (max-height: 760px) { #wordsCard { max-height: 28vh; } #theme { padding: 5px 12px; } }
 #theme {
     margin: 0; padding: 8px 14px; font-size: 1.05rem; font-weight: 800; text-align: center; letter-spacing: .06em; text-transform: uppercase;
     color: #fff; background: linear-gradient(180deg, var(--accent2), var(--accent)); border-radius: var(--r) var(--r) 0 0;
-    position: sticky; top: 0; z-index: 1; overflow-wrap: anywhere;
+    flex: none; overflow-wrap: anywhere;
 }
 [data-theme=dark] #theme { color: #0f1420; }
-#words { list-style: none; margin: 0; padding: 10px 10px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 6px; }
+/* Die Liste selbst scrollt, die Überschrift bleibt stehen. Schriftgröße setzt app.js über --wfs, Abstände wachsen mit. */
+#words {
+    list-style: none; margin: 0; padding: 10px 10px 0; display: flex; flex-wrap: wrap; justify-content: center; align-content: flex-start;
+    gap: calc(var(--wfs, 16px) * .38); flex: 1; min-height: 0; overflow-y: auto; overflow-x: hidden; position: relative;
+    scrollbar-width: thin; overscroll-behavior: contain;
+}
 #words li {
-    font-size: var(--wfs, 1.02rem) !important;
-    padding: 3px 10px; border-radius: 999px; font-weight: 800; letter-spacing: .04em; font-size: 1.02rem; line-height: 1.5;
+    font-size: var(--wfs, 1.02rem); padding: .16em .6em; border-radius: 999px; font-weight: 800; letter-spacing: .04em; line-height: 1.5;
     border: 2px solid transparent; transition: background .25s;
 }
-#words.many { gap: 4px; padding-top: 8px; }
-#words.many li { font-size: .86rem; padding: 1px 7px; letter-spacing: .02em; }
+#words.many { padding-top: 8px; }
+#words.many li { letter-spacing: .02em; }
+#words.collapsed li.found { display: none; }
+#words.wrap li { max-width: 100%; overflow-wrap: anywhere; }
+#words li.sum {
+    cursor: pointer; color: var(--accent); background: var(--soft); border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+    font-variant-numeric: tabular-nums; letter-spacing: .02em;
+}
+#words li.sum:hover { border-color: var(--accent); }
+/* Steht unten noch etwas, blendet der Rand sanft aus */
+#wordsCard.more #words { -webkit-mask-image: linear-gradient(#000 calc(100% - 22px), transparent); mask-image: linear-gradient(#000 calc(100% - 22px), transparent); }
+@container (max-width: 190px) {
+    #theme { font-size: .82rem; padding: 6px 8px; letter-spacing: .03em; }
+    #words { padding: 8px 6px 0; }
+    #words li { padding: .12em .45em; letter-spacing: .01em; }
+}
 #words li.found {
     background: var(--c); background: color-mix(in srgb, var(--c) 82%, var(--card)); color: #10131a;
     text-decoration: line-through; text-decoration-thickness: 2px; cursor: pointer; animation: pop .35s;
 }
-#boardCard { flex: 1; min-height: 200px; display: flex; flex-direction: column; overflow: hidden; }
+#boardCard { flex: 1; min-height: 200px; min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
+/* Taschenlampe: das Gitter liegt im Dunkeln, egal ob helles oder dunkles Design */
+#boardWrap.lamp { background: radial-gradient(ellipse at 50% 40%, #151b2b, #0a0d16); }
 #boardWrap { flex: 1; min-height: 0; position: relative; }
 #board { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: crosshair; user-select: none; -webkit-user-select: none; }
 #board.panning { cursor: grabbing; }
@@ -139,16 +159,19 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 #wordsCard.sized { max-height: none; }
 #words.many li { padding: 1px 7px; }
 
-@media (min-width: 820px) and (min-aspect-ratio: 1/1) {
-    #main { flex-direction: row; }
-    .split { height: auto; width: 22px; cursor: col-resize; }
-    .split::before { inset: 0 -8px; }
-    .split i { width: 6px; height: 64px; }
-    .split:hover i, .split.active i { transform: scaleY(1.2); }
-    #wordsCard { width: 300px; max-height: none; }
-    #words { justify-content: flex-start; }
-}
-@media (min-width: 1200px) and (min-aspect-ratio: 1/1) { #wordsCard { width: 340px; } }
+/* Wo die Wortliste steht, legt app.js über data-pos fest: oben, unten, links oder rechts */
+#main[data-pos=bottom] { flex-direction: column-reverse; }
+#main[data-pos=left] { flex-direction: row; }
+#main[data-pos=right] { flex-direction: row-reverse; }
+#main[data-pos=left] .split, #main[data-pos=right] .split { height: auto; width: 22px; cursor: col-resize; }
+#main[data-pos=left] .split::before, #main[data-pos=right] .split::before { inset: 0 -8px; }
+#main[data-pos=left] .split i, #main[data-pos=right] .split i { width: 6px; height: 64px; }
+#main[data-pos=left] .split:hover i, #main[data-pos=left] .split.active i,
+#main[data-pos=right] .split:hover i, #main[data-pos=right] .split.active i { transform: scaleY(1.2); }
+#main[data-pos=left] #wordsCard, #main[data-pos=right] #wordsCard { width: min(300px, 40%); max-height: none; }
+#main[data-pos=left] #words, #main[data-pos=right] #words { justify-content: flex-start; }
+@media (min-width: 1200px) { #main[data-pos=left] #wordsCard, #main[data-pos=right] #wordsCard { width: 340px; } }
+.lampt { margin-top: 8px; }
 .toast { cursor: pointer; }
 
 /* ---------- Hinweise unten ---------- */
@@ -300,5 +323,4 @@ canvas.preview.big { cursor: zoom-out; }
 
 /* Wortliste: noch zu suchende Wörter zuerst, gefundene dahinter etwas zurückgenommen */
 #words li.found { opacity: .85; }
-#wordsCard { scrollbar-width: thin; }
 html, body { overscroll-behavior-x: none; }

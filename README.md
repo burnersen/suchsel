@@ -67,9 +67,11 @@ Die App wird einmal vom Server geladen und läuft danach komplett auf dem Gerät
 | Verschieben | zwei Finger gemeinsam bewegen | rechte Maustaste gedrückt halten, Mausrad, Pfeiltasten |
 | Zurück zur Ausgangsgröße | doppelt tippen | Doppelklick oder Taste 0 |
 | Wortliste größer oder kleiner | Balken zwischen Liste und Gitter ziehen, doppelt tippen stellt zurück | dito |
+| Wortliste oben, unten, links oder rechts | Menü, Einstellungen, Wortliste | dito |
 | Tipp | Glühbirne oben | dito |
+| Taschenlampe | Finger übers Gitter ziehen | Maus übers Gitter bewegen |
 
-Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange Wörter in großen Gittern. Die Aufteilung zwischen Wortliste und Gitter richtet sich von selbst nach der Form des Gitters, die Schrift der Wortliste wird so groß, wie der Platz hergibt. Text lässt sich nicht aus Versehen markieren.
+Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange Wörter in großen Gittern. Die Aufteilung zwischen Wortliste und Gitter richtet sich von selbst nach der Form des Gitters, die Schrift der Wortliste wird so groß, wie der Platz hergibt. Wird die Liste klein gezogen, schrumpft die Schrift, und die schon gefundenen Wörter rücken zu einem kleinen ✓ zusammen, das sie beim Antippen wieder aufklappt. Halb abgeschnittene Einträge gibt es nicht mehr. Text lässt sich nicht aus Versehen markieren.
 
 ## Funktionen
 
@@ -81,6 +83,8 @@ Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange W�
 - **Umlaute:** Ä, Ö, Ü (und Ñ im Spanischen) bleiben im Gitter stehen, auf Wunsch werden sie zu AE, OE, UE. ß wird immer SS, Akzente fallen weg. Leerzeichen und Bindestriche verschwinden: „Eis am Stiel“ steht als EISAMSTIEL im Gitter und als EIS AM STIEL in der Liste.
 - **Neu mischen:** dieselben Wörter, neues Gitter.
 - **Tipp:** zeigt, wo eins der Wörter anfängt.
+- **Taschenlampe:** beim neuen Rätsel einschaltbar. Das Gitter liegt im Dunkeln, nur rund um Finger oder Maus leuchten die Buchstaben, mit einer Lichtspur, die knapp eine Sekunde nachglüht. Je schwerer, desto kleiner das Licht (Leicht groß, Mittel mittel, Schwer und Profi klein). Gefundene Wörter bleiben sichtbar, ist alles gefunden, geht das Licht an. Bestzeiten mit Taschenlampe zählen extra.
+- **Wortliste, wo du willst:** oben, unten, links, rechts oder automatisch (im Hochformat oben, auf breiten Bildschirmen links).
 - **Stoppuhr und Statistik:** angefangene und gelöste Rätsel, gefundene Wörter, Tipps, Spielzeit und Bestzeiten je Schwierigkeit. Die Uhr läuft nur, solange das Rätsel zu sehen ist.
 - **Spielstand bleibt erhalten:** App zu, App auf, weiter geht's.
 - **Teilen per Link:** wer den Link öffnet, bekommt genau dasselbe Gitter. Im Link stehen nur die Wörter und Einstellungen, keine Lösungen.

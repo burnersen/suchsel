@@ -19,6 +19,9 @@
         profi: { n: 20, w: 20, h: 20, dirs: { h: 1, v: 1, d: 1, r: 1 }, tricky: true },
     };
     const PRESET_NAMES = { leicht: 'Leicht', mittel: 'Mittel', schwer: 'Schwer', profi: 'Profi', eigen: 'Individuell' };
+    // Taschenlampe: Radius des Lichtkegels in Feldern, je schwerer, desto kleiner
+    const LAMP_R = { leicht: 2.6, mittel: 2, schwer: 1.5, profi: 1.25, eigen: 2 };
+    const POS = ['auto', 'top', 'bottom', 'left', 'right'];
 
     /* ---------- Speicher ---------- */
     const load = (k, d) => { try { const v = JSON.parse(localStorage.getItem('su_' + k)); return v == null ? d : v; } catch (e) { return d; } };
@@ -28,11 +31,12 @@
         for (const l of navigator.languages || [navigator.language || 'de']) { const s = String(l).slice(0, 2).toLowerCase(); if (LANGS[s]) return s; }
         return 'en';
     };
-    const set = Object.assign({ lang: navLang(), theme: 'auto', font: 'sans', lines: false, timer: true, vibrate: true }, load('set', {}));
+    const set = Object.assign({ lang: navLang(), theme: 'auto', font: 'sans', lines: false, timer: true, vibrate: true, pos: 'auto' }, load('set', {}));
+    if (!POS.includes(set.pos)) set.pos = 'auto';
     if (!LANGS[set.lang]) set.lang = 'en';
     const wordLang = l => WORD_URLS[l] ? l : WORD_URLS.en ? 'en' : Object.keys(WORD_URLS)[0] || 'de';
     let newOpt = Object.assign({ cat: 'rnd', wl: wordLang(set.lang), preset: 'leicht', n: 6, w: 10, h: 10, dirs: { h: 1, v: 1, d: 0, r: 0 },
-        tricky: false, keep: true, custom: '', customTitle: '', saveCat: false }, load('new', {}));
+        tricky: false, keep: true, lamp: false, custom: '', customTitle: '', saveCat: false }, load('new', {}));
     let own = Object.assign({ cats: [], extra: {} }, load('own', {}));
     let stats = Object.assign({ played: 0, solved: 0, words: 0, hints: 0, time: 0, best: {} }, load('stats', {}));
     let exp = Object.assign({ mode: 'puzzle', land: false, list: true, name: false, title: '' }, load('exp', {}));
@@ -315,10 +319,11 @@
         game = {
             v: 1, title, cat: catId, lang: l, w, h, grid: res.grid,
             words: res.words.map(x => ({ t: x.t, k: x.k, src: items.find(y => y.k === x.k).src, p: x.p, f: null, c: -1 })),
-            opt: { seed, dirs: Object.assign({}, dirs), keep: o.keep, tricky: o.tricky, preset: presetOf(Object.assign({}, o, { w, h })), n: o.n },
+            opt: { seed, dirs: Object.assign({}, dirs), keep: o.keep, tricky: o.tricky, preset: presetOf(Object.assign({}, o, { w, h })), n: o.n, lamp: !!o.lamp },
             found: 0, elapsed: 0, hints: 0, done: false, at: Date.now(),
         };
         game.words.sort((a, b2) => a.t.localeCompare(b2.t, l));
+        showFound = false;
         stats.played++;
         save('stats', stats);
         saveGame();
@@ -327,6 +332,7 @@
         if (w !== o.w || h !== o.h) notes.push(t('Gitter auf {w} × {h} vergrößert, damit alles passt.', { w, h }));
         if (res.missing.length) notes.push(t('Nicht ins Gitter gepasst: {w}', { w: res.missing.join(', ') }));
         if (short.length) notes.push(t('Zu kurz (mindestens 3 Buchstaben): {w}', { w: short.join(', ') }));
+        if (o.lamp && !load('lampcoach', 0)) { save('lampcoach', 1); notes.unshift(t('Taschenlampe an: Fahr mit dem Finger oder der Maus übers Gitter, dann leuchten die Buchstaben auf.')); }
         if (notes.length) toast(notes.join(' '));
         return true;
     }
@@ -336,18 +342,24 @@
     const colorOf = w => COLORS[w.c % COLORS.length];
     const foundList = () => game.words.filter(w => w.f).sort((a, b) => a.c - b.c).map(w => ({ sel: w.f, color: colorOf(w) }));
     function nextColor() { return COLORS[(game ? game.found : 0) % COLORS.length]; }
+    const lampR = () => game && game.opt.lamp && !game.done ? LAMP_R[game.opt.preset] || LAMP_R.eigen : 0;
+    /** Schlüssel für Bestzeiten: Schwierigkeit, mit Taschenlampe extra */
+    const bestKey = g => (g.opt.preset || 'eigen') + (g.opt.lamp ? '-lamp' : '');
+    const presetLabel = g => t(PRESET_NAMES[g.opt.preset] || 'Individuell') + (g.opt.lamp ? ' · ' + t('Taschenlampe') : '');
 
     function render(fresh) {
         if (!game) {
             $('#theme').textContent = 'Suchsel';
             $('#words').replaceChildren();
             board.setPuzzle(null);
+            board.setLamp(0);
             renderStat();
             return;
         }
         $('#theme').textContent = game.title;
         renderWords();
         board.setPuzzle({ grid: game.grid, w: game.w, h: game.h }, !fresh);
+        board.setLamp(lampR());
         board.setFound(foundList());
         renderStat();
         renderCoach();
@@ -356,12 +368,18 @@
     function renderWords() {
         const ul = $('#words');
         ul.classList.toggle('many', game.words.length > 14);
-        const order = game.words.filter(w => !w.f).concat(game.words.filter(w => w.f));
-        ul.replaceChildren(...order.map(w => el('li', {
-            class: w.f ? 'found' : null, vars: w.f ? { '--c': colorOf(w) } : null, text: w.t,
-            title: w.f ? t('Antippen zeigt das Wort im Gitter') : null,
-            onclick: w.f ? () => board.flash(w.f, colorOf(w)) : null,
+        const open = game.words.filter(w => !w.f), done = game.words.filter(w => w.f);
+        // Wird es eng, rücken die gefundenen Wörter in ein kleines „✓ 3“ zusammen. Antippen klappt sie auf und wieder zu.
+        const sum = done.length ? el('li.sum', { text: '✓ ' + done.length, role: 'button', tabindex: 0,
+            title: showFound ? t('Gefundene Wörter einklappen') : t('Gefundene Wörter zeigen'),
+            onclick: () => { showFound = !showFound; renderWords(); },
+            onkeydown: e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showFound = !showFound; renderWords(); } } }) : null;
+        ul.replaceChildren(...open.map(w => el('li', { text: w.t })), ...(sum ? [sum] : []), ...done.map(w => el('li', {
+            class: 'found', vars: { '--c': colorOf(w) }, text: w.t,
+            title: t('Antippen zeigt das Wort im Gitter'),
+            onclick: () => board.flash(w.f, colorOf(w)),
         })));
+        fitWords();
     }
     function renderStat() {
         $('#progress').textContent = game ? game.found + '/' + game.words.length : '';
@@ -384,27 +402,62 @@
         setTimeout(() => c.remove(), 450);
     }
 
-    /** Schrift der Wortliste so groß, wie der Platz hergibt (zwischen 13 und 30 Pixeln) */
+    /**
+     * Schrift der Wortliste so groß, wie der Platz hergibt. Reicht er nicht, erst kleiner (bis 12 Pixel), dann die gefundenen
+     * Wörter zusammenklappen, dann noch kleiner (bis 10 Pixel). Erst wenn auch das nicht reicht, wird gescrollt.
+     */
+    let showFound = false;
     function fitWords() {
-        const card = $('#wordsCard'), ul = $('#words');
-        if (!ul.children.length) return;
-        const fits = px => { ul.style.setProperty('--wfs', px + 'px'); return card.scrollHeight <= card.clientHeight + 1; };
-        let lo = 13, hi = 30;
-        if (fits(hi)) return;
-        while (hi - lo > 0.5) { const m = (lo + hi) / 2; if (fits(m)) lo = m; else hi = m; }
-        fits(Math.floor(lo));
+        const ul = $('#words');
+        if (!ul.children.length) { moreHint(); return; }
+        const sum = ul.querySelector('.sum');
+        const fits = px => { ul.style.setProperty('--wfs', px + 'px'); return ul.scrollHeight <= ul.clientHeight + 1 && ul.scrollWidth <= ul.clientWidth + 1; };
+        const fit = (lo, hi) => {
+            if (fits(hi)) return true;
+            if (!fits(lo)) return false;
+            while (hi - lo > 0.5) { const m = (lo + hi) / 2; if (fits(m)) lo = m; else hi = m; }
+            fits(Math.floor(lo * 2) / 2);
+            return true;
+        };
+        ul.classList.remove('collapsed', 'wrap');
+        if (sum) sum.hidden = !showFound;
+        let ok = fit(12, 30);
+        if (!ok && sum && !showFound) { ul.classList.add('collapsed'); sum.hidden = false; ok = fit(10, 30); }
+        if (!ok) ok = fit(10, 12);
+        if (!ok && ul.scrollWidth > ul.clientWidth + 1) ul.classList.add('wrap');   // ein einzelnes Wort ist breiter als die Liste
+        if (!ok) fits(10);
+        moreHint();
+    }
+    /** Verlauf am unteren Rand, wenn in der Wortliste noch etwas weiter unten steht */
+    function moreHint() {
+        const ul = $('#words');
+        $('#wordsCard').classList.toggle('more', ul.scrollTop + ul.clientHeight < ul.scrollHeight - 2);
     }
     let layout = () => {};
 
-    /* ---------- Griff zwischen Wortliste und Gitter: Größe stufenlos, je Ausrichtung gemerkt ---------- */
+    /* ---------- Wortliste oben, unten, links oder rechts. Griff dazwischen: Größe stufenlos, je Position gemerkt ---------- */
+    const wideMq = matchMedia('(min-width: 820px) and (min-aspect-ratio: 1/1)');
+    /** Wo die Wortliste gerade steht. Automatisch: im Hochformat oben, auf breiten Bildschirmen links. */
+    const listPos = () => set.pos !== 'auto' ? set.pos : wideMq.matches ? 'left' : 'top';
     function initSplit() {
-        const sp = $('#split'), card = $('#wordsCard'), main = $('#main');
-        const row = () => getComputedStyle(main).flexDirection === 'row';
+        const MIN = 90;   // mindestens Überschrift und eine Zeile Wörter
+        const sp = $('#split'), card = $('#wordsCard'), main = $('#main'), ul = $('#words');
+        // Alte Einstellung (vor 1.1.0) übernehmen: „col“ war oben, „row“ war links
+        const old = load('split', {});
+        if ('col' in old || 'row' in old) {
+            const s = {};
+            if (old.col != null) s.top = old.col;
+            if (old.row != null) s.left = old.row;
+            save('split', s);
+        }
         const apply = () => {
-            const s = load('split', {}), r = row(), f = s[r ? 'row' : 'col'];
+            const pos = listPos(), r = pos === 'left' || pos === 'right';
+            if (main.dataset.pos !== pos) main.dataset.pos = pos;
+            const s = load('split', {}), f = s[pos];
             card.style.height = ''; card.style.width = '';
             sp.setAttribute('aria-orientation', r ? 'vertical' : 'horizontal');
             const total = r ? main.clientWidth : main.clientHeight;
+            const lo = r ? Math.min(220, Math.round(total * 0.3)) : 110, hi = total * (r ? 0.45 : 0.42);
             let px;
             if (f != null) px = f * total;
             else if (game) {
@@ -415,39 +468,54 @@
                 if (!r) {   // die Wortliste muss mindestens in kleiner Schrift ganz zu sehen sein
                     card.classList.add('sized');
                     card.style.height = 'auto';
-                    $('#words').style.setProperty('--wfs', '14px');
+                    ul.classList.remove('collapsed', 'wrap');
+                    ul.style.setProperty('--wfs', '14px');
                     px = Math.max(px, card.scrollHeight + 2);
                     card.style.height = '';
                 }
-                px = Math.max(r ? 220 : 110, Math.min(total * (r ? 0.45 : 0.42), px));
+                px = Math.max(lo, Math.min(hi, px));
             } else { card.classList.remove('sized'); fitWords(); return; }
-            px = Math.round(Math.max(70, Math.min(total - 180, px)));
+            px = Math.round(Math.max(MIN, Math.min(total - 180, px)));
             card.classList.add('sized');
             if (r) card.style.width = px + 'px'; else card.style.height = px + 'px';
             fitWords();
+            if (!r && ul.scrollHeight > ul.clientHeight + 1) {
+                // Muss doch gescrollt werden: nur ganze Zeilen zeigen, keine halb abgeschnittenen
+                let fit = 0;
+                for (const li of ul.children) {
+                    if (li.hidden || !li.offsetParent) continue;
+                    const b = li.offsetTop + li.offsetHeight;
+                    if (b <= ul.clientHeight + 1) fit = Math.max(fit, b);
+                }
+                const cut = ul.clientHeight - fit - 4;
+                if (fit && cut > 0) { card.style.height = (px - cut) + 'px'; moreHint(); }
+            }
         };
         layout = apply;
         let drag = null;
         sp.addEventListener('pointerdown', e => {
             e.preventDefault();
             sp.setPointerCapture(e.pointerId);
-            const r = card.getBoundingClientRect();
-            drag = { r: row(), start: row() ? r.left : r.top };
+            drag = { pos: listPos(), rect: card.getBoundingClientRect() };
             sp.classList.add('active');
         });
         sp.addEventListener('pointermove', e => {
             if (!drag) return;
-            const total = drag.r ? main.clientWidth : main.clientHeight;
-            const px = Math.max(70, Math.min(total - 180, (drag.r ? e.clientX : e.clientY) - drag.start - 9));
+            const p = drag.pos, rc = drag.rect, r = p === 'left' || p === 'right';
+            const total = r ? main.clientWidth : main.clientHeight;
+            const raw = p === 'top' ? e.clientY - rc.top : p === 'bottom' ? rc.bottom - e.clientY : p === 'left' ? e.clientX - rc.left : rc.right - e.clientX;
+            const px = Math.max(MIN, Math.min(total - 180, raw - 9));
             const s = load('split', {});
-            s[drag.r ? 'row' : 'col'] = px / total;
+            s[p] = px / total;
             save('split', s);
             apply();
         });
         const end = () => { if (drag) { drag = null; sp.classList.remove('active'); } };
         sp.addEventListener('pointerup', end);
         sp.addEventListener('pointercancel', end);
-        sp.addEventListener('dblclick', () => { const s = load('split', {}); delete s[row() ? 'row' : 'col']; save('split', s); apply(); });
+        sp.addEventListener('dblclick', () => { const s = load('split', {}); delete s[listPos()]; save('split', s); apply(); });
+        ul.addEventListener('scroll', moreHint, { passive: true });
+        wideMq.addEventListener && wideMq.addEventListener('change', apply);
         new ResizeObserver(apply).observe(main);
         apply();
     }
@@ -456,7 +524,7 @@
         if (!game || game.done) return false;
         const i = SuGame.match(game, sel);
         if (i < 0) {
-            if (set.vibrate && navigator.vibrate) navigator.vibrate([12, 40, 12]);
+            if (set.vibrate && navigator.vibrate && !game.opt.lamp) navigator.vibrate([12, 40, 12]);   // mit Taschenlampe wird viel übers Gitter gefahren, da nicht meckern
             return false;
         }
         const w = game.words[i];
@@ -479,12 +547,13 @@
         game.done = true;
         stats.solved++;
         stats.time += game.elapsed;
-        const key = game.opt.preset || 'eigen';
+        const key = bestKey(game);
         const rec = !stats.best[key] || game.elapsed < stats.best[key];
         if (rec) stats.best[key] = Math.round(game.elapsed);
         save('stats', stats);
         saveGame();
         renderStat();
+        board.setLamp(0);   // geschafft: das Licht geht an, das ganze Gitter ist zu sehen
         celebrate();
         setTimeout(() => showDone(rec), 900);
     }
@@ -773,9 +842,12 @@
 
         buildCats(); paintCustom(); paintFine(); paintKeep();
         const det = el('details.more', { open: o.preset === 'eigen' ? 'open' : null }, el('summary', { text: t('Feineinstellung') }), fine);
+        const lampT = toggle(t('Taschenlampe'), o.lamp, v => { o.lamp = v; },
+            t('Das Gitter ist dunkel, nur wo dein Finger ist, leuchten die Buchstaben. Je schwerer, desto kleiner das Licht.'));
+        lampT.classList.add('lampt');
         body.append(
             section(t('Thema'), search, catBox, customBox),
-            section(t('Schwierigkeit'), presetSeg, det),
+            section(t('Schwierigkeit'), presetSeg, lampT, det),
             note);
         const go = el('button.btn.primary.big', { type: 'button' }, icon('play'), el('span', { text: t('Los geht\'s!') }));
         const s = sheet(t('Neues Rätsel'), body, { foot: go, cls: 'wide' });
@@ -798,7 +870,7 @@
 
     async function reshuffle() {
         if (!game) return;
-        const o = Object.assign({}, newOpt, { wl: game.lang, w: game.w, h: game.h, dirs: game.opt.dirs, keep: game.opt.keep, tricky: game.opt.tricky, n: game.words.length, cat: game.cat });
+        const o = Object.assign({}, newOpt, { wl: game.lang, w: game.w, h: game.h, dirs: game.opt.dirs, keep: game.opt.keep, tricky: game.opt.tricky, lamp: !!game.opt.lamp, n: game.words.length, cat: game.cat });
         await startNew(o, { words: game.words.map(w => w.src || w.t), title: game.title });
     }
     const nextGame = () => startNew(newOpt);
@@ -808,7 +880,7 @@
         const body = el('div.done', null,
             el('div.big', { text: '🎉' }),
             el('p.lead', { text: t('{n} Wörter in {time} gefunden.', { n: game.words.length, time: fmtTime(game.elapsed) }) }),
-            rec ? el('p.rec', null, icon('star'), el('span', { text: t('Neue Bestzeit für {p}!', { p: t(PRESET_NAMES[game.opt.preset] || 'Individuell') }) })) : null,
+            rec ? el('p.rec', null, icon('star'), el('span', { text: t('Neue Bestzeit für {p}!', { p: presetLabel(game) }) })) : null,
             game.hints ? el('p.muted', { text: t('Mit {n} Tipps.', { n: game.hints }) }) : null);
         const s = sheet(t('Geschafft!'), body, { cls: 'narrow', foot: el('div.btns', null,
             el('button.btn.primary', { type: 'button', onclick: () => { s.close(); setTimeout(nextGame, 80); } }, icon('play'), el('span', { text: t('Nächstes Rätsel') })),
@@ -1013,7 +1085,7 @@
                 for (const k in d.own.extra || {}) if (/^[a-z]{2}:[a-z0-9_-]+$/.test(k) && Array.isArray(d.own.extra[k])) own.extra[k] = parseList(d.own.extra[k].join('\n'));
                 save('own', own);
                 if (d.stats && (d.stats.played || 0) > stats.played) { stats = Object.assign(stats, d.stats); save('stats', stats); }
-                if (d.set) { Object.assign(set, d.set); if (!LANGS[set.lang]) set.lang = 'en'; save('set', set); applyTheme(); applyTexts(); }
+                if (d.set) { Object.assign(set, d.set); if (!LANGS[set.lang]) set.lang = 'en'; if (!POS.includes(set.pos)) set.pos = 'auto'; save('set', set); applyTheme(); applyTexts(); layout(); }
                 toast(t('Sicherung geladen.'));
                 done && done();
             } catch (e) {
@@ -1031,7 +1103,9 @@
             row(t('Tipps benutzt'), stats.hints), row(t('Spielzeit gesamt'), fmtTime(stats.time)),
             stats.solved ? row(t('Durchschnitt pro Rätsel'), fmtTime(stats.time / stats.solved)) : null,
             el('h3', { text: t('Bestzeiten') }),
-            ...['leicht', 'mittel', 'schwer', 'profi', 'eigen'].map(k => row(t(PRESET_NAMES[k]), stats.best[k] ? fmtTime(stats.best[k]) : '–')));
+            ...['leicht', 'mittel', 'schwer', 'profi', 'eigen'].map(k => row(t(PRESET_NAMES[k]), stats.best[k] ? fmtTime(stats.best[k]) : '–')),
+            ...(Object.keys(stats.best).some(k => k.endsWith('-lamp')) ? [el('h3', { text: t('Bestzeiten mit Taschenlampe') }),
+                ...['leicht', 'mittel', 'schwer', 'profi', 'eigen'].map(k => row(t(PRESET_NAMES[k]), stats.best[k + '-lamp'] ? fmtTime(stats.best[k + '-lamp']) : '–'))] : []));
         const s = sheet(t('Statistik'), body, { cls: 'narrow', foot: el('button.btn', { type: 'button', onclick: () => {
             if (!confirm(t('Statistik wirklich zurücksetzen?'))) return;
             stats = { played: 0, solved: 0, words: 0, hints: 0, time: 0, best: {} };
@@ -1060,6 +1134,8 @@
         const body = el('div', null,
             section(t('Sprache'), lang),
             section(t('Design'), seg([['light', t('Hell')], ['dark', t('Dunkel')], ['auto', t('Wie das Gerät')]], set.theme, v => { set.theme = v; store(); applyTheme(); })),
+            section(t('Wortliste'), seg([['auto', t('Automatisch')], ['top', t('Oben')], ['bottom', t('Unten')], ['left', t('Links')], ['right', t('Rechts')]], set.pos,
+                v => { set.pos = v; store(); layout(); }), el('p.note', { text: t('Automatisch: im Hochformat oben, auf breiten Bildschirmen links. Links und rechts passen am besten zum Querformat.') })),
             section(t('Schrift im Gitter'), (() => { const sg = seg([['sans', t('Klar')], ['round', t('Rund')], ['serif', t('Klassisch')], ['mono', t('Schreibmaschine')]], set.font,
                 v => { set.font = v; store(); paintSample(); board.setStyle(set.font, set.lines); }); sg.classList.add('c4'); return sg; })(), sample),
             section(t('Spiel'),
@@ -1080,6 +1156,8 @@
             p(t('So geht\'s'), t('Oben stehen die gesuchten Wörter. Zieh mit dem Finger oder der Maus über die Buchstaben eines Wortes. Die Markierung rastet waagerecht, senkrecht und schräg ein, egal ob du vorn oder hinten anfängst. Gefundene Wörter bekommen eine eigene Farbe und werden oben durchgestrichen.')),
             p(t('Zoomen und Verschieben'), t('Zwei Finger auseinander- oder zusammenziehen, am Rechner mit dem Mausrad oder Strg und Mausrad. Verschieben geht mit zwei Fingern, am Rechner mit gedrückter rechter Maustaste, dem Mausrad oder den Pfeiltasten. Doppelt tippen bringt das Gitter wieder in die Ausgangsgröße. Beim Markieren am Rand wandert das Gitter von selbst mit. Den Balken zwischen Wortliste und Gitter kannst du ziehen, doppelt tippen stellt ihn zurück.')),
             p(t('Tipp'), t('Die Glühbirne oben zeigt, wo eins der Wörter anfängt.')),
+            p(t('Taschenlampe'), t('Unter Neues Rätsel lässt sich die Taschenlampe einschalten. Dann ist das Gitter dunkel und nur rund um deinen Finger oder die Maus leuchten die Buchstaben, mit einer kurzen Lichtspur dahinter. Je schwerer das Rätsel, desto kleiner das Licht. Bestzeiten mit Taschenlampe zählen extra.')),
+            p(t('Wortliste'), t('In den Einstellungen legst du fest, ob die Wortliste oben, unten, links oder rechts steht. Wird sie klein gezogen, schrumpft die Schrift und die gefundenen Wörter rücken zu einem ✓ zusammen. Antippen klappt sie wieder auf.')),
             p(t('Neues Rätsel'), t('Wähle ein Thema aus dem großen Wortschatz, lass den Zufall entscheiden oder tipp eigene Wörter ein. Die Schwierigkeit reicht von 6 Wörtern nur waagerecht und senkrecht bis zu 20 Wörtern in alle Richtungen. In der Feineinstellung legst du Anzahl, Größe des Gitters (bis 100 × 100) und Richtungen selbst fest.')),
             p(t('Meine Wörter'), t('Leg eigene Kategorien an oder ergänze die eingebauten Themen. Alles bleibt auf deinem Gerät. Mit der Sicherung als Datei nimmst du es auf ein anderes Gerät mit.')),
             p(t('Drucken'), t('Unter Drucken und Bild gibt es das Rätsel als A4-PDF oder als Bild, leer zum Lösen oder bunt mit Lösung, im Hoch- oder Querformat. Die Vorschau zeigt genau, was aus dem Drucker kommt.')),
@@ -1225,7 +1303,7 @@
             history.replaceState(null, '', location.pathname + location.search);
             const d = SuGame.decodeShare(m[1]);
             if (d) {
-                const o = Object.assign({}, newOpt, { wl: d.lang, w: d.w, h: d.h, dirs: d.dirs, keep: d.keep, tricky: d.tricky, n: d.words.length, cat: 'shared' });
+                const o = Object.assign({}, newOpt, { wl: d.lang, w: d.w, h: d.h, dirs: d.dirs, keep: d.keep, tricky: d.tricky, lamp: d.lamp, n: d.words.length, cat: 'shared' });
                 if (await startNew(o, { words: d.words, title: d.title, seed: d.seed })) return;
             }
         }
