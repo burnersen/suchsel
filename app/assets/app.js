@@ -292,6 +292,7 @@
         }
         if (!(await allowNew())) return false;
         const seed = extra.seed != null ? extra.seed >>> 0 : SuGame.newSeed();
+        const algo = extra.algo === 1 ? 1 : 2;   // 1 nur für geteilte Links von vor 1.2.0
         const seen = new Set();
         let items = [], short = [];
         for (const s of list) {
@@ -311,15 +312,15 @@
             while ((SuGame.maxLen(w, h, dirs) < longest || letters > 0.6 * w * h) && w < 100 && h < 100) grow();
         }
         if (!items.length) { toast(t('Keins der Wörter passt in dieses Gitter. Mach es größer.')); return false; }
-        let res = SuGame.generate({ words: items, w, h, dirs, seed, lang: l, keep: o.keep, tricky: o.tricky });
+        let res = SuGame.generate({ words: items, w, h, dirs, seed, algo, lang: l, keep: o.keep, tricky: o.tricky });
         for (let i = 0; res.missing.length && !fromPool && !extra.words && i < 4 && w < 100; i++) {
             w = Math.min(100, w + 2); h = Math.min(100, h + 2);
-            res = SuGame.generate({ words: items, w, h, dirs, seed, lang: l, keep: o.keep, tricky: o.tricky });
+            res = SuGame.generate({ words: items, w, h, dirs, seed, algo, lang: l, keep: o.keep, tricky: o.tricky });
         }
         game = {
             v: 1, title, cat: catId, lang: l, w, h, grid: res.grid,
             words: res.words.map(x => ({ t: x.t, k: x.k, src: items.find(y => y.k === x.k).src, p: x.p, f: null, c: -1 })),
-            opt: { seed, dirs: Object.assign({}, dirs), keep: o.keep, tricky: o.tricky, preset: presetOf(Object.assign({}, o, { w, h })), n: o.n, lamp: !!o.lamp },
+            opt: { seed, algo, dirs: Object.assign({}, dirs), keep: o.keep, tricky: o.tricky, preset: presetOf(Object.assign({}, o, { w, h })), n: o.n, lamp: !!o.lamp },
             found: 0, elapsed: 0, hints: 0, done: false, at: Date.now(),
         };
         game.words.sort((a, b2) => a.t.localeCompare(b2.t, l));
@@ -1339,7 +1340,7 @@
             const d = SuGame.decodeShare(m[1]);
             if (d) {
                 const o = Object.assign({}, newOpt, { wl: d.lang, w: d.w, h: d.h, dirs: d.dirs, keep: d.keep, tricky: d.tricky, lamp: d.lamp, n: d.words.length, cat: 'shared' });
-                if (await startNew(o, { words: d.words, title: d.title, seed: d.seed })) return;
+                if (await startNew(o, { words: d.words, title: d.title, seed: d.seed, algo: d.algo })) return;
             }
         }
         const g = load('game', null);

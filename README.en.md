@@ -71,7 +71,7 @@ Upload `suchsel-install.php`, open it in the browser, click "Install now". That 
 | Hint | light bulb at the top | same |
 | Flashlight | drag your finger across the grid | move the mouse over the grid |
 
-When you mark near the edge, the grid moves along by itself, so long words work in large grids too. The split between word list and grid adapts to the shape of the grid, and the word list uses the largest font that fits. If you drag the list smaller, the text shrinks and the words already found collapse into a small ✓ that expands them again when tapped. If there is still not enough room, the text stays readable and the list can be swiped: sideways at the top and bottom, up and down on the left and right. Text cannot be selected by accident.
+When you mark near the edge, the grid moves along by itself, so long words work in large grids too. Once the direction is set, it moves exactly along the word, so for diagonal words sideways and up or down at the same time. The split between word list and grid adapts to the shape of the grid, and the word list uses the largest font that fits. If you drag the list smaller, the text shrinks and the words already found collapse into a small ✓ that expands them again when tapped. If there is still not enough room, the text stays readable and the list can be swiped: sideways at the top and bottom, up and down on the left and right. Text cannot be selected by accident.
 
 ## Features
 
@@ -79,7 +79,7 @@ When you mark near the edge, the grid moves along by itself, so long words work 
 
 - **Any grid size:** width and height separately, from 5 to 100. Small grids fit the whole screen, large ones start at a readable size and can be zoomed.
 - **Difficulty:** Easy (6 words, only → and ↓), Medium (10 words, also diagonal), Hard (15 words, also backwards), Expert (20 words in all directions with tricky filler letters). Fine tuning lets you set everything yourself: 5 to 20 words, size, directions (across, down, diagonal, backwards), tricky filler letters.
-- **Like a real word search:** words like to cross, filler letters follow the letter frequency of the language. No word appears twice by accident, and no word hides inside another one.
+- **Like a real word search:** the words spread across the whole grid instead of clumping in one corner, rarely lie side by side in parallel and run in mixed directions. They still cross now and then. Filler letters follow the letter frequency of the language. No word appears twice by accident, and no word hides inside another one.
 - **Special letters:** Ä, Ö, Ü (and Ñ in Spanish) stay in the grid, or are replaced by AE, OE, UE if you like. ß always becomes SS, accents are dropped. Spaces and hyphens disappear: "ice cream" is ICECREAM in the grid and ICE CREAM in the list.
 - **Reshuffle:** same words, new grid.
 - **Hint:** shows where one of the words starts.

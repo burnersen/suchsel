@@ -71,7 +71,7 @@ Die App wird einmal vom Server geladen und läuft danach komplett auf dem Gerät
 | Tipp | Glühbirne oben | dito |
 | Taschenlampe | Finger übers Gitter ziehen | Maus übers Gitter bewegen |
 
-Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange Wörter in großen Gittern. Die Aufteilung zwischen Wortliste und Gitter richtet sich von selbst nach der Form des Gitters, die Schrift der Wortliste wird so groß, wie der Platz hergibt. Wird die Liste klein gezogen, schrumpft die Schrift, und die schon gefundenen Wörter rücken zu einem kleinen ✓ zusammen, das sie beim Antippen wieder aufklappt. Reicht der Platz dann noch nicht, bleibt die Schrift lesbar und die Liste lässt sich wischen: oben und unten seitwärts, links und rechts hoch und runter. Text lässt sich nicht aus Versehen markieren.
+Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange Wörter in großen Gittern. Steht die Richtung fest, geht es genau in Wortrichtung weiter, bei schrägen Wörtern also gleichzeitig zur Seite und nach unten oder oben. Die Aufteilung zwischen Wortliste und Gitter richtet sich von selbst nach der Form des Gitters, die Schrift der Wortliste wird so groß, wie der Platz hergibt. Wird die Liste klein gezogen, schrumpft die Schrift, und die schon gefundenen Wörter rücken zu einem kleinen ✓ zusammen, das sie beim Antippen wieder aufklappt. Reicht der Platz dann noch nicht, bleibt die Schrift lesbar und die Liste lässt sich wischen: oben und unten seitwärts, links und rechts hoch und runter. Text lässt sich nicht aus Versehen markieren.
 
 ## Funktionen
 
@@ -79,7 +79,7 @@ Beim Markieren am Rand wandert das Gitter von selbst mit, so gehen auch lange W�
 
 - **Gitter frei wählbar:** Breite und Höhe getrennt, von 5 bis 100. Kleine Gitter passen ganz auf den Bildschirm, große starten lesbar groß und lassen sich zoomen.
 - **Schwierigkeit:** Leicht (6 Wörter, nur → und ↓), Mittel (10 Wörter, auch schräg), Schwer (15 Wörter, auch rückwärts), Profi (20 Wörter in alle Richtungen, mit kniffligen Füllbuchstaben). In der Feineinstellung lässt sich alles einzeln einstellen: 5 bis 20 Wörter, Größe, Richtungen (waagerecht, senkrecht, schräg, rückwärts), knifflige Füllbuchstaben.
-- **Wie ein echtes Suchsel:** Wörter kreuzen sich gern, die Füllbuchstaben folgen der Buchstabenhäufigkeit der Sprache. Kein Wort taucht aus Versehen zweimal auf, und kein Wort steckt in einem anderen (also nie „Eis“ zusammen mit „Eisbär“).
+- **Wie ein echtes Suchsel:** Die Wörter verteilen sich übers ganze Gitter, statt in einer Ecke zu klumpen, liegen selten parallel direkt nebeneinander und laufen in gemischten Richtungen. Kreuzungen gibt es trotzdem. Die Füllbuchstaben folgen der Buchstabenhäufigkeit der Sprache. Kein Wort taucht aus Versehen zweimal auf, und kein Wort steckt in einem anderen (also nie „Eis“ zusammen mit „Eisbär“).
 - **Umlaute:** Ä, Ö, Ü (und Ñ im Spanischen) bleiben im Gitter stehen, auf Wunsch werden sie zu AE, OE, UE. ß wird immer SS, Akzente fallen weg. Leerzeichen und Bindestriche verschwinden: „Eis am Stiel“ steht als EISAMSTIEL im Gitter und als EIS AM STIEL in der Liste.
 - **Neu mischen:** dieselben Wörter, neues Gitter.
 - **Tipp:** zeigt, wo eins der Wörter anfängt.
