@@ -11,6 +11,7 @@ foreach (suWordLangs() as $l) $suWords[$l] = '?action=words&l=' . $l . '&v=' . s
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="description" content="<?= h(suT('Suchsel: Wortsuchrätsel mit großem Wortschatz in vielen Themen, eigenen Wörtern, Zoom und Druck als PDF. Kostenlos, ohne Werbung, auch offline als App.', 'Suchsel: word search puzzles with a large vocabulary in many topics, your own words, zoom and PDF printing. Free, ad-free, works offline as an app.')) ?>">
 <meta name="theme-color" content="#3b5bdb">
+<meta name="color-scheme" content="light dark">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">

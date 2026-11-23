@@ -21,7 +21,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', '0');
 date_default_timezone_set('Europe/Berlin');
 
-define('SU_VERSION', '1.2.2');
+define('SU_VERSION', '1.2.3');
 define('SU_ROOT', __DIR__);
 define('SU_APP', SU_ROOT . '/app');
 define('SU_DATA_DIR', SU_ROOT . '/data');
