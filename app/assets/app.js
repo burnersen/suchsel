@@ -141,6 +141,8 @@
         root.dataset.theme = dark ? 'dark' : 'light';
         const meta = document.querySelector('meta[name=theme-color]');
         if (meta) meta.content = dark ? '#121826' : '#3b5bdb';
+        const cm = document.querySelector('meta[name=color-scheme]');
+        if (cm) cm.content = dark ? 'only dark' : 'only light';
         if (board) board.setStyle(set.font, set.lines);
     }
     darkMq.addEventListener && darkMq.addEventListener('change', applyTheme);

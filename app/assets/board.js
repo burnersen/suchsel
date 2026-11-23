@@ -81,8 +81,9 @@
         readColors() {
             const cs = getComputedStyle(document.documentElement);
             const v = (k, d) => (cs.getPropertyValue(k) || '').trim() || d;
-            this.colors = { text: v('--board-text', '#1b1f2a'), cover: v('--board-cover', '#111'), line: v('--board-line', 'rgba(0,0,0,.07)'),
-                hint: v('--accent', '#3b5bdb'), dark: document.documentElement.dataset.theme === 'dark' };
+            const dark = document.documentElement.dataset.theme === 'dark';
+            this.colors = { text: v('--board-text', dark ? '#e9edf6' : '#1b1f2a'), cover: v('--board-cover', '#111'), line: v('--board-line', 'rgba(0,0,0,.07)'),
+                hint: v('--accent', '#3b5bdb'), bg: v('--card', dark ? '#1a2232' : '#ffffff'), dark };
         }
 
         /* ---------- Ansicht ---------- */
@@ -153,6 +154,16 @@
             const c = this.ctx, g = this.g;
             c.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
             c.clearRect(0, 0, this.cw, this.ch);
+            const lamp = this.lamp > 0;
+            // Eigener, deckender Hintergrund: Buchstaben und Untergrund kommen so immer zusammen aus dem Canvas.
+            // Färbt ein Browser die Seite im Dunkelmodus selbst um, passen Schrift und Hintergrund trotzdem zueinander.
+            if (lamp) {
+                const r = Math.max(this.cw, this.ch) * 0.75;
+                const gr = c.createRadialGradient(this.cw / 2, this.ch * 0.4, 0, this.cw / 2, this.ch * 0.4, r);
+                gr.addColorStop(0, '#151b2b'); gr.addColorStop(1, '#0a0d16');
+                c.fillStyle = gr;
+            } else c.fillStyle = this.colors.bg;
+            c.fillRect(0, 0, this.cw, this.ch);
             if (!g) return;
             const cs = this.cs, now = performance.now();
             this.anims = this.anims.filter(a => now - a.t0 < a.dur);
@@ -160,7 +171,7 @@
             const y0 = Math.max(0, Math.floor(-this.oy / cs)), y1 = Math.min(g.h - 1, Math.floor((this.ch - this.oy) / cs));
             const cx = x => this.ox + (x + 0.5) * cs, cy = y => this.oy + (y + 0.5) * cs;
 
-            const lamp = this.lamp > 0, lights = lamp ? this.lights(now) : null;
+            const lights = lamp ? this.lights(now) : null;
             if (lamp) this.drawGlow(c, lights);
 
             if (this.lines && cs >= 8) {
