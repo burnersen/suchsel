@@ -125,12 +125,16 @@
         const words = o.words.filter(x => x.k.length >= 2).sort((a, b) => b.k.length - a.k.length || (a.k < b.k ? -1 : a.k > b.k ? 1 : 0));
         const order = words.map((x, i) => i);
         const algo = o.algo === 1 ? 1 : 2;
+        // Kreuzungen: bei normal gefüllten Gittern so selten wie beim reinen Zufall (sie dürfen, müssen aber nicht).
+        // Nur wenn das Gitter sehr voll wird, helfen sie, damit alles hineinpasst.
+        const dens = words.reduce((s, x) => s + x.k.length, 0) / N;
+        const crossW = Math.max(W.cmin, Math.min(4, W.cmin + 60 * (dens - 0.5)));
         let best = null;
         for (let attempt = 0; attempt < 30; attempt++) {
             const r = rng((o.seed + attempt * 7919) >>> 0);
             const cells = new Array(N).fill('');
             const pos = new Array(words.length).fill(null);
-            const ctx = { use: dirs.map(() => 0), axis: new Array(N).fill(0) };
+            const ctx = { use: dirs.map(() => 0), axis: new Array(N).fill(0), cross: crossW, deck: [] };
             let missing = 0;
             for (const i of order) {
                 const p = algo === 1 ? place(cells, w, h, words[i].k, dirs, r) : spread(cells, w, h, words[i].k, dirs, r, ctx);
@@ -194,11 +198,14 @@
     /**
      * Einen Platz für ein Wort suchen, so dass sich die Wörter übers ganze Gitter verteilen:
      * Stellen mit viel Abstand zu anderen Wörtern zählen mehr, Wörter direkt nebeneinander kaum.
-     * Kreuzungen gibt es weiter, aber nur ab und zu. Richtungen, die schon oft vorkamen, sind weniger beliebt.
+     * Kreuzungen dürfen sein, werden aber nicht gesucht (so oft wie beim reinen Zufall, nur in sehr vollen Gittern öfter).
+     * Die Richtung zieht jedes Wort wie von einem gemischten Kartenstapel, so kommt jede gleich oft dran.
      * ctx.use zählt mit, wie oft jede Richtung schon dran war, ctx.axis merkt sich je Feld die Achse des Wortes dort
      * (damit zwei Wörter nicht parallel direkt nebeneinander liegen, das sieht sofort nach Klumpen aus).
      */
-    const W = { par: 15, dir: 3, cross: 6, noise: 3 };   // Gewichte, ausprobiert an vielen Gittern
+    // Gewichte, ausprobiert an vielen Gittern: parallel daneben, Richtungsausgleich, gezogene Richtung, Zufall, Auswahl aus den besten k,
+    // Kreuzungen bei normal gefüllten Gittern
+    const W = { par: 15, dir: 3, want: 25, noise: 5, k: 5, cmin: -16 };
     function spread(cells, w, h, k, dirs, r, ctx) {
         const L = k.length, use = ctx.use, axis = ctx.axis;
         const axisOf = (dx, dy) => (dx < 0 || (dx === 0 && dy < 0)) ? 5 - dx * 3 - dy : 5 + dx * 3 + dy;
@@ -238,34 +245,44 @@
         }
         if (!cands.length) return null;
         // Wie voll ist es rund um das Wort? Direkt daneben zählt doppelt, zwei Felder weg halb.
+        // Gerechnet als Anteil der Nachbarfelder, sonst hätten schräge Wörter (mehr Nachbarn) immer das Nachsehen.
         // Ein Wort, das parallel direkt daneben liegt, zählt richtig viel: genau das sieht nach Klumpen aus.
         const crowd = cd => {
             const [dx, dy] = dirs[cd.di];
             const ax = axisOf(dx, dy);
             const path = new Set();
             for (let i = 0; i < L; i++) path.add((cd.y + dy * i) * w + cd.x + dx * i);
-            const near = new Set(), far = new Set();
+            const near = new Set(), far = new Set(), nearAll = new Set(), farAll = new Set();
             for (let i = 0; i < L; i++) {
                 const px = cd.x + dx * i, py = cd.y + dy * i;
                 for (let oy = -2; oy <= 2; oy++) for (let ox = -2; ox <= 2; ox++) {
                     const nx = px + ox, ny = py + oy;
                     if (nx < 0 || ny < 0 || nx >= w || ny >= h) continue;
                     const j = ny * w + nx;
-                    if (path.has(j) || cells[j] === '') continue;
-                    if (Math.abs(ox) <= 1 && Math.abs(oy) <= 1) near.add(j); else far.add(j);
+                    if (path.has(j)) continue;
+                    const isNear = Math.abs(ox) <= 1 && Math.abs(oy) <= 1;
+                    (isNear ? nearAll : farAll).add(j);
+                    if (cells[j] !== '') (isNear ? near : far).add(j);
                 }
             }
             let par = 0;
             for (const j of near) { far.delete(j); if (axis[j] === ax) par++; }
-            return 2 * near.size + 0.5 * far.size + W.par * par;
+            for (const j of nearAll) farAll.delete(j);
+            const fn = near.size / (nearAll.size || 1), ff = far.size / (farAll.size || 1);
+            return (2 * fn + 0.5 * ff) * (2 * L + 6) + W.par * par;
         };
         const total = use.reduce((a, b) => a + b, 0);
-        // Kreuzungen sind gern gesehen, sie sparen Platz und verstecken die Wörter besser
+        // Richtung wie vom gemischten Kartenstapel ziehen: jede kommt gleich oft dran, in zufälliger Reihenfolge
+        if (!ctx.deck.length) ctx.deck = shuffle(dirs.map((d, i) => i), r);
+        const want = ctx.deck.pop();
+        // Zum Schluss eine kräftige Prise Zufall, und gewählt wird unter den besten fünf Stellen
         for (const cd of cands) {
-            cd.s = -crowd(cd) - W.dir * (use[cd.di] - total / dirs.length) + W.cross * cd.c + r() * W.noise;
+            cd.s = -crowd(cd) + (cd.di === want ? W.want : 0) - W.dir * (use[cd.di] - total / dirs.length) + ctx.cross * cd.c + r() * W.noise;
         }
         cands.sort((a, b) => b.s - a.s);
-        const pickd = cands[Math.floor(r() * Math.min(3, cands.length))];
+        // unter den besten fünf, aber nur, wenn sie fast so gut sind wie die beste
+        const top = cands.slice(0, W.k).filter(c => c.s >= cands[0].s - 2 * W.noise);
+        const pickd = top[Math.floor(r() * top.length)];
         const [dx, dy] = dirs[pickd.di];
         for (let i = 0; i < L; i++) {
             const j = (pickd.y + dy * i) * w + pickd.x + dx * i;
@@ -273,6 +290,7 @@
             axis[j] = axisOf(dx, dy);
         }
         use[pickd.di]++;
+        if (pickd.di !== want) ctx.deck.push(want);   // gezogene Richtung ging nicht: Karte zurück, das nächste Wort bekommt sie
         return [pickd.x, pickd.y, dx, dy];
     }
 
