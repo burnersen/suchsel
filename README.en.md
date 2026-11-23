@@ -79,7 +79,7 @@ When you mark near the edge, the grid moves along by itself, so long words work 
 
 - **Any grid size:** width and height separately, from 5 to 100. Small grids fit the whole screen, large ones start at a readable size and can be zoomed.
 - **Difficulty:** Easy (6 words, only → and ↓), Medium (10 words, also diagonal), Hard (15 words, also backwards), Expert (20 words in all directions with tricky filler letters). Fine tuning lets you set everything yourself: 5 to 20 words, size, directions (across, down, diagonal, backwards), tricky filler letters.
-- **Like a real word search:** the words spread across the whole grid instead of clumping in one corner, rarely lie side by side in parallel and run in mixed directions. They still cross now and then. Filler letters follow the letter frequency of the language. No word appears twice by accident, and no word hides inside another one.
+- **Like a real word search:** the words spread across the whole grid instead of clumping in one corner, rarely lie side by side in parallel, and every allowed direction comes up about equally often, in random order. Words may cross but don't have to: sometimes nothing crosses, sometimes several do, just as chance has it. Filler letters follow the letter frequency of the language. No word appears twice by accident, and no word hides inside another one.
 - **Special letters:** Ä, Ö, Ü (and Ñ in Spanish) stay in the grid, or are replaced by AE, OE, UE if you like. ß always becomes SS, accents are dropped. Spaces and hyphens disappear: "ice cream" is ICECREAM in the grid and ICE CREAM in the list.
 - **Reshuffle:** same words, new grid.
 - **Hint:** shows where one of the words starts.
