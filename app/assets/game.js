@@ -113,7 +113,8 @@
     }
 
     /**
-     * Das Gitter bauen. o = { words: [{ t, k }], w, h, dirs: {h,v,d,r}, seed, lang, keep, tricky }
+     * Das Gitter bauen. o = { words: [{ t, k }], w, h, dirs: {h,v,d,r}, seed, lang, keep, tricky, algo }
+     * algo 2 (Standard) verteilt die Wörter übers ganze Gitter, algo 1 ist die alte Art (für ältere geteilte Links).
      * Liefert { grid (String, Zeile für Zeile), w, h, words: [{ t, k, p: [x, y, dx, dy] }], missing: [Anzeige …] }
      * Wörter, die nicht hineinpassen, landen in missing.
      */
@@ -123,14 +124,16 @@
         // Feste Reihenfolge (lang vor kurz, sonst alphabetisch), damit dieselben Wörter in jeder Reihenfolge dasselbe Gitter ergeben
         const words = o.words.filter(x => x.k.length >= 2).sort((a, b) => b.k.length - a.k.length || (a.k < b.k ? -1 : a.k > b.k ? 1 : 0));
         const order = words.map((x, i) => i);
+        const algo = o.algo === 1 ? 1 : 2;
         let best = null;
         for (let attempt = 0; attempt < 30; attempt++) {
             const r = rng((o.seed + attempt * 7919) >>> 0);
             const cells = new Array(N).fill('');
             const pos = new Array(words.length).fill(null);
+            const ctx = { use: dirs.map(() => 0), axis: new Array(N).fill(0) };
             let missing = 0;
             for (const i of order) {
-                const p = place(cells, w, h, words[i].k, dirs, r);
+                const p = algo === 1 ? place(cells, w, h, words[i].k, dirs, r) : spread(cells, w, h, words[i].k, dirs, r, ctx);
                 if (p) pos[i] = p; else missing++;
             }
             if (!best || missing < best.missing) best = { cells, pos, missing, r };
@@ -186,6 +189,91 @@
         }
         for (let i = 0; i < L; i++) cells[(pickd.y + pickd.dy * i) * w + pickd.x + pickd.dx * i] = k[i];
         return [pickd.x, pickd.y, pickd.dx, pickd.dy];
+    }
+
+    /**
+     * Einen Platz für ein Wort suchen, so dass sich die Wörter übers ganze Gitter verteilen:
+     * Stellen mit viel Abstand zu anderen Wörtern zählen mehr, Wörter direkt nebeneinander kaum.
+     * Kreuzungen gibt es weiter, aber nur ab und zu. Richtungen, die schon oft vorkamen, sind weniger beliebt.
+     * ctx.use zählt mit, wie oft jede Richtung schon dran war, ctx.axis merkt sich je Feld die Achse des Wortes dort
+     * (damit zwei Wörter nicht parallel direkt nebeneinander liegen, das sieht sofort nach Klumpen aus).
+     */
+    const W = { par: 15, dir: 3, cross: 6, noise: 3 };   // Gewichte, ausprobiert an vielen Gittern
+    function spread(cells, w, h, k, dirs, r, ctx) {
+        const L = k.length, use = ctx.use, axis = ctx.axis;
+        const axisOf = (dx, dy) => (dx < 0 || (dx === 0 && dy < 0)) ? 5 - dx * 3 - dy : 5 + dx * 3 + dy;
+        const cands = [];
+        const seen = new Set();
+        const range = (d, size) => d > 0 ? [0, size - L] : d < 0 ? [L - 1, size - 1] : [0, size - 1];
+        const fits = (x, y, dx, dy) => {
+            let cross = 0;
+            for (let i = 0; i < L; i++) {
+                const c = cells[(y + dy * i) * w + x + dx * i];
+                if (c === '') continue;
+                if (c !== k[i]) return -1;
+                cross++;
+            }
+            return cross === L ? -1 : cross;
+        };
+        const add = (x, y, di) => {
+            const key = x + ',' + y + ',' + di;
+            if (seen.has(key)) return;
+            seen.add(key);
+            const c = fits(x, y, dirs[di][0], dirs[di][1]);
+            if (c >= 0) cands.push({ x, y, di, c });
+        };
+        for (let tries = 0; tries < 900 && cands.length < 150; tries++) {
+            const di = Math.floor(r() * dirs.length);
+            const [dx, dy] = dirs[di];
+            const [x0, x1] = range(dx, w), [y0, y1] = range(dy, h);
+            if (x1 < x0 || y1 < y0) continue;
+            add(x0 + Math.floor(r() * (x1 - x0 + 1)), y0 + Math.floor(r() * (y1 - y0 + 1)), di);
+        }
+        if (!cands.length) {
+            for (const di of shuffle(dirs.map((d, i) => i), r)) {
+                const [dx, dy] = dirs[di];
+                const [x0, x1] = range(dx, w), [y0, y1] = range(dy, h);
+                for (let y = y0; y <= y1 && cands.length < 150; y++) for (let x = x0; x <= x1 && cands.length < 150; x++) add(x, y, di);
+            }
+        }
+        if (!cands.length) return null;
+        // Wie voll ist es rund um das Wort? Direkt daneben zählt doppelt, zwei Felder weg halb.
+        // Ein Wort, das parallel direkt daneben liegt, zählt richtig viel: genau das sieht nach Klumpen aus.
+        const crowd = cd => {
+            const [dx, dy] = dirs[cd.di];
+            const ax = axisOf(dx, dy);
+            const path = new Set();
+            for (let i = 0; i < L; i++) path.add((cd.y + dy * i) * w + cd.x + dx * i);
+            const near = new Set(), far = new Set();
+            for (let i = 0; i < L; i++) {
+                const px = cd.x + dx * i, py = cd.y + dy * i;
+                for (let oy = -2; oy <= 2; oy++) for (let ox = -2; ox <= 2; ox++) {
+                    const nx = px + ox, ny = py + oy;
+                    if (nx < 0 || ny < 0 || nx >= w || ny >= h) continue;
+                    const j = ny * w + nx;
+                    if (path.has(j) || cells[j] === '') continue;
+                    if (Math.abs(ox) <= 1 && Math.abs(oy) <= 1) near.add(j); else far.add(j);
+                }
+            }
+            let par = 0;
+            for (const j of near) { far.delete(j); if (axis[j] === ax) par++; }
+            return 2 * near.size + 0.5 * far.size + W.par * par;
+        };
+        const total = use.reduce((a, b) => a + b, 0);
+        // Kreuzungen sind gern gesehen, sie sparen Platz und verstecken die Wörter besser
+        for (const cd of cands) {
+            cd.s = -crowd(cd) - W.dir * (use[cd.di] - total / dirs.length) + W.cross * cd.c + r() * W.noise;
+        }
+        cands.sort((a, b) => b.s - a.s);
+        const pickd = cands[Math.floor(r() * Math.min(3, cands.length))];
+        const [dx, dy] = dirs[pickd.di];
+        for (let i = 0; i < L; i++) {
+            const j = (pickd.y + dy * i) * w + pickd.x + dx * i;
+            cells[j] = k[i];
+            axis[j] = axisOf(dx, dy);
+        }
+        use[pickd.di]++;
+        return [pickd.x, pickd.y, dx, dy];
     }
 
     /** Leere Felder füllen. „Knifflig“ nimmt gern Buchstaben aus den gesuchten Wörtern, dann gibt es viele Fast-Treffer.
@@ -256,7 +344,7 @@
     }
     function encodeShare(g) {
         const o = g.opt;
-        return b64e(JSON.stringify({ v: 1, t: g.title, l: g.lang, w: g.w, h: g.h, s: o.seed, d: ['h', 'v', 'd', 'r'].filter(x => o.dirs[x]).join(''),
+        return b64e(JSON.stringify({ v: 1, a: o.algo === 2 ? 2 : 1, t: g.title, l: g.lang, w: g.w, h: g.h, s: o.seed, d: ['h', 'v', 'd', 'r'].filter(x => o.dirs[x]).join(''),
             k: o.keep ? 1 : 0, f: o.tricky ? 1 : 0, m: o.lamp ? 1 : 0, p: o.preset || '', x: g.words.map(x => x.src || x.t) }));
     }
     function decodeShare(s) {
@@ -268,6 +356,7 @@
                 title: String(j.t || '').slice(0, 80), lang: /^[a-z]{2}$/.test(j.l) ? j.l : 'de',
                 w: clamp(j.w, 4, 100), h: clamp(j.h, 4, 100), seed: (+j.s) >>> 0,
                 dirs: { h: /h/.test(j.d), v: /v/.test(j.d), d: /d/.test(j.d), r: /r/.test(j.d) },
+                algo: j.a === 2 ? 2 : 1,   // Links von vor 1.2.0 haben kein a und bekommen das Gitter wie damals
                 keep: !!j.k, tricky: !!j.f, lamp: !!j.m, preset: String(j.p || '').slice(0, 10),
                 words: j.x.slice(0, 60).map(x => String(x).slice(0, 60)),
             };

@@ -459,6 +459,13 @@
                 let vx = 0, vy = 0;
                 if (p.px < EDGE) vx = (EDGE - p.px) / EDGE; else if (p.px > this.cw - EDGE) vx = -(p.px - (this.cw - EDGE)) / EDGE;
                 if (p.py < EDGE) vy = (EDGE - p.py) / EDGE; else if (p.py > this.ch - EDGE) vy = -(p.py - (this.ch - EDGE)) / EDGE;
+                if (d.moved && d.len > 1) {
+                    // Richtung steht fest: genau in Wortrichtung weiterschieben, schräg also in beide Richtungen zugleich.
+                    // Es reicht, wenn der Finger an einem Rand ist, auf den das Wort zuläuft.
+                    const [dx, dy] = d.dir;
+                    const s = Math.max(dx * vx < 0 ? Math.abs(vx) : 0, dy * vy < 0 ? Math.abs(vy) : 0);
+                    vx = -dx * s; vy = -dy * s;
+                }
                 if ((vx || vy) && this.canPan()) {
                     const ox = this.ox, oy = this.oy;
                     this.ox += Math.max(-1, Math.min(1, vx)) * 9; this.oy += Math.max(-1, Math.min(1, vy)) * 9;
