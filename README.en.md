@@ -71,7 +71,7 @@ Upload `suchsel-install.php`, open it in the browser, click "Install now". That 
 | Hint | light bulb at the top | same |
 | Flashlight | drag your finger across the grid | move the mouse over the grid |
 
-When you mark near the edge, the grid moves along by itself, so long words work in large grids too. Once the direction is set, it moves exactly along the word, so for diagonal words sideways and up or down at the same time. The split between word list and grid adapts to the shape of the grid, and the word list uses the largest font that fits. If you drag the list smaller, the text shrinks and the words already found collapse into a small ✓ that expands them again when tapped. If there is still not enough room, the text stays readable and the list can be swiped: sideways at the top and bottom, up and down on the left and right. Text cannot be selected by accident.
+When you mark near the edge, the grid moves along by itself, so long words work in large grids too. Once the direction is set, it moves exactly along the word, in all eight directions, so for diagonal words sideways and up or down at the same time. It starts gently and speeds up the closer your finger gets to the edge, at the same speed on every device. The split between word list and grid adapts to the shape of the grid, and the word list uses the largest font that fits. If you drag the list smaller, the text shrinks and the words already found collapse into a small ✓ that expands them again when tapped. If there is still not enough room, the text stays readable and the list can be swiped: sideways at the top and bottom, up and down on the left and right. Text cannot be selected by accident.
 
 ## Features
 

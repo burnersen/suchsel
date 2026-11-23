@@ -452,23 +452,36 @@
         }
         /** Beim Markieren am Rand des Bildes: Gitter langsam weiterschieben, damit auch lange Wörter in großen Gittern gehen */
         autoScroll() {
-            const step = () => {
+            // Tempo hängt an der Zeit, nicht an der Bildrate: auf 60- und 120-Hz-Bildschirmen gleich schnell.
+            // Die Randzone wächst mit dem Bildschirm, das Gitter läuft sanft an und wird schneller, je näher der Finger am Rand ist.
+            let last = 0, cvx = 0, cvy = 0;
+            const step = now => {
                 const d = this.drag;
                 if (!d) return;
+                const dt = last ? Math.min(0.05, (now - last) / 1000) : 0;
+                last = now;
                 const p = d.last;
-                let vx = 0, vy = 0;
-                if (p.px < EDGE) vx = (EDGE - p.px) / EDGE; else if (p.px > this.cw - EDGE) vx = -(p.px - (this.cw - EDGE)) / EDGE;
-                if (p.py < EDGE) vy = (EDGE - p.py) / EDGE; else if (p.py > this.ch - EDGE) vy = -(p.py - (this.ch - EDGE)) / EDGE;
+                const edge = Math.max(EDGE, Math.min(90, 0.14 * Math.min(this.cw, this.ch)));
+                const depth = v => Math.min(1, Math.max(0, v / edge));
+                let vx = depth(edge - p.px) - depth(p.px - (this.cw - edge));
+                let vy = depth(edge - p.py) - depth(p.py - (this.ch - edge));
                 if (d.moved && d.len > 1) {
-                    // Richtung steht fest: genau in Wortrichtung weiterschieben, schräg also in beide Richtungen zugleich.
+                    // Richtung steht fest: genau in Wortrichtung weiterschieben, in allen 8 Richtungen, schräg also in beide zugleich.
                     // Es reicht, wenn der Finger an einem Rand ist, auf den das Wort zuläuft.
                     const [dx, dy] = d.dir;
                     const s = Math.max(dx * vx < 0 ? Math.abs(vx) : 0, dy * vy < 0 ? Math.abs(vy) : 0);
                     vx = -dx * s; vy = -dy * s;
                 }
-                if ((vx || vy) && this.canPan()) {
+                // sanfter Anlauf: am Anfang der Randzone langsam, ganz am Rand volles Tempo (bis 9 Felder pro Sekunde)
+                const max = Math.max(260, Math.min(650, this.cs * 9));
+                const ease = v => Math.sign(v) * v * v * max;
+                const k = Math.min(1, dt * 12);   // Tempo weich nachführen, kein Ruck beim Rein- und Rausfahren
+                cvx += (ease(vx) - cvx) * k; cvy += (ease(vy) - cvy) * k;
+                if (Math.abs(cvx) < 1 && !vx) cvx = 0;
+                if (Math.abs(cvy) < 1 && !vy) cvy = 0;
+                if ((cvx || cvy) && dt && this.canPan()) {
                     const ox = this.ox, oy = this.oy;
-                    this.ox += Math.max(-1, Math.min(1, vx)) * 9; this.oy += Math.max(-1, Math.min(1, vy)) * 9;
+                    this.ox += cvx * dt; this.oy += cvy * dt;
                     this.clamp();
                     if (ox !== this.ox || oy !== this.oy) {
                         this.fitted = false;
